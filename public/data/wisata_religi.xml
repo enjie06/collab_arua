@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wisataReligi>
+  <wisata>
+    <namaWisata>Masjid Raya Al-Mashun</namaWisata>
+    <kategori>Masjid</kategori>
+    <alamat>Jl. Sisingamangaraja No.61, Kel. Mesjid, Kec. Medan Kota</alamat>
+    <kotaKabupaten>Kota Medan</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.5854</geoLatitude>
+    <geoLongitude>98.6768</geoLongitude>
+    <agamaTerkait>Islam</agamaTerkait>
+    <tokohTerkait>Sultan Ma'mun Al Rasyid Perkasa Alamsyah</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>24 Jam</jamBuka>
+    <jamTutup>-</jamTutup>
+    <dekatDengan>Istana Maimun</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Masjid Al-Osmani</namaWisata>
+    <kategori>Masjid</kategori>
+    <alamat>Jl. Kol. Yos Sudarso Km. 19, Kec. Medan Labuhan</alamat>
+    <kotaKabupaten>Kota Medan</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.7101</geoLatitude>
+    <geoLongitude>98.6764</geoLongitude>
+    <agamaTerkait>Islam</agamaTerkait>
+    <tokohTerkait>Sultan Osman Perkasa Alam</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>24 Jam</jamBuka>
+    <jamTutup>-</jamTutup>
+    <dekatDengan>Pelabuhan Belawan</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Masjid Agung Binjai</namaWisata>
+    <kategori>Masjid</kategori>
+    <alamat>Jl. Soekarno Hatta No.1, Kec. Binjai Timur</alamat>
+    <kotaKabupaten>Kota Binjai</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.6024</geoLatitude>
+    <geoLongitude>98.5003</geoLongitude>
+    <agamaTerkait>Islam</agamaTerkait>
+    <tokohTerkait>-</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>24 Jam</jamBuka>
+    <jamTutup>-</jamTutup>
+    <dekatDengan>Lapangan Merdeka Binjai</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Masjid Agung Medan</namaWisata>
+    <kategori>Masjid</kategori>
+    <alamat>Jl. Diponegoro No.8, Kec. Medan Petisah</alamat>
+    <kotaKabupaten>Kota Medan</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.5867</geoLatitude>
+    <geoLongitude>98.6712</geoLongitude>
+    <agamaTerkait>Islam</agamaTerkait>
+    <tokohTerkait>-</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>24 Jam</jamBuka>
+    <jamTutup>-</jamTutup>
+    <dekatDengan>Lapangan Merdeka Medan</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Makam Mahmud Al Rasyid</namaWisata>
+    <kategori>Makam</kategori>
+    <alamat>Jl. Istana Lama, Kec. Deli Tua</alamat>
+    <kotaKabupaten>Kabupaten Deli Serdang</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.5098</geoLatitude>
+    <geoLongitude>98.6902</geoLongitude>
+    <agamaTerkait>Islam</agamaTerkait>
+    <tokohTerkait>Sultan Mahmud Al Rasyid</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>07:00</jamBuka>
+    <jamTutup>18:00</jamTutup>
+    <dekatDengan>Masjid Raya Al-Mashun</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Makam Syeikh Abdul Wahab Rokan</namaWisata>
+    <kategori>Makam</kategori>
+    <alamat>Desa Babussalam, Kec. Padang Tualang</alamat>
+    <kotaKabupaten>Kabupaten Langkat</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.7578</geoLatitude>
+    <geoLongitude>98.3267</geoLongitude>
+    <agamaTerkait>Islam</agamaTerkait>
+    <tokohTerkait>Syeikh Abdul Wahab Rokan</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>07:00</jamBuka>
+    <jamTutup>18:00</jamTutup>
+    <dekatDengan>Pondok Pesantren Babussalam</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Makam Pahlawan Tuanku Imam Bonjol</namaWisata>
+    <kategori>Makam</kategori>
+    <alamat>Bonjol, Kec. Dolok Sigompulon</alamat>
+    <kotaKabupaten>Kabupaten Padang Lawas Utara</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>1.0915</geoLatitude>
+    <geoLongitude>99.6734</geoLongitude>
+    <agamaTerkait>Islam</agamaTerkait>
+    <tokohTerkait>Tuanku Imam Bonjol</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>07:00</jamBuka>
+    <jamTutup>18:00</jamTutup>
+    <dekatDengan>Museum Tuanku Imam Bonjol</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Makam Datuk Pulo Sembilan</namaWisata>
+    <kategori>Makam</kategori>
+    <alamat>Desa Pulo Sembilan, Kec. Pulau Rakyat</alamat>
+    <kotaKabupaten>Kabupaten Asahan</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>2.7809</geoLatitude>
+    <geoLongitude>99.6503</geoLongitude>
+    <agamaTerkait>Islam</agamaTerkait>
+    <tokohTerkait>Datuk Pulo Sembilan</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>07:00</jamBuka>
+    <jamTutup>18:00</jamTutup>
+    <dekatDengan>Masjid Raya Setempat</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Makam Raja Sisingamangaraja XII</namaWisata>
+    <kategori>Makam</kategori>
+    <alamat>Balige, Kec. Balige</alamat>
+    <kotaKabupaten>Kabupaten Toba</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>2.3347</geoLatitude>
+    <geoLongitude>99.0777</geoLongitude>
+    <agamaTerkait>Kristen</agamaTerkait>
+    <tokohTerkait>Raja Sisingamangaraja XII</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>07:00</jamBuka>
+    <jamTutup>18:00</jamTutup>
+    <dekatDengan>Danau Toba</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Masjid Azizi</namaWisata>
+    <kategori>Masjid</kategori>
+    <alamat>Jl. Lintas Sumatera No.1, Tanjung Pura</alamat>
+    <kotaKabupaten>Kabupaten Langkat</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.7849</geoLatitude>
+    <geoLongitude>98.3345</geoLongitude>
+    <agamaTerkait>Islam</agamaTerkait>
+    <tokohTerkait>Sultan Abdul Aziz</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>24 Jam</jamBuka>
+    <jamTutup>-</jamTutup>
+    <dekatDengan>Ponpes Tuan Guru Babussalam</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Masjid Raya Stabat</namaWisata>
+    <kategori>Masjid</kategori>
+    <alamat>Jl. KH Zainul Arifin, Kec. Stabat</alamat>
+    <kotaKabupaten>Kabupaten Langkat</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.7475</geoLatitude>
+    <geoLongitude>98.4508</geoLongitude>
+    <agamaTerkait>Islam</agamaTerkait>
+    <tokohTerkait>-</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>24 Jam</jamBuka>
+    <jamTutup>-</jamTutup>
+    <dekatDengan>Alun-Alun Stabat</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Masjid Al-Jihad</namaWisata>
+    <kategori>Masjid</kategori>
+    <alamat>Jl. Abdullah Lubis No.75, Kec. Medan Baru</alamat>
+    <kotaKabupaten>Kota Medan</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.5781</geoLatitude>
+    <geoLongitude>98.6604</geoLongitude>
+    <agamaTerkait>Islam</agamaTerkait>
+    <tokohTerkait>-</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>24 Jam</jamBuka>
+    <jamTutup>-</jamTutup>
+    <dekatDengan>Kampus USU</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Makam Syekh Abdurrahman Siddik</namaWisata>
+    <kategori>Makam</kategori>
+    <alamat>Desa Labuhan Bilik, Kec. Panai Tengah</alamat>
+    <kotaKabupaten>Kabupaten Labuhanbatu</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>2.4207</geoLatitude>
+    <geoLongitude>100.0603</geoLongitude>
+    <agamaTerkait>Islam</agamaTerkait>
+    <tokohTerkait>Syekh Abdurrahman Siddik</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>07:00</jamBuka>
+    <jamTutup>18:00</jamTutup>
+    <dekatDengan>Masjid Raya Labuhan Bilik</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Graha Maria Annai Velangkanni</namaWisata>
+    <kategori>Gereja</kategori>
+    <alamat>Jl. Sakura III No.7, Tanjung Selamat, Kec. Medan Tuntungan</alamat>
+    <kotaKabupaten>Kota Medan</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.5184</geoLatitude>
+    <geoLongitude>98.6187</geoLongitude>
+    <agamaTerkait>Katolik</agamaTerkait>
+    <tokohTerkait>Bunda Maria Annai Velangkanni</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>08:00</jamBuka>
+    <jamTutup>17:00</jamTutup>
+    <dekatDengan>Kampus Santo Thomas Medan</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Gereja Katedral Santa Maria Tak Bercela</namaWisata>
+    <kategori>Gereja</kategori>
+    <alamat>Jl. Pemuda No.1, Kec. Medan Maimun</alamat>
+    <kotaKabupaten>Kota Medan</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.5899</geoLatitude>
+    <geoLongitude>98.6814</geoLongitude>
+    <agamaTerkait>Katolik</agamaTerkait>
+    <tokohTerkait>Santa Maria</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>06:00</jamBuka>
+    <jamTutup>20:00</jamTutup>
+    <dekatDengan>Lapangan Merdeka Medan</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Salib Kasih</namaWisata>
+    <kategori>Monumen Religi</kategori>
+    <alamat>Siatas Barita, Tarutung</alamat>
+    <kotaKabupaten>Kabupaten Tapanuli Utara</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>2.0048</geoLatitude>
+    <geoLongitude>98.9789</geoLongitude>
+    <agamaTerkait>Kristen Protestan</agamaTerkait>
+    <tokohTerkait>Ingwer Ludwig Nommensen</tokohTerkait>
+    <hargaTiket>Rp5.000</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>08:00</jamBuka>
+    <jamTutup>18:00</jamTutup>
+    <dekatDengan>Kota Tarutung</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Bukit Doa Getsemani</namaWisata>
+    <kategori>Bukit Religi</kategori>
+    <alamat>Desa Sumbul, Kec. Berastagi</alamat>
+    <kotaKabupaten>Kabupaten Karo</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.1798</geoLatitude>
+    <geoLongitude>98.5045</geoLongitude>
+    <agamaTerkait>Kristen</agamaTerkait>
+    <tokohTerkait>Yesus Kristus</tokohTerkait>
+    <hargaTiket>Rp10.000</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>07:00</jamBuka>
+    <jamTutup>18:00</jamTutup>
+    <dekatDengan>Taman Alam Lumbini</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Gereja HKBP Balige</namaWisata>
+    <kategori>Gereja</kategori>
+    <alamat>Jl. Sisingamangaraja No.12, Kec. Balige</alamat>
+    <kotaKabupaten>Kabupaten Toba</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>2.3342</geoLatitude>
+    <geoLongitude>99.0678</geoLongitude>
+    <agamaTerkait>Kristen Protestan</agamaTerkait>
+    <tokohTerkait>Raja Sisingamangaraja XII</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Minggu</hariBuka>
+    <jamBuka>06:00</jamBuka>
+    <jamTutup>12:00</jamTutup>
+    <dekatDengan>Danau Toba</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Gereja Katolik St. Fransiskus Asisi</namaWisata>
+    <kategori>Gereja</kategori>
+    <alamat>Jl. Jamin Ginting No.45, Kec. Medan Selayang</alamat>
+    <kotaKabupaten>Kota Medan</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.5234</geoLatitude>
+    <geoLongitude>98.6493</geoLongitude>
+    <agamaTerkait>Katolik</agamaTerkait>
+    <tokohTerkait>St. Fransiskus Asisi</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>06:00</jamBuka>
+    <jamTutup>20:00</jamTutup>
+    <dekatDengan>Graha Maria Annai Velangkanni</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Bukit Doa Mahawu versi Sumut</namaWisata>
+    <kategori>Bukit Religi</kategori>
+    <alamat>Desa Tongging, Kec. Merek</alamat>
+    <kotaKabupaten>Kabupaten Karo</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>2.9055</geoLatitude>
+    <geoLongitude>98.5127</geoLongitude>
+    <agamaTerkait>Kristen</agamaTerkait>
+    <tokohTerkait>Yesus Kristus</tokohTerkait>
+    <hargaTiket>Rp10.000</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>07:00</jamBuka>
+    <jamTutup>18:00</jamTutup>
+    <dekatDengan>Danau Toba</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Goa Maria Bukit Salib</namaWisata>
+    <kategori>Goa Maria</kategori>
+    <alamat>Jl. Bukit Salib, Kabanjahe</alamat>
+    <kotaKabupaten>Kabupaten Karo</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.1045</geoLatitude>
+    <geoLongitude>98.4952</geoLongitude>
+    <agamaTerkait>Katolik</agamaTerkait>
+    <tokohTerkait>Bunda Maria</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>07:00</jamBuka>
+    <jamTutup>18:00</jamTutup>
+    <dekatDengan>Taman Alam Lumbini</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Gereja Katedral Santo Yosef</namaWisata>
+    <kategori>Gereja</kategori>
+    <alamat>Jl. Pemuda No.1, Kesawan</alamat>
+    <kotaKabupaten>Kota Medan</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.5943</geoLatitude>
+    <geoLongitude>98.6769</geoLongitude>
+    <agamaTerkait>Katolik</agamaTerkait>
+    <tokohTerkait>Santo Yosef</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>06:00</jamBuka>
+    <jamTutup>20:00</jamTutup>
+    <dekatDengan>Lapangan Merdeka Medan</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Taman Alam Lumbini</namaWisata>
+    <kategori>Vihara</kategori>
+    <alamat>Desa Tongkoh, Kec. Dolat Rayat</alamat>
+    <kotaKabupaten>Kabupaten Karo</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.1925</geoLatitude>
+    <geoLongitude>98.5023</geoLongitude>
+    <agamaTerkait>Buddha</agamaTerkait>
+    <tokohTerkait>Gautama Buddha</tokohTerkait>
+    <hargaTiket>Rp10.000</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>08:00</jamBuka>
+    <jamTutup>17:00</jamTutup>
+    <dekatDengan>Bukit Doa Getsemani</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Vihara Maha Maitreya</namaWisata>
+    <kategori>Vihara</kategori>
+    <alamat>Jl. Cemara Boulevard Utara No.8, Komplek Cemara Asri</alamat>
+    <kotaKabupaten>Kota Medan</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.6419</geoLatitude>
+    <geoLongitude>98.7231</geoLongitude>
+    <agamaTerkait>Buddha</agamaTerkait>
+    <tokohTerkait>Bodhisattva Maitreya</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>07:00</jamBuka>
+    <jamTutup>21:00</jamTutup>
+    <dekatDengan>Pusat Komplek Cemara Asri</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Vihara Setia Buddha</namaWisata>
+    <kategori>Vihara</kategori>
+    <alamat>Jl. Irian Barat, Pematangsiantar</alamat>
+    <kotaKabupaten>Kota Pematangsiantar</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>2.9611</geoLatitude>
+    <geoLongitude>99.0639</geoLongitude>
+    <agamaTerkait>Buddha</agamaTerkait>
+    <tokohTerkait>Buddha Gautama</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>07:00</jamBuka>
+    <jamTutup>18:00</jamTutup>
+    <dekatDengan>Pusat Kota Pematangsiantar</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Vihara Avalokitesvara</namaWisata>
+    <kategori>Vihara</kategori>
+    <alamat>Jl. Pahlawan, Tanjungbalai</alamat>
+    <kotaKabupaten>Kota Tanjungbalai</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>2.9654</geoLatitude>
+    <geoLongitude>99.7993</geoLongitude>
+    <agamaTerkait>Buddha</agamaTerkait>
+    <tokohTerkait>Dewi Kwan Im</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>07:00</jamBuka>
+    <jamTutup>21:00</jamTutup>
+    <dekatDengan>Pelabuhan Tanjungbalai</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Vihara Borobudur</namaWisata>
+    <kategori>Vihara</kategori>
+    <alamat>Jl. Sisingamangaraja No.19, Medan</alamat>
+    <kotaKabupaten>Kota Medan</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.5881</geoLatitude>
+    <geoLongitude>98.6790</geoLongitude>
+    <agamaTerkait>Buddha</agamaTerkait>
+    <tokohTerkait>Buddha</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>08:00</jamBuka>
+    <jamTutup>20:00</jamTutup>
+    <dekatDengan>Masjid Raya Medan</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Kuil Shri Mariamman</namaWisata>
+    <kategori>Kuil Hindu</kategori>
+    <alamat>Jl. Teuku Umar No.18, Petisah Tengah</alamat>
+    <kotaKabupaten>Kota Medan</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.5861</geoLatitude>
+    <geoLongitude>98.6749</geoLongitude>
+    <agamaTerkait>Hindu</agamaTerkait>
+    <tokohTerkait>Dewi Mariamman</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>06:00</jamBuka>
+    <jamTutup>20:00</jamTutup>
+    <dekatDengan>Sun Plaza Medan</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Vihara Tri Ratna</namaWisata>
+    <kategori>Vihara</kategori>
+    <alamat>Jl. Asahan, Kisaran</alamat>
+    <kotaKabupaten>Kabupaten Asahan</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>2.9815</geoLatitude>
+    <geoLongitude>99.6254</geoLongitude>
+    <agamaTerkait>Buddha</agamaTerkait>
+    <tokohTerkait>Buddha</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>07:00</jamBuka>
+    <jamTutup>20:00</jamTutup>
+    <dekatDengan>Pusat Kota Kisaran</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Vihara Dewi Kwan Im</namaWisata>
+    <kategori>Vihara</kategori>
+    <alamat>Jl. Laksamana Yos Sudarso, Belawan</alamat>
+    <kotaKabupaten>Kota Medan</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.7811</geoLatitude>
+    <geoLongitude>98.7039</geoLongitude>
+    <agamaTerkait>Buddha</agamaTerkait>
+    <tokohTerkait>Dewi Kwan Im</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>07:00</jamBuka>
+    <jamTutup>21:00</jamTutup>
+    <dekatDengan>Pelabuhan Belawan</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Rumah Tua Tjong A Fie</namaWisata>
+    <kategori>Bangunan Bersejarah</kategori>
+    <alamat>Jl. Ahmad Yani No.105, Kesawan</alamat>
+    <kotaKabupaten>Kota Medan</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.5932</geoLatitude>
+    <geoLongitude>98.6759</geoLongitude>
+    <agamaTerkait>Konghucu</agamaTerkait>
+    <tokohTerkait>Tjong A Fie</tokohTerkait>
+    <hargaTiket>Rp10.000</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>09:00</jamBuka>
+    <jamTutup>17:00</jamTutup>
+    <dekatDengan>Lapangan Merdeka Medan</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Pemakaman Belanda</namaWisata>
+    <kategori>Makam</kategori>
+    <alamat>Jl. Zainul Arifin No.10, Madras Hulu</alamat>
+    <kotaKabupaten>Kota Medan</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>3.5912</geoLatitude>
+    <geoLongitude>98.6677</geoLongitude>
+    <agamaTerkait>Kristen</agamaTerkait>
+    <tokohTerkait>Peninggalan Kolonial Belanda</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>07:00</jamBuka>
+    <jamTutup>18:00</jamTutup>
+    <dekatDengan>Gereja Immanuel Medan</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Makam Raja Siantar</namaWisata>
+    <kategori>Makam</kategori>
+    <alamat>Jl. Kartini, Pematangsiantar</alamat>
+    <kotaKabupaten>Kota Pematangsiantar</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>2.9618</geoLatitude>
+    <geoLongitude>99.0629</geoLongitude>
+    <agamaTerkait>Kristen</agamaTerkait>
+    <tokohTerkait>Raja Siantar</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>07:00</jamBuka>
+    <jamTutup>18:00</jamTutup>
+    <dekatDengan>Vihara Setia Buddha</dekatDengan>
+  </wisata>
+
+  <wisata>
+    <namaWisata>Makam Raja Sidimpuan</namaWisata>
+    <kategori>Makam</kategori>
+    <alamat>Desa Batunadua, Kec. Padangsidimpuan</alamat>
+    <kotaKabupaten>Kota Padangsidimpuan</kotaKabupaten>
+    <provinsi>Sumatera Utara</provinsi>
+    <geoLatitude>1.3807</geoLatitude>
+    <geoLongitude>99.2689</geoLongitude>
+    <agamaTerkait>Islam</agamaTerkait>
+    <tokohTerkait>Raja Sidimpuan</tokohTerkait>
+    <hargaTiket>Gratis</hargaTiket>
+    <hariBuka>Setiap Hari</hariBuka>
+    <jamBuka>07:00</jamBuka>
+    <jamTutup>18:00</jamTutup>
+    <dekatDengan>Kota Padangsidimpuan</dekatDengan>
+  </wisata>
+
+</wisataReligi>
+
