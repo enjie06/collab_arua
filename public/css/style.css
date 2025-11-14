@@ -1,0 +1,33 @@
+.header-with-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Jarak antara judul dan card */
+    margin-top: 20px;
+}
+
+.header-with-card .title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.category-card {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    width: 200px;
+}
+
+.category-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.category-card ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.category-card li {
+    margin-bottom: 6px;
+}
