@@ -75,81 +75,46 @@
     </section>
 
 <!-- ======================================= -->
-<!--   BAGIAN BAWAH — KATEGORI + SLIDER     -->
+<!--            12 FOTO + PAGINATION         -->
 <!-- ======================================= -->
 
 <section id="wisata-section" class="w-full py-24 px-16 bg-[#0B1F33]">
 
-    <h2 class="text-4xl font-bold mb-16 text-center">Kategori Wisata di Sumatera Utara</h2>
+    <h2 class="text-4xl font-bold mb-12 text-center">Wisata Sumatera Utara</h2>
 
+    <!-- GRID 12 FOTO -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
 
-    <!-- ========================= -->
-    <!-- 1. WISATA ALAM -->
-    <!-- ========================= -->
-    <div class="mb-20">
+        @for($i = 1; $i <= 12; $i++)
+            <div class="w-full h-56 bg-white/5 rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                <img src="/images/wisata{{ $i }}.jpg"
+                     class="w-full h-full object-cover"
+                     alt="Foto Wisata {{ $i }}">
+            </div>
+        @endfor
 
-        <div class="flex justify-between items-center mb-6">
-            <h3 class="text-3xl font-semibold">🌿 Wisata Alam</h3>
-            <a href="/kategori/alam" class="text-blue-400 hover:underline">See All</a>
-        </div>
-
-        <div class="flex space-x-6 overflow-x-auto pb-4 scrollbar-hide">
-            @for($i = 1; $i <= 6; $i++)
-                <div class="min-w-[300px] h-56 bg-white/5 rounded-xl overflow-hidden border border-white/10 flex-shrink-0 shadow-lg">
-                    <img src="/images/alam{{ $i }}.jpg" 
-                         class="w-full h-full object-cover"
-                         alt="Foto Alam {{ $i }}">
-                </div>
-            @endfor
-        </div>
     </div>
 
+    <!-- PAGINATION -->
+    <div class="flex justify-center mt-12 gap-4 text-lg">
 
+        <a href="/" class="px-4 py-2 bg-blue-600 rounded-lg">1</a>
 
+        <a href="/wisata/page2" 
+           class="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg">
+           2
+        </a>
 
-    <!-- ========================= -->
-    <!-- 2. WISATA BUDAYA -->
-    <!-- ========================= -->
-    <div class="mb-20">
+        <a href="/wisata/page3" 
+           class="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg">
+           3
+        </a>
 
-        <div class="flex justify-between items-center mb-6">
-            <h3 class="text-3xl font-semibold">🏺 Wisata Budaya</h3>
-            <a href="/kategori/budaya" class="text-blue-400 hover:underline">See All</a>
-        </div>
+        <a href="/wisata/page4" 
+           class="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg">
+           4
+        </a>
 
-        <div class="flex space-x-6 overflow-x-auto pb-4 scrollbar-hide">
-            @for($i = 1; $i <= 6; $i++)
-                <div class="min-w-[300px] h-56 bg-white/5 rounded-xl overflow-hidden border border-white/10 flex-shrink-0 shadow-lg">
-                    <img src="/images/budaya{{ $i }}.jpg" 
-                         class="w-full h-full object-cover"
-                         alt="Foto Budaya {{ $i }}">
-                </div>
-            @endfor
-        </div>
-    </div>
-
-
-
-
-    <!-- ========================= -->
-    <!-- 3. WISATA RELIGI -->
-    <!-- ========================= -->
-    <div class="mb-20">
-
-        <div class="flex justify-between items-center mb-6">
-            <h3 class="text-3xl font-semibold">⛪ Wisata Religi</h3>
-            <a href="/kategori/religi" class="text-blue-400 hover:underline">See All</a>
-        </div>
-
-        <div class="flex space-x-6 overflow-x-auto pb-4 scrollbar-hide">
-            @for($i = 1; $i <= 6; $i++)
-                <div class="min-w-[300px] h-56 bg-white/5 rounded-xl overflow-hidden border border-white/10 flex-shrink-0 shadow-lg">
-                    <img src="/images/religi{{ $i }}.jpg" 
-                         class="w-full h-full object-cover"
-                         alt="Foto Religi {{ $i }}">
-                </div>
-            @endfor
-        </div>
     </div>
 
 </section>
