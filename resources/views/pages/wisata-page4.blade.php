@@ -16,7 +16,7 @@
         <!-- GRID FOTO -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
 
-            @for($i = 13; $i <= 24; $i++)
+            @for($i = 37; $i <= 48; $i++)
                 <div class="w-full h-56 bg-white/5 rounded-xl overflow-hidden border border-white/10 shadow-lg">
                     <img src="/images/wisata{{ $i }}.jpg"
                          class="w-full h-full object-cover"
@@ -31,17 +31,11 @@
 
             <a href="/" class="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg">1</a>
 
-            <a href="/wisata/page2" class="px-4 py-2 bg-blue-600 rounded-lg">2</a>
+            <a href="/wisata/page2" class="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg">2</a>
 
-            <a href="/wisata/page3" 
-               class="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg">
-               3
-            </a>
+            <a href="/wisata/page3" class="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg">3</a>
 
-            <a href="/wisata/page4" 
-               class="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg">
-               4
-            </a>
+            <a href="/wisata/page4" class="px-4 py-2 bg-blue-600 rounded-lg">4</a>
 
         </div>
 
