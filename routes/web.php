@@ -10,9 +10,6 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/kategori', function () {
-    return view('kategori');
-});
 Route::get('/wisata', function () {
     return view('wisata');
 });
@@ -31,4 +28,9 @@ Route::get('/wisata/page3', function () {
 
 Route::get('/wisata/page4', function () {
     return view('pages.wisata-page4');
+});
+Route::get('/search', function (Request $request) {
+    $query = $request->get('q');
+    // Untuk sementara kita redirect ke home dulu
+    return redirect('/')->with('search', $query);
 });
