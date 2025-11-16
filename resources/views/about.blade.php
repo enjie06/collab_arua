@@ -78,17 +78,15 @@
         }
 
         .team-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            padding: 1.5rem;
-            width: 180px;
-            px;
-            text-align: center;
-            transition: all 0.3s;
-            gap: 1.5rem;
-            
-        }
+         background: rgba(255, 255, 255, 0.05);
+         border: 1px solid rgba(255, 255, 255, 0.1);
+         border-radius: 15px;
+         padding: 1.5rem;
+         width: 180px;
+         text-align: center;
+         transition: all 0.3s;
+         gap: 1.5rem;
+}
 
         .team-card:hover {
             background: rgba(255, 255, 255, 0.08);
@@ -148,8 +146,71 @@
         }
 
         .cta-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+        /* Bottom CTA Banner */
+        .bottom-cta-banner {
+            position: relative;
+            height: 300px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), 
+            url('{{ asset("images/danau.jpg") }}') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                45deg,
+                rgba(102, 126, 234, 0.05),
+                rgba(102, 126, 234, 0.05) 10px,
+                transparent 10px,
+                transparent 20px
+            );
+            pointer-events: none;
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .banner-content h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 2rem;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .banner-btn {
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            background: #a8e063;
+            color: #1a1a2e;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(168, 224, 99, 0.4);
+            text-transform: uppercase;
+        }
+
+        .banner-btn:hover {
+            background: #93d04b;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(168, 224, 99, 0.6);
         }
 
         /* Responsive */
@@ -180,13 +241,13 @@
                 padding: 4rem 2rem;
             }
 
-            .features-grid,
-            .team-grid {
-                grid-template-columns: 1fr;
+            .banner-content h2 {
+                font-size: 1.8rem;
             }
 
-            .tech-grid {
-                grid-template-columns: repeat(2, 1fr);
+            .banner-btn {
+                font-size: 1rem;
+                padding: 1rem 2rem;
             }
         }
     </style>
@@ -240,17 +301,18 @@
                     </div>
                 </div>
             </div>
+    </section>
 
             <!-- CTA Section -->
-            <div class="cta-section">
-        <div class="banner-overlay"></div>
-        <div class="banner-content">
-            <h2>Mulai Jelajahi Sumatera Utara?</h2>
-            <a href="/" class="banner-btn">
-                START EXPLORING →
-            </a>
-        </div>
-    </section>
+            <section class="bottom-cta-banner">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+        <h2>Mulai menjelajahi Sumatera Utara?</h2>
+        <a href="/" class="banner-btn">
+            START EXPLORING →
+        </a>
+    </div>
+</section>
 
 
     <script src="{{ asset('js/script.js') }}"></script>

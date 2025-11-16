@@ -7,7 +7,6 @@
         
         <ul class="flex gap-12 text-sm">
     <li><a href="/home" class="hover:text-white">Home</a></li>
-    <li><a href="/kategori" class="hover:text-white">Kategori</a></li>
     <li><a href="/wisata" class="hover:text-white">Wisata</a></li>
     <li><a href="/about" class="hover:text-white">About</a></li>
 </ul>

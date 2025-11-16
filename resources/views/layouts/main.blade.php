@@ -21,7 +21,6 @@
             <!-- Menu tengah -->
             <ul class="flex gap-10 text-white font-medium absolute left-1/2 -translate-x-1/2">
                 <li><a href="/" class="hover:text-gray-300 transition">Home</a></li>
-                <li><a href="/kategori" class="hover:text-gray-300 transition">Kategori</a></li>
                 <li><a href="/wisata" class="hover:text-gray-300 transition">Wisata</a></li>
                 <li><a href="/about" class="hover:text-gray-300 transition">About</a></li>
             </ul>
