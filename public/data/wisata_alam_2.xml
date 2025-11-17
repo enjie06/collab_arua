@@ -4,7 +4,6 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
     xmlns:ws="http://example.com/wisata#">
-  <wisataAlam>
     <wisata>
       <rdfs:label>Pantai Lagundri</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
@@ -361,5 +360,4 @@
       <ws:fasilitas>Parkir, area istirahat</ws:fasilitas>
       <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam</ws:aktivitas>
     </wisata>
-  </wisataAlam>
 </rdf:RDF>
