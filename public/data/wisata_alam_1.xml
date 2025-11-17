@@ -1,1808 +1,1813 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wisataAlam>
-  <wisata>
-    <namaWisata>Danau Toba</namaWisata>
-    <kategori>Danau</kategori>
-    <alamat>Desa Parapat, Kec. Girsang Sipangan Bolon</alamat>
-    <kotaKabupaten>Kabupaten Simalungun</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.6844</geoLatitude>
-    <geoLongitude>98.8754</geoLongitude>
-    <hargaTiket>Gratis</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>24 Jam</jamBuka>
-    <jamTutup>-</jamTutup>
-    <dekatDengan>Pulau Samosir</dekatDengan>
-    <fasilitas>Parkir, Penginapan, Restoran, Toilet</fasilitas>
-    <aktivitas>Berenang, Berlayar, Foto, Wisata Alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pulau Samosir</namaWisata>
-    <kategori>Pulau</kategori>
-    <alamat>Danau Toba, Kec. Pangururan</alamat>
-    <kotaKabupaten>Kabupaten Samosir</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.6395</geoLatitude>
-    <geoLongitude>98.8231</geoLongitude>
-    <hargaTiket>Gratis</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>24 Jam</jamBuka>
-    <jamTutup>-</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Penginapan, Restoran, Penyewaan Perahu</fasilitas>
-    <aktivitas>Bersepeda, Jelajah Budaya, Foto</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Sipiso-piso</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Tongging, Kec. Merek</alamat>
-    <kotaKabupaten>Kabupaten Karo</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.9055</geoLatitude>
-    <geoLongitude>98.5127</geoLongitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Parkir, Warung, Toilet</fasilitas>
-    <aktivitas>Trekking, Foto, Menikmati Pemandangan</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Gunung Sibayak</namaWisata>
-    <kategori>Gunung</kategori>
-    <alamat>Desa Semangat Gunung, Kec. Merdeka</alamat>
-    <kotaKabupaten>Kabupaten Karo</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>3.1975</geoLatitude>
-    <geoLongitude>98.5085</geoLongitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>05:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Kota Berastagi</dekatDengan>
-    <fasilitas>Parkir, Pemandian Air Panas, Toilet</fasilitas>
-    <aktivitas>Mendaki, Camping, Fotografi</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Gunung Sinabung</namaWisata>
-    <kategori>Gunung</kategori>
-    <alamat>Desa Sukanalu, Kec. Naman Teran</alamat>
-    <kotaKabupaten>Kabupaten Karo</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>3.1707</geoLatitude>
-    <geoLongitude>98.3923</geoLongitude>
-    <hargaTiket>Gratis</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>24 Jam</jamBuka>
-    <jamTutup>-</jamTutup>
-    <dekatDengan>Gunung Sibayak</dekatDengan>
-    <fasilitas>Parkir, Pos Pendakian</fasilitas>
-    <aktivitas>Pendakian, Observasi Alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Bukit Lawang</namaWisata>
-    <kategori>Taman Nasional</kategori>
-    <alamat>Desa Bohorok, Kec. Bahorok</alamat>
-    <kotaKabupaten>Kabupaten Langkat</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>3.5553</geoLatitude>
-    <geoLongitude>98.1124</geoLongitude>
-    <hargaTiket>Rp25.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Taman Nasional Gunung Leuser</dekatDengan>
-    <fasilitas>Penginapan, Restoran, Toilet</fasilitas>
-    <aktivitas>Tracking, Melihat Orangutan, Arung Jeram</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Ponot</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Halado, Kec. Pintu Pohan Meranti</alamat>
-    <kotaKabupaten>Kabupaten Toba</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.4545</geoLatitude>
-    <geoLongitude>99.1599</geoLongitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>08:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Parkir, Warung, Toilet</fasilitas>
-    <aktivitas>Trekking, Foto, Piknik</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Taman Wisata Alam Sicike-cike</namaWisata>
-    <kategori>Taman Alam</kategori>
-    <alamat>Desa Lae Hole, Kec. Sitellu Tali Urang Julu</alamat>
-    <kotaKabupaten>Kabupaten Dairi</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.6063</geoLatitude>
-    <geoLongitude>98.2371</geoLongitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Sidikalang</dekatDengan>
-    <fasilitas>Parkir, Toilet, Area Camping</fasilitas>
-    <aktivitas>Tracking, Camping, Fotografi</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Danau Linting</namaWisata>
-    <kategori>Danau</kategori>
-    <alamat>Desa Sibunga-bunga Hilir, Kec. STM Hulu</alamat>
-    <kotaKabupaten>Kabupaten Deli Serdang</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>3.2164</geoLatitude>
-    <geoLongitude>98.7813</geoLongitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>08:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Air Terjun Dua Warna</dekatDengan>
-    <fasilitas>Parkir, Warung, Toilet</fasilitas>
-    <aktivitas>Berenang, Foto, Bersantai</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Pandan</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Kec. Pandan</alamat>
-    <kotaKabupaten>Kabupaten Tapanuli Tengah</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.7249</geoLatitude>
-    <geoLongitude>98.7857</geoLongitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>06:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Kota Sibolga</dekatDengan>
-    <fasilitas>Parkir, Warung, Toilet, Penginapan</fasilitas>
-    <aktivitas>Berenang, Piknik, Menikmati Sunset</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Dua Warna Sibolangit</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Durin Sirugun, Kec. Sibolangit</alamat>
-    <kotaKabupaten>Kabupaten Deli Serdang</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>3.2402</geoLatitude>
-    <geoLongitude>98.5334</geoLongitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Danau Linting</dekatDengan>
-    <fasilitas>Parkir, Pemandu Wisata</fasilitas>
-    <aktivitas>Trekking, Foto, Menikmati Alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Taman Nasional Gunung Leuser</namaWisata>
-    <kategori>Taman Nasional</kategori>
-    <alamat>Desa Ketambe, Kec. Kutacane</alamat>
-    <kotaKabupaten>Kabupaten Langkat dan Aceh Tenggara</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>3.6667</geoLatitude>
-    <geoLongitude>97.7500</geoLongitude>
-    <hargaTiket>Rp25.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>06:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Bukit Lawang</dekatDengan>
-    <fasilitas>Penginapan, Pusat Informasi, Toilet</fasilitas>
-    <aktivitas>Tracking, Observasi Satwa, Camping</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Bukit Holbung</namaWisata>
-    <kategori>Bukit</kategori>
-    <alamat>Desa Janji Martahan, Kec. Harian Boho</alamat>
-    <kotaKabupaten>Kabupaten Samosir</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.4233</geoLatitude>
-    <geoLongitude>98.7969</geoLongitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>06:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Parkir, Warung, Toilet</fasilitas>
-    <aktivitas>Hiking, Camping, Menikmati Pemandangan</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Efrata</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Sosor Dolok, Kec. Harian Boho</alamat>
-    <kotaKabupaten>Kabupaten Samosir</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.4049</geoLatitude>
-    <geoLongitude>98.7188</geoLongitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Bukit Holbung</dekatDengan>
-    <fasilitas>Parkir, Toilet</fasilitas>
-    <aktivitas>Trekking, Foto, Piknik</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Danau Lau Kawar</namaWisata>
-    <kategori>Danau</kategori>
-    <alamat>Desa Kuta Gugung, Kec. Naman Teran</alamat>
-    <kotaKabupaten>Kabupaten Karo</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>3.1503</geoLatitude>
-    <geoLongitude>98.3897</geoLongitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Gunung Sinabung</dekatDengan>
-    <fasilitas>Parkir, Warung, Toilet, Area Camping</fasilitas>
-    <aktivitas>Camping, Foto, Menikmati Alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Sikulikap</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Doulu, Kecamatan Berastagi</alamat>
-    <kotaKabupaten>Karo</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>3.1954</geo:latitude>
-    <geo:longitude>98.4979</geo:longitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>08.00</jamBuka>
-    <jamTutup>17.00</jamTutup>
-    <dekatDengan>Taman Hutan Raya Bukit Barisan</dekatDengan>
-    <fasilitas>Parkir, warung, area foto, toilet</fasilitas>
-    <aktivitas>Trekking, fotografi, menikmati alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Cermin</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Pantai Cermin Kanan</alamat>
-    <kotaKabupaten>Serdang Bedagai</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>3.5672</geo:latitude>
-    <geo:longitude>99.0508</geo:longitude>
-    <hargaTiket>Rp25.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>08.00</jamBuka>
-    <jamTutup>18.00</jamTutup>
-    <dekatDengan>Pantai Kuala Putri</dekatDengan>
-    <fasilitas>Gazebo, area bermain, restoran, penginapan</fasilitas>
-    <aktivitas>Bermain air, bersantai, menikmati sunset</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Gunung Sibuatan</namaWisata>
-    <kategori>Gunung</kategori>
-    <alamat>Kecamatan Merek</alamat>
-    <kotaKabupaten>Karo</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>2.9601</geo:latitude>
-    <geo:longitude>98.5189</geo:longitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>24 Jam</jamBuka>
-    <jamTutup>-</jamTutup>
-    <dekatDengan>Gunung Sinabung</dekatDengan>
-    <fasilitas>Tempat parkir, basecamp, warung</fasilitas>
-    <aktivitas>Mendaki, berkemah, fotografi</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Situmurun Binangalom</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Binangalom</alamat>
-    <kotaKabupaten>Toba</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>2.4236</geo:latitude>
-    <geo:longitude>98.9238</geo:longitude>
-    <hargaTiket>Gratis</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>09.00</jamBuka>
-    <jamTutup>17.00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Perahu sewa, spot foto</fasilitas>
-    <aktivitas>Naik perahu, berenang, fotografi</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Danau Sidihoni</namaWisata>
-    <kategori>Danau</kategori>
-    <alamat>Pulau Samosir</alamat>
-    <kotaKabupaten>Samosir</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>2.6291</geo:latitude>
-    <geo:longitude>98.7753</geo:longitude>
-    <hargaTiket>Gratis</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>24 Jam</jamBuka>
-    <jamTutup>-</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Area parkir, warung</fasilitas>
-    <aktivitas>Bersantai, menikmati pemandangan</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Sorake</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Teluk Dalam</alamat>
-    <kotaKabupaten>Nias Selatan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>0.7891</geo:latitude>
-    <geo:longitude>97.7856</geo:longitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>06.00</jamBuka>
-    <jamTutup>18.00</jamTutup>
-    <dekatDengan>Pantai Lagundri</dekatDengan>
-    <fasilitas>Penginapan, restoran, area surfing</fasilitas>
-    <aktivitas>Surfing, berenang, menikmati sunset</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Lagundri</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Teluk Dalam</alamat>
-    <kotaKabupaten>Nias Selatan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>0.7867</geo:latitude>
-    <geo:longitude>97.7841</geo:longitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>06.00</jamBuka>
-    <jamTutup>18.00</jamTutup>
-    <dekatDengan>Pantai Sorake</dekatDengan>
-    <fasilitas>Homestay, parkir, area surfing</fasilitas>
-    <aktivitas>Surfing, berenang, bersantai</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Sigura-gura</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Halado</alamat>
-    <kotaKabupaten>Toba</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>2.4829</geo:latitude>
-    <geo:longitude>99.2832</geo:longitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>08.00</jamBuka>
-    <jamTutup>17.00</jamTutup>
-    <dekatDengan>PLTA Sigura-gura</dekatDengan>
-    <fasilitas>Parkir, area foto</fasilitas>
-    <aktivitas>Fotografi, eksplorasi alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Bukit Indah Simarjarunjung</namaWisata>
-    <kategori>Bukit</kategori>
-    <alamat>Jalan Raya Simarjarunjung</alamat>
-    <kotaKabupaten>Simalungun</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>2.7884</geo:latitude>
-    <geo:longitude>98.6667</geo:longitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>07.00</jamBuka>
-    <jamTutup>18.00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Spot foto, warung, area parkir</fasilitas>
-    <aktivitas>Fotografi, bersantai</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Bukit Gajah Bobok</namaWisata>
-    <kategori>Bukit</kategori>
-    <alamat>Desa Situnggaling</alamat>
-    <kotaKabupaten>Karo</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>2.9715</geo:latitude>
-    <geo:longitude>98.4651</geo:longitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>24 Jam</jamBuka>
-    <jamTutup>-</jamTutup>
-    <dekatDengan>Gunung Sibuatan</dekatDengan>
-    <fasilitas>Parkir, area camping</fasilitas>
-    <aktivitas>Camping, hiking, menikmati sunrise</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Lae Pendaroh</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Lae Hole</alamat>
-    <kotaKabupaten>Dairi</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>2.8445</geo:latitude>
-    <geo:longitude>98.2532</geo:longitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>08.00</jamBuka>
-    <jamTutup>17.00</jamTutup>
-    <dekatDengan>Air Terjun Situmurun</dekatDengan>
-    <fasilitas>Parkir, warung</fasilitas>
-    <aktivitas>Berenang, fotografi</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Danau Siombak</namaWisata>
-    <kategori>Danau</kategori>
-    <alamat>Kelurahan Paya Pasir, Medan Marelan</alamat>
-    <kotaKabupaten>Medan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>3.6861</geo:latitude>
-    <geo:longitude>98.6414</geo:longitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>07.00</jamBuka>
-    <jamTutup>18.00</jamTutup>
-    <dekatDengan>Pantai Mangrove Belawan</dekatDengan>
-    <fasilitas>Perahu, tempat makan, area parkir</fasilitas>
-    <aktivitas>Memancing, berperahu, piknik</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Tarunggang</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Marbun Toruan</alamat>
-    <kotaKabupaten>Humbang Hasundutan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>2.3269</geo:latitude>
-    <geo:longitude>98.7484</geo:longitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>08.00</jamBuka>
-    <jamTutup>17.00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Parkir, area foto</fasilitas>
-    <aktivitas>Fotografi, trekking</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Taman Alam Lumbini</namaWisata>
-    <kategori>Taman</kategori>
-    <alamat>Desa Tongkoh, Kecamatan Dolat Rayat</alamat>
-    <kotaKabupaten>Karo</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>3.1737</geo:latitude>
-    <geo:longitude>98.5183</geo:longitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>08.00</jamBuka>
-    <jamTutup>17.00</jamTutup>
-    <dekatDengan>Gunung Sibayak</dekatDengan>
-    <fasilitas>Toilet, area parkir, restoran</fasilitas>
-    <aktivitas>Wisata religi, fotografi, meditasi</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Janji</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Marbun Toruan</alamat>
-    <kotaKabupaten>Humbang Hasundutan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>2.3264</geo:latitude>
-    <geo:longitude>98.7425</geo:longitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>08.00</jamBuka>
-    <jamTutup>17.00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Parkir, gazebo, area foto</fasilitas>
-    <aktivitas>Fotografi, bersantai, berenang</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Linggahara</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Linggahara Jae</alamat>
-    <kotaKabupaten>Padang Lawas Utara</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>1.3735</geo:latitude>
-    <geo:longitude>99.7558</geo:longitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>08.00</jamBuka>
-    <jamTutup>17.00</jamTutup>
-    <dekatDengan>Gunung Lubukraya</dekatDengan>
-    <fasilitas>Area parkir, warung</fasilitas>
-    <aktivitas>Berenang, eksplorasi alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Simangande</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Simangande</alamat>
-    <kotaKabupaten>Toba</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>2.3739</geo:latitude>
-    <geo:longitude>98.9331</geo:longitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>08.00</jamBuka>
-    <jamTutup>17.00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Spot foto, area parkir</fasilitas>
-    <aktivitas>Fotografi, menikmati alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Bukit Doa Tapanuli Utara</namaWisata>
-    <kategori>Bukit</kategori>
-    <alamat>Desa Siatas Barita</alamat>
-    <kotaKabupaten>Tapanuli Utara</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>2.0345</geo:latitude>
-    <geo:longitude>98.9456</geo:longitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>07.00</jamBuka>
-    <jamTutup>18.00</jamTutup>
-    <dekatDengan>Kota Tarutung</dekatDengan>
-    <fasilitas>Toilet, warung, tempat duduk</fasilitas>
-    <aktivitas>Bersantai, berdoa, menikmati pemandangan</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Goa Natumandi</namaWisata>
-    <kategori>Goa</kategori>
-    <alamat>Desa Sijungkang</alamat>
-    <kotaKabupaten>Humbang Hasundutan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>2.2264</geo:latitude>
-    <geo:longitude>98.7208</geo:longitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>08.00</jamBuka>
-    <jamTutup>17.00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Parkir, pemandu lokal</fasilitas>
-    <aktivitas>Eksplorasi goa, fotografi</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Hutan Wisata Sibolangit</namaWisata>
-    <kategori>Hutan</kategori>
-    <alamat>Kecamatan Sibolangit</alamat>
-    <kotaKabupaten>Deli Serdang</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>3.2861</geo:latitude>
-    <geo:longitude>98.5453</geo:longitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>07.00</jamBuka>
-    <jamTutup>17.00</jamTutup>
-    <dekatDengan>Air Terjun Dua Warna</dekatDengan>
-    <fasilitas>Tempat parkir, area piknik</fasilitas>
-    <aktivitas>Trekking, camping, edukasi alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Batu Hoda</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Cinta Dame</alamat>
-    <kotaKabupaten>Toba</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>2.5582</geo:latitude>
-    <geo:longitude>98.9504</geo:longitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>07.00</jamBuka>
-    <jamTutup>18.00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Gazebo, warung, area bermain</fasilitas>
-    <aktivitas>Bermain air, bersantai, fotografi</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Bah Biak</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Tongging</alamat>
-    <kotaKabupaten>Karo</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>2.9568</geo:latitude>
-    <geo:longitude>98.5432</geo:longitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>08.00</jamBuka>
-    <jamTutup>17.00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Parkir, spot foto</fasilitas>
-    <aktivitas>Fotografi, relaksasi</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Gunung Lubukraya</namaWisata>
-    <kategori>Gunung</kategori>
-    <alamat>Desa Batang Toru</alamat>
-    <kotaKabupaten>Tapanuli Selatan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>1.4235</geo:latitude>
-    <geo:longitude>99.0956</geo:longitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>24 Jam</jamBuka>
-    <jamTutup>-</jamTutup>
-    <dekatDengan>Air Terjun Linggahara</dekatDengan>
-    <fasilitas>Basecamp, parkir</fasilitas>
-    <aktivitas>Mendaki, camping</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Danau Sicike-cike</namaWisata>
-    <kategori>Danau</kategori>
-    <alamat>Desa Lae Hole</alamat>
-    <kotaKabupaten>Dairi</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>2.6621</geo:latitude>
-    <geo:longitude>98.2643</geo:longitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>07.00</jamBuka>
-    <jamTutup>17.00</jamTutup>
-    <dekatDengan>Taman Wisata Alam Sicike-cike</dekatDengan>
-    <fasilitas>Parkir, shelter</fasilitas>
-    <aktivitas>Trekking, edukasi alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Simanoroni</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Hutaraja</alamat>
-    <kotaKabupaten>Tapanuli Selatan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>1.5634</geo:latitude>
-    <geo:longitude>99.1546</geo:longitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>08.00</jamBuka>
-    <jamTutup>17.00</jamTutup>
-    <dekatDengan>Gunung Lubukraya</dekatDengan>
-    <fasilitas>Parkir, area foto</fasilitas>
-    <aktivitas>Fotografi, eksplorasi alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pemandian Air Panas Sidebuk-debuk</namaWisata>
-    <kategori>Pemandian</kategori>
-    <alamat>Desa Doulu</alamat>
-    <kotaKabupaten>Karo</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>3.1950</geo:latitude>
-    <geo:longitude>98.4975</geo:longitude>
-    <hargaTiket>Rp15.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>07.00</jamBuka>
-    <jamTutup>22.00</jamTutup>
-    <dekatDengan>Gunung Sibayak</dekatDengan>
-    <fasilitas>Kolam air panas, warung, parkir</fasilitas>
-    <aktivitas>Berendam, relaksasi</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Bukit Gundaling</namaWisata>
-    <kategori>Bukit</kategori>
-    <alamat>Kecamatan Berastagi</alamat>
-    <kotaKabupaten>Karo</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>3.1945</geo:latitude>
-    <geo:longitude>98.5079</geo:longitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>07.00</jamBuka>
-    <jamTutup>18.00</jamTutup>
-    <dekatDengan>Gunung Sibayak</dekatDengan>
-    <fasilitas>Kuda tunggang, taman, warung</fasilitas>
-    <aktivitas>Menikmati pemandangan, berkuda</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Pasir Putih Parbaba</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Parbaba</alamat>
-    <kotaKabupaten>Samosir</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>2.5483</geo:latitude>
-    <geo:longitude>98.8256</geo:longitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>07.00</jamBuka>
-    <jamTutup>18.00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Warung, sewa ban, area bermain</fasilitas>
-    <aktivitas>Bermain air, bersantai</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Mursala</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Pulau Mursala</alamat>
-    <kotaKabupaten>Tapanuli Tengah</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>1.7015</geo:latitude>
-    <geo:longitude>98.7482</geo:longitude>
-    <hargaTiket>Rp20.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>08.00</jamBuka>
-    <jamTutup>17.00</jamTutup>
-    <dekatDengan>Pantai Kalangan</dekatDengan>
-    <fasilitas>Perahu, pemandu wisata</fasilitas>
-    <aktivitas>Menjelajah pulau, fotografi</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Silangit</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Silangit</alamat>
-    <kotaKabupaten>Tapanuli Utara</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geo:latitude>2.2652</geo:latitude>
-    <geo:longitude>99.0251</geo:longitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap hari</hariBuka>
-    <jamBuka>08.00</jamBuka>
-    <jamTutup>17.00</jamTutup>
-    <dekatDengan>Bandara Silangit</dekatDengan>
-    <fasilitas>Area parkir, spot foto</fasilitas>
-    <aktivitas>Fotografi, menikmati alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Muara Indah</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Muara, Kec. Muara</alamat>
-    <kotaKabupaten>Kabupaten Tapanuli Utara</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.2491</geoLatitude>
-    <geoLongitude>98.9432</geoLongitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Toilet, parkir, warung</fasilitas>
-    <aktivitas>Bermain air, bersantai, menikmati pemandangan</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Sosor Dolok</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Huta Rakyat, Kec. Balige</alamat>
-    <kotaKabupaten>Kabupaten Toba</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.3264</geoLatitude>
-    <geoLongitude>99.0687</geoLongitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Area parkir, gazebo, warung kecil</fasilitas>
-    <aktivitas>Foto, trekking, menikmati alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Bukit Siadtaratas</namaWisata>
-    <kategori>Bukit</kategori>
-    <alamat>Desa Lintong Nihuta</alamat>
-    <kotaKabupaten>Kabupaten Humbang Hasundutan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.2236</geoLatitude>
-    <geoLongitude>98.8554</geoLongitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>06:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Lembah Bakkara</dekatDengan>
-    <fasilitas>Toilet, tempat duduk, area foto</fasilitas>
-    <aktivitas>Camping, fotografi, hiking</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Danau Marsabut</namaWisata>
-    <kategori>Danau</kategori>
-    <alamat>Desa Aek Godang, Kec. Sipirok</alamat>
-    <kotaKabupaten>Kabupaten Tapanuli Selatan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.5478</geoLatitude>
-    <geoLongitude>99.2609</geoLongitude>
-    <hargaTiket>Gratis</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>24 Jam</jamBuka>
-    <jamTutup>-</jamTutup>
-    <dekatDengan>Gunung Lubukraya</dekatDengan>
-    <fasilitas>Gazebo, parkir, spot foto</fasilitas>
-    <aktivitas>Memancing, menikmati pemandangan</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Lembah Bakkara</namaWisata>
-    <kategori>Lembah</kategori>
-    <alamat>Desa Bakkara, Kec. Baktiraja</alamat>
-    <kotaKabupaten>Kabupaten Humbang Hasundutan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.2686</geoLatitude>
-    <geoLongitude>98.8284</geoLongitude>
-    <hargaTiket>Gratis</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>24 Jam</jamBuka>
-    <jamTutup>-</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Tempat parkir, area foto, warung</fasilitas>
-    <aktivitas>Menikmati panorama, berfoto, eksplorasi</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Menara Pandang Tele</namaWisata>
-    <kategori>Menara</kategori>
-    <alamat>Jl. Tele, Turpuk Limbong</alamat>
-    <kotaKabupaten>Kabupaten Samosir</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.5015</geoLatitude>
-    <geoLongitude>98.7163</geoLongitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Parkir, Toilet, Warung, Area Foto</fasilitas>
-    <aktivitas>Melihat panorama, fotografi, bersantai</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pusuk Buhit Samosir</namaWisata>
-    <kategori>Gunung</kategori>
-    <alamat>Desa Limbong, Kec. Sianjur Mula-Mula</alamat>
-    <kotaKabupaten>Kabupaten Samosir</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.5873</geoLatitude>
-    <geoLongitude>98.7302</geoLongitude>
-    <hargaTiket>Gratis</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>24 Jam</jamBuka>
-    <jamTutup>-</jamTutup>
-    <dekatDengan>Menara Pandang Tele</dekatDengan>
-    <fasilitas>Parkir, Warung, Area Istirahat</fasilitas>
-    <aktivitas>Mendaki, camping, menikmati pemandangan</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Bukit Beta</namaWisata>
-    <kategori>Bukit</kategori>
-    <alamat>Desa Tuk-Tuk Siadong, Kec. Simanindo</alamat>
-    <kotaKabupaten>Kabupaten Samosir</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.6421</geoLatitude>
-    <geoLongitude>98.8245</geoLongitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Tempat duduk, warung, area foto</fasilitas>
-    <aktivitas>Menikmati matahari terbenam, bersantai, berfoto</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Aek Sipitu Dai</namaWisata>
-    <kategori>Sumber Air</kategori>
-    <alamat>Desa Aek Sipitu Dai, Kec. Sianjur Mula-Mula</alamat>
-    <kotaKabupaten>Kabupaten Samosir</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.5789</geoLatitude>
-    <geoLongitude>98.7554</geoLongitude>
-    <hargaTiket>Gratis</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Pusuk Buhit</dekatDengan>
-    <fasilitas>Parkir, tempat istirahat</fasilitas>
-    <aktivitas>Menikmati keunikan air tujuh rasa, foto alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pemandian Air Panas Rianiate</namaWisata>
-    <kategori>Pemandian</kategori>
-    <alamat>Desa Rianiate, Kec. Pangururan</alamat>
-    <kotaKabupaten>Kabupaten Samosir</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.6284</geoLatitude>
-    <geoLongitude>98.7415</geoLongitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>06:00</jamBuka>
-    <jamTutup>20:00</jamTutup>
-    <dekatDengan>Aek Rangat Pangururan</dekatDengan>
-    <fasilitas>Kolam, ruang bilas, parkir, warung</fasilitas>
-    <aktivitas>Berendam air panas, relaksasi</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Puncak Sidiangkat</namaWisata>
-    <kategori>Puncak</kategori>
-    <alamat>Jl. Sidikalang - Medan, Desa Sidiangkat</alamat>
-    <kotaKabupaten>Kabupaten Dairi</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.7651</geoLatitude>
-    <geoLongitude>98.3043</geoLongitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Kota Sidikalang</dekatDengan>
-    <fasilitas>Parkir, toilet, gazebo, tempat makan</fasilitas>
-    <aktivitas>Camping, fotografi, menikmati panorama</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Tano Ponggol</namaWisata>
-    <kategori>Tanah Genting</kategori>
-    <alamat>Desa Siogung-Ogung, Kec. Pangururan</alamat>
-    <kotaKabupaten>Kabupaten Samosir</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.6481</geoLatitude>
-    <geoLongitude>98.7178</geoLongitude>
-    <hargaTiket>Gratis</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>24 Jam</jamBuka>
-    <jamTutup>-</jamTutup>
-    <dekatDengan>Jembatan Tano Ponggol</dekatDengan>
-    <fasilitas>Jalan aspal, spot foto, area parkir</fasilitas>
-    <aktivitas>Berkeliling, menikmati panorama Danau Toba</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Aek Rangat Pangururan</namaWisata>
-    <kategori>Pemandian</kategori>
-    <alamat>Desa Rianiate, Kec. Pangururan</alamat>
-    <kotaKabupaten>Kabupaten Samosir</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.6437</geoLatitude>
-    <geoLongitude>98.7479</geoLongitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>06:00</jamBuka>
-    <jamTutup>20:00</jamTutup>
-    <dekatDengan>Tano Ponggol</dekatDengan>
-    <fasilitas>Kolam air panas, toilet, parkir, gazebo</fasilitas>
-    <aktivitas>Berendam, relaksasi, menikmati panorama</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Sigura-Gura</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Halado, Kec. Pintu Pohan Meranti</alamat>
-    <kotaKabupaten>Kabupaten Toba</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.4915</geoLatitude>
-    <geoLongitude>99.2729</geoLongitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>PLTA Sigura-Gura</dekatDengan>
-    <fasilitas>Parkir, warung, toilet</fasilitas>
-    <aktivitas>Menikmati air terjun, fotografi alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Binanga Bolon</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Nagori Purba Dolok, Kec. Haranggaol Horisan</alamat>
-    <kotaKabupaten>Kabupaten Simalungun</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.7658</geoLatitude>
-    <geoLongitude>98.6821</geoLongitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Parkir, tempat duduk, warung</fasilitas>
-    <aktivitas>Bermain air, trekking, fotografi</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Pandan Sibolga</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Pandan, Kec. Pandan</alamat>
-    <kotaKabupaten>Kabupaten Tapanuli Tengah</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.7367</geoLatitude>
-    <geoLongitude>98.7911</geoLongitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Kota Sibolga</dekatDengan>
-    <fasilitas>Gazebo, kamar mandi, warung, parkir</fasilitas>
-    <aktivitas>Berenang, bermain pasir, berfoto</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Bunga Tanjung</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Bunga Tanjung, Kec. Barus</alamat>
-    <kotaKabupaten>Kabupaten Tapanuli Tengah</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.0246</geoLatitude>
-    <geoLongitude>98.3982</geoLongitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Pantai Mutiara</dekatDengan>
-    <fasilitas>Toilet, parkir, warung, spot foto</fasilitas>
-    <aktivitas>Bermain pasir, bersantai, melihat sunset</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Sorake</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Botohilitano, Kec. Teluk Dalam</alamat>
-    <kotaKabupaten>Kabupaten Nias Selatan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>0.6482</geoLatitude>
-    <geoLongitude>97.8091</geoLongitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>24 Jam</jamBuka>
-    <jamTutup>-</jamTutup>
-    <dekatDengan>Pantai Lagundri</dekatDengan>
-    <fasilitas>Homestay, warung, parkir, penyewaan papan selancar</fasilitas>
-    <aktivitas>Berselancar, berenang, menikmati sunset</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Lahusa Idanoi</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Lahusa Idanoi</alamat>
-    <kotaKabupaten>Kabupaten Nias Selatan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>-0.7167</geoLatitude>
-    <geoLongitude>97.8000</geoLongitude>
-    <hargaTiket>Rp 3.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Pantai Sorake</dekatDengan>
-    <fasilitas>Parkir, warung tradisional</fasilitas>
-    <aktivitas>Berenang, bersantai, fotografi pantai</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Onolimbu</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Onolimbu</alamat>
-    <kotaKabupaten>Kabupaten Nias Barat</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>0.9833</geoLatitude>
-    <geoLongitude>97.4500</geoLongitude>
-    <hargaTiket>Rp 2.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Pantai Sirombu</dekatDengan>
-    <fasilitas>Parkir, warung lokal</fasilitas>
-    <aktivitas>Berenang, memancing, menikmati sunset</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Hilinawalo Mazinö</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Hilinawalo Mazinö</alamat>
-    <kotaKabupaten>Kabupaten Nias Selatan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>-0.6833</geoLatitude>
-    <geoLongitude>97.8167</geoLongitude>
-    <hargaTiket>Rp 5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>08:00</jamBuka>
-    <jamTutup>16:00</jamTutup>
-    <dekatDengan>Desa Bawomataluo</dekatDengan>
-    <fasilitas>Parkir, area istirahat</fasilitas>
-    <aktivitas>Trekking, mandi di air terjun, fotografi alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Bukit Hiliweto</namaWisata>
-    <kategori>Bukit</kategori>
-    <alamat>Desa Hiliweto</alamat>
-    <kotaKabupaten>Kabupaten Nias Utara</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.3000</geoLatitude>
-    <geoLongitude>97.4167</geoLongitude>
-    <hargaTiket>Rp 4.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>06:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Kota Lotu</dekatDengan>
-    <fasilitas>Parkir, spot foto</fasilitas>
-    <aktivitas>Menikmati panorama, fotografi, melihat sunrise</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Botohilitano</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Botohilitano</alamat>
-    <kotaKabupaten>Kabupaten Nias Selatan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>-0.5667</geoLatitude>
-    <geoLongitude>97.7833</geoLongitude>
-    <hargaTiket>Rp 3.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Pantai Lagundri</dekatDengan>
-    <fasilitas>Parkir, warung makan</fasilitas>
-    <aktivitas>Berenang, snorkeling, fotografi pantai</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Miga</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Miga</alamat>
-    <kotaKabupaten>Kabupaten Nias Barat</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.0500</geoLatitude>
-    <geoLongitude>97.4667</geoLongitude>
-    <hargaTiket>Rp 2.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Pantai Sirombu</dekatDengan>
-    <fasilitas>Parkir, warung sederhana</fasilitas>
-    <aktivitas>Berenang, memancing, bersantai</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Gawu Soyo</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Gawu Soyo</alamat>
-    <kotaKabupaten>Kabupaten Nias Utara</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.3333</geoLatitude>
-    <geoLongitude>97.3667</geoLongitude>
-    <hargaTiket>Rp 4.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>06:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Pulau Hinako</dekatDengan>
-    <fasilitas>Parkir, warung seafood</fasilitas>
-    <aktivitas>Berenang, snorkeling, kuliner seafood</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Siwalu Banua</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Siwalu Banua</alamat>
-    <kotaKabupaten>Kabupaten Nias Utara</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.3500</geoLatitude>
-    <geoLongitude>97.3833</geoLongitude>
-    <hargaTiket>Rp 3.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Pantai Gawu Soyo</dekatDengan>
-    <fasilitas>Parkir, area piknik</fasilitas>
-    <aktivitas>Berenang, piknik keluarga, fotografi</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Luaha Ndroi</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Luaha Ndroi</alamat>
-    <kotaKabupaten>Kabupaten Nias</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.1167</geoLatitude>
-    <geoLongitude>97.6333</geoLongitude>
-    <hargaTiket>Rp 6.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>08:00</jamBuka>
-    <jamTutup>16:00</jamTutup>
-    <dekatDengan>Gunung Sitoli</dekatDengan>
-    <fasilitas>Parkir, area camping</fasilitas>
-    <aktivitas>Trekking, camping, mandi di air terjun</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Lahewa</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Kecamatan Lahewa</alamat>
-    <kotaKabupaten>Kabupaten Nias Utara</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.4167</geoLatitude>
-    <geoLongitude>97.0833</geoLongitude>
-    <hargaTiket>Rp 5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>06:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Pelabuhan Lahewa</dekatDengan>
-    <fasilitas>Parkir, hotel, restoran, warung makan</fasilitas>
-    <aktivitas>Berenang, kuliner, fotografi, melihat aktivitas pelabuhan</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Tuhemberua</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Tuhemberua</alamat>
-    <kotaKabupaten>Kabupaten Nias Utara</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.3833</geoLatitude>
-    <geoLongitude>97.3167</geoLongitude>
-    <hargaTiket>Rp 3.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Pantai Lahewa</dekatDengan>
-    <fasilitas>Parkir, warung tradisional</fasilitas>
-    <aktivitas>Berenang, memancing, bersantai</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Tundrumbaho</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Tundrumbaho, Kec. Idanögawo</alamat>
-    <kotaKabupaten>Kabupaten Nias</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.0215</geoLatitude>
-    <geoLongitude>97.6103</geoLongitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Pantai Moale</dekatDengan>
-    <fasilitas>Area parkir, warung, toilet</fasilitas>
-    <aktivitas>Bermain air, berfoto, menikmati alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Danau Loto</namaWisata>
-    <kategori>Danau</kategori>
-    <alamat>Desa Loto, Kec. Lolowau</alamat>
-    <kotaKabupaten>Kabupaten Nias Selatan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>0.7683</geoLatitude>
-    <geoLongitude>97.7698</geoLongitude>
-    <hargaTiket>Gratis</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>06:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Pantai Sorake</dekatDengan>
-    <fasilitas>Gazebo, area piknik</fasilitas>
-    <aktivitas>Berkemah, memancing, jalan santai</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Holi</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Holi, Kec. Idanögawo</alamat>
-    <kotaKabupaten>Kabupaten Nias</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.0789</geoLatitude>
-    <geoLongitude>97.6501</geoLongitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Desa Bawömataluo</dekatDengan>
-    <fasilitas>Warung, parkir, penginapan</fasilitas>
-    <aktivitas>Berenang, bersantai, menikmati sunset</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Sisarahili</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Sisarahili, Kec. Teluk Dalam</alamat>
-    <kotaKabupaten>Kabupaten Nias Selatan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>0.8304</geoLatitude>
-    <geoLongitude>97.8009</geoLongitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Pantai Sorake</dekatDengan>
-    <fasilitas>Toilet, tempat bilas, warung</fasilitas>
-    <aktivitas>Bermain pasir, berenang, berfoto</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Orahili</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Orahili, Kec. Teluk Dalam</alamat>
-    <kotaKabupaten>Kabupaten Nias Selatan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>0.8352</geoLatitude>
-    <geoLongitude>97.7786</geoLongitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:30</jamTutup>
-    <dekatDengan>Desa Bawömataluo</dekatDengan>
-    <fasilitas>Area parkir, toilet, shelter</fasilitas>
-    <aktivitas>Mendaki ringan, bermain air, foto alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Hiliganoita</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Hiliganoita, Kec. Idanögawo</alamat>
-    <kotaKabupaten>Kabupaten Nias</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.0559</geoLatitude>
-    <geoLongitude>97.6124</geoLongitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Pantai Holi</dekatDengan>
-    <fasilitas>Tempat parkir, warung kecil</fasilitas>
-    <aktivitas>Berenang, eksplorasi hutan, fotografi</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Loloana’a</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Loloana’a, Kec. Teluk Dalam</alamat>
-    <kotaKabupaten>Kabupaten Nias Selatan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>0.7955</geoLatitude>
-    <geoLongitude>97.8372</geoLongitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>06:30</jamBuka>
-    <jamTutup>18:30</jamTutup>
-    <dekatDengan>Pantai Lagundri</dekatDengan>
-    <fasilitas>Warung, tempat bilas, sewa ban</fasilitas>
-    <aktivitas>Berenang, berselancar, menikmati sunset</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Hoya Nias Utara</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Hoya, Kec. Alasa Talumuzoi</alamat>
-    <kotaKabupaten>Kabupaten Nias Utara</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.4339</geoLatitude>
-    <geoLongitude>97.3254</geoLongitude>
-    <hargaTiket>Gratis</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Teluk Dalam Nias</dekatDengan>
-    <fasilitas>Tempat duduk, area parkir</fasilitas>
-    <aktivitas>Bersantai, memancing, menikmati pemandangan laut</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Bozihona Hilisimaetano</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Hilisimaetano, Kec. Maniamölö</alamat>
-    <kotaKabupaten>Kabupaten Nias Selatan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>0.8807</geoLatitude>
-    <geoLongitude>97.7115</geoLongitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Pantai Sorake</dekatDengan>
-    <fasilitas>Warung makan, toilet, area bermain</fasilitas>
-    <aktivitas>Bermain pasir, berenang, foto laut</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Sirombu Tengah</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Sirombu Tengah, Kec. Sirombu</alamat>
-    <kotaKabupaten>Kabupaten Nias Barat</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.0371</geoLatitude>
-    <geoLongitude>97.4134</geoLongitude>
-    <hargaTiket>Gratis</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:30</jamTutup>
-    <dekatDengan>Pantai Sirombu Indah</dekatDengan>
-    <fasilitas>Parkir, warung, toilet</fasilitas>
-    <aktivitas>Bermain pasir, bersantai, melihat ombak</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Sifahandro</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Sifahandro</alamat>
-    <kotaKabupaten>Kabupaten Nias Selatan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>-0.7000</geoLatitude>
-    <geoLongitude>97.7833</geoLongitude>
-    <hargaTiket>Rp 3.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Pantai Sorake</dekatDengan>
-    <fasilitas>Parkir, warung tradisional</fasilitas>
-    <aktivitas>Berenang, bersantai, fotografi pantai</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Hilimbowo</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Hilimbowo</alamat>
-    <kotaKabupaten>Kabupaten Nias</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.0833</geoLatitude>
-    <geoLongitude>97.6667</geoLongitude>
-    <hargaTiket>Rp 5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>08:00</jamBuka>
-    <jamTutup>16:00</jamTutup>
-    <dekatDengan>Gunung Sitoli</dekatDengan>
-    <fasilitas>Parkir, area piknik</fasilitas>
-    <aktivitas>Trekking, mandi di air terjun, fotografi alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Laturi</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Laturi</alamat>
-    <kotaKabupaten>Kabupaten Nias Barat</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>0.9500</geoLatitude>
-    <geoLongitude>97.4333</geoLongitude>
-    <hargaTiket>Rp 2.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Pantai Sirombu</dekatDengan>
-    <fasilitas>Parkir, warung lokal</fasilitas>
-    <aktivitas>Berenang, memancing, menikmati sunset</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pulau Makaro</namaWisata>
-    <kategori>Pulau</kategori>
-    <alamat>Perairan Teluk Tapian Nauli</alamat>
-    <kotaKabupaten>Kota Sibolga</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.7500</geoLatitude>
-    <geoLongitude>98.7833</geoLongitude>
-    <hargaTiket>Rp 15.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>06:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Pulau Poncan</dekatDengan>
-    <fasilitas>Dermaga, warung makan, penginapan</fasilitas>
-    <aktivitas>Snorkeling, diving, berenang, fotografi pulau</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Onowaembo</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Onowaembo</alamat>
-    <kotaKabupaten>Kabupaten Nias Utara</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.3167</geoLatitude>
-    <geoLongitude>97.4000</geoLongitude>
-    <hargaTiket>Rp 4.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Pantai Sisobahili</dekatDengan>
-    <fasilitas>Parkir, warung seafood</fasilitas>
-    <aktivitas>Berenang, snorkeling, kuliner seafood</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Lase</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Lase</alamat>
-    <kotaKabupaten>Kabupaten Nias Selatan</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>-0.6333</geoLatitude>
-    <geoLongitude>97.7667</geoLongitude>
-    <hargaTiket>Rp 3.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Pantai Lagundri</dekatDengan>
-    <fasilitas>Parkir, warung makan</fasilitas>
-    <aktivitas>Berenang, snorkeling, fotografi pantai</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Kaliki Sibolga</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Kelurahan Kaliki</alamat>
-    <kotaKabupaten>Kota Sibolga</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.7333</geoLatitude>
-    <geoLongitude>98.7833</geoLongitude>
-    <hargaTiket>Rp 5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>06:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Pelabuhan Sibolga</dekatDengan>
-    <fasilitas>Parkir, warung makan, toilet</fasilitas>
-    <aktivitas>Berenang, memancing, menikmati sunset</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Huta Ginjang</namaWisata>
-    <kategori>Bukit</kategori>
-    <alamat>Kecamatan Muara</alamat>
-    <kotaKabupaten>Kabupaten Toba</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.6167</geoLatitude>
-    <geoLongitude>98.8667</geoLongitude>
-    <hargaTiket>Rp 10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>06:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Parkir, spot foto, warung makan</fasilitas>
-    <aktivitas>Menikmati panorama Danau Toba, fotografi, melihat sunrise/sunset</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Kawah Sipoholon</namaWisata>
-    <kategori>Kawah</kategori>
-    <alamat>Kecamatan Sipoholon</alamat>
-    <kotaKabupaten>Kabupaten Tapanuli Utara</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.1167</geoLatitude>
-    <geoLongitude>98.9500</geoLongitude>
-    <hargaTiket>Rp 7.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>08:00</jamBuka>
-    <jamTutup>16:00</jamTutup>
-    <dekatDengan>Tarutung</dekatDengan>
-    <fasilitas>Parkir, pemandian air panas</fasilitas>
-    <aktivitas>Berendam air panas, terapi alam, fotografi</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Silaklak</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Silaklak</alamat>
-    <kotaKabupaten>Kabupaten Samosir</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.5333</geoLatitude>
-    <geoLongitude>98.7167</geoLongitude>
-    <hargaTiket>Rp 8.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>08:00</jamBuka>
-    <jamTutup>16:00</jamTutup>
-    <dekatDengan>Pangururan</dekatDengan>
-    <fasilitas>Parkir, area piknik, warung makan</fasilitas>
-    <aktivitas>Trekking, mandi di air terjun, fotografi alam, piknik</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Batu Gajah</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Batu Gajah, Kec. Tapian Nauli</alamat>
-    <kotaKabupaten>Kabupaten Tapanuli Tengah</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.7219</geoLatitude>
-    <geoLongitude>98.7824</geoLongitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Pantai Pandan</dekatDengan>
-    <fasilitas>Gazebo, parkir, warung makan</fasilitas>
-    <aktivitas>Berenang, bersantai, foto pantai</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pulau Karang Sitiris-Tiris</namaWisata>
-    <kategori>Pulau</kategori>
-    <alamat>Perairan Sibolga, Tapanuli Tengah</alamat>
-    <kotaKabupaten>Kabupaten Tapanuli Tengah</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.6761</geoLatitude>
-    <geoLongitude>98.7325</geoLongitude>
-    <hargaTiket>Rp20.000 (perahu ke pulau)</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:30</jamTutup>
-    <dekatDengan>Pantai Pandan Sibolga</dekatDengan>
-    <fasilitas>Sewa perahu, area snorkeling</fasilitas>
-    <aktivitas>Snorkeling, menyelam, eksplorasi pulau</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Mursala Dua</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Pulau Mursala, Kec. Tapian Nauli</alamat>
-    <kotaKabupaten>Kabupaten Tapanuli Tengah</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.5884</geoLatitude>
-    <geoLongitude>98.5657</geoLongitude>
-    <hargaTiket>Rp25.000 (termasuk sewa perahu)</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Pulau Kalimantung</dekatDengan>
-    <fasilitas>Perahu wisata, pelampung</fasilitas>
-    <aktivitas>Snorkeling, foto alam, menikmati air terjun laut</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Binasi</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Binasi, Kec. Pandan</alamat>
-    <kotaKabupaten>Kabupaten Tapanuli Tengah</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.7156</geoLatitude>
-    <geoLongitude>98.7941</geoLongitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>06:30</jamBuka>
-    <jamTutup>18:30</jamTutup>
-    <dekatDengan>Pantai Pandan Sibolga</dekatDengan>
-    <fasilitas>Warung, toilet, area bermain</fasilitas>
-    <aktivitas>Berenang, bermain pasir, kuliner pantai</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Hajoran</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Hajoran, Kec. Pandan</alamat>
-    <kotaKabupaten>Kabupaten Tapanuli Tengah</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.6908</geoLatitude>
-    <geoLongitude>98.7746</geoLongitude>
-    <hargaTiket>Rp10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:30</jamTutup>
-    <dekatDengan>Pantai Pandan</dekatDengan>
-    <fasilitas>Parkir, warung, kamar mandi</fasilitas>
-    <aktivitas>Berenang, naik banana boat, bersantai</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Sigura-Gura II</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Halado, Kec. Pintu Pohan Meranti</alamat>
-    <kotaKabupaten>Kabupaten Toba</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.4407</geoLatitude>
-    <geoLongitude>99.3104</geoLongitude>
-    <hargaTiket>Rp5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:30</jamTutup>
-    <dekatDengan>PLTA Sigura-Gura</dekatDengan>
-    <fasilitas>Tempat parkir, shelter, spot foto</fasilitas>
-    <aktivitas>Tracking ringan, menikmati panorama alam, berfoto</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pantai Indah Kalangan</namaWisata>
-    <kategori>Pantai</kategori>
-    <alamat>Desa Kalangan</alamat>
-    <kotaKabupaten>Kabupaten Tapanuli Tengah</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>1.8500</geoLatitude>
-    <geoLongitude>98.6833</geoLongitude>
-    <hargaTiket>Rp 5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Kota Sibolga</dekatDengan>
-    <fasilitas>Parkir, warung makan, toilet, musholla</fasilitas>
-    <aktivitas>Berenang, memancing, fotografi, bersantai</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Sitabotabo</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Desa Sitabotabo</alamat>
-    <kotaKabupaten>Kabupaten Toba</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.4500</geoLatitude>
-    <geoLongitude>99.3167</geoLongitude>
-    <hargaTiket>Rp 7.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>08:00</jamBuka>
-    <jamTutup>16:00</jamTutup>
-    <dekatDengan>Parapat</dekatDengan>
-    <fasilitas>Parkir, area piknik, warung kecil</fasilitas>
-    <aktivitas>Trekking, mandi di air terjun, fotografi alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Bukit Sitanggor</namaWisata>
-    <kategori>Bukit</kategori>
-    <alamat>Desa Sitanggor</alamat>
-    <kotaKabupaten>Kabupaten Samosir</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.5833</geoLatitude>
-    <geoLongitude>98.8333</geoLongitude>
-    <hargaTiket>Rp 6.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>06:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Danau Toba</dekatDengan>
-    <fasilitas>Parkir, spot foto, warung kopi</fasilitas>
-    <aktivitas>Menikmati panorama Danau Toba, fotografi, melihat sunrise</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Air Terjun Sigura-gura Tarutung</namaWisata>
-    <kategori>Air Terjun</kategori>
-    <alamat>Kecamatan Sipoholon</alamat>
-    <kotaKabupaten>Kabupaten Tapanuli Utara</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.0833</geoLatitude>
-    <geoLongitude>98.9667</geoLongitude>
-    <hargaTiket>Rp 8.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>08:00</jamBuka>
-    <jamTutup>16:00</jamTutup>
-    <dekatDengan>Kawah Sipoholon</dekatDengan>
-    <fasilitas>Parkir, area istirahat, warung makan</fasilitas>
-    <aktivitas>Trekking, mandi di air terjun, fotografi, wisata alam</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Bukit Siogung-ogung</namaWisata>
-    <kategori>Bukit</kategori>
-    <alamat>Desa Siogung-ogung</alamat>
-    <kotaKabupaten>Kabupaten Samosir</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.6167</geoLatitude>
-    <geoLongitude>98.8000</geoLongitude>
-    <hargaTiket>Rp 5.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>06:00</jamBuka>
-    <jamTutup>18:00</jamTutup>
-    <dekatDengan>Pangururan</dekatDengan>
-    <fasilitas>Parkir, gardu pandang, spot foto</fasilitas>
-    <aktivitas>Menikmati pemandangan, fotografi, camping</aktivitas>
-  </wisata>
-
-  <wisata>
-    <namaWisata>Pemandian Air Panas Aek Sijorni</namaWisata>
-    <kategori>Pemandian Air Panas</kategori>
-    <alamat>Desa Aek Sijorni</alamat>
-    <kotaKabupaten>Kabupaten Tapanuli Utara</kotaKabupaten>
-    <provinsi>Sumatera Utara</provinsi>
-    <geoLatitude>2.1000</geoLatitude>
-    <geoLongitude>98.9333</geoLongitude>
-    <hargaTiket>Rp 10.000</hargaTiket>
-    <hariBuka>Setiap Hari</hariBuka>
-    <jamBuka>07:00</jamBuka>
-    <jamTutup>17:00</jamTutup>
-    <dekatDengan>Tarutung</dekatDengan>
-    <fasilitas>Kolam renang air panas, parkir, kamar ganti, warung makan</fasilitas>
-    <aktivitas>Berendam air panas, terapi kesehatan, relaksasi</aktivitas>
-  </wisata>
-</wisataAlam>
-
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:ws="http://example.com/wisata#">
+  <wisataAlam>
+    <wisata>
+      <rdfs:label>Danau Toba</rdfs:label>
+      <ws:kategori>Danau</ws:kategori>
+      <ws:alamat>Desa Parapat, Kec. Girsang Sipangan Bolon</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Simalungun</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.6844</geo:latitude>
+      <geo:longitude>98.8754</geo:longitude>
+      <ws:hargaTiket>Gratis</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>24 Jam</ws:jamBuka>
+      <ws:jamTutup>-</ws:jamTutup>
+      <ws:dekatDengan>Pulau Samosir</ws:dekatDengan>
+      <ws:fasilitas>Parkir, Penginapan, Restoran, Toilet</ws:fasilitas>
+      <ws:aktivitas>Berenang, Berlayar, Foto, Wisata Alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pulau Samosir</rdfs:label>
+      <ws:kategori>Pulau</ws:kategori>
+      <ws:alamat>Danau Toba, Kec. Pangururan</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.6395</geo:latitude>
+      <geo:longitude>98.8231</geo:longitude>
+      <ws:hargaTiket>Gratis</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>24 Jam</ws:jamBuka>
+      <ws:jamTutup>-</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Penginapan, Restoran, Penyewaan Perahu</ws:fasilitas>
+      <ws:aktivitas>Bersepeda, Jelajah Budaya, Foto</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Sipiso-piso</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Tongging, Kec. Merek</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Karo</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.9055</geo:latitude>
+      <geo:longitude>98.5127</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Parkir, Warung, Toilet</ws:fasilitas>
+      <ws:aktivitas>Trekking, Foto, Menikmati Pemandangan</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Gunung Sibayak</rdfs:label>
+      <ws:kategori>Gunung</ws:kategori>
+      <ws:alamat>Desa Semangat Gunung, Kec. Merdeka</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Karo</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>3.1975</geo:latitude>
+      <geo:longitude>98.5085</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>05:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Kota Berastagi</ws:dekatDengan>
+      <ws:fasilitas>Parkir, Pemandian Air Panas, Toilet</ws:fasilitas>
+      <ws:aktivitas>Mendaki, Camping, Fotografi</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Gunung Sinabung</rdfs:label>
+      <ws:kategori>Gunung</ws:kategori>
+      <ws:alamat>Desa Sukanalu, Kec. Naman Teran</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Karo</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>3.1707</geo:latitude>
+      <geo:longitude>98.3923</geo:longitude>
+      <ws:hargaTiket>Gratis</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>24 Jam</ws:jamBuka>
+      <ws:jamTutup>-</ws:jamTutup>
+      <ws:dekatDengan>Gunung Sibayak</ws:dekatDengan>
+      <ws:fasilitas>Parkir, Pos Pendakian</ws:fasilitas>
+      <ws:aktivitas>Pendakian, Observasi Alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Bukit Lawang</rdfs:label>
+      <ws:kategori>Taman Nasional</ws:kategori>
+      <ws:alamat>Desa Bohorok, Kec. Bahorok</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Langkat</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>3.5553</geo:latitude>
+      <geo:longitude>98.1124</geo:longitude>
+      <ws:hargaTiket>Rp25.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Taman Nasional Gunung Leuser</ws:dekatDengan>
+      <ws:fasilitas>Penginapan, Restoran, Toilet</ws:fasilitas>
+      <ws:aktivitas>Tracking, Melihat Orangutan, Arung Jeram</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Ponot</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Halado, Kec. Pintu Pohan Meranti</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Toba</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.4545</geo:latitude>
+      <geo:longitude>99.1599</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>08:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Parkir, Warung, Toilet</ws:fasilitas>
+      <ws:aktivitas>Trekking, Foto, Piknik</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Taman Wisata Alam Sicike-cike</rdfs:label>
+      <ws:kategori>Taman Alam</ws:kategori>
+      <ws:alamat>Desa Lae Hole, Kec. Sitellu Tali Urang Julu</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Dairi</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.6063</geo:latitude>
+      <geo:longitude>98.2371</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Sidikalang</ws:dekatDengan>
+      <ws:fasilitas>Parkir, Toilet, Area Camping</ws:fasilitas>
+      <ws:aktivitas>Tracking, Camping, Fotografi</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Danau Linting</rdfs:label>
+      <ws:kategori>Danau</ws:kategori>
+      <ws:alamat>Desa Sibunga-bunga Hilir, Kec. STM Hulu</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Deli Serdang</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>3.2164</geo:latitude>
+      <geo:longitude>98.7813</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>08:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Air Terjun Dua Warna</ws:dekatDengan>
+      <ws:fasilitas>Parkir, Warung, Toilet</ws:fasilitas>
+      <ws:aktivitas>Berenang, Foto, Bersantai</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Pandan</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Kec. Pandan</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Tapanuli Tengah</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.7249</geo:latitude>
+      <geo:longitude>98.7857</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>06:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Kota Sibolga</ws:dekatDengan>
+      <ws:fasilitas>Parkir, Warung, Toilet, Penginapan</ws:fasilitas>
+      <ws:aktivitas>Berenang, Piknik, Menikmati Sunset</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Dua Warna Sibolangit</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Durin Sirugun, Kec. Sibolangit</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Deli Serdang</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>3.2402</geo:latitude>
+      <geo:longitude>98.5334</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Danau Linting</ws:dekatDengan>
+      <ws:fasilitas>Parkir, Pemandu Wisata</ws:fasilitas>
+      <ws:aktivitas>Trekking, Foto, Menikmati Alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Taman Nasional Gunung Leuser</rdfs:label>
+      <ws:kategori>Taman Nasional</ws:kategori>
+      <ws:alamat>Desa Ketambe, Kec. Kutacane</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Langkat dan Aceh Tenggara</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>3.6667</geo:latitude>
+      <geo:longitude>97.7500</geo:longitude>
+      <ws:hargaTiket>Rp25.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>06:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Bukit Lawang</ws:dekatDengan>
+      <ws:fasilitas>Penginapan, Pusat Informasi, Toilet</ws:fasilitas>
+      <ws:aktivitas>Tracking, Observasi Satwa, Camping</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Bukit Holbung</rdfs:label>
+      <ws:kategori>Bukit</ws:kategori>
+      <ws:alamat>Desa Janji Martahan, Kec. Harian Boho</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.4233</geo:latitude>
+      <geo:longitude>98.7969</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>06:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Parkir, Warung, Toilet</ws:fasilitas>
+      <ws:aktivitas>Hiking, Camping, Menikmati Pemandangan</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Efrata</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Sosor Dolok, Kec. Harian Boho</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.4049</geo:latitude>
+      <geo:longitude>98.7188</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Bukit Holbung</ws:dekatDengan>
+      <ws:fasilitas>Parkir, Toilet</ws:fasilitas>
+      <ws:aktivitas>Trekking, Foto, Piknik</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Danau Lau Kawar</rdfs:label>
+      <ws:kategori>Danau</ws:kategori>
+      <ws:alamat>Desa Kuta Gugung, Kec. Naman Teran</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Karo</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>3.1503</geo:latitude>
+      <geo:longitude>98.3897</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Gunung Sinabung</ws:dekatDengan>
+      <ws:fasilitas>Parkir, Warung, Toilet, Area Camping</ws:fasilitas>
+      <ws:aktivitas>Camping, Foto, Menikmati Alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Sikulikap</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Doulu, Kecamatan Berastagi</ws:alamat>
+      <ws:kotaKabupaten>Karo</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>3.1954</geo:latitude>
+      <geo:longitude>98.4979</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>08.00</ws:jamBuka>
+      <ws:jamTutup>17.00</ws:jamTutup>
+      <ws:dekatDengan>Taman Hutan Raya Bukit Barisan</ws:dekatDengan>
+      <ws:fasilitas>Parkir, warung, area foto, toilet</ws:fasilitas>
+      <ws:aktivitas>Trekking, fotografi, menikmati alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Cermin</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Pantai Cermin Kanan</ws:alamat>
+      <ws:kotaKabupaten>Serdang Bedagai</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>3.5672</geo:latitude>
+      <geo:longitude>99.0508</geo:longitude>
+      <ws:hargaTiket>Rp25.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>08.00</ws:jamBuka>
+      <ws:jamTutup>18.00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Kuala Putri</ws:dekatDengan>
+      <ws:fasilitas>Gazebo, area bermain, restoran, penginapan</ws:fasilitas>
+      <ws:aktivitas>Bermain air, bersantai, menikmati sunset</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Gunung Sibuatan</rdfs:label>
+      <ws:kategori>Gunung</ws:kategori>
+      <ws:alamat>Kecamatan Merek</ws:alamat>
+      <ws:kotaKabupaten>Karo</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.9601</geo:latitude>
+      <geo:longitude>98.5189</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>24 Jam</ws:jamBuka>
+      <ws:jamTutup>-</ws:jamTutup>
+      <ws:dekatDengan>Gunung Sinabung</ws:dekatDengan>
+      <ws:fasilitas>Tempat parkir, basecamp, warung</ws:fasilitas>
+      <ws:aktivitas>Mendaki, berkemah, fotografi</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Situmurun Binangalom</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Binangalom</ws:alamat>
+      <ws:kotaKabupaten>Toba</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.4236</geo:latitude>
+      <geo:longitude>98.9238</geo:longitude>
+      <ws:hargaTiket>Gratis</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>09.00</ws:jamBuka>
+      <ws:jamTutup>17.00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Perahu sewa, spot foto</ws:fasilitas>
+      <ws:aktivitas>Naik perahu, berenang, fotografi</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Danau Sidihoni</rdfs:label>
+      <ws:kategori>Danau</ws:kategori>
+      <ws:alamat>Pulau Samosir</ws:alamat>
+      <ws:kotaKabupaten>Samosir</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.6291</geo:latitude>
+      <geo:longitude>98.7753</geo:longitude>
+      <ws:hargaTiket>Gratis</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>24 Jam</ws:jamBuka>
+      <ws:jamTutup>-</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Area parkir, warung</ws:fasilitas>
+      <ws:aktivitas>Bersantai, menikmati pemandangan</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Sorake</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Teluk Dalam</ws:alamat>
+      <ws:kotaKabupaten>Nias Selatan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>0.7891</geo:latitude>
+      <geo:longitude>97.7856</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>06.00</ws:jamBuka>
+      <ws:jamTutup>18.00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Lagundri</ws:dekatDengan>
+      <ws:fasilitas>Penginapan, restoran, area surfing</ws:fasilitas>
+      <ws:aktivitas>Surfing, berenang, menikmati sunset</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Lagundri</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Teluk Dalam</ws:alamat>
+      <ws:kotaKabupaten>Nias Selatan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>0.7867</geo:latitude>
+      <geo:longitude>97.7841</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>06.00</ws:jamBuka>
+      <ws:jamTutup>18.00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
+      <ws:fasilitas>Homestay, parkir, area surfing</ws:fasilitas>
+      <ws:aktivitas>Surfing, berenang, bersantai</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Sigura-gura</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Halado</ws:alamat>
+      <ws:kotaKabupaten>Toba</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.4829</geo:latitude>
+      <geo:longitude>99.2832</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>08.00</ws:jamBuka>
+      <ws:jamTutup>17.00</ws:jamTutup>
+      <ws:dekatDengan>PLTA Sigura-gura</ws:dekatDengan>
+      <ws:fasilitas>Parkir, area foto</ws:fasilitas>
+      <ws:aktivitas>Fotografi, eksplorasi alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Bukit Indah Simarjarunjung</rdfs:label>
+      <ws:kategori>Bukit</ws:kategori>
+      <ws:alamat>Jalan Raya Simarjarunjung</ws:alamat>
+      <ws:kotaKabupaten>Simalungun</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.7884</geo:latitude>
+      <geo:longitude>98.6667</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>07.00</ws:jamBuka>
+      <ws:jamTutup>18.00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Spot foto, warung, area parkir</ws:fasilitas>
+      <ws:aktivitas>Fotografi, bersantai</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Bukit Gajah Bobok</rdfs:label>
+      <ws:kategori>Bukit</ws:kategori>
+      <ws:alamat>Desa Situnggaling</ws:alamat>
+      <ws:kotaKabupaten>Karo</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.9715</geo:latitude>
+      <geo:longitude>98.4651</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>24 Jam</ws:jamBuka>
+      <ws:jamTutup>-</ws:jamTutup>
+      <ws:dekatDengan>Gunung Sibuatan</ws:dekatDengan>
+      <ws:fasilitas>Parkir, area camping</ws:fasilitas>
+      <ws:aktivitas>Camping, hiking, menikmati sunrise</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Lae Pendaroh</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Lae Hole</ws:alamat>
+      <ws:kotaKabupaten>Dairi</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.8445</geo:latitude>
+      <geo:longitude>98.2532</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>08.00</ws:jamBuka>
+      <ws:jamTutup>17.00</ws:jamTutup>
+      <ws:dekatDengan>Air Terjun Situmurun</ws:dekatDengan>
+      <ws:fasilitas>Parkir, warung</ws:fasilitas>
+      <ws:aktivitas>Berenang, fotografi</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Danau Siombak</rdfs:label>
+      <ws:kategori>Danau</ws:kategori>
+      <ws:alamat>Kelurahan Paya Pasir, Medan Marelan</ws:alamat>
+      <ws:kotaKabupaten>Medan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>3.6861</geo:latitude>
+      <geo:longitude>98.6414</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>07.00</ws:jamBuka>
+      <ws:jamTutup>18.00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Mangrove Belawan</ws:dekatDengan>
+      <ws:fasilitas>Perahu, tempat makan, area parkir</ws:fasilitas>
+      <ws:aktivitas>Memancing, berperahu, piknik</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Tarunggang</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Marbun Toruan</ws:alamat>
+      <ws:kotaKabupaten>Humbang Hasundutan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.3269</geo:latitude>
+      <geo:longitude>98.7484</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>08.00</ws:jamBuka>
+      <ws:jamTutup>17.00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Parkir, area foto</ws:fasilitas>
+      <ws:aktivitas>Fotografi, trekking</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Taman Alam Lumbini</rdfs:label>
+      <ws:kategori>Taman</ws:kategori>
+      <ws:alamat>Desa Tongkoh, Kecamatan Dolat Rayat</ws:alamat>
+      <ws:kotaKabupaten>Karo</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>3.1737</geo:latitude>
+      <geo:longitude>98.5183</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>08.00</ws:jamBuka>
+      <ws:jamTutup>17.00</ws:jamTutup>
+      <ws:dekatDengan>Gunung Sibayak</ws:dekatDengan>
+      <ws:fasilitas>Toilet, area parkir, restoran</ws:fasilitas>
+      <ws:aktivitas>Wisata religi, fotografi, meditasi</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Janji</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Marbun Toruan</ws:alamat>
+      <ws:kotaKabupaten>Humbang Hasundutan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.3264</geo:latitude>
+      <geo:longitude>98.7425</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>08.00</ws:jamBuka>
+      <ws:jamTutup>17.00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Parkir, gazebo, area foto</ws:fasilitas>
+      <ws:aktivitas>Fotografi, bersantai, berenang</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Linggahara</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Linggahara Jae</ws:alamat>
+      <ws:kotaKabupaten>Padang Lawas Utara</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.3735</geo:latitude>
+      <geo:longitude>99.7558</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>08.00</ws:jamBuka>
+      <ws:jamTutup>17.00</ws:jamTutup>
+      <ws:dekatDengan>Gunung Lubukraya</ws:dekatDengan>
+      <ws:fasilitas>Area parkir, warung</ws:fasilitas>
+      <ws:aktivitas>Berenang, eksplorasi alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Simangande</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Simangande</ws:alamat>
+      <ws:kotaKabupaten>Toba</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.3739</geo:latitude>
+      <geo:longitude>98.9331</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>08.00</ws:jamBuka>
+      <ws:jamTutup>17.00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Spot foto, area parkir</ws:fasilitas>
+      <ws:aktivitas>Fotografi, menikmati alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Bukit Doa Tapanuli Utara</rdfs:label>
+      <ws:kategori>Bukit</ws:kategori>
+      <ws:alamat>Desa Siatas Barita</ws:alamat>
+      <ws:kotaKabupaten>Tapanuli Utara</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.0345</geo:latitude>
+      <geo:longitude>98.9456</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>07.00</ws:jamBuka>
+      <ws:jamTutup>18.00</ws:jamTutup>
+      <ws:dekatDengan>Kota Tarutung</ws:dekatDengan>
+      <ws:fasilitas>Toilet, warung, tempat duduk</ws:fasilitas>
+      <ws:aktivitas>Bersantai, berdoa, menikmati pemandangan</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Goa Natumandi</rdfs:label>
+      <ws:kategori>Goa</ws:kategori>
+      <ws:alamat>Desa Sijungkang</ws:alamat>
+      <ws:kotaKabupaten>Humbang Hasundutan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.2264</geo:latitude>
+      <geo:longitude>98.7208</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>08.00</ws:jamBuka>
+      <ws:jamTutup>17.00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Parkir, pemandu lokal</ws:fasilitas>
+      <ws:aktivitas>Eksplorasi goa, fotografi</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Hutan Wisata Sibolangit</rdfs:label>
+      <ws:kategori>Hutan</ws:kategori>
+      <ws:alamat>Kecamatan Sibolangit</ws:alamat>
+      <ws:kotaKabupaten>Deli Serdang</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>3.2861</geo:latitude>
+      <geo:longitude>98.5453</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>07.00</ws:jamBuka>
+      <ws:jamTutup>17.00</ws:jamTutup>
+      <ws:dekatDengan>Air Terjun Dua Warna</ws:dekatDengan>
+      <ws:fasilitas>Tempat parkir, area piknik</ws:fasilitas>
+      <ws:aktivitas>Trekking, camping, edukasi alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Batu Hoda</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Cinta Dame</ws:alamat>
+      <ws:kotaKabupaten>Toba</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.5582</geo:latitude>
+      <geo:longitude>98.9504</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>07.00</ws:jamBuka>
+      <ws:jamTutup>18.00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Gazebo, warung, area bermain</ws:fasilitas>
+      <ws:aktivitas>Bermain air, bersantai, fotografi</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Bah Biak</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Tongging</ws:alamat>
+      <ws:kotaKabupaten>Karo</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.9568</geo:latitude>
+      <geo:longitude>98.5432</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>08.00</ws:jamBuka>
+      <ws:jamTutup>17.00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Parkir, spot foto</ws:fasilitas>
+      <ws:aktivitas>Fotografi, relaksasi</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Gunung Lubukraya</rdfs:label>
+      <ws:kategori>Gunung</ws:kategori>
+      <ws:alamat>Desa Batang Toru</ws:alamat>
+      <ws:kotaKabupaten>Tapanuli Selatan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.4235</geo:latitude>
+      <geo:longitude>99.0956</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>24 Jam</ws:jamBuka>
+      <ws:jamTutup>-</ws:jamTutup>
+      <ws:dekatDengan>Air Terjun Linggahara</ws:dekatDengan>
+      <ws:fasilitas>Basecamp, parkir</ws:fasilitas>
+      <ws:aktivitas>Mendaki, camping</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Danau Sicike-cike</rdfs:label>
+      <ws:kategori>Danau</ws:kategori>
+      <ws:alamat>Desa Lae Hole</ws:alamat>
+      <ws:kotaKabupaten>Dairi</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.6621</geo:latitude>
+      <geo:longitude>98.2643</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>07.00</ws:jamBuka>
+      <ws:jamTutup>17.00</ws:jamTutup>
+      <ws:dekatDengan>Taman Wisata Alam Sicike-cike</ws:dekatDengan>
+      <ws:fasilitas>Parkir, shelter</ws:fasilitas>
+      <ws:aktivitas>Trekking, edukasi alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Simanoroni</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Hutaraja</ws:alamat>
+      <ws:kotaKabupaten>Tapanuli Selatan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.5634</geo:latitude>
+      <geo:longitude>99.1546</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>08.00</ws:jamBuka>
+      <ws:jamTutup>17.00</ws:jamTutup>
+      <ws:dekatDengan>Gunung Lubukraya</ws:dekatDengan>
+      <ws:fasilitas>Parkir, area foto</ws:fasilitas>
+      <ws:aktivitas>Fotografi, eksplorasi alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pemandian Air Panas Sidebuk-debuk</rdfs:label>
+      <ws:kategori>Pemandian</ws:kategori>
+      <ws:alamat>Desa Doulu</ws:alamat>
+      <ws:kotaKabupaten>Karo</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>3.1950</geo:latitude>
+      <geo:longitude>98.4975</geo:longitude>
+      <ws:hargaTiket>Rp15.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>07.00</ws:jamBuka>
+      <ws:jamTutup>22.00</ws:jamTutup>
+      <ws:dekatDengan>Gunung Sibayak</ws:dekatDengan>
+      <ws:fasilitas>Kolam air panas, warung, parkir</ws:fasilitas>
+      <ws:aktivitas>Berendam, relaksasi</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Bukit Gundaling</rdfs:label>
+      <ws:kategori>Bukit</ws:kategori>
+      <ws:alamat>Kecamatan Berastagi</ws:alamat>
+      <ws:kotaKabupaten>Karo</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>3.1945</geo:latitude>
+      <geo:longitude>98.5079</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>07.00</ws:jamBuka>
+      <ws:jamTutup>18.00</ws:jamTutup>
+      <ws:dekatDengan>Gunung Sibayak</ws:dekatDengan>
+      <ws:fasilitas>Kuda tunggang, taman, warung</ws:fasilitas>
+      <ws:aktivitas>Menikmati pemandangan, berkuda</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Pasir Putih Parbaba</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Parbaba</ws:alamat>
+      <ws:kotaKabupaten>Samosir</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.5483</geo:latitude>
+      <geo:longitude>98.8256</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>07.00</ws:jamBuka>
+      <ws:jamTutup>18.00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Warung, sewa ban, area bermain</ws:fasilitas>
+      <ws:aktivitas>Bermain air, bersantai</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Mursala</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Pulau Mursala</ws:alamat>
+      <ws:kotaKabupaten>Tapanuli Tengah</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.7015</geo:latitude>
+      <geo:longitude>98.7482</geo:longitude>
+      <ws:hargaTiket>Rp20.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>08.00</ws:jamBuka>
+      <ws:jamTutup>17.00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Kalangan</ws:dekatDengan>
+      <ws:fasilitas>Perahu, pemandu wisata</ws:fasilitas>
+      <ws:aktivitas>Menjelajah pulau, fotografi</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Silangit</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Silangit</ws:alamat>
+      <ws:kotaKabupaten>Tapanuli Utara</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.2652</geo:latitude>
+      <geo:longitude>99.0251</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap hari</ws:hariBuka>
+      <ws:jamBuka>08.00</ws:jamBuka>
+      <ws:jamTutup>17.00</ws:jamTutup>
+      <ws:dekatDengan>Bandara Silangit</ws:dekatDengan>
+      <ws:fasilitas>Area parkir, spot foto</ws:fasilitas>
+      <ws:aktivitas>Fotografi, menikmati alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Muara Indah</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Muara, Kec. Muara</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Tapanuli Utara</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.2491</geo:latitude>
+      <geo:longitude>98.9432</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Toilet, parkir, warung</ws:fasilitas>
+      <ws:aktivitas>Bermain air, bersantai, menikmati pemandangan</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Sosor Dolok</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Huta Rakyat, Kec. Balige</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Toba</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.3264</geo:latitude>
+      <geo:longitude>99.0687</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Area parkir, gazebo, warung kecil</ws:fasilitas>
+      <ws:aktivitas>Foto, trekking, menikmati alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Bukit Siadtaratas</rdfs:label>
+      <ws:kategori>Bukit</ws:kategori>
+      <ws:alamat>Desa Lintong Nihuta</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Humbang Hasundutan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.2236</geo:latitude>
+      <geo:longitude>98.8554</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>06:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Lembah Bakkara</ws:dekatDengan>
+      <ws:fasilitas>Toilet, tempat duduk, area foto</ws:fasilitas>
+      <ws:aktivitas>Camping, fotografi, hiking</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Danau Marsabut</rdfs:label>
+      <ws:kategori>Danau</ws:kategori>
+      <ws:alamat>Desa Aek Godang, Kec. Sipirok</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Tapanuli Selatan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.5478</geo:latitude>
+      <geo:longitude>99.2609</geo:longitude>
+      <ws:hargaTiket>Gratis</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>24 Jam</ws:jamBuka>
+      <ws:jamTutup>-</ws:jamTutup>
+      <ws:dekatDengan>Gunung Lubukraya</ws:dekatDengan>
+      <ws:fasilitas>Gazebo, parkir, spot foto</ws:fasilitas>
+      <ws:aktivitas>Memancing, menikmati pemandangan</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Lembah Bakkara</rdfs:label>
+      <ws:kategori>Lembah</ws:kategori>
+      <ws:alamat>Desa Bakkara, Kec. Baktiraja</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Humbang Hasundutan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.2686</geo:latitude>
+      <geo:longitude>98.8284</geo:longitude>
+      <ws:hargaTiket>Gratis</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>24 Jam</ws:jamBuka>
+      <ws:jamTutup>-</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Tempat parkir, area foto, warung</ws:fasilitas>
+      <ws:aktivitas>Menikmati panorama, berfoto, eksplorasi</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Menara Pandang Tele</rdfs:label>
+      <ws:kategori>Menara</ws:kategori>
+      <ws:alamat>Jl. Tele, Turpuk Limbong</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.5015</geo:latitude>
+      <geo:longitude>98.7163</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Parkir, Toilet, Warung, Area Foto</ws:fasilitas>
+      <ws:aktivitas>Melihat panorama, fotografi, bersantai</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pusuk Buhit Samosir</rdfs:label>
+      <ws:kategori>Gunung</ws:kategori>
+      <ws:alamat>Desa Limbong, Kec. Sianjur Mula-Mula</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.5873</geo:latitude>
+      <geo:longitude>98.7302</geo:longitude>
+      <ws:hargaTiket>Gratis</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>24 Jam</ws:jamBuka>
+      <ws:jamTutup>-</ws:jamTutup>
+      <ws:dekatDengan>Menara Pandang Tele</ws:dekatDengan>
+      <ws:fasilitas>Parkir, Warung, Area Istirahat</ws:fasilitas>
+      <ws:aktivitas>Mendaki, camping, menikmati pemandangan</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Bukit Beta</rdfs:label>
+      <ws:kategori>Bukit</ws:kategori>
+      <ws:alamat>Desa Tuk-Tuk Siadong, Kec. Simanindo</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.6421</geo:latitude>
+      <geo:longitude>98.8245</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Tempat duduk, warung, area foto</ws:fasilitas>
+      <ws:aktivitas>Menikmati matahari terbenam, bersantai, berfoto</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Aek Sipitu Dai</rdfs:label>
+      <ws:kategori>Sumber Air</ws:kategori>
+      <ws:alamat>Desa Aek Sipitu Dai, Kec. Sianjur Mula-Mula</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.5789</geo:latitude>
+      <geo:longitude>98.7554</geo:longitude>
+      <ws:hargaTiket>Gratis</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Pusuk Buhit</ws:dekatDengan>
+      <ws:fasilitas>Parkir, tempat istirahat</ws:fasilitas>
+      <ws:aktivitas>Menikmati keunikan air tujuh rasa, foto alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pemandian Air Panas Rianiate</rdfs:label>
+      <ws:kategori>Pemandian</ws:kategori>
+      <ws:alamat>Desa Rianiate, Kec. Pangururan</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.6284</geo:latitude>
+      <geo:longitude>98.7415</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>06:00</ws:jamBuka>
+      <ws:jamTutup>20:00</ws:jamTutup>
+      <ws:dekatDengan>Aek Rangat Pangururan</ws:dekatDengan>
+      <ws:fasilitas>Kolam, ruang bilas, parkir, warung</ws:fasilitas>
+      <ws:aktivitas>Berendam air panas, relaksasi</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Puncak Sidiangkat</rdfs:label>
+      <ws:kategori>Puncak</ws:kategori>
+      <ws:alamat>Jl. Sidikalang - Medan, Desa Sidiangkat</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Dairi</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.7651</geo:latitude>
+      <geo:longitude>98.3043</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Kota Sidikalang</ws:dekatDengan>
+      <ws:fasilitas>Parkir, toilet, gazebo, tempat makan</ws:fasilitas>
+      <ws:aktivitas>Camping, fotografi, menikmati panorama</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Tano Ponggol</rdfs:label>
+      <ws:kategori>Tanah Genting</ws:kategori>
+      <ws:alamat>Desa Siogung-Ogung, Kec. Pangururan</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.6481</geo:latitude>
+      <geo:longitude>98.7178</geo:longitude>
+      <ws:hargaTiket>Gratis</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>24 Jam</ws:jamBuka>
+      <ws:jamTutup>-</ws:jamTutup>
+      <ws:dekatDengan>Jembatan Tano Ponggol</ws:dekatDengan>
+      <ws:fasilitas>Jalan aspal, spot foto, area parkir</ws:fasilitas>
+      <ws:aktivitas>Berkeliling, menikmati panorama Danau Toba</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Aek Rangat Pangururan</rdfs:label>
+      <ws:kategori>Pemandian</ws:kategori>
+      <ws:alamat>Desa Rianiate, Kec. Pangururan</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.6437</geo:latitude>
+      <geo:longitude>98.7479</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>06:00</ws:jamBuka>
+      <ws:jamTutup>20:00</ws:jamTutup>
+      <ws:dekatDengan>Tano Ponggol</ws:dekatDengan>
+      <ws:fasilitas>Kolam air panas, toilet, parkir, gazebo</ws:fasilitas>
+      <ws:aktivitas>Berendam, relaksasi, menikmati panorama</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Sigura-Gura</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Halado, Kec. Pintu Pohan Meranti</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Toba</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.4915</geo:latitude>
+      <geo:longitude>99.2729</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>PLTA Sigura-Gura</ws:dekatDengan>
+      <ws:fasilitas>Parkir, warung, toilet</ws:fasilitas>
+      <ws:aktivitas>Menikmati air terjun, fotografi alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Binanga Bolon</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Nagori Purba Dolok, Kec. Haranggaol Horisan</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Simalungun</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.7658</geo:latitude>
+      <geo:longitude>98.6821</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Parkir, tempat duduk, warung</ws:fasilitas>
+      <ws:aktivitas>Bermain air, trekking, fotografi</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Pandan Sibolga</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Pandan, Kec. Pandan</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Tapanuli Tengah</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.7367</geo:latitude>
+      <geo:longitude>98.7911</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Kota Sibolga</ws:dekatDengan>
+      <ws:fasilitas>Gazebo, kamar mandi, warung, parkir</ws:fasilitas>
+      <ws:aktivitas>Berenang, bermain pasir, berfoto</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Bunga Tanjung</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Bunga Tanjung, Kec. Barus</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Tapanuli Tengah</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.0246</geo:latitude>
+      <geo:longitude>98.3982</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Mutiara</ws:dekatDengan>
+      <ws:fasilitas>Toilet, parkir, warung, spot foto</ws:fasilitas>
+      <ws:aktivitas>Bermain pasir, bersantai, melihat sunset</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Sorake</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Botohilitano, Kec. Teluk Dalam</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>0.6482</geo:latitude>
+      <geo:longitude>97.8091</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>24 Jam</ws:jamBuka>
+      <ws:jamTutup>-</ws:jamTutup>
+      <ws:dekatDengan>Pantai Lagundri</ws:dekatDengan>
+      <ws:fasilitas>Homestay, warung, parkir, penyewaan papan selancar</ws:fasilitas>
+      <ws:aktivitas>Berselancar, berenang, menikmati sunset</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Lahusa Idanoi</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Lahusa Idanoi</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>-0.7167</geo:latitude>
+      <geo:longitude>97.8000</geo:longitude>
+      <ws:hargaTiket>Rp 3.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
+      <ws:fasilitas>Parkir, warung tradisional</ws:fasilitas>
+      <ws:aktivitas>Berenang, bersantai, fotografi pantai</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Onolimbu</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Onolimbu</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Barat</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>0.9833</geo:latitude>
+      <geo:longitude>97.4500</geo:longitude>
+      <ws:hargaTiket>Rp 2.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Sirombu</ws:dekatDengan>
+      <ws:fasilitas>Parkir, warung lokal</ws:fasilitas>
+      <ws:aktivitas>Berenang, memancing, menikmati sunset</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Hilinawalo Mazinö</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Hilinawalo Mazinö</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>-0.6833</geo:latitude>
+      <geo:longitude>97.8167</geo:longitude>
+      <ws:hargaTiket>Rp 5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>08:00</ws:jamBuka>
+      <ws:jamTutup>16:00</ws:jamTutup>
+      <ws:dekatDengan>Desa Bawomataluo</ws:dekatDengan>
+      <ws:fasilitas>Parkir, area istirahat</ws:fasilitas>
+      <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Bukit Hiliweto</rdfs:label>
+      <ws:kategori>Bukit</ws:kategori>
+      <ws:alamat>Desa Hiliweto</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Utara</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.3000</geo:latitude>
+      <geo:longitude>97.4167</geo:longitude>
+      <ws:hargaTiket>Rp 4.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>06:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Kota Lotu</ws:dekatDengan>
+      <ws:fasilitas>Parkir, spot foto</ws:fasilitas>
+      <ws:aktivitas>Menikmati panorama, fotografi, melihat sunrise</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Botohilitano</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Botohilitano</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>-0.5667</geo:latitude>
+      <geo:longitude>97.7833</geo:longitude>
+      <ws:hargaTiket>Rp 3.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Lagundri</ws:dekatDengan>
+      <ws:fasilitas>Parkir, warung makan</ws:fasilitas>
+      <ws:aktivitas>Berenang, snorkeling, fotografi pantai</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Miga</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Miga</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Barat</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.0500</geo:latitude>
+      <geo:longitude>97.4667</geo:longitude>
+      <ws:hargaTiket>Rp 2.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Sirombu</ws:dekatDengan>
+      <ws:fasilitas>Parkir, warung sederhana</ws:fasilitas>
+      <ws:aktivitas>Berenang, memancing, bersantai</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Gawu Soyo</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Gawu Soyo</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Utara</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.3333</geo:latitude>
+      <geo:longitude>97.3667</geo:longitude>
+      <ws:hargaTiket>Rp 4.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>06:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Pulau Hinako</ws:dekatDengan>
+      <ws:fasilitas>Parkir, warung seafood</ws:fasilitas>
+      <ws:aktivitas>Berenang, snorkeling, kuliner seafood</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Siwalu Banua</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Siwalu Banua</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Utara</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.3500</geo:latitude>
+      <geo:longitude>97.3833</geo:longitude>
+      <ws:hargaTiket>Rp 3.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Gawu Soyo</ws:dekatDengan>
+      <ws:fasilitas>Parkir, area piknik</ws:fasilitas>
+      <ws:aktivitas>Berenang, piknik keluarga, fotografi</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Luaha Ndroi</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Luaha Ndroi</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.1167</geo:latitude>
+      <geo:longitude>97.6333</geo:longitude>
+      <ws:hargaTiket>Rp 6.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>08:00</ws:jamBuka>
+      <ws:jamTutup>16:00</ws:jamTutup>
+      <ws:dekatDengan>Gunung Sitoli</ws:dekatDengan>
+      <ws:fasilitas>Parkir, area camping</ws:fasilitas>
+      <ws:aktivitas>Trekking, camping, mandi di air terjun</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Lahewa</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Kecamatan Lahewa</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Utara</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.4167</geo:latitude>
+      <geo:longitude>97.0833</geo:longitude>
+      <ws:hargaTiket>Rp 5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>06:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Pelabuhan Lahewa</ws:dekatDengan>
+      <ws:fasilitas>Parkir, hotel, restoran, warung makan</ws:fasilitas>
+      <ws:aktivitas>Berenang, kuliner, fotografi, melihat ws:aktivitas pelabuhan</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Tuhemberua</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Tuhemberua</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Utara</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.3833</geo:latitude>
+      <geo:longitude>97.3167</geo:longitude>
+      <ws:hargaTiket>Rp 3.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Lahewa</ws:dekatDengan>
+      <ws:fasilitas>Parkir, warung tradisional</ws:fasilitas>
+      <ws:aktivitas>Berenang, memancing, bersantai</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Tundrumbaho</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Tundrumbaho, Kec. Idanögawo</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.0215</geo:latitude>
+      <geo:longitude>97.6103</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Moale</ws:dekatDengan>
+      <ws:fasilitas>Area parkir, warung, toilet</ws:fasilitas>
+      <ws:aktivitas>Bermain air, berfoto, menikmati alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Danau Loto</rdfs:label>
+      <ws:kategori>Danau</ws:kategori>
+      <ws:alamat>Desa Loto, Kec. Lolowau</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>0.7683</geo:latitude>
+      <geo:longitude>97.7698</geo:longitude>
+      <ws:hargaTiket>Gratis</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>06:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
+      <ws:fasilitas>Gazebo, area piknik</ws:fasilitas>
+      <ws:aktivitas>Berkemah, memancing, jalan santai</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Holi</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Holi, Kec. Idanögawo</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.0789</geo:latitude>
+      <geo:longitude>97.6501</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Desa Bawömataluo</ws:dekatDengan>
+      <ws:fasilitas>Warung, parkir, penginapan</ws:fasilitas>
+      <ws:aktivitas>Berenang, bersantai, menikmati sunset</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Sisarahili</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Sisarahili, Kec. Teluk Dalam</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>0.8304</geo:latitude>
+      <geo:longitude>97.8009</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
+      <ws:fasilitas>Toilet, tempat bilas, warung</ws:fasilitas>
+      <ws:aktivitas>Bermain pasir, berenang, berfoto</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Orahili</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Orahili, Kec. Teluk Dalam</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>0.8352</geo:latitude>
+      <geo:longitude>97.7786</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:30</ws:jamTutup>
+      <ws:dekatDengan>Desa Bawömataluo</ws:dekatDengan>
+      <ws:fasilitas>Area parkir, toilet, shelter</ws:fasilitas>
+      <ws:aktivitas>Mendaki ringan, bermain air, foto alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Hiliganoita</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Hiliganoita, Kec. Idanögawo</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.0559</geo:latitude>
+      <geo:longitude>97.6124</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Holi</ws:dekatDengan>
+      <ws:fasilitas>Tempat parkir, warung kecil</ws:fasilitas>
+      <ws:aktivitas>Berenang, eksplorasi hutan, fotografi</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Loloana’a</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Loloana’a, Kec. Teluk Dalam</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>0.7955</geo:latitude>
+      <geo:longitude>97.8372</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>06:30</ws:jamBuka>
+      <ws:jamTutup>18:30</ws:jamTutup>
+      <ws:dekatDengan>Pantai Lagundri</ws:dekatDengan>
+      <ws:fasilitas>Warung, tempat bilas, sewa ban</ws:fasilitas>
+      <ws:aktivitas>Berenang, berselancar, menikmati sunset</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Hoya Nias Utara</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Hoya, Kec. Alasa Talumuzoi</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Utara</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.4339</geo:latitude>
+      <geo:longitude>97.3254</geo:longitude>
+      <ws:hargaTiket>Gratis</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Teluk Dalam Nias</ws:dekatDengan>
+      <ws:fasilitas>Tempat duduk, area parkir</ws:fasilitas>
+      <ws:aktivitas>Bersantai, memancing, menikmati pemandangan laut</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Bozihona Hilisimaetano</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Hilisimaetano, Kec. Maniamölö</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>0.8807</geo:latitude>
+      <geo:longitude>97.7115</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
+      <ws:fasilitas>Warung makan, toilet, area bermain</ws:fasilitas>
+      <ws:aktivitas>Bermain pasir, berenang, foto laut</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Sirombu Tengah</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Sirombu Tengah, Kec. Sirombu</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Barat</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.0371</geo:latitude>
+      <geo:longitude>97.4134</geo:longitude>
+      <ws:hargaTiket>Gratis</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:30</ws:jamTutup>
+      <ws:dekatDengan>Pantai Sirombu Indah</ws:dekatDengan>
+      <ws:fasilitas>Parkir, warung, toilet</ws:fasilitas>
+      <ws:aktivitas>Bermain pasir, bersantai, melihat ombak</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Sifahandro</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Sifahandro</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>-0.7000</geo:latitude>
+      <geo:longitude>97.7833</geo:longitude>
+      <ws:hargaTiket>Rp 3.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
+      <ws:fasilitas>Parkir, warung tradisional</ws:fasilitas>
+      <ws:aktivitas>Berenang, bersantai, fotografi pantai</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Hilimbowo</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Hilimbowo</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.0833</geo:latitude>
+      <geo:longitude>97.6667</geo:longitude>
+      <ws:hargaTiket>Rp 5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>08:00</ws:jamBuka>
+      <ws:jamTutup>16:00</ws:jamTutup>
+      <ws:dekatDengan>Gunung Sitoli</ws:dekatDengan>
+      <ws:fasilitas>Parkir, area piknik</ws:fasilitas>
+      <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Laturi</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Laturi</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Barat</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>0.9500</geo:latitude>
+      <geo:longitude>97.4333</geo:longitude>
+      <ws:hargaTiket>Rp 2.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Sirombu</ws:dekatDengan>
+      <ws:fasilitas>Parkir, warung lokal</ws:fasilitas>
+      <ws:aktivitas>Berenang, memancing, menikmati sunset</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pulau Makaro</rdfs:label>
+      <ws:kategori>Pulau</ws:kategori>
+      <ws:alamat>Perairan Teluk Tapian Nauli</ws:alamat>
+      <ws:kotaKabupaten>Kota Sibolga</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.7500</geo:latitude>
+      <geo:longitude>98.7833</geo:longitude>
+      <ws:hargaTiket>Rp 15.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>06:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Pulau Poncan</ws:dekatDengan>
+      <ws:fasilitas>Dermaga, warung makan, penginapan</ws:fasilitas>
+      <ws:aktivitas>Snorkeling, diving, berenang, fotografi pulau</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Onowaembo</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Onowaembo</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Utara</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.3167</geo:latitude>
+      <geo:longitude>97.4000</geo:longitude>
+      <ws:hargaTiket>Rp 4.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Sisobahili</ws:dekatDengan>
+      <ws:fasilitas>Parkir, warung seafood</ws:fasilitas>
+      <ws:aktivitas>Berenang, snorkeling, kuliner seafood</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Lase</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Lase</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>-0.6333</geo:latitude>
+      <geo:longitude>97.7667</geo:longitude>
+      <ws:hargaTiket>Rp 3.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Lagundri</ws:dekatDengan>
+      <ws:fasilitas>Parkir, warung makan</ws:fasilitas>
+      <ws:aktivitas>Berenang, snorkeling, fotografi pantai</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Kaliki Sibolga</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Kelurahan Kaliki</ws:alamat>
+      <ws:kotaKabupaten>Kota Sibolga</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.7333</geo:latitude>
+      <geo:longitude>98.7833</geo:longitude>
+      <ws:hargaTiket>Rp 5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>06:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Pelabuhan Sibolga</ws:dekatDengan>
+      <ws:fasilitas>Parkir, warung makan, toilet</ws:fasilitas>
+      <ws:aktivitas>Berenang, memancing, menikmati sunset</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Huta Ginjang</rdfs:label>
+      <ws:kategori>Bukit</ws:kategori>
+      <ws:alamat>Kecamatan Muara</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Toba</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.6167</geo:latitude>
+      <geo:longitude>98.8667</geo:longitude>
+      <ws:hargaTiket>Rp 10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>06:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Parkir, spot foto, warung makan</ws:fasilitas>
+      <ws:aktivitas>Menikmati panorama Danau Toba, fotografi, melihat sunrise/sunset</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Kawah Sipoholon</rdfs:label>
+      <ws:kategori>Kawah</ws:kategori>
+      <ws:alamat>Kecamatan Sipoholon</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Tapanuli Utara</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.1167</geo:latitude>
+      <geo:longitude>98.9500</geo:longitude>
+      <ws:hargaTiket>Rp 7.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>08:00</ws:jamBuka>
+      <ws:jamTutup>16:00</ws:jamTutup>
+      <ws:dekatDengan>Tarutung</ws:dekatDengan>
+      <ws:fasilitas>Parkir, pemandian air panas</ws:fasilitas>
+      <ws:aktivitas>Berendam air panas, terapi alam, fotografi</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Silaklak</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Silaklak</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.5333</geo:latitude>
+      <geo:longitude>98.7167</geo:longitude>
+      <ws:hargaTiket>Rp 8.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>08:00</ws:jamBuka>
+      <ws:jamTutup>16:00</ws:jamTutup>
+      <ws:dekatDengan>Pangururan</ws:dekatDengan>
+      <ws:fasilitas>Parkir, area piknik, warung makan</ws:fasilitas>
+      <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam, piknik</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Batu Gajah</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Batu Gajah, Kec. Tapian Nauli</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Tapanuli Tengah</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.7219</geo:latitude>
+      <geo:longitude>98.7824</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Pantai Pandan</ws:dekatDengan>
+      <ws:fasilitas>Gazebo, parkir, warung makan</ws:fasilitas>
+      <ws:aktivitas>Berenang, bersantai, foto pantai</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pulau Karang Sitiris-Tiris</rdfs:label>
+      <ws:kategori>Pulau</ws:kategori>
+      <ws:alamat>Perairan Sibolga, Tapanuli Tengah</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Tapanuli Tengah</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.6761</geo:latitude>
+      <geo:longitude>98.7325</geo:longitude>
+      <ws:hargaTiket>Rp20.000 (perahu ke pulau)</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:30</ws:jamTutup>
+      <ws:dekatDengan>Pantai Pandan Sibolga</ws:dekatDengan>
+      <ws:fasilitas>Sewa perahu, area snorkeling</ws:fasilitas>
+      <ws:aktivitas>Snorkeling, menyelam, eksplorasi pulau</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Mursala Dua</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Pulau Mursala, Kec. Tapian Nauli</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Tapanuli Tengah</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.5884</geo:latitude>
+      <geo:longitude>98.5657</geo:longitude>
+      <ws:hargaTiket>Rp25.000 (termasuk sewa perahu)</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Pulau Kalimantung</ws:dekatDengan>
+      <ws:fasilitas>Perahu wisata, pelampung</ws:fasilitas>
+      <ws:aktivitas>Snorkeling, foto alam, menikmati air terjun laut</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Binasi</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Binasi, Kec. Pandan</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Tapanuli Tengah</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.7156</geo:latitude>
+      <geo:longitude>98.7941</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>06:30</ws:jamBuka>
+      <ws:jamTutup>18:30</ws:jamTutup>
+      <ws:dekatDengan>Pantai Pandan Sibolga</ws:dekatDengan>
+      <ws:fasilitas>Warung, toilet, area bermain</ws:fasilitas>
+      <ws:aktivitas>Berenang, bermain pasir, kuliner pantai</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Hajoran</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Hajoran, Kec. Pandan</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Tapanuli Tengah</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.6908</geo:latitude>
+      <geo:longitude>98.7746</geo:longitude>
+      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:30</ws:jamTutup>
+      <ws:dekatDengan>Pantai Pandan</ws:dekatDengan>
+      <ws:fasilitas>Parkir, warung, kamar mandi</ws:fasilitas>
+      <ws:aktivitas>Berenang, naik banana boat, bersantai</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Sigura-Gura II</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Halado, Kec. Pintu Pohan Meranti</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Toba</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.4407</geo:latitude>
+      <geo:longitude>99.3104</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:30</ws:jamTutup>
+      <ws:dekatDengan>PLTA Sigura-Gura</ws:dekatDengan>
+      <ws:fasilitas>Tempat parkir, shelter, spot foto</ws:fasilitas>
+      <ws:aktivitas>Tracking ringan, menikmati panorama alam, berfoto</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pantai Indah Kalangan</rdfs:label>
+      <ws:kategori>Pantai</ws:kategori>
+      <ws:alamat>Desa Kalangan</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Tapanuli Tengah</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>1.8500</geo:latitude>
+      <geo:longitude>98.6833</geo:longitude>
+      <ws:hargaTiket>Rp 5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Kota Sibolga</ws:dekatDengan>
+      <ws:fasilitas>Parkir, warung makan, toilet, musholla</ws:fasilitas>
+      <ws:aktivitas>Berenang, memancing, fotografi, bersantai</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Sitabotabo</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Sitabotabo</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Toba</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.4500</geo:latitude>
+      <geo:longitude>99.3167</geo:longitude>
+      <ws:hargaTiket>Rp 7.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>08:00</ws:jamBuka>
+      <ws:jamTutup>16:00</ws:jamTutup>
+      <ws:dekatDengan>Parapat</ws:dekatDengan>
+      <ws:fasilitas>Parkir, area piknik, warung kecil</ws:fasilitas>
+      <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Bukit Sitanggor</rdfs:label>
+      <ws:kategori>Bukit</ws:kategori>
+      <ws:alamat>Desa Sitanggor</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.5833</geo:latitude>
+      <geo:longitude>98.8333</geo:longitude>
+      <ws:hargaTiket>Rp 6.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>06:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Parkir, spot foto, warung kopi</ws:fasilitas>
+      <ws:aktivitas>Menikmati panorama Danau Toba, fotografi, melihat sunrise</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Air Terjun Sigura-gura Tarutung</rdfs:label>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Kecamatan Sipoholon</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Tapanuli Utara</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.0833</geo:latitude>
+      <geo:longitude>98.9667</geo:longitude>
+      <ws:hargaTiket>Rp 8.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>08:00</ws:jamBuka>
+      <ws:jamTutup>16:00</ws:jamTutup>
+      <ws:dekatDengan>Kawah Sipoholon</ws:dekatDengan>
+      <ws:fasilitas>Parkir, area istirahat, warung makan</ws:fasilitas>
+      <ws:aktivitas>Trekking, mandi di air terjun, fotografi, wisata alam</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Bukit Siogung-ogung</rdfs:label>
+      <ws:kategori>Bukit</ws:kategori>
+      <ws:alamat>Desa Siogung-ogung</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.6167</geo:latitude>
+      <geo:longitude>98.8000</geo:longitude>
+      <ws:hargaTiket>Rp 5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>06:00</ws:jamBuka>
+      <ws:jamTutup>18:00</ws:jamTutup>
+      <ws:dekatDengan>Pangururan</ws:dekatDengan>
+      <ws:fasilitas>Parkir, gardu pandang, spot foto</ws:fasilitas>
+      <ws:aktivitas>Menikmati pemandangan, fotografi, camping</ws:aktivitas>
+    </wisata>
+
+    <wisata>
+      <rdfs:label>Pemandian Air Panas Aek Sijorni</rdfs:label>
+      <ws:kategori>Pemandian Air Panas</ws:kategori>
+      <ws:alamat>Desa Aek Sijorni</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Tapanuli Utara</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.1000</geo:latitude>
+      <geo:longitude>98.9333</geo:longitude>
+      <ws:hargaTiket>Rp 10.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>07:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Tarutung</ws:dekatDengan>
+      <ws:fasilitas>Kolam renang air panas, parkir, kamar ganti, warung makan</ws:fasilitas>
+      <ws:aktivitas>Berendam air panas, terapi kesehatan, relaksasi</ws:aktivitas>
+    </wisata>
+  </wisataAlam>
+</rdf:RDF>
 
 
 
