@@ -4,7 +4,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
     xmlns:ws="http://example.com/wisata#">
-    <wisata>
+    <w<rdf:Description rdf:about="">isata>
       <rdfs:label>Danau Toba</rdfs:label>
       <ws:kategori>Danau</ws:kategori>
       <ws:alamat>Desa Parapat, Kec. Girsang Sipangan Bolon</ws:alamat>
@@ -19,9 +19,9 @@
       <ws:dekatDengan>Pulau Samosir</ws:dekatDengan>
       <ws:fasilitas>Parkir, Penginapan, Restoran, Toilet</ws:fasilitas>
       <ws:aktivitas>Berenang, Berlayar, Foto, Wisata Alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pulau Samosir</rdfs:label>
       <ws:kategori>Pulau</ws:kategori>
       <ws:alamat>Danau Toba, Kec. Pangururan</ws:alamat>
@@ -36,9 +36,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Penginapan, Restoran, Penyewaan Perahu</ws:fasilitas>
       <ws:aktivitas>Bersepeda, Jelajah Budaya, Foto</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Sipiso-piso</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Tongging, Kec. Merek</ws:alamat>
@@ -53,9 +53,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Parkir, Warung, Toilet</ws:fasilitas>
       <ws:aktivitas>Trekking, Foto, Menikmati Pemandangan</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Gunung Sibayak</rdfs:label>
       <ws:kategori>Gunung</ws:kategori>
       <ws:alamat>Desa Semangat Gunung, Kec. Merdeka</ws:alamat>
@@ -70,9 +70,9 @@
       <ws:dekatDengan>Kota Berastagi</ws:dekatDengan>
       <ws:fasilitas>Parkir, Pemandian Air Panas, Toilet</ws:fasilitas>
       <ws:aktivitas>Mendaki, Camping, Fotografi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Gunung Sinabung</rdfs:label>
       <ws:kategori>Gunung</ws:kategori>
       <ws:alamat>Desa Sukanalu, Kec. Naman Teran</ws:alamat>
@@ -87,9 +87,9 @@
       <ws:dekatDengan>Gunung Sibayak</ws:dekatDengan>
       <ws:fasilitas>Parkir, Pos Pendakian</ws:fasilitas>
       <ws:aktivitas>Pendakian, Observasi Alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Bukit Lawang</rdfs:label>
       <ws:kategori>Taman Nasional</ws:kategori>
       <ws:alamat>Desa Bohorok, Kec. Bahorok</ws:alamat>
@@ -104,9 +104,9 @@
       <ws:dekatDengan>Taman Nasional Gunung Leuser</ws:dekatDengan>
       <ws:fasilitas>Penginapan, Restoran, Toilet</ws:fasilitas>
       <ws:aktivitas>Tracking, Melihat Orangutan, Arung Jeram</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Ponot</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Halado, Kec. Pintu Pohan Meranti</ws:alamat>
@@ -121,9 +121,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Parkir, Warung, Toilet</ws:fasilitas>
       <ws:aktivitas>Trekking, Foto, Piknik</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Taman Wisata Alam Sicike-cike</rdfs:label>
       <ws:kategori>Taman Alam</ws:kategori>
       <ws:alamat>Desa Lae Hole, Kec. Sitellu Tali Urang Julu</ws:alamat>
@@ -138,9 +138,9 @@
       <ws:dekatDengan>Sidikalang</ws:dekatDengan>
       <ws:fasilitas>Parkir, Toilet, Area Camping</ws:fasilitas>
       <ws:aktivitas>Tracking, Camping, Fotografi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Danau Linting</rdfs:label>
       <ws:kategori>Danau</ws:kategori>
       <ws:alamat>Desa Sibunga-bunga Hilir, Kec. STM Hulu</ws:alamat>
@@ -155,9 +155,9 @@
       <ws:dekatDengan>Air Terjun Dua Warna</ws:dekatDengan>
       <ws:fasilitas>Parkir, Warung, Toilet</ws:fasilitas>
       <ws:aktivitas>Berenang, Foto, Bersantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Pandan</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Kec. Pandan</ws:alamat>
@@ -172,9 +172,9 @@
       <ws:dekatDengan>Kota Sibolga</ws:dekatDengan>
       <ws:fasilitas>Parkir, Warung, Toilet, Penginapan</ws:fasilitas>
       <ws:aktivitas>Berenang, Piknik, Menikmati Sunset</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Dua Warna Sibolangit</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Durin Sirugun, Kec. Sibolangit</ws:alamat>
@@ -189,9 +189,9 @@
       <ws:dekatDengan>Danau Linting</ws:dekatDengan>
       <ws:fasilitas>Parkir, Pemandu Wisata</ws:fasilitas>
       <ws:aktivitas>Trekking, Foto, Menikmati Alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Taman Nasional Gunung Leuser</rdfs:label>
       <ws:kategori>Taman Nasional</ws:kategori>
       <ws:alamat>Desa Ketambe, Kec. Kutacane</ws:alamat>
@@ -206,9 +206,9 @@
       <ws:dekatDengan>Bukit Lawang</ws:dekatDengan>
       <ws:fasilitas>Penginapan, Pusat Informasi, Toilet</ws:fasilitas>
       <ws:aktivitas>Tracking, Observasi Satwa, Camping</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Bukit Holbung</rdfs:label>
       <ws:kategori>Bukit</ws:kategori>
       <ws:alamat>Desa Janji Martahan, Kec. Harian Boho</ws:alamat>
@@ -223,9 +223,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Parkir, Warung, Toilet</ws:fasilitas>
       <ws:aktivitas>Hiking, Camping, Menikmati Pemandangan</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Efrata</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Sosor Dolok, Kec. Harian Boho</ws:alamat>
@@ -240,9 +240,9 @@
       <ws:dekatDengan>Bukit Holbung</ws:dekatDengan>
       <ws:fasilitas>Parkir, Toilet</ws:fasilitas>
       <ws:aktivitas>Trekking, Foto, Piknik</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Danau Lau Kawar</rdfs:label>
       <ws:kategori>Danau</ws:kategori>
       <ws:alamat>Desa Kuta Gugung, Kec. Naman Teran</ws:alamat>
@@ -257,9 +257,9 @@
       <ws:dekatDengan>Gunung Sinabung</ws:dekatDengan>
       <ws:fasilitas>Parkir, Warung, Toilet, Area Camping</ws:fasilitas>
       <ws:aktivitas>Camping, Foto, Menikmati Alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Sikulikap</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Doulu, Kecamatan Berastagi</ws:alamat>
@@ -274,9 +274,9 @@
       <ws:dekatDengan>Taman Hutan Raya Bukit Barisan</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung, area foto, toilet</ws:fasilitas>
       <ws:aktivitas>Trekking, fotografi, menikmati alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Cermin</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Pantai Cermin Kanan</ws:alamat>
@@ -291,9 +291,9 @@
       <ws:dekatDengan>Pantai Kuala Putri</ws:dekatDengan>
       <ws:fasilitas>Gazebo, area bermain, restoran, penginapan</ws:fasilitas>
       <ws:aktivitas>Bermain air, bersantai, menikmati sunset</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Gunung Sibuatan</rdfs:label>
       <ws:kategori>Gunung</ws:kategori>
       <ws:alamat>Kecamatan Merek</ws:alamat>
@@ -308,9 +308,9 @@
       <ws:dekatDengan>Gunung Sinabung</ws:dekatDengan>
       <ws:fasilitas>Tempat parkir, basecamp, warung</ws:fasilitas>
       <ws:aktivitas>Mendaki, berkemah, fotografi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Situmurun Binangalom</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Binangalom</ws:alamat>
@@ -325,9 +325,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Perahu sewa, spot foto</ws:fasilitas>
       <ws:aktivitas>Naik perahu, berenang, fotografi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Danau Sidihoni</rdfs:label>
       <ws:kategori>Danau</ws:kategori>
       <ws:alamat>Pulau Samosir</ws:alamat>
@@ -342,9 +342,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Area parkir, warung</ws:fasilitas>
       <ws:aktivitas>Bersantai, menikmati pemandangan</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Sorake</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Teluk Dalam</ws:alamat>
@@ -359,9 +359,9 @@
       <ws:dekatDengan>Pantai Lagundri</ws:dekatDengan>
       <ws:fasilitas>Penginapan, restoran, area surfing</ws:fasilitas>
       <ws:aktivitas>Surfing, berenang, menikmati sunset</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Lagundri</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Teluk Dalam</ws:alamat>
@@ -376,9 +376,9 @@
       <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
       <ws:fasilitas>Homestay, parkir, area surfing</ws:fasilitas>
       <ws:aktivitas>Surfing, berenang, bersantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Sigura-gura</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Halado</ws:alamat>
@@ -393,9 +393,9 @@
       <ws:dekatDengan>PLTA Sigura-gura</ws:dekatDengan>
       <ws:fasilitas>Parkir, area foto</ws:fasilitas>
       <ws:aktivitas>Fotografi, eksplorasi alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Bukit Indah Simarjarunjung</rdfs:label>
       <ws:kategori>Bukit</ws:kategori>
       <ws:alamat>Jalan Raya Simarjarunjung</ws:alamat>
@@ -410,9 +410,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Spot foto, warung, area parkir</ws:fasilitas>
       <ws:aktivitas>Fotografi, bersantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Bukit Gajah Bobok</rdfs:label>
       <ws:kategori>Bukit</ws:kategori>
       <ws:alamat>Desa Situnggaling</ws:alamat>
@@ -427,9 +427,9 @@
       <ws:dekatDengan>Gunung Sibuatan</ws:dekatDengan>
       <ws:fasilitas>Parkir, area camping</ws:fasilitas>
       <ws:aktivitas>Camping, hiking, menikmati sunrise</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Lae Pendaroh</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Lae Hole</ws:alamat>
@@ -444,9 +444,9 @@
       <ws:dekatDengan>Air Terjun Situmurun</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung</ws:fasilitas>
       <ws:aktivitas>Berenang, fotografi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Danau Siombak</rdfs:label>
       <ws:kategori>Danau</ws:kategori>
       <ws:alamat>Kelurahan Paya Pasir, Medan Marelan</ws:alamat>
@@ -461,9 +461,9 @@
       <ws:dekatDengan>Pantai Mangrove Belawan</ws:dekatDengan>
       <ws:fasilitas>Perahu, tempat makan, area parkir</ws:fasilitas>
       <ws:aktivitas>Memancing, berperahu, piknik</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Tarunggang</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Marbun Toruan</ws:alamat>
@@ -478,9 +478,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Parkir, area foto</ws:fasilitas>
       <ws:aktivitas>Fotografi, trekking</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Taman Alam Lumbini</rdfs:label>
       <ws:kategori>Taman</ws:kategori>
       <ws:alamat>Desa Tongkoh, Kecamatan Dolat Rayat</ws:alamat>
@@ -495,9 +495,9 @@
       <ws:dekatDengan>Gunung Sibayak</ws:dekatDengan>
       <ws:fasilitas>Toilet, area parkir, restoran</ws:fasilitas>
       <ws:aktivitas>Wisata religi, fotografi, meditasi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Janji</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Marbun Toruan</ws:alamat>
@@ -512,9 +512,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Parkir, gazebo, area foto</ws:fasilitas>
       <ws:aktivitas>Fotografi, bersantai, berenang</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Linggahara</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Linggahara Jae</ws:alamat>
@@ -529,9 +529,9 @@
       <ws:dekatDengan>Gunung Lubukraya</ws:dekatDengan>
       <ws:fasilitas>Area parkir, warung</ws:fasilitas>
       <ws:aktivitas>Berenang, eksplorasi alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Simangande</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Simangande</ws:alamat>
@@ -546,9 +546,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Spot foto, area parkir</ws:fasilitas>
       <ws:aktivitas>Fotografi, menikmati alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Bukit Doa Tapanuli Utara</rdfs:label>
       <ws:kategori>Bukit</ws:kategori>
       <ws:alamat>Desa Siatas Barita</ws:alamat>
@@ -563,9 +563,9 @@
       <ws:dekatDengan>Kota Tarutung</ws:dekatDengan>
       <ws:fasilitas>Toilet, warung, tempat duduk</ws:fasilitas>
       <ws:aktivitas>Bersantai, berdoa, menikmati pemandangan</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Goa Natumandi</rdfs:label>
       <ws:kategori>Goa</ws:kategori>
       <ws:alamat>Desa Sijungkang</ws:alamat>
@@ -580,9 +580,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Parkir, pemandu lokal</ws:fasilitas>
       <ws:aktivitas>Eksplorasi goa, fotografi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Hutan Wisata Sibolangit</rdfs:label>
       <ws:kategori>Hutan</ws:kategori>
       <ws:alamat>Kecamatan Sibolangit</ws:alamat>
@@ -597,9 +597,9 @@
       <ws:dekatDengan>Air Terjun Dua Warna</ws:dekatDengan>
       <ws:fasilitas>Tempat parkir, area piknik</ws:fasilitas>
       <ws:aktivitas>Trekking, camping, edukasi alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Batu Hoda</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Cinta Dame</ws:alamat>
@@ -614,9 +614,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Gazebo, warung, area bermain</ws:fasilitas>
       <ws:aktivitas>Bermain air, bersantai, fotografi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Bah Biak</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Tongging</ws:alamat>
@@ -631,9 +631,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Parkir, spot foto</ws:fasilitas>
       <ws:aktivitas>Fotografi, relaksasi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Gunung Lubukraya</rdfs:label>
       <ws:kategori>Gunung</ws:kategori>
       <ws:alamat>Desa Batang Toru</ws:alamat>
@@ -648,9 +648,9 @@
       <ws:dekatDengan>Air Terjun Linggahara</ws:dekatDengan>
       <ws:fasilitas>Basecamp, parkir</ws:fasilitas>
       <ws:aktivitas>Mendaki, camping</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Danau Sicike-cike</rdfs:label>
       <ws:kategori>Danau</ws:kategori>
       <ws:alamat>Desa Lae Hole</ws:alamat>
@@ -665,9 +665,9 @@
       <ws:dekatDengan>Taman Wisata Alam Sicike-cike</ws:dekatDengan>
       <ws:fasilitas>Parkir, shelter</ws:fasilitas>
       <ws:aktivitas>Trekking, edukasi alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Simanoroni</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Hutaraja</ws:alamat>
@@ -682,9 +682,9 @@
       <ws:dekatDengan>Gunung Lubukraya</ws:dekatDengan>
       <ws:fasilitas>Parkir, area foto</ws:fasilitas>
       <ws:aktivitas>Fotografi, eksplorasi alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pemandian Air Panas Sidebuk-debuk</rdfs:label>
       <ws:kategori>Pemandian</ws:kategori>
       <ws:alamat>Desa Doulu</ws:alamat>
@@ -699,9 +699,9 @@
       <ws:dekatDengan>Gunung Sibayak</ws:dekatDengan>
       <ws:fasilitas>Kolam air panas, warung, parkir</ws:fasilitas>
       <ws:aktivitas>Berendam, relaksasi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Bukit Gundaling</rdfs:label>
       <ws:kategori>Bukit</ws:kategori>
       <ws:alamat>Kecamatan Berastagi</ws:alamat>
@@ -716,9 +716,9 @@
       <ws:dekatDengan>Gunung Sibayak</ws:dekatDengan>
       <ws:fasilitas>Kuda tunggang, taman, warung</ws:fasilitas>
       <ws:aktivitas>Menikmati pemandangan, berkuda</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Pasir Putih Parbaba</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Parbaba</ws:alamat>
@@ -733,9 +733,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Warung, sewa ban, area bermain</ws:fasilitas>
       <ws:aktivitas>Bermain air, bersantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Mursala</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Pulau Mursala</ws:alamat>
@@ -750,9 +750,9 @@
       <ws:dekatDengan>Pantai Kalangan</ws:dekatDengan>
       <ws:fasilitas>Perahu, pemandu wisata</ws:fasilitas>
       <ws:aktivitas>Menjelajah pulau, fotografi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Silangit</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Silangit</ws:alamat>
@@ -767,9 +767,9 @@
       <ws:dekatDengan>Bandara Silangit</ws:dekatDengan>
       <ws:fasilitas>Area parkir, spot foto</ws:fasilitas>
       <ws:aktivitas>Fotografi, menikmati alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Muara Indah</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Muara, Kec. Muara</ws:alamat>
@@ -784,9 +784,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Toilet, parkir, warung</ws:fasilitas>
       <ws:aktivitas>Bermain air, bersantai, menikmati pemandangan</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Sosor Dolok</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Huta Rakyat, Kec. Balige</ws:alamat>
@@ -801,9 +801,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Area parkir, gazebo, warung kecil</ws:fasilitas>
       <ws:aktivitas>Foto, trekking, menikmati alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Bukit Siadtaratas</rdfs:label>
       <ws:kategori>Bukit</ws:kategori>
       <ws:alamat>Desa Lintong Nihuta</ws:alamat>
@@ -818,9 +818,9 @@
       <ws:dekatDengan>Lembah Bakkara</ws:dekatDengan>
       <ws:fasilitas>Toilet, tempat duduk, area foto</ws:fasilitas>
       <ws:aktivitas>Camping, fotografi, hiking</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Danau Marsabut</rdfs:label>
       <ws:kategori>Danau</ws:kategori>
       <ws:alamat>Desa Aek Godang, Kec. Sipirok</ws:alamat>
@@ -835,9 +835,9 @@
       <ws:dekatDengan>Gunung Lubukraya</ws:dekatDengan>
       <ws:fasilitas>Gazebo, parkir, spot foto</ws:fasilitas>
       <ws:aktivitas>Memancing, menikmati pemandangan</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Lembah Bakkara</rdfs:label>
       <ws:kategori>Lembah</ws:kategori>
       <ws:alamat>Desa Bakkara, Kec. Baktiraja</ws:alamat>
@@ -852,9 +852,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Tempat parkir, area foto, warung</ws:fasilitas>
       <ws:aktivitas>Menikmati panorama, berfoto, eksplorasi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Menara Pandang Tele</rdfs:label>
       <ws:kategori>Menara</ws:kategori>
       <ws:alamat>Jl. Tele, Turpuk Limbong</ws:alamat>
@@ -869,9 +869,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Parkir, Toilet, Warung, Area Foto</ws:fasilitas>
       <ws:aktivitas>Melihat panorama, fotografi, bersantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pusuk Buhit Samosir</rdfs:label>
       <ws:kategori>Gunung</ws:kategori>
       <ws:alamat>Desa Limbong, Kec. Sianjur Mula-Mula</ws:alamat>
@@ -886,9 +886,9 @@
       <ws:dekatDengan>Menara Pandang Tele</ws:dekatDengan>
       <ws:fasilitas>Parkir, Warung, Area Istirahat</ws:fasilitas>
       <ws:aktivitas>Mendaki, camping, menikmati pemandangan</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Bukit Beta</rdfs:label>
       <ws:kategori>Bukit</ws:kategori>
       <ws:alamat>Desa Tuk-Tuk Siadong, Kec. Simanindo</ws:alamat>
@@ -903,9 +903,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Tempat duduk, warung, area foto</ws:fasilitas>
       <ws:aktivitas>Menikmati matahari terbenam, bersantai, berfoto</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Aek Sipitu Dai</rdfs:label>
       <ws:kategori>Sumber Air</ws:kategori>
       <ws:alamat>Desa Aek Sipitu Dai, Kec. Sianjur Mula-Mula</ws:alamat>
@@ -920,9 +920,9 @@
       <ws:dekatDengan>Pusuk Buhit</ws:dekatDengan>
       <ws:fasilitas>Parkir, tempat istirahat</ws:fasilitas>
       <ws:aktivitas>Menikmati keunikan air tujuh rasa, foto alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pemandian Air Panas Rianiate</rdfs:label>
       <ws:kategori>Pemandian</ws:kategori>
       <ws:alamat>Desa Rianiate, Kec. Pangururan</ws:alamat>
@@ -937,9 +937,9 @@
       <ws:dekatDengan>Aek Rangat Pangururan</ws:dekatDengan>
       <ws:fasilitas>Kolam, ruang bilas, parkir, warung</ws:fasilitas>
       <ws:aktivitas>Berendam air panas, relaksasi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Puncak Sidiangkat</rdfs:label>
       <ws:kategori>Puncak</ws:kategori>
       <ws:alamat>Jl. Sidikalang - Medan, Desa Sidiangkat</ws:alamat>
@@ -954,9 +954,9 @@
       <ws:dekatDengan>Kota Sidikalang</ws:dekatDengan>
       <ws:fasilitas>Parkir, toilet, gazebo, tempat makan</ws:fasilitas>
       <ws:aktivitas>Camping, fotografi, menikmati panorama</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Tano Ponggol</rdfs:label>
       <ws:kategori>Tanah Genting</ws:kategori>
       <ws:alamat>Desa Siogung-Ogung, Kec. Pangururan</ws:alamat>
@@ -971,9 +971,9 @@
       <ws:dekatDengan>Jembatan Tano Ponggol</ws:dekatDengan>
       <ws:fasilitas>Jalan aspal, spot foto, area parkir</ws:fasilitas>
       <ws:aktivitas>Berkeliling, menikmati panorama Danau Toba</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Aek Rangat Pangururan</rdfs:label>
       <ws:kategori>Pemandian</ws:kategori>
       <ws:alamat>Desa Rianiate, Kec. Pangururan</ws:alamat>
@@ -988,9 +988,9 @@
       <ws:dekatDengan>Tano Ponggol</ws:dekatDengan>
       <ws:fasilitas>Kolam air panas, toilet, parkir, gazebo</ws:fasilitas>
       <ws:aktivitas>Berendam, relaksasi, menikmati panorama</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Sigura-Gura</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Halado, Kec. Pintu Pohan Meranti</ws:alamat>
@@ -1005,9 +1005,9 @@
       <ws:dekatDengan>PLTA Sigura-Gura</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung, toilet</ws:fasilitas>
       <ws:aktivitas>Menikmati air terjun, fotografi alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Binanga Bolon</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Nagori Purba Dolok, Kec. Haranggaol Horisan</ws:alamat>
@@ -1022,9 +1022,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Parkir, tempat duduk, warung</ws:fasilitas>
       <ws:aktivitas>Bermain air, trekking, fotografi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Pandan Sibolga</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Pandan, Kec. Pandan</ws:alamat>
@@ -1039,9 +1039,9 @@
       <ws:dekatDengan>Kota Sibolga</ws:dekatDengan>
       <ws:fasilitas>Gazebo, kamar mandi, warung, parkir</ws:fasilitas>
       <ws:aktivitas>Berenang, bermain pasir, berfoto</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Bunga Tanjung</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Bunga Tanjung, Kec. Barus</ws:alamat>
@@ -1056,9 +1056,9 @@
       <ws:dekatDengan>Pantai Mutiara</ws:dekatDengan>
       <ws:fasilitas>Toilet, parkir, warung, spot foto</ws:fasilitas>
       <ws:aktivitas>Bermain pasir, bersantai, melihat sunset</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Sorake</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Botohilitano, Kec. Teluk Dalam</ws:alamat>
@@ -1073,9 +1073,9 @@
       <ws:dekatDengan>Pantai Lagundri</ws:dekatDengan>
       <ws:fasilitas>Homestay, warung, parkir, penyewaan papan selancar</ws:fasilitas>
       <ws:aktivitas>Berselancar, berenang, menikmati sunset</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Lahusa Idanoi</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Lahusa Idanoi</ws:alamat>
@@ -1090,9 +1090,9 @@
       <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung tradisional</ws:fasilitas>
       <ws:aktivitas>Berenang, bersantai, fotografi pantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Onolimbu</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Onolimbu</ws:alamat>
@@ -1107,9 +1107,9 @@
       <ws:dekatDengan>Pantai Sirombu</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung lokal</ws:fasilitas>
       <ws:aktivitas>Berenang, memancing, menikmati sunset</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Hilinawalo Mazinö</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Hilinawalo Mazinö</ws:alamat>
@@ -1124,9 +1124,9 @@
       <ws:dekatDengan>Desa Bawomataluo</ws:dekatDengan>
       <ws:fasilitas>Parkir, area istirahat</ws:fasilitas>
       <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Bukit Hiliweto</rdfs:label>
       <ws:kategori>Bukit</ws:kategori>
       <ws:alamat>Desa Hiliweto</ws:alamat>
@@ -1141,9 +1141,9 @@
       <ws:dekatDengan>Kota Lotu</ws:dekatDengan>
       <ws:fasilitas>Parkir, spot foto</ws:fasilitas>
       <ws:aktivitas>Menikmati panorama, fotografi, melihat sunrise</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Botohilitano</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Botohilitano</ws:alamat>
@@ -1158,9 +1158,9 @@
       <ws:dekatDengan>Pantai Lagundri</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung makan</ws:fasilitas>
       <ws:aktivitas>Berenang, snorkeling, fotografi pantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Miga</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Miga</ws:alamat>
@@ -1175,9 +1175,9 @@
       <ws:dekatDengan>Pantai Sirombu</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung sederhana</ws:fasilitas>
       <ws:aktivitas>Berenang, memancing, bersantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Gawu Soyo</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Gawu Soyo</ws:alamat>
@@ -1192,9 +1192,9 @@
       <ws:dekatDengan>Pulau Hinako</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung seafood</ws:fasilitas>
       <ws:aktivitas>Berenang, snorkeling, kuliner seafood</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Siwalu Banua</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Siwalu Banua</ws:alamat>
@@ -1209,9 +1209,9 @@
       <ws:dekatDengan>Pantai Gawu Soyo</ws:dekatDengan>
       <ws:fasilitas>Parkir, area piknik</ws:fasilitas>
       <ws:aktivitas>Berenang, piknik keluarga, fotografi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Luaha Ndroi</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Luaha Ndroi</ws:alamat>
@@ -1226,9 +1226,9 @@
       <ws:dekatDengan>Gunung Sitoli</ws:dekatDengan>
       <ws:fasilitas>Parkir, area camping</ws:fasilitas>
       <ws:aktivitas>Trekking, camping, mandi di air terjun</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Lahewa</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Kecamatan Lahewa</ws:alamat>
@@ -1243,9 +1243,9 @@
       <ws:dekatDengan>Pelabuhan Lahewa</ws:dekatDengan>
       <ws:fasilitas>Parkir, hotel, restoran, warung makan</ws:fasilitas>
       <ws:aktivitas>Berenang, kuliner, fotografi, melihat ws:aktivitas pelabuhan</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Tuhemberua</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Tuhemberua</ws:alamat>
@@ -1260,9 +1260,9 @@
       <ws:dekatDengan>Pantai Lahewa</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung tradisional</ws:fasilitas>
       <ws:aktivitas>Berenang, memancing, bersantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Tundrumbaho</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Tundrumbaho, Kec. Idanögawo</ws:alamat>
@@ -1277,9 +1277,9 @@
       <ws:dekatDengan>Pantai Moale</ws:dekatDengan>
       <ws:fasilitas>Area parkir, warung, toilet</ws:fasilitas>
       <ws:aktivitas>Bermain air, berfoto, menikmati alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Danau Loto</rdfs:label>
       <ws:kategori>Danau</ws:kategori>
       <ws:alamat>Desa Loto, Kec. Lolowau</ws:alamat>
@@ -1294,9 +1294,9 @@
       <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
       <ws:fasilitas>Gazebo, area piknik</ws:fasilitas>
       <ws:aktivitas>Berkemah, memancing, jalan santai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Holi</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Holi, Kec. Idanögawo</ws:alamat>
@@ -1311,9 +1311,9 @@
       <ws:dekatDengan>Desa Bawömataluo</ws:dekatDengan>
       <ws:fasilitas>Warung, parkir, penginapan</ws:fasilitas>
       <ws:aktivitas>Berenang, bersantai, menikmati sunset</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Sisarahili</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Sisarahili, Kec. Teluk Dalam</ws:alamat>
@@ -1328,9 +1328,9 @@
       <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
       <ws:fasilitas>Toilet, tempat bilas, warung</ws:fasilitas>
       <ws:aktivitas>Bermain pasir, berenang, berfoto</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Orahili</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Orahili, Kec. Teluk Dalam</ws:alamat>
@@ -1345,9 +1345,9 @@
       <ws:dekatDengan>Desa Bawömataluo</ws:dekatDengan>
       <ws:fasilitas>Area parkir, toilet, shelter</ws:fasilitas>
       <ws:aktivitas>Mendaki ringan, bermain air, foto alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Hiliganoita</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Hiliganoita, Kec. Idanögawo</ws:alamat>
@@ -1362,9 +1362,9 @@
       <ws:dekatDengan>Pantai Holi</ws:dekatDengan>
       <ws:fasilitas>Tempat parkir, warung kecil</ws:fasilitas>
       <ws:aktivitas>Berenang, eksplorasi hutan, fotografi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Loloana’a</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Loloana’a, Kec. Teluk Dalam</ws:alamat>
@@ -1379,9 +1379,9 @@
       <ws:dekatDengan>Pantai Lagundri</ws:dekatDengan>
       <ws:fasilitas>Warung, tempat bilas, sewa ban</ws:fasilitas>
       <ws:aktivitas>Berenang, berselancar, menikmati sunset</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Hoya Nias Utara</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Hoya, Kec. Alasa Talumuzoi</ws:alamat>
@@ -1396,9 +1396,9 @@
       <ws:dekatDengan>Teluk Dalam Nias</ws:dekatDengan>
       <ws:fasilitas>Tempat duduk, area parkir</ws:fasilitas>
       <ws:aktivitas>Bersantai, memancing, menikmati pemandangan laut</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Bozihona Hilisimaetano</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Hilisimaetano, Kec. Maniamölö</ws:alamat>
@@ -1413,9 +1413,9 @@
       <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
       <ws:fasilitas>Warung makan, toilet, area bermain</ws:fasilitas>
       <ws:aktivitas>Bermain pasir, berenang, foto laut</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Sirombu Tengah</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Sirombu Tengah, Kec. Sirombu</ws:alamat>
@@ -1430,9 +1430,9 @@
       <ws:dekatDengan>Pantai Sirombu Indah</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung, toilet</ws:fasilitas>
       <ws:aktivitas>Bermain pasir, bersantai, melihat ombak</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Sifahandro</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Sifahandro</ws:alamat>
@@ -1447,9 +1447,9 @@
       <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung tradisional</ws:fasilitas>
       <ws:aktivitas>Berenang, bersantai, fotografi pantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Hilimbowo</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Hilimbowo</ws:alamat>
@@ -1464,9 +1464,9 @@
       <ws:dekatDengan>Gunung Sitoli</ws:dekatDengan>
       <ws:fasilitas>Parkir, area piknik</ws:fasilitas>
       <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Laturi</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Laturi</ws:alamat>
@@ -1481,9 +1481,9 @@
       <ws:dekatDengan>Pantai Sirombu</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung lokal</ws:fasilitas>
       <ws:aktivitas>Berenang, memancing, menikmati sunset</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pulau Makaro</rdfs:label>
       <ws:kategori>Pulau</ws:kategori>
       <ws:alamat>Perairan Teluk Tapian Nauli</ws:alamat>
@@ -1498,9 +1498,9 @@
       <ws:dekatDengan>Pulau Poncan</ws:dekatDengan>
       <ws:fasilitas>Dermaga, warung makan, penginapan</ws:fasilitas>
       <ws:aktivitas>Snorkeling, diving, berenang, fotografi pulau</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Onowaembo</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Onowaembo</ws:alamat>
@@ -1515,9 +1515,9 @@
       <ws:dekatDengan>Pantai Sisobahili</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung seafood</ws:fasilitas>
       <ws:aktivitas>Berenang, snorkeling, kuliner seafood</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Lase</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Lase</ws:alamat>
@@ -1532,9 +1532,9 @@
       <ws:dekatDengan>Pantai Lagundri</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung makan</ws:fasilitas>
       <ws:aktivitas>Berenang, snorkeling, fotografi pantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Kaliki Sibolga</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Kelurahan Kaliki</ws:alamat>
@@ -1549,9 +1549,9 @@
       <ws:dekatDengan>Pelabuhan Sibolga</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung makan, toilet</ws:fasilitas>
       <ws:aktivitas>Berenang, memancing, menikmati sunset</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Huta Ginjang</rdfs:label>
       <ws:kategori>Bukit</ws:kategori>
       <ws:alamat>Kecamatan Muara</ws:alamat>
@@ -1566,9 +1566,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Parkir, spot foto, warung makan</ws:fasilitas>
       <ws:aktivitas>Menikmati panorama Danau Toba, fotografi, melihat sunrise/sunset</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Kawah Sipoholon</rdfs:label>
       <ws:kategori>Kawah</ws:kategori>
       <ws:alamat>Kecamatan Sipoholon</ws:alamat>
@@ -1583,9 +1583,9 @@
       <ws:dekatDengan>Tarutung</ws:dekatDengan>
       <ws:fasilitas>Parkir, pemandian air panas</ws:fasilitas>
       <ws:aktivitas>Berendam air panas, terapi alam, fotografi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Silaklak</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Silaklak</ws:alamat>
@@ -1600,9 +1600,9 @@
       <ws:dekatDengan>Pangururan</ws:dekatDengan>
       <ws:fasilitas>Parkir, area piknik, warung makan</ws:fasilitas>
       <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam, piknik</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Batu Gajah</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Batu Gajah, Kec. Tapian Nauli</ws:alamat>
@@ -1617,9 +1617,9 @@
       <ws:dekatDengan>Pantai Pandan</ws:dekatDengan>
       <ws:fasilitas>Gazebo, parkir, warung makan</ws:fasilitas>
       <ws:aktivitas>Berenang, bersantai, foto pantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pulau Karang Sitiris-Tiris</rdfs:label>
       <ws:kategori>Pulau</ws:kategori>
       <ws:alamat>Perairan Sibolga, Tapanuli Tengah</ws:alamat>
@@ -1634,9 +1634,9 @@
       <ws:dekatDengan>Pantai Pandan Sibolga</ws:dekatDengan>
       <ws:fasilitas>Sewa perahu, area snorkeling</ws:fasilitas>
       <ws:aktivitas>Snorkeling, menyelam, eksplorasi pulau</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Mursala Dua</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Pulau Mursala, Kec. Tapian Nauli</ws:alamat>
@@ -1651,9 +1651,9 @@
       <ws:dekatDengan>Pulau Kalimantung</ws:dekatDengan>
       <ws:fasilitas>Perahu wisata, pelampung</ws:fasilitas>
       <ws:aktivitas>Snorkeling, foto alam, menikmati air terjun laut</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Binasi</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Binasi, Kec. Pandan</ws:alamat>
@@ -1668,9 +1668,9 @@
       <ws:dekatDengan>Pantai Pandan Sibolga</ws:dekatDengan>
       <ws:fasilitas>Warung, toilet, area bermain</ws:fasilitas>
       <ws:aktivitas>Berenang, bermain pasir, kuliner pantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Hajoran</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Hajoran, Kec. Pandan</ws:alamat>
@@ -1685,9 +1685,9 @@
       <ws:dekatDengan>Pantai Pandan</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung, kamar mandi</ws:fasilitas>
       <ws:aktivitas>Berenang, naik banana boat, bersantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Sigura-Gura II</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Halado, Kec. Pintu Pohan Meranti</ws:alamat>
@@ -1702,9 +1702,9 @@
       <ws:dekatDengan>PLTA Sigura-Gura</ws:dekatDengan>
       <ws:fasilitas>Tempat parkir, shelter, spot foto</ws:fasilitas>
       <ws:aktivitas>Tracking ringan, menikmati panorama alam, berfoto</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Indah Kalangan</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Kalangan</ws:alamat>
@@ -1719,9 +1719,9 @@
       <ws:dekatDengan>Kota Sibolga</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung makan, toilet, musholla</ws:fasilitas>
       <ws:aktivitas>Berenang, memancing, fotografi, bersantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Sitabotabo</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Sitabotabo</ws:alamat>
@@ -1736,9 +1736,9 @@
       <ws:dekatDengan>Parapat</ws:dekatDengan>
       <ws:fasilitas>Parkir, area piknik, warung kecil</ws:fasilitas>
       <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Bukit Sitanggor</rdfs:label>
       <ws:kategori>Bukit</ws:kategori>
       <ws:alamat>Desa Sitanggor</ws:alamat>
@@ -1753,9 +1753,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Parkir, spot foto, warung kopi</ws:fasilitas>
       <ws:aktivitas>Menikmati panorama Danau Toba, fotografi, melihat sunrise</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Sigura-gura Tarutung</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Kecamatan Sipoholon</ws:alamat>
@@ -1770,9 +1770,9 @@
       <ws:dekatDengan>Kawah Sipoholon</ws:dekatDengan>
       <ws:fasilitas>Parkir, area istirahat, warung makan</ws:fasilitas>
       <ws:aktivitas>Trekking, mandi di air terjun, fotografi, wisata alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Bukit Siogung-ogung</rdfs:label>
       <ws:kategori>Bukit</ws:kategori>
       <ws:alamat>Desa Siogung-ogung</ws:alamat>
@@ -1787,9 +1787,9 @@
       <ws:dekatDengan>Pangururan</ws:dekatDengan>
       <ws:fasilitas>Parkir, gardu pandang, spot foto</ws:fasilitas>
       <ws:aktivitas>Menikmati pemandangan, fotografi, camping</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pemandian Air Panas Aek Sijorni</rdfs:label>
       <ws:kategori>Pemandian Air Panas</ws:kategori>
       <ws:alamat>Desa Aek Sijorni</ws:alamat>
@@ -1804,7 +1804,7 @@
       <ws:dekatDengan>Tarutung</ws:dekatDengan>
       <ws:fasilitas>Kolam renang air panas, parkir, kamar ganti, warung makan</ws:fasilitas>
       <ws:aktivitas>Berendam air panas, terapi kesehatan, relaksasi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 </rdf:RDF>
 
 
