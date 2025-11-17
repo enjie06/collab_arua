@@ -4,7 +4,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
     xmlns:ws="http://example.com/wisata#">
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Lagundri</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Lagundri</ws:alamat>
@@ -19,9 +19,9 @@
       <ws:dekatDengan>Teluk Lagundri</ws:dekatDengan>
       <ws:fasilitas>Parkir, homestay, warung makan, penyewaan papan selancar</ws:fasilitas>
       <ws:aktivitas>Surfing, berenang, fotografi, menikmati sunset</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Tureloto</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Bawodesolo</ws:alamat>
@@ -36,9 +36,9 @@
       <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung sederhana</ws:fasilitas>
       <ws:aktivitas>Berenang, snorkeling, menikmati pemandangan batu karang</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Moale</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Kecamatan Moro'o</ws:alamat>
@@ -53,9 +53,9 @@
       <ws:dekatDengan>Pelabuhan Sirombu</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung tradisional</ws:fasilitas>
       <ws:aktivitas>Berenang, memancing, fotografi alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Toyolawa</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Toyolawa</ws:alamat>
@@ -70,9 +70,9 @@
       <ws:dekatDengan>Pulau Tello</ws:dekatDengan>
       <ws:fasilitas>Parkir, penginapan sederhana, warung makan</ws:fasilitas>
       <ws:aktivitas>Snorkeling, diving, berenang, fotografi bawah air</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Humogo</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Humogo</ws:alamat>
@@ -87,9 +87,9 @@
       <ws:dekatDengan>Gunung Sitoli</ws:dekatDengan>
       <ws:fasilitas>Parkir, area piknik</ws:fasilitas>
       <ws:aktivitas>Tracking, mandi di air terjun, fotografi alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Sirombu</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Kecamatan Sirombu</ws:alamat>
@@ -104,9 +104,9 @@
       <ws:dekatDengan>Pelabuhan Sirombu</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung seafood, penginapan</ws:fasilitas>
       <ws:aktivitas>Berenang, memancing, menikmati sunset, kuliner seafood</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Baloho</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Baloho</ws:alamat>
@@ -121,9 +121,9 @@
       <ws:dekatDengan>Pantai Lagundri</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung tradisional</ws:fasilitas>
       <ws:aktivitas>Berenang, snorkeling, fotografi pantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Baho Masiwa</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Masiwa</ws:alamat>
@@ -138,9 +138,9 @@
       <ws:dekatDengan>Desa Bawomataluo</ws:dekatDengan>
       <ws:fasilitas>Parkir, area istirahat</ws:fasilitas>
       <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Bukit Hilisimaetano</rdfs:label>
       <ws:kategori>Bukit</ws:kategori>
       <ws:alamat>Kecamatan Hilisimaetano</ws:alamat>
@@ -155,9 +155,9 @@
       <ws:dekatDengan>Pantai Lagundri</ws:dekatDengan>
       <ws:fasilitas>Parkir, spot foto</ws:fasilitas>
       <ws:aktivitas>Menikmati panorama, fotografi, melihat sunrise/sunset</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Laowö</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Laowö</ws:alamat>
@@ -172,9 +172,9 @@
       <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung lokal</ws:fasilitas>
       <ws:aktivitas>Berenang, bersantai, fotografi pantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pulau Asu</rdfs:label>
       <ws:kategori>Pulau</ws:kategori>
       <ws:alamat>Kecamatan Hibala</ws:alamat>
@@ -189,9 +189,9 @@
       <ws:dekatDengan>Pulau Bawa</ws:dekatDengan>
       <ws:fasilitas>Camping ground, pondok sederhana</ws:fasilitas>
       <ws:aktivitas>Diving, snorkeling, camping, fotografi bawah air, mengamati hiu</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pulau Bawa</rdfs:label>
       <ws:kategori>Pulau</ws:kategori>
       <ws:alamat>Kecamatan Hibala</ws:alamat>
@@ -206,9 +206,9 @@
       <ws:dekatDengan>Pulau Asu</ws:dekatDengan>
       <ws:fasilitas>Area camping, pondok sederhana</ws:fasilitas>
       <ws:aktivitas>Snorkeling, diving, camping, fotografi bawah air</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pulau Langu</rdfs:label>
       <ws:kategori>Pulau</ws:kategori>
       <ws:alamat>Kecamatan Hibala</ws:alamat>
@@ -223,9 +223,9 @@
       <ws:dekatDengan>Pulau Bawa</ws:dekatDengan>
       <ws:fasilitas>Area camping, spot snorkeling</ws:fasilitas>
       <ws:aktivitas>Snorkeling, berenang, fotografi panorama pulau</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Goa Togindrawa</rdfs:label>
       <ws:kategori>Goa</ws:kategori>
       <ws:alamat>Desa Togindrawa</ws:alamat>
@@ -240,9 +240,9 @@
       <ws:dekatDengan>Kota Gunungsitoli</ws:dekatDengan>
       <ws:fasilitas>Parkir, pemandu wisata</ws:fasilitas>
       <ws:aktivitas>Eksplorasi goa, fotografi, wisata edukasi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Bozihona</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Bozihona</ws:alamat>
@@ -257,9 +257,9 @@
       <ws:dekatDengan>Pantai Sirombu</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung makan</ws:fasilitas>
       <ws:aktivitas>Berenang, memancing, menikmati sunset</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Fofosö</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Fofosö</ws:alamat>
@@ -274,9 +274,9 @@
       <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
       <ws:fasilitas>Parkir, penginapan, warung makan</ws:fasilitas>
       <ws:aktivitas>Surfing, berenang, fotografi pantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Sisobahili</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Sisobahili</ws:alamat>
@@ -291,9 +291,9 @@
       <ws:dekatDengan>Pulau Hinako</ws:dekatDengan>
       <ws:fasilitas>Parkir, homestay, warung seafood</ws:fasilitas>
       <ws:aktivitas>Berenang, snorkeling, kuliner seafood, fotografi</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Siwahili</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Siwahili</ws:alamat>
@@ -308,9 +308,9 @@
       <ws:dekatDengan>Gunung Sitoli</ws:dekatDengan>
       <ws:fasilitas>Parkir, area piknik</ws:fasilitas>
       <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Lologolu</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Lologolu</ws:alamat>
@@ -325,9 +325,9 @@
       <ws:dekatDengan>Pantai Lagundri</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung tradisional</ws:fasilitas>
       <ws:aktivitas>Berenang, bersantai, fotografi pantai</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Pantai Hoya</rdfs:label>
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Hoya</ws:alamat>
@@ -342,9 +342,9 @@
       <ws:dekatDengan>Pantai Sirombu</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung lokal</ws:fasilitas>
       <ws:aktivitas>Berenang, memancing, menikmati pemandangan</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 
-    <wisata>
+    <rdf:Description rdf:about="">
       <rdfs:label>Air Terjun Hiligino</rdfs:label>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Desa Hiligino</ws:alamat>
@@ -359,5 +359,5 @@
       <ws:dekatDengan>Desa Bawomataluo</ws:dekatDengan>
       <ws:fasilitas>Parkir, area istirahat</ws:fasilitas>
       <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam</ws:aktivitas>
-    </wisata>
+    </rdf:Description>
 </rdf:RDF>
