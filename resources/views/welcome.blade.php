@@ -161,7 +161,7 @@
                 <!-- Menu -->
                 <ul class="flex gap-10 text-white font-medium absolute left-1/2 -translate-x-1/2">
                     <li><a href="/" class="hover:text-gray-300 transition">Home</a></li>
-                    <li><a href="/wisata/page2" class="hover:text-gray-300 transition">Wisata</a></li>
+                    <li><a href="/wisata" class="hover:text-gray-300 transition">Wisata</a></li>
                     <li><a href="/about" class="hover:text-gray-300 transition">About</a></li>
                 </ul>
 
@@ -194,10 +194,10 @@
                     Setiap sudutnya menghadirkan pengalaman memukau yang menampilkan keindahan Indonesia yang sesungguhnya.
                 </p>
 
-                <button onclick="document.getElementById('wisata-section').scrollIntoView({ behavior: 'smooth' })"
-                    class="mt-8 bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-xl font-semibold flex items-center gap-3">
-                    Explore →
-                </button>
+               <a href="/wisata"
+                class="mt-8 bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-xl font-semibold flex items-center gap-3 inline-block">
+             Explore →
+                </a>
 
             </div>
 
@@ -248,88 +248,3 @@
         </div>
 
     </section>
-
-    <!-- =================================================== -->
-    <!--            12 FOTO + PAGINATION                     -->
-    <!-- =================================================== -->
-
-    <section id="wisata-section" class="w-full py-24 px-16 bg-[#0B1F33]">
-
-        <h2 class="text-4xl font-bold mb-12 text-center">Wisata Sumatera Utara</h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            @for($i = 1; $i <= 12; $i++)
-                <div class="w-full h-56 bg-white/5 rounded-xl overflow-hidden border border-white/10 shadow-lg">
-                    <img src="/images/wisata{{ $i }}.jpg"
-                         class="w-full h-full object-cover"
-                         alt="Foto Wisata {{ $i }}">
-                </div>
-            @endfor
-        </div>
-
-        <div class="flex justify-center mt-12 gap-4 text-lg">
-            <a href="/" class="px-4 py-2 bg-blue-600 rounded-lg">1</a>
-            <a href="/wisata/page2" class="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg">2</a>
-            <a href="/wisata/page3" class="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg">3</a>
-            <a href="/wisata/page4" class="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg">4</a>
-        </div>
-
-    </section>
-
-    <script>
-        let currentSlide = 0;
-        const totalSlides = 3;
-        const carousel = document.getElementById('categoryCarousel');
-        const dots = document.querySelectorAll('.carousel-dot');
-
-        function updateCarousel() {
-            const slideWidth = document.querySelector('.carousel-item').offsetWidth + 20;
-            carousel.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-            
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentSlide);
-            });
-        }
-
-        function moveCarousel(direction) {
-            currentSlide += direction;
-            
-            if (currentSlide < 0) {
-                currentSlide = totalSlides - 1;
-            } else if (currentSlide >= totalSlides) {
-                currentSlide = 0;
-            }
-            
-            updateCarousel();
-        }
-
-        function goToSlide(slideIndex) {
-            currentSlide = slideIndex;
-            updateCarousel();
-        }
-
-        // Touch swipe
-        let startX = 0;
-
-        carousel.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].clientX;
-        });
-
-        carousel.addEventListener('touchend', (e) => {
-            const endX = e.changedTouches[0].clientX;
-            const diff = startX - endX;
-            
-            if (Math.abs(diff) > 30) {
-                if (diff > 0) {
-                    moveCarousel(1);
-                } else {
-                    moveCarousel(-1);
-                }
-            }
-        });
-
-        updateCarousel();
-    </script>
-
-</body>
-</html>
