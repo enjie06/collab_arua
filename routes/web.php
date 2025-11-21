@@ -18,17 +18,6 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/wisata/page2', function () {
-    return view('pages.wisata-page2');
-});
-
-Route::get('/wisata/page3', function () {
-    return view('pages.wisata-page3');
-});
-
-Route::get('/wisata/page4', function () {
-    return view('pages.wisata-page4');
-});
 Route::get('/search', function (Request $request) {
     $query = $request->get('q');
     // Untuk sementara kita redirect ke home dulu
