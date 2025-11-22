@@ -282,7 +282,7 @@
                         </div>
 
                         <div class="team-card">
-                            <img src="{{ asset('images/team/member3.jpg') }}" alt="Nama Anggota 3" class="team-photo">
+                            <img src="{{ asset('images/member3.jpg') }}" alt="Nama Anggota 3" class="team-photo">
                             <h3 class="team-name">Vina Permata Sari</h3>
                         </div>
                     </div>
@@ -295,7 +295,7 @@
                         </div>
 
                         <div class="team-card">
-                            <img src="{{ asset('images/team/member5.jpg') }}" alt="Nama Anggota 5" class="team-photo">
+                            <img src="{{ asset('images/member5.jpg') }}" alt="Nama Anggota 5" class="team-photo">
                             <h3 class="team-name">Natali Desi Sembiring</h3>
                         </div>
                     </div>
