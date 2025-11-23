@@ -2,195 +2,206 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:ws="http://example.com/wisatasumut#"
     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
-    xmlns:ws="http://example.com/wisata#">
-    <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/south-nias-regency/lagundri-beach-south-nias-137953997/">
-      <rdfs:label>Pantai Lagundri</rdfs:label>
-      <ws:kategori>Pantai</ws:kategori>
-      <ws:alamat>Desa Lagundri</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>-0.7619</geo:latitude>
-      <geo:longitude>97.7742</geo:longitude>
-      <ws:hargaTiket>Rp 5.000</hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>06:00</ws:jamBuka>
-      <ws:jamTutup>18:00</ws:jamTutup>
-      <ws:dekatDengan>Teluk Lagundri</ws:dekatDengan>
-      <ws:fasilitas>Parkir, homestay, warung makan, penyewaan papan selancar</ws:fasilitas>
-      <ws:aktivitas>Surfing, berenang, fotografi, menikmati sunset</ws:aktivitas>
-    </rdf:Description>
+    xmlns:graph="http://example.com/graph/">
+      
+      <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/south-nias-regency/lagundri-beach-south-nias-137953997/" rdf:graph="http://example.com/graph/alam">
+        <rdfs:label>Pantai Lagundri</rdfs:label>
+        <ws:jenisWisata>Alam</ws:jenisWisata>
+        <ws:kategori>Pantai</ws:kategori>
+        <ws:alamat>Desa Lagundri, Kecamatan Teluk Dalam</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>-0.7619</geo:latitude>
+        <geo:longitude>97.7742</geo:longitude>
+        <ws:hargaTiket>Rp 5.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>06:00</ws:jamBuka>
+        <ws:jamTutup>18:00</ws:jamTutup>
+        <ws:dekatDengan>Teluk Lagundri</ws:dekatDengan>
+        <ws:fasilitas>Parkir, homestay, warung makan, penyewaan papan selancar</ws:fasilitas>
+        <ws:aktivitas>Surfing, berenang, fotografi, menikmati sunset</ws:aktivitas>
+      </rdf:Description>
 
-    <rdf:Description rdf:about="https://www.kepulauannias.com/pantai-tureloto-surga-tersembunyi-di-nias-utara">
-      <rdfs:label>Pantai Tureloto</rdfs:label>
-      <ws:kategori>Pantai</ws:kategori>
-      <ws:alamat>Desa Bawodesolo</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>-0.7333</geo:latitude>
-      <geo:longitude>97.8667</geo:longitude>
-      <hargaTiket>Rp 3.000</hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>07:00</ws:jamBuka>
-      <ws:jamTutup>17:00</ws:jamTutup>
-      <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
-      <ws:fasilitas>Parkir, warung sederhana</ws:fasilitas>
-      <ws:aktivitas>Berenang, snorkeling, menikmati pemandangan batu karang</ws:aktivitas>
-    </rdf:Description>
+      <rdf:Description rdf:about="https://www.kepulauannias.com/pantai-tureloto-surga-tersembunyi-di-nias-utara" rdf:graph="http://example.com/graph/alam">
+        <rdfs:label>Pantai Tureloto</rdfs:label>
+        <ws:jenisWisata>Alam</ws:jenisWisata>
+        <ws:kategori>Pantai</ws:kategori>
+        <ws:alamat>Desa Bawodesolo, Kecamatan Teluk Dalam</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>-0.7333</geo:latitude>
+        <geo:longitude>97.8667</geo:longitude>
+        <ws:hargaTiket>Rp 3.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>07:00</ws:jamBuka>
+        <ws:jamTutup>17:00</ws:jamTutup>
+        <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
+        <ws:fasilitas>Parkir, warung sederhana</ws:fasilitas>
+        <ws:aktivitas>Berenang, snorkeling, menikmati pemandangan batu karang</ws:aktivitas>
+      </rdf:Description>
 
-    <rdf:Description rdf:about="https://rri.co.id/sibolga/hiburan/1609968/pantai-moale-surga-kecil-di-ujung-nias-selatan">
-      <rdfs:label>Pantai Moale</rdfs:label>
-      <ws:kategori>Pantai</ws:kategori>
-      <ws:alamat>Kecamatan Moro'o</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias Barat</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>1.0333</geo:latitude>
-      <geo:longitude>97.4833</geo:longitude>
-      <hargaTiket>Rp 2.000</hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>06:00</ws:jamBuka>
-      <ws:jamTutup>18:00</ws:jamTutup>
-      <ws:dekatDengan>Pelabuhan Sirombu</ws:dekatDengan>
-      <ws:fasilitas>Parkir, warung tradisional</ws:fasilitas>
-      <ws:aktivitas>Berenang, memancing, fotografi alam</ws:aktivitas>
-    </rdf:Description>
+      <rdf:Description rdf:about="https://rri.co.id/sibolga/hiburan/1609968/pantai-moale-surga-kecil-di-ujung-nias-selatan" rdf:graph="http://example.com/graph/alam">
+        <rdfs:label>Pantai Moale</rdfs:label>
+        <ws:jenisWisata>Alam</ws:jenisWisata>
+        <ws:kategori>Pantai</ws:kategori>
+        <ws:alamat>Kecamatan Moro'o</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Nias Barat</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>1.0333</geo:latitude>
+        <geo:longitude>97.4833</geo:longitude>
+        <ws:hargaTiket>Rp 2.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>06:00</ws:jamBuka>
+        <ws:jamTutup>18:00</ws:jamTutup>
+        <ws:dekatDengan>Pelabuhan Sirombu</ws:dekatDengan>
+        <ws:fasilitas>Parkir, warung tradisional</ws:fasilitas>
+        <ws:aktivitas>Berenang, memancing, fotografi alam</ws:aktivitas>
+      </rdf:Description>
 
-    <rdf:Description rdf:about="https://gunungsitolikota.go.id/2019/07/wajah-baru-objek-wisata-air-terjun-humogo/">
-      <rdfs:label>Air Terjun Humogo</rdfs:label>
-      <ws:kategori>Air Terjun</ws:kategori>
-      <ws:alamat>Desa Humogo</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>1.0667</geo:latitude>
-      <geo:longitude>97.6167</geo:longitude>
-      <hargaTiket>Rp 5.000</hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>08:00</ws:jamBuka>
-      <ws:jamTutup>16:00</ws:jamTutup>
-      <ws:dekatDengan>Gunung Sitoli</ws:dekatDengan>
-      <ws:fasilitas>Parkir, area piknik</ws:fasilitas>
-      <ws:aktivitas>Tracking, mandi di air terjun, fotografi alam</ws:aktivitas>
-    </rdf:Description>
+      <rdf:Description rdf:about="https://gunungsitolikota.go.id/2019/07/wajah-baru-objek-wisata-air-terjun-humogo/" rdf:graph="http://example.com/graph/alam">
+        <rdfs:label>Air Terjun Humogo</rdfs:label>
+        <ws:jenisWisata>Alam</ws:jenisWisata>
+        <ws:kategori>Air Terjun</ws:kategori>
+        <ws:alamat>Desa Humogo, Kecamatan Gunungsitoli</ws:alamat>
+        <ws:kotaKabupaten>Kota Gunungsitoli</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>1.2833</geo:latitude>
+        <geo:longitude>97.6167</geo:longitude>
+        <ws:hargaTiket>Rp 5.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>08:00</ws:jamBuka>
+        <ws:jamTutup>16:00</ws:jamTutup>
+        <ws:dekatDengan>Kota Gunungsitoli</ws:dekatDengan>
+        <ws:fasilitas>Parkir, area piknik</ws:fasilitas>
+        <ws:aktivitas>Tracking, mandi di air terjun, fotografi alam</ws:aktivitas>
+      </rdf:Description>
 
-    <rdf:Description rdf:about="https://northsumatrainvest.id/id/tourism/sirombu-beach">
-      <rdfs:label>Pantai Sirombu</rdfs:label>
-      <ws:kategori>Pantai</ws:kategori>
-      <ws:alamat>Kecamatan Sirombu</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias Barat</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>0.9333</geo:latitude>
-      <geo:longitude>97.4500</geo:longitude>
-      <hargaTiket>Rp 3.000</hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>06:00</ws:jamBuka>
-      <ws:jamTutup>18:00</ws:jamTutup>
-      <ws:dekatDengan>Pelabuhan Sirombu</ws:dekatDengan>
-      <ws:fasilitas>Parkir, warung seafood, penginapan</ws:fasilitas>
-      <ws:aktivitas>Berenang, memancing, menikmati sunset, kuliner seafood</ws:aktivitas>
-    </rdf:Description>
+      <rdf:Description rdf:about="https://northsumatrainvest.id/id/tourism/sirombu-beach" rdf:graph="http://example.com/graph/alam">
+        <rdfs:label>Pantai Sirombu</rdfs:label>
+        <ws:jenisWisata>Alam</ws:jenisWisata>
+        <ws:kategori>Pantai</ws:kategori>
+        <ws:alamat>Kecamatan Sirombu</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Nias Barat</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>0.9333</geo:latitude>
+        <geo:longitude>97.4500</geo:longitude>
+        <ws:hargaTiket>Rp 3.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>06:00</ws:jamBuka>
+        <ws:jamTutup>18:00</ws:jamTutup>
+        <ws:dekatDengan>Pelabuhan Sirombu</ws:dekatDengan>
+        <ws:fasilitas>Parkir, warung seafood, penginapan</ws:fasilitas>
+        <ws:aktivitas>Berenang, memancing, menikmati sunset, kuliner seafood</ws:aktivitas>
+      </rdf:Description>
 
-    <rdf:Description rdf:about="">
-      <rdfs:label>Air Terjun Baho Masiwa</rdfs:label>
-      <ws:kategori>Air Terjun</ws:kategori>
-      <ws:alamat>Desa Masiwa</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>-0.7167</geo:latitude>
-      <geo:longitude>97.8333</geo:longitude>
-      <hargaTiket>Rp 4.000</hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>08:00</ws:jamBuka>
-      <ws:jamTutup>16:00</ws:jamTutup>
-      <ws:dekatDengan>Desa Bawomataluo</ws:dekatDengan>
-      <ws:fasilitas>Parkir, area istirahat</ws:fasilitas>
-      <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam</ws:aktivitas>
-    </rdf:Description>
+      <rdf:Description rdf:about="https://www.niasselatankab.go.id/wisata/air-terjun-baho-masiwa" rdf:graph="http://example.com/graph/alam">
+        <rdfs:label>Air Terjun Baho Masiwa</rdfs:label>
+        <ws:jenisWisata>Alam</ws:jenisWisata>
+        <ws:kategori>Air Terjun</ws:kategori>
+        <ws:alamat>Desa Masiwa, Kecamatan Fanayama</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>0.5833</geo:latitude>
+        <geo:longitude>97.8167</geo:longitude>
+        <ws:hargaTiket>Rp 4.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>08:00</ws:jamBuka>
+        <ws:jamTutup>16:00</ws:jamTutup>
+        <ws:dekatDengan>Desa Bawomataluo</ws:dekatDengan>
+        <ws:fasilitas>Parkir, area istirahat</ws:fasilitas>
+        <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam</ws:aktivitas>
+      </rdf:Description>
 
-    <rdf:Description rdf:about="">
-      <rdfs:label>Bukit Hilisimaetano</rdfs:label>
-      <ws:kategori>Bukit</ws:kategori>
-      <ws:alamat>Kecamatan Hilisimaetano</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>-0.6000</geo:latitude>
-      <geo:longitude>97.7667</geo:longitude>
-      <hargaTiket>Rp 3.000</hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>06:00</ws:jamBuka>
-      <ws:jamTutup>18:00</ws:jamTutup>
-      <ws:dekatDengan>Pantai Lagundri</ws:dekatDengan>
-      <ws:fasilitas>Parkir, spot foto</ws:fasilitas>
-      <ws:aktivitas>Menikmati panorama, fotografi, melihat sunrise/sunset</ws:aktivitas>
-    </rdf:Description>
+      <rdf:Description rdf:about="https://www.niasselatankab.go.id/wisata/bukit-hilisimaetano" rdf:graph="http://example.com/graph/alam">
+        <rdfs:label>Bukit Hilisimaetano</rdfs:label>
+        <ws:jenisWisata>Alam</ws:jenisWisata>
+        <ws:kategori>Bukit</ws:kategori>
+        <ws:alamat>Kecamatan Hilisimaetano</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>0.6000</geo:latitude>
+        <geo:longitude>97.7667</geo:longitude>
+        <ws:hargaTiket>Rp 3.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>06:00</ws:jamBuka>
+        <ws:jamTutup>18:00</ws:jamTutup>
+        <ws:dekatDengan>Pantai Lagundri</ws:dekatDengan>
+        <ws:fasilitas>Parkir, spot foto</ws:fasilitas>
+        <ws:aktivitas>Menikmati panorama, fotografi, melihat sunrise/sunset</ws:aktivitas>
+      </rdf:Description>
 
-    <rdf:Description rdf:about="">
-      <rdfs:label>Pantai Laowö</rdfs:label>
-      <ws:kategori>Pantai</ws:kategori>
-      <ws:alamat>Desa Laowö</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>-0.6833</geo:latitude>
-      <geo:longitude>97.7833</geo:longitude>
-      <hargaTiket>Rp 2.000</hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>07:00</ws:jamBuka>
-      <ws:jamTutup>17:00</ws:jamTutup>
-      <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
-      <ws:fasilitas>Parkir, warung lokal</ws:fasilitas>
-      <ws:aktivitas>Berenang, bersantai, fotografi pantai</ws:aktivitas>
-    </rdf:Description>
+      <rdf:Description rdf:about="https://www.niasselatankab.go.id/wisata/pantai-laowo" rdf:graph="http://example.com/graph/alam">
+        <rdfs:label>Pantai Laowö</rdfs:label>
+        <ws:jenisWisata>Alam</ws:jenisWisata>
+        <ws:kategori>Pantai</ws:kategori>
+        <ws:alamat>Desa Laowö, Kecamatan Teluk Dalam</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>-0.6833</geo:latitude>
+        <geo:longitude>97.7833</geo:longitude>
+        <ws:hargaTiket>Rp 2.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>07:00</ws:jamBuka>
+        <ws:jamTutup>17:00</ws:jamTutup>
+        <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
+        <ws:fasilitas>Parkir, warung lokal</ws:fasilitas>
+        <ws:aktivitas>Berenang, bersantai, fotografi pantai</ws:aktivitas>
+      </rdf:Description>
 
-    <rdf:Description rdf:about="https://mindtrip.ai/attraction/pulau-asu-sumatra/pulau-asu/at-AQMJkxNs">
-      <rdfs:label>Pulau Asu</rdfs:label>
-      <ws:kategori>Pulau</ws:kategori>
-      <ws:alamat>Kecamatan Hibala</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>-0.0833</geo:latitude>
-      <geo:longitude>98.3000</geo:longitude>
-      <hargaTiket>Rp 15.000</hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>06:00</ws:jamBuka>
-      <ws:jamTutup>17:00</ws:jamTutup>
-      <ws:dekatDengan>Pulau Bawa</ws:dekatDengan>
-      <ws:fasilitas>Camping ground, pondok sederhana</ws:fasilitas>
-      <ws:aktivitas>Diving, snorkeling, camping, fotografi bawah air, mengamati hiu</ws:aktivitas>
-    </rdf:Description>
+      <rdf:Description rdf:about="https://mindtrip.ai/attraction/pulau-asu-sumatra/pulau-asu/at-AQMJkxNs" rdf:graph="http://example.com/graph/alam">
+        <rdfs:label>Pulau Asu</rdfs:label>
+        <ws:jenisWisata>Alam</ws:jenisWisata>
+        <ws:kategori>Pulau</ws:kategori>
+        <ws:alamat>Kecamatan Hibala</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>0.0833</geo:latitude>
+        <geo:longitude>98.3000</geo:longitude>
+        <ws:hargaTiket>Rp 15.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>06:00</ws:jamBuka>
+        <ws:jamTutup>17:00</ws:jamTutup>
+        <ws:dekatDengan>Pulau Bawa</ws:dekatDengan>
+        <ws:fasilitas>Camping ground, pondok sederhana</ws:fasilitas>
+        <ws:aktivitas>Diving, snorkeling, camping, fotografi bawah air, mengamati hiu</ws:aktivitas>
+      </rdf:Description>
 
+      <rdf:Description rdf:about="https://gunungsitolikota.go.id/2019/07/togi-ndrawa-wisata-gua-bersejarah-di-kota-gunungsitoli/" rdf:graph="http://example.com/graph/alam">
+        <rdfs:label>Goa Togindrawa</rdfs:label>
+        <ws:jenisWisata>Alam</ws:jenisWisata>
+        <ws:kategori>Goa</ws:kategori>
+        <ws:alamat>Desa Togindrawa, Kecamatan Gunungsitoli</ws:alamat>
+        <ws:kotaKabupaten>Kota Gunungsitoli</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>1.2833</geo:latitude>
+        <geo:longitude>97.6167</geo:longitude>
+        <ws:hargaTiket>Rp 7.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>08:00</ws:jamBuka>
+        <ws:jamTutup>16:00</ws:jamTutup>
+        <ws:dekatDengan>Kota Gunungsitoli</ws:dekatDengan>
+        <ws:fasilitas>Parkir, pemandu wisata</ws:fasilitas>
+        <ws:aktivitas>Eksplorasi goa, fotografi, wisata edukasi</ws:aktivitas>
+      </rdf:Description>
 
-    <rdf:Description rdf:about="https://gunungsitolikota.go.id/2019/07/togi-ndrawa-wisata-gua-bersejarah-di-kota-gunungsitoli/">
-      <rdfs:label>Goa Togindrawa</rdfs:label>
-      <ws:kategori>Goa</ws:kategori>
-      <ws:alamat>Desa Togindrawa</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>1.1333</geo:latitude>
-      <geo:longitude>97.6167</geo:longitude>
-      <hargaTiket>Rp 7.000</hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>08:00</ws:jamBuka>
-      <ws:jamTutup>16:00</ws:jamTutup>
-      <ws:dekatDengan>Kota Gunungsitoli</ws:dekatDengan>
-      <ws:fasilitas>Parkir, pemandu wisata</ws:fasilitas>
-      <ws:aktivitas>Eksplorasi goa, fotografi, wisata edukasi</ws:aktivitas>
-    </rdf:Description>
+      <rdf:Description rdf:about="https://www.kompasiana.com/iwan02/6533e60b110fce037f7fddb2/pantai-bozihona-objek-wisata-yang-eksis-kembali-di-kabupaten-nias" rdf:graph="http://example.com/graph/alam">
+        <rdfs:label>Pantai Bozihona</rdfs:label>
+        <ws:jenisWisata>Alam</ws:jenisWisata>
+        <ws:kategori>Pantai</ws:kategori>
+        <ws:alamat>Desa Bozihona, Kecamatan Sirombu</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Nias Barat</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>0.9667</geo:latitude>
+        <geo:longitude>97.4833</geo:longitude>
+        <ws:hargaTiket>Rp 3.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>07:00</ws:jamBuka>
+        <ws:jamTutup>18:00</ws:jamTutup>
+        <ws:dekatDengan>Pantai Sirombu</ws:dekatDengan>
+        <ws:fasilitas>Parkir, warung makan</ws:fasilitas>
+        <ws:aktivitas>Berenang, memancing, menikmati sunset</ws:aktivitas>
+      </rdf:Description>
 
-    <rdf:Description rdf:about="https://www.kompasiana.com/iwan02/6533e60b110fce037f7fddb2/pantai-bozihona-objek-wisata-yang-eksis-kembali-di-kabupaten-nias">
-      <rdfs:label>Pantai Bozihona</rdfs:label>
-      <ws:kategori>Pantai</ws:kategori>
-      <ws:alamat>Desa Bozihona</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias Barat</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>0.9667</geo:latitude>
-      <geo:longitude>97.4833</geo:longitude>
-      <hargaTiket>Rp 3.000</hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>07:00</ws:jamBuka>
-      <ws:jamTutup>18:00</ws:jamTutup>
-      <ws:dekatDengan>Pantai Sirombu</ws:dekatDengan>
-      <ws:fasilitas>Parkir, warung makan</ws:fasilitas>
-      <ws:aktivitas>Berenang, memancing, menikmati sunset</ws:aktivitas>
-    </rdf:Description>
-
-
-    
+</rdf:RDF>
