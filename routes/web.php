@@ -53,3 +53,12 @@ Route::get('/test-sparql', function() {
         ]);
     }
 });
+
+Route::get('/debug-duplicate', function() {
+    $sparqlService = new \App\Services\SparqlService();
+    $results = $sparqlService->debugDuplicateData('pantai');
+    
+    echo "<pre>";
+    print_r($results);
+    echo "</pre>";
+});
