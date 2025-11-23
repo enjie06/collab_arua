@@ -135,31 +135,12 @@
       <ws:aktivitas>Tracking, Camping, Fotografi</ws:aktivitas>
     </rdf:Description>
 
-    <!-- 🔧 DIPERBAIKI: Koordinat -->
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Danau_Linting">
-      <rdfs:label>Danau Linting</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Danau</ws:kategori>
-      <ws:alamat>Desa Sibunga-bunga Hilir, Kec. STM Hulu</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Deli Serdang</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>3.4231</geo:latitude>
-      <geo:longitude>98.7452</geo:longitude>
-      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>08:00</ws:jamBuka>
-      <ws:jamTutup>18:00</ws:jamTutup>
-      <ws:dekatDengan>Air Terjun Dua Warna</ws:dekatDengan>
-      <ws:fasilitas>Parkir, Warung, Toilet</ws:fasilitas>
-      <ws:aktivitas>Berenang, Foto, Bersantai</ws:aktivitas>
-    </rdf:Description>
-
     <!-- ✅ SUDAH BENAR -->
     <rdf:Description rdf:about="https://www.tapanulitengahkab.go.id/wisata/pantai-pandan">
       <rdfs:label>Pantai Pandan</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
-      <ws:alamat>Jl. Sisingamangaraja Jl. Padang Sidempuan, Kec. Pandan</ws:alamat>
+      <ws:alamat>Jl. Sibolga - Padang Sidempuan Kec. Pandan</ws:alamat>
       <ws:kotaKabupaten>Kabupaten Tapanuli Tengah</ws:kotaKabupaten>
       <ws:provinsi>Sumatera Utara</ws:provinsi>
       <geo:latitude>1.6933702718091868</geo:latitude>
@@ -267,45 +248,7 @@
       <ws:fasilitas>Gazebo, Area Bermain, Restoran, Penginapan</ws:fasilitas>
       <ws:aktivitas>Bermain Air, Bersantai, Menikmati Sunset</ws:aktivitas>
     </rdf:Description>
-
-    <!-- 🔧 DIPERBAIKI: Link dan koordinat -->
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Gunung_Sibuatan">
-      <rdfs:label>Gunung Sibuatan</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Gunung</ws:kategori>
-      <ws:alamat>Kecamatan Merek, Kabupaten Karo</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Karo</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>2.9856</geo:latitude>
-      <geo:longitude>98.4892</geo:longitude>
-      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>24 Jam</ws:jamBuka>
-      <ws:jamTutup>-</ws:jamTutup>
-      <ws:dekatDengan>Gunung Sinabung</ws:dekatDengan>
-      <ws:fasilitas>Tempat parkir, basecamp, warung</ws:fasilitas>
-      <ws:aktivitas>Mendaki, berkemah, fotografi</ws:aktivitas>
-    </rdf:Description>
-
-    <!-- 🔧 DIPERBAIKI: Koordinat -->
-    <rdf:Description rdf:about="https://jejakpiknik.com/air-terjun-di-danau-toba/#1_Situmurun%E2%9D%A4%EF%B8%8F">
-      <rdfs:label>Air Terjun Situmurun Binangalom</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Air Terjun</ws:kategori>
-      <ws:alamat>Desa Binangalom, Kecamatan Habinsaran, Kabupaten Toba</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Toba</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>2.4012</geo:latitude>
-      <geo:longitude>98.9567</geo:longitude>
-      <ws:hargaTiket>Gratis</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>09:00</ws:jamBuka>
-      <ws:jamTutup>17:00</ws:jamTutup>
-      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
-      <ws:fasilitas>Perahu Sewa, Spot Foto</ws:fasilitas>
-      <ws:aktivitas>Naik Perahu, Berenang, Fotografi</ws:aktivitas>
-    </rdf:Description>
-
+   
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Danau_Sidihoni">
       <rdfs:label>Danau Sidihoni</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
@@ -340,42 +283,6 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
       <ws:fasilitas>Spot Foto, Warung, Area Parkir</ws:fasilitas>
       <ws:aktivitas>Fotografi, Bersantai</ws:aktivitas>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bukit_Gajah_Bobok">
-      <rdfs:label>Bukit Gajah Bobok</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Bukit</ws:kategori>
-      <ws:alamat>Desa Situnggaling, Kecamatan Merek, Kabupaten Karo</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Karo</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>2.9715</geo:latitude>
-      <geo:longitude>98.4651</geo:longitude>
-      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>24 Jam</ws:jamBuka>
-      <ws:jamTutup>-</ws:jamTutup>
-      <ws:dekatDengan>Gunung Sibuatan</ws:dekatDengan>
-      <ws:fasilitas>Parkir, Area Camping</ws:fasilitas>
-      <ws:aktivitas>Camping, Hiking, Menikmati Sunrise</ws:aktivitas>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Lae_Pendaroh">
-      <rdfs:label>Air Terjun Lae Pendaroh</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Air Terjun</ws:kategori>
-      <ws:alamat>Desa Lae Hole, Kecamatan Sitellu Tali Urang Julu, Kabupaten Dairi</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Dairi</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>2.8445</geo:latitude>
-      <geo:longitude>98.2532</geo:longitude>
-      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>08:00</ws:jamBuka>
-      <ws:jamTutup>17:00</ws:jamTutup>
-      <ws:dekatDengan>Air Terjun Situmurun</ws:dekatDengan>
-      <ws:fasilitas>Parkir, Warung</ws:fasilitas>
-      <ws:aktivitas>Berenang, Fotografi</ws:aktivitas>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Danau_Siombak">
@@ -414,23 +321,6 @@
       <ws:aktivitas>Fotografi, Trekking</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Taman_Alam_Lumbini">
-      <rdfs:label>Taman Alam Lumbini</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Taman</ws:kategori>
-      <ws:alamat>Desa Tongkoh, Kecamatan Dolat Rayat, Kabupaten Karo</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Karo</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>3.1737</geo:latitude>
-      <geo:longitude>98.5183</geo:longitude>
-      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>08:00</ws:jamBuka>
-      <ws:jamTutup>17:00</ws:jamTutup>
-      <ws:dekatDengan>Gunung Sibayak</ws:dekatDengan>
-      <ws:fasilitas>Toilet, Area Parkir, Restoran</ws:fasilitas>
-      <ws:aktivitas>Wisata Religi, Fotografi, Meditasi</ws:aktivitas>
-    </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Janji">
       <rdfs:label>Air Terjun Janji</rdfs:label>
@@ -520,42 +410,6 @@
       <ws:dekatDengan>Air Terjun Linggahara</ws:dekatDengan>
       <ws:fasilitas>Basecamp, Parkir</ws:fasilitas>
       <ws:aktivitas>Mendaki, Camping</ws:aktivitas>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bukit_Gundaling">
-      <rdfs:label>Bukit Gundaling</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Bukit</ws:kategori>
-      <ws:alamat>Kecamatan Berastagi, Kabupaten Karo</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Karo</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>3.1945</geo:latitude>
-      <geo:longitude>98.5079</geo:longitude>
-      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>07:00</ws:jamBuka>
-      <ws:jamTutup>18:00</ws:jamTutup>
-      <ws:dekatDengan>Gunung Sibayak</ws:dekatDengan>
-      <ws:fasilitas>Kuda Tunggang, Taman, Warung</ws:fasilitas>
-      <ws:aktivitas>Menikmati Pemandangan, Berkuda</ws:aktivitas>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Mursala">
-      <rdfs:label>Air Terjun Mursala</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Air Terjun</ws:kategori>
-      <ws:alamat>Pulau Mursala, Kabupaten Tapanuli Tengah</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Tapanuli Tengah</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>1.7015</geo:latitude>
-      <geo:longitude>98.7482</geo:longitude>
-      <ws:hargaTiket>Rp20.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>08:00</ws:jamBuka>
-      <ws:jamTutup>17:00</ws:jamTutup>
-      <ws:dekatDengan>Pantai Kalangan</ws:dekatDengan>
-      <ws:fasilitas>Perahu, Pemandu Wisata</ws:fasilitas>
-      <ws:aktivitas>Menjelajah Pulau, Fotografi</ws:aktivitas>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Silangit">
@@ -684,24 +538,6 @@
       <ws:aktivitas>Menikmati Air Terjun, Fotografi Alam</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai_Pandan">
-      <rdfs:label>Pantai Pandan Sibolga</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Pantai</ws:kategori>
-      <ws:alamat>Jl. Sibolga - Padang Sidempuan No.92, Kec. Pandan</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Tapanuli Tengah</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>1.680265703046462</geo:latitude>
-      <geo:longitude>98.85021735542755</geo:longitude>
-      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>07:00</ws:jamBuka>
-      <ws:jamTutup>18:00</ws:jamTutup>
-      <ws:dekatDengan>Kota Sibolga</ws:dekatDengan>
-      <ws:fasilitas>Gazebo, Kamar Mandi, Warung, Parkir</ws:fasilitas>
-      <ws:aktivitas>Berenang, Bermain Pasir, Berfoto</ws:aktivitas>
-    </rdf:Description>
-
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai_Sorake">
       <rdfs:label>Pantai Sorake</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
@@ -720,44 +556,7 @@
       <ws:aktivitas>Berselancar, Berenang, Menikmati Sunset</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Nias">
-      <rdfs:label>Pantai Botohilitano</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Pantai</ws:kategori>
-      <ws:alamat>Desa Botohilitano</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>-0.5667</geo:latitude>
-      <geo:longitude>97.7833</geo:longitude>
-      <ws:hargaTiket>Rp 3.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>07:00</ws:jamBuka>
-      <ws:jamTutup>17:00</ws:jamTutup>
-      <ws:dekatDengan>Pantai Lagundri</ws:dekatDengan>
-      <ws:fasilitas>Parkir, warung makan</ws:fasilitas>
-      <ws:aktivitas>Berenang, snorkeling, fotografi pantai</ws:aktivitas>
-    </rdf:Description>    
-
-        <!-- Pakai Wikipedia Sumatera Utara -->
-    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/North_Sumatra">
-      <rdfs:label>Pantai Miga</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Pantai</ws:kategori>
-      <ws:alamat>Desa Miga</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias Barat</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>1.0333</geo:latitude>
-      <geo:longitude>97.4500</geo:longitude>
-      <ws:hargaTiket>Rp 2.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>07:00</ws:jamBuka>
-      <ws:jamTutup>17:00</ws:jamTutup>
-      <ws:dekatDengan>Pantai Sirombu</ws:dekatDengan>
-      <ws:fasilitas>Parkir, warung sederhana</ws:fasilitas>
-      <ws:aktivitas>Berenang, memancing, bersantai</ws:aktivitas>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://dbpedia.org/resource/Nias">
+    <rdf:Description rdf:about="https://www.kompasiana.com/java05_gheeyahoo.com/55281a17f17e6110178b458f/gawu-soyo-pantai-berpasir-merah-darah-di-afulu-nias-utara">
       <rdfs:label>Pantai Gawu Soyo</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -773,62 +572,6 @@
       <ws:dekatDengan>Pulau Hinako</ws:dekatDengan>
       <ws:fasilitas>Parkir, warung seafood</ws:fasilitas>
       <ws:aktivitas>Berenang, snorkeling, kuliner seafood</ws:aktivitas>
-    </rdf:Description>
-
-        <!-- Pakai Wikipedia Indonesia tentang Pantai -->
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai">
-      <rdfs:label>Pantai Siwalu Banua</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Pantai</ws:kategori>
-      <ws:alamat>Desa Siwalu Banua</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias Utara</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>1.3333</geo:latitude>
-      <geo:longitude>97.3667</geo:longitude>
-      <ws:hargaTiket>Rp 3.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>07:00</ws:jamBuka>
-      <ws:jamTutup>17:00</ws:jamTutup>
-      <ws:dekatDengan>Pantai Gawu Soyo</ws:dekatDengan>
-      <ws:fasilitas>Parkir, area piknik</ws:fasilitas>
-      <ws:aktivitas>Berenang, piknik keluarga, fotografi</ws:aktivitas>
-    </rdf:Description>
-
-        <!-- Pakai Wikipedia Air Terjun -->
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_terjun">
-      <rdfs:label>Air Terjun Luaha Ndroi</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Air Terjun</ws:kategori>
-      <ws:alamat>Desa Luaha Ndroi</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>1.1000</geo:latitude>
-      <geo:longitude>97.6167</geo:longitude>
-      <ws:hargaTiket>Rp 6.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>08:00</ws:jamBuka>
-      <ws:jamTutup>16:00</ws:jamTutup>
-      <ws:dekatDengan>Gunung Sitoli</ws:dekatDengan>
-      <ws:fasilitas>Parkir, area camping</ws:fasilitas>
-      <ws:aktivitas>Trekking, camping, mandi di air terjun</ws:aktivitas>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/north-nias-regency/pantai-marisa-136898707/">
-      <rdfs:label>Pantai Tuhemberua</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Pantai</ws:kategori>
-      <ws:alamat>Desa Tuhemberua</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias Utara</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>1.3833</geo:latitude>
-      <geo:longitude>97.3167</geo:longitude>
-      <ws:hargaTiket>Rp 3.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>07:00</ws:jamBuka>
-      <ws:jamTutup>17:00</ws:jamTutup>
-      <ws:dekatDengan>Pantai Lahewa</ws:dekatDengan>
-      <ws:fasilitas>Parkir, warung tradisional</ws:fasilitas>
-      <ws:aktivitas>Berenang, memancing, bersantai</ws:aktivitas>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://www.kompasiana.com/iwan02/5b98c026aeebe17c17627d43/pantai-hoya-objek-wisata-pantai-yang-indah-dan-tempat-outbond-yang-mengasikan-di-gunungsitoli">
@@ -1013,7 +756,7 @@
     </rdf:Description>
 
     <rdf:Description rdf:about="https://satyawinnie.com/air-terjun-mursala/">
-      <rdfs:label>Air Terjun Mursala Dua</rdfs:label>
+      <rdfs:label>Air Terjun Mursala</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
       <ws:alamat>Pulau Mursala, Kec. Tapian Nauli</ws:alamat>
