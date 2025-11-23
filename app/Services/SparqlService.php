@@ -13,9 +13,7 @@ class SparqlService
     public function __construct()
     {
         try {
-            // GUNAKAN 'arua' bukan 'wisatabaru'
             $this->sparqlClient = new Client('http://localhost:3030/arua/sparql');
-            
         } catch (Exception $e) {
             Log::error('Failed to initialize SPARQL client: ' . $e->getMessage());
             throw $e;
@@ -25,7 +23,6 @@ class SparqlService
     public function searchWisata($keyword)
     {
         try {
-            // Escape keyword untuk mencegah SPARQL injection
             $escapedKeyword = addslashes($keyword);
             
             $query = "
@@ -33,7 +30,7 @@ class SparqlService
                 PREFIX ws: <http://example.com/wisatasumut#>
                 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 
-                SELECT ?wisata ?label ?jenis ?kategori ?alamat ?kota ?latitude ?longitude
+                SELECT DISTINCT ?wisata ?label ?jenis ?kategori ?alamat ?kota ?latitude ?longitude
                 WHERE {
                     ?wisata rdfs:label ?label ;
                             ws:jenisWisata ?jenis ;
@@ -47,6 +44,7 @@ class SparqlService
                             contains(lcase(str(?kategori)), lcase(\"$escapedKeyword\")) ||
                             contains(lcase(str(?kota)), lcase(\"$escapedKeyword\")))
                 }
+                ORDER BY ?label
                 LIMIT 50
             ";
 
@@ -57,7 +55,7 @@ class SparqlService
 
         } catch (Exception $e) {
             Log::error('SPARQL search error: ' . $e->getMessage());
-            return []; // Return empty array instead of throwing
+            return [];
         }
     }
 
@@ -71,7 +69,7 @@ class SparqlService
                 PREFIX ws: <http://example.com/wisatasumut#>
                 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 
-                SELECT ?wisata ?label ?jenis ?kategori ?alamat ?kota ?latitude ?longitude
+                SELECT DISTINCT ?wisata ?label ?jenis ?kategori ?alamat ?kota ?latitude ?longitude
                 WHERE {
                     ?wisata rdfs:label ?label ;
                             ws:jenisWisata ?jenis ;
@@ -83,6 +81,7 @@ class SparqlService
                     
                     FILTER (lcase(str(?kategori)) = lcase(\"$escapedKategori\"))
                 }
+                ORDER BY ?label
             ";
 
             return $this->sparqlClient->query($query);
@@ -101,7 +100,7 @@ class SparqlService
                 PREFIX ws: <http://example.com/wisatasumut#>
                 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 
-                SELECT ?wisata ?label ?jenis ?kategori ?alamat ?kota ?latitude ?longitude
+                SELECT DISTINCT ?wisata ?label ?jenis ?kategori ?alamat ?kota ?latitude ?longitude
                 WHERE {
                     ?wisata rdfs:label ?label ;
                             ws:jenisWisata ?jenis ;
@@ -122,7 +121,6 @@ class SparqlService
         }
     }
 
-    // Test connection method
     public function testConnection()
     {
         try {
@@ -132,6 +130,46 @@ class SparqlService
         } catch (Exception $e) {
             Log::error('SPARQL connection test failed: ' . $e->getMessage());
             return false;
+        }
+    }
+
+    // Debug method untuk cek duplikat
+    public function debugDuplicateData($keyword = 'pantai')
+    {
+        try {
+            $escapedKeyword = addslashes($keyword);
+            
+            $query = "
+                PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                PREFIX ws: <http://example.com/wisatasumut#>
+
+                SELECT ?wisata ?label ?alamat (COUNT(?wisata) as ?count)
+                WHERE {
+                    ?wisata rdfs:label ?label ;
+                            ws:alamat ?alamat .
+                    
+                    FILTER (contains(lcase(str(?label)), lcase(\"$escapedKeyword\")))
+                }
+                GROUP BY ?wisata ?label ?alamat
+                ORDER BY DESC(?count)
+            ";
+
+            $results = $this->sparqlClient->query($query);
+            
+            $debug = [];
+            foreach ($results as $result) {
+                $debug[] = [
+                    'uri' => $result->wisata->getUri(),
+                    'label' => $result->label->getValue(),
+                    'alamat' => $result->alamat->getValue(),
+                    'count' => $result->count->getValue()
+                ];
+            }
+            
+            return $debug;
+
+        } catch (Exception $e) {
+            return ['error' => $e->getMessage()];
         }
     }
 }
