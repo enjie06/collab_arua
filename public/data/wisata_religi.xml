@@ -2,11 +2,13 @@
 <rdf:RDF
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:ws="http://example.com/wisatasumut#"
   xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
-  xmlns:ws="http://example.com/wisataReligi#">
+  xmlns:graph="http://example.com/graph/">
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Masjid_Raya_Al-Mashun">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Masjid_Raya_Al-Mashun" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Masjid Raya Al-Mashun</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Masjid</ws:kategori>
       <ws:alamat>Jl. Sisingamangaraja No.74c, Mesjid, Kec. Medan Kota</ws:alamat>
       <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
@@ -22,8 +24,9 @@
       <ws:dekatDengan>Istana Maimun</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://ceritamedan.com/masjid-al-osmani-masjid-tertua-kesultanan-deli/">
+    <rdf:Description rdf:about="https://ceritamedan.com/masjid-al-osmani-masjid-tertua-kesultanan-deli/" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Masjid Al-Osmani</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Masjid</ws:kategori>
       <ws:alamat>Jl. Kol. Yos Sudarso Km. 19, Kec. Medan Labuhan</ws:alamat>
       <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
@@ -39,8 +42,9 @@
       <ws:dekatDengan>Pelabuhan Belawan</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://idalamat.com/alamat/143606/masjid-agung-binjai-binjai-sumatera-utara">
+    <rdf:Description rdf:about="https://idalamat.com/alamat/143606/masjid-agung-binjai-binjai-sumatera-utara" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Masjid Agung Binjai</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Masjid</ws:kategori>
       <ws:alamat>Jl. Soekarno Hatta No.1, Kec. Binjai Timur</ws:alamat>
       <ws:kotaKabupaten>Kota Binjai</ws:kotaKabupaten>
@@ -56,8 +60,9 @@
       <ws:dekatDengan>Lapangan Merdeka Binjai</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Grand_Mosque_of_Medan">
+    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Grand_Mosque_of_Medan" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Masjid Agung Medan</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Masjid</ws:kategori>
       <ws:alamat>Jl. Pangeran Diponegoro, Madras Hulu, Kec. Medan Polonia</ws:alamat>
       <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
@@ -73,8 +78,9 @@
       <ws:dekatDengan>Lapangan Merdeka Medan</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Sultan_Ma%27mun_Al_Rashid_Perkasa_Alamsyah">
+    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Sultan_Ma%27mun_Al_Rashid_Perkasa_Alamsyah" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Makam Mahmud Al Rasyid</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Makam</ws:kategori>
       <ws:alamat>Jl. Istana Lama, Kec. Deli Tua</ws:alamat>
       <ws:kotaKabupaten>Kabupaten Deli Serdang</ws:kotaKabupaten>
@@ -90,8 +96,9 @@
       <ws:dekatDengan>Masjid Raya Al-Mashun</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Abdul_Wahab_Rokan">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Abdul_Wahab_Rokan" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Makam Syeikh Abdul Wahab Rokan</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Makam</ws:kategori>
       <ws:alamat>Desa Besilam, Kec. Padang Tualang</ws:alamat>
       <ws:kotaKabupaten>Kabupaten Langkat</ws:kotaKabupaten>
@@ -107,8 +114,9 @@
       <ws:dekatDengan>Pondok Pesantren Babussalam</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://www.backpacksejarah.com/2015/10/makam-sisingamangaraja-xii-di-balige.html">
+    <rdf:Description rdf:about="https://www.backpacksejarah.com/2015/10/makam-sisingamangaraja-xii-di-balige.html" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Makam Raja Sisingamangaraja XII</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Makam</ws:kategori>
       <ws:alamat>Silalahi Pagar Batu, Kec. Balige</ws:alamat>
       <ws:kotaKabupaten>Kabupaten Toba</ws:kotaKabupaten>
@@ -124,8 +132,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Azizi_Mosque">
+    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Azizi_Mosque" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Masjid Azizi</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Masjid</ws:kategori>
       <ws:alamat>Jl. Masjid No.1, Pekan Tj. Pura, Kec. Tj. Pura</ws:alamat>
       <ws:kotaKabupaten>Kabupaten Langkat</ws:kotaKabupaten>
@@ -141,8 +150,9 @@
       <ws:dekatDengan>Ponpes Tuan Guru Babussalam</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Masjid_Raya_Stabat">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Masjid_Raya_Stabat" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Masjid Raya Stabat</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Masjid</ws:kategori>
       <ws:alamat>Jl. KH Zainul Arifin, Kec. Stabat</ws:alamat>
       <ws:kotaKabupaten>Kabupaten Langkat</ws:kotaKabupaten>
@@ -158,8 +168,9 @@
       <ws:dekatDengan>Alun-Alun Stabat</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://mieayammahmud.com/sejarah-masjid-al-jihad-medan/">
+    <rdf:Description rdf:about="https://mieayammahmud.com/sejarah-masjid-al-jihad-medan/" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Masjid Al-Jihad</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Masjid</ws:kategori>
       <ws:alamat>Jl. Masjid Al Jihad No.22a, Babura, Kec. Medan Baru</ws:alamat>
       <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
@@ -175,8 +186,9 @@
       <ws:dekatDengan>Kampus USU</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Graha_Maria_Annai_Velangkanni">
+    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Graha_Maria_Annai_Velangkanni" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Graha Maria Annai Velangkanni</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Gereja</ws:kategori>
       <ws:alamat>Jl. Sakura III No.7, Tanjung Selamat, Kec. Medan Tuntungan</ws:alamat>
       <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
@@ -192,8 +204,9 @@
       <ws:dekatDengan>Kampus Santo Thomas Medan</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://katedralmedan.or.id/">
+    <rdf:Description rdf:about="https://katedralmedan.or.id/" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Gereja Katedral Santa Maria Tak Bernoda</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Gereja</ws:kategori>
       <ws:alamat>Jl. Pemuda No.1, Kec. Medan Maimun</ws:alamat>
       <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
@@ -209,8 +222,9 @@
       <ws:dekatDengan>Lapangan Merdeka Medan</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Salib_Kasih">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Salib_Kasih" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Salib Kasih</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Monumen Religi</ws:kategori>
       <ws:alamat>Simorangkir Julu, Kec. Siatas Barita</ws:alamat>
       <ws:kotaKabupaten>Kabupaten Tapanuli Utara</ws:kotaKabupaten>
@@ -226,8 +240,9 @@
       <ws:dekatDengan>Kota Tarutung</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/HKBP_Distrik_XI_Toba_Hasundutan">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/HKBP_Distrik_XI_Toba_Hasundutan" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Gereja HKBP Balige</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Gereja</ws:kategori>
       <ws:alamat>Jl. Gereja, Balige III, Kec. Balige</ws:alamat>
       <ws:kotaKabupaten>Kabupaten Toba</ws:kotaKabupaten>
@@ -243,8 +258,9 @@
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://parokipadangbulan.id/">
+    <rdf:Description rdf:about="https://parokipadangbulan.id/" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Gereja Katolik St. Fransiskus Asisi</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Gereja</ws:kategori>
       <ws:alamat>Jl. Bunga Ester No.93 B, Padang Bulan Selayang II, Kec. Medan Selayang</ws:alamat>
       <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
@@ -260,8 +276,9 @@
       <ws:dekatDengan>Graha Maria Annai Velangkanni</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://adulamtravel.com/product/wisata-iman-katolik-via-medan-5-hari-4-malam-goa-maria-berastagi-taman-simalem-bukit-sibea-bea-desa-ulos-samosir-tour/">
+    <rdf:Description rdf:about="https://adulamtravel.com/product/wisata-iman-katolik-via-medan-5-hari-4-malam-goa-maria-berastagi-taman-simalem-bukit-sibea-bea-desa-ulos-samosir-tour/" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Gua Bunda Maria Tritunggal Maha Kudus Sibiru-Biru</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Goa Maria</ws:kategori>
       <ws:alamat>Jl. Unnamed, Namo Suro Baru, Sibiru-biru</ws:alamat>
       <ws:kotaKabupaten>Kabupaten Deli Serdang</ws:kotaKabupaten>
@@ -277,9 +294,10 @@
       <ws:dekatDengan>Taman Alam Lumbini</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:aboutGereja Katedral Santo Yosef="https://idalamat.com/alamat/239547/gereja-katolik-st-yoseph-medan-sumatera-utara#:~:text=Gereja%20Katolik%20St%20Yoseph%20merupakan%20salah%20satu%20gereja,kamis%20putih%2C%20baptis%20%28pembaptisan%29%2C%20Natal%20hingga%20Jumat%20Agung.">
-      <rdfs:label></rdfs:label>
-      <ws:kategori>Gereja Katolik Stasi St. Yoseph, Dr Mansyur</ws:kategori>
+    <rdf:Description rdf:about="https://idalamat.com/alamat/239547/gereja-katolik-st-yoseph-medan-sumatera-utara" rdf:graph="http://example.com/graph/religi">
+      <rdfs:label>Gereja Katolik Stasi St. Yosef, Dr Mansyur</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
+      <ws:kategori>Gereja</ws:kategori>
       <ws:alamat>Jl. Dr. Mansyur No.75, Padang Bulan Selayang I, Kec. Medan Selayang</ws:alamat>
       <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
       <ws:provinsi>Sumatera Utara</ws:provinsi>
@@ -294,8 +312,9 @@
       <ws:dekatDengan>Lapangan Merdeka Medan</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Lumbini_Natural_Park">
+    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Lumbini_Natural_Park" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Taman Alam Lumbini</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Vihara</ws:kategori>
       <ws:alamat>Jl. Barusjahe, Dolat Rayat, Kec. Dolat Rayat</ws:alamat>
       <ws:kotaKabupaten>Kabupaten Karo</ws:kotaKabupaten>
@@ -311,8 +330,9 @@
       <ws:dekatDengan>Bukit Doa Getsemani</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://mahaviharamaitreya.org/">
+    <rdf:Description rdf:about="https://mahaviharamaitreya.org/" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Maha Vihara Maitreya</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Vihara</ws:kategori>
       <ws:alamat>Jl. Cemara Asri Boulevard Raya No.8, Komplek Cemara Asri, Kec. Percut Sei Tuan</ws:alamat>
       <ws:kotaKabupaten>Kota Deli Serdang</ws:kotaKabupaten>
@@ -328,8 +348,9 @@
       <ws:dekatDengan>Pusat Komplek Cemara Asri</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://www.semuabis.com/vihara-setia-budi_3C">
+    <rdf:Description rdf:about="https://www.semuabis.com/vihara-setia-budi_3C" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Vihara Setia Buddha</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Vihara</ws:kategori>
       <ws:alamat>Jl. Jendral Sudirman, Pekan Binjai, Kec. Binjai Kota</ws:alamat>
       <ws:kotaKabupaten>Kota Binjai</ws:kotaKabupaten>
@@ -345,8 +366,9 @@
       <ws:dekatDengan>Pusat Kota Pematangsiantar</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://pariwisatasumut.com/destination/read/vihara-avalokitesvara">
+    <rdf:Description rdf:about="https://pariwisatasumut.com/destination/read/vihara-avalokitesvara" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Vihara Avalokitesvara</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Vihara</ws:kategori>
       <ws:alamat>Jl. Gn. Pusuk Buhit, Karo, Kec. Siantar Sel.</ws:alamat>
       <ws:kotaKabupaten>kota Pematang Siantar</ws:kotaKabupaten>
@@ -362,8 +384,9 @@
       <ws:dekatDengan>Pelabuhan Tanjungbalai</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://viharaborobudur.org/home/informasi.html">
+    <rdf:Description rdf:about="https://viharaborobudur.org/home/informasi.html" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Vihara Borobudur</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Vihara</ws:kategori>
       <ws:alamat>Jalan Imam Bonjol No 21, Hamdan, Kec. Medan Maimun</ws:alamat>
       <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
@@ -379,8 +402,9 @@
       <ws:dekatDengan>Masjid Raya Medan</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Sri_Mariamman_Temple,_Medan">
+    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Sri_Mariamman_Temple,_Medan" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Kuil Shri Mariamman</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Kuil Hindu</ws:kategori>
       <ws:alamat>Jl. Teuku Umar No.18, Petisah Tengah, Kec. Medan Petisah</ws:alamat>
       <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
@@ -396,8 +420,9 @@
       <ws:dekatDengan>Sun Plaza Medan</ws:dekatDengan>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://www.tobawisata.com/chong-a-fie-mansion/">
+    <rdf:Description rdf:about="https://www.tobawisata.com/chong-a-fie-mansion/" rdf:graph="http://example.com/graph/religi">
       <rdfs:label>Rumah Tua Tjong A Fie</rdfs:label>
+      <ws:jenisWisata>Religi</ws:jenisWisata>
       <ws:kategori>Bangunan Bersejarah</ws:kategori>
       <ws:alamat>Jl. Jend. Ahmad Yani No.105, Kesawan, Kec. Medan Bar.</ws:alamat>
       <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
@@ -412,3 +437,4 @@
       <ws:jamTutup>17:00</ws:jamTutup>
       <ws:dekatDengan>Lapangan Merdeka Medan</ws:dekatDengan>
     </rdf:Description>
+</rdf:RDF>
