@@ -185,22 +185,4 @@
         <ws:aktivitas>Eksplorasi goa, fotografi, wisata edukasi</ws:aktivitas>
       </rdf:Description>
 
-      <rdf:Description rdf:about="https://www.kompasiana.com/iwan02/6533e60b110fce037f7fddb2/pantai-bozihona-objek-wisata-yang-eksis-kembali-di-kabupaten-nias">
-        <rdfs:label>Pantai Bozihona</rdfs:label>
-        <ws:jenisWisata>Alam</ws:jenisWisata>
-        <ws:kategori>Pantai</ws:kategori>
-        <ws:alamat>Desa Bozihona, Kecamatan Sirombu</ws:alamat>
-        <ws:kotaKabupaten>Kabupaten Nias Barat</ws:kotaKabupaten>
-        <ws:provinsi>Sumatera Utara</ws:provinsi>
-        <geo:latitude>0.9667</geo:latitude>
-        <geo:longitude>97.4833</geo:longitude>
-        <ws:hargaTiket>Rp 3.000</ws:hargaTiket>
-        <ws:hariBuka>Setiap Hari</ws:hariBuka>
-        <ws:jamBuka>07:00</ws:jamBuka>
-        <ws:jamTutup>18:00</ws:jamTutup>
-        <ws:dekatDengan>Pantai Sirombu</ws:dekatDengan>
-        <ws:fasilitas>Parkir, warung makan</ws:fasilitas>
-        <ws:aktivitas>Berenang, memancing, menikmati sunset</ws:aktivitas>
-      </rdf:Description>
-
 </rdf:RDF>
