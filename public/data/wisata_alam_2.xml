@@ -3,7 +3,7 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:ws="http://example.com/wisatasumut#"
-    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
       
       <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/south-nias-regency/lagundri-beach-south-nias-137953997/">
         <rdfs:label>Pantai Lagundri</rdfs:label>
