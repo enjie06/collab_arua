@@ -66,4 +66,12 @@ class SearchController extends Controller
             'results' => $results
         ]);
     }
+
+    // Method untuk debug duplikat
+    public function debugDuplicate()
+    {
+        $results = $this->sparqlService->debugDuplicateData('pantai');
+        
+        return response()->json($results);
+    }
 }
