@@ -4,9 +4,8 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:ws="http://example.com/wisatasumut#"
     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
-    xmlns:graph="http://example.com/graph/">
       
-      <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/south-nias-regency/lagundri-beach-south-nias-137953997/" rdf:graph="http://example.com/graph/alam">
+      <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/south-nias-regency/lagundri-beach-south-nias-137953997/">
         <rdfs:label>Pantai Lagundri</rdfs:label>
         <ws:jenisWisata>Alam</ws:jenisWisata>
         <ws:kategori>Pantai</ws:kategori>
@@ -24,7 +23,7 @@
         <ws:aktivitas>Surfing, berenang, fotografi, menikmati sunset</ws:aktivitas>
       </rdf:Description>
 
-      <rdf:Description rdf:about="https://www.kepulauannias.com/pantai-tureloto-surga-tersembunyi-di-nias-utara" rdf:graph="http://example.com/graph/alam">
+      <rdf:Description rdf:about="https://www.kepulauannias.com/pantai-tureloto-surga-tersembunyi-di-nias-utara">
         <rdfs:label>Pantai Tureloto</rdfs:label>
         <ws:jenisWisata>Alam</ws:jenisWisata>
         <ws:kategori>Pantai</ws:kategori>
@@ -42,7 +41,7 @@
         <ws:aktivitas>Berenang, snorkeling, menikmati pemandangan batu karang</ws:aktivitas>
       </rdf:Description>
 
-      <rdf:Description rdf:about="https://rri.co.id/sibolga/hiburan/1609968/pantai-moale-surga-kecil-di-ujung-nias-selatan" rdf:graph="http://example.com/graph/alam">
+      <rdf:Description rdf:about="https://rri.co.id/sibolga/hiburan/1609968/pantai-moale-surga-kecil-di-ujung-nias-selatan">
         <rdfs:label>Pantai Moale</rdfs:label>
         <ws:jenisWisata>Alam</ws:jenisWisata>
         <ws:kategori>Pantai</ws:kategori>
@@ -60,7 +59,7 @@
         <ws:aktivitas>Berenang, memancing, fotografi alam</ws:aktivitas>
       </rdf:Description>
 
-      <rdf:Description rdf:about="https://gunungsitolikota.go.id/2019/07/wajah-baru-objek-wisata-air-terjun-humogo/" rdf:graph="http://example.com/graph/alam">
+      <rdf:Description rdf:about="https://gunungsitolikota.go.id/2019/07/wajah-baru-objek-wisata-air-terjun-humogo/">
         <rdfs:label>Air Terjun Humogo</rdfs:label>
         <ws:jenisWisata>Alam</ws:jenisWisata>
         <ws:kategori>Air Terjun</ws:kategori>
@@ -78,7 +77,7 @@
         <ws:aktivitas>Tracking, mandi di air terjun, fotografi alam</ws:aktivitas>
       </rdf:Description>
 
-      <rdf:Description rdf:about="https://northsumatrainvest.id/id/tourism/sirombu-beach" rdf:graph="http://example.com/graph/alam">
+      <rdf:Description rdf:about="https://northsumatrainvest.id/id/tourism/sirombu-beach">
         <rdfs:label>Pantai Sirombu</rdfs:label>
         <ws:jenisWisata>Alam</ws:jenisWisata>
         <ws:kategori>Pantai</ws:kategori>
@@ -96,7 +95,7 @@
         <ws:aktivitas>Berenang, memancing, menikmati sunset, kuliner seafood</ws:aktivitas>
       </rdf:Description>
 
-      <rdf:Description rdf:about="https://www.niasselatankab.go.id/wisata/air-terjun-baho-masiwa" rdf:graph="http://example.com/graph/alam">
+      <rdf:Description rdf:about="https://www.niasselatankab.go.id/wisata/air-terjun-baho-masiwa">
         <rdfs:label>Air Terjun Baho Masiwa</rdfs:label>
         <ws:jenisWisata>Alam</ws:jenisWisata>
         <ws:kategori>Air Terjun</ws:kategori>
@@ -114,7 +113,7 @@
         <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam</ws:aktivitas>
       </rdf:Description>
 
-      <rdf:Description rdf:about="https://www.niasselatankab.go.id/wisata/bukit-hilisimaetano" rdf:graph="http://example.com/graph/alam">
+      <rdf:Description rdf:about="https://www.niasselatankab.go.id/wisata/bukit-hilisimaetano">
         <rdfs:label>Bukit Hilisimaetano</rdfs:label>
         <ws:jenisWisata>Alam</ws:jenisWisata>
         <ws:kategori>Bukit</ws:kategori>
@@ -132,7 +131,7 @@
         <ws:aktivitas>Menikmati panorama, fotografi, melihat sunrise/sunset</ws:aktivitas>
       </rdf:Description>
 
-      <rdf:Description rdf:about="https://www.niasselatankab.go.id/wisata/pantai-laowo" rdf:graph="http://example.com/graph/alam">
+      <rdf:Description rdf:about="https://www.niasselatankab.go.id/wisata/pantai-laowo">
         <rdfs:label>Pantai Laowö</rdfs:label>
         <ws:jenisWisata>Alam</ws:jenisWisata>
         <ws:kategori>Pantai</ws:kategori>
@@ -150,7 +149,7 @@
         <ws:aktivitas>Berenang, bersantai, fotografi pantai</ws:aktivitas>
       </rdf:Description>
 
-      <rdf:Description rdf:about="https://mindtrip.ai/attraction/pulau-asu-sumatra/pulau-asu/at-AQMJkxNs" rdf:graph="http://example.com/graph/alam">
+      <rdf:Description rdf:about="https://mindtrip.ai/attraction/pulau-asu-sumatra/pulau-asu/at-AQMJkxNs">
         <rdfs:label>Pulau Asu</rdfs:label>
         <ws:jenisWisata>Alam</ws:jenisWisata>
         <ws:kategori>Pulau</ws:kategori>
@@ -168,7 +167,7 @@
         <ws:aktivitas>Diving, snorkeling, camping, fotografi bawah air, mengamati hiu</ws:aktivitas>
       </rdf:Description>
 
-      <rdf:Description rdf:about="https://gunungsitolikota.go.id/2019/07/togi-ndrawa-wisata-gua-bersejarah-di-kota-gunungsitoli/" rdf:graph="http://example.com/graph/alam">
+      <rdf:Description rdf:about="https://gunungsitolikota.go.id/2019/07/togi-ndrawa-wisata-gua-bersejarah-di-kota-gunungsitoli/">
         <rdfs:label>Goa Togindrawa</rdfs:label>
         <ws:jenisWisata>Alam</ws:jenisWisata>
         <ws:kategori>Goa</ws:kategori>
@@ -186,7 +185,7 @@
         <ws:aktivitas>Eksplorasi goa, fotografi, wisata edukasi</ws:aktivitas>
       </rdf:Description>
 
-      <rdf:Description rdf:about="https://www.kompasiana.com/iwan02/6533e60b110fce037f7fddb2/pantai-bozihona-objek-wisata-yang-eksis-kembali-di-kabupaten-nias" rdf:graph="http://example.com/graph/alam">
+      <rdf:Description rdf:about="https://www.kompasiana.com/iwan02/6533e60b110fce037f7fddb2/pantai-bozihona-objek-wisata-yang-eksis-kembali-di-kabupaten-nias">
         <rdfs:label>Pantai Bozihona</rdfs:label>
         <ws:jenisWisata>Alam</ws:jenisWisata>
         <ws:kategori>Pantai</ws:kategori>
