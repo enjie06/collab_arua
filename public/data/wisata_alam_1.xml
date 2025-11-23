@@ -739,7 +739,12 @@
       <ws:aktivitas>Berselancar, Berenang, Menikmati Sunset</ws:aktivitas>
     </rdf:Description>
 
+<<<<<<< Updated upstream
     <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Nias" rdf:graph="http://example.com/graph/alam">
+=======
+    <!-- Untuk yang ini pakai Wikipedia Nias secara umum -->
+<rdf:Description rdf:about="https://en.wikipedia.org/wiki/Nias">
+>>>>>>> Stashed changes
       <rdfs:label>Pantai Botohilitano</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -794,10 +799,16 @@
       <ws:aktivitas>Berenang, snorkeling, kuliner seafood</ws:aktivitas>
     </rdf:Description>
 
+<<<<<<< Updated upstream
         <!-- Pakai Wikipedia Indonesia tentang Pantai -->
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai" rdf:graph="http://example.com/graph/alam">
       <rdfs:label>Pantai Siwalu Banua</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
+=======
+    <!-- Pakai Wikipedia Indonesia tentang Pantai -->
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai">
+      <rdfs:label>Pantai Siwalubanua</rdfs:label>
+>>>>>>> Stashed changes
       <ws:kategori>Pantai</ws:kategori>
       <ws:alamat>Desa Siwalu Banua</ws:alamat>
       <ws:kotaKabupaten>Kabupaten Nias Utara</ws:kotaKabupaten>
@@ -850,6 +861,7 @@
       <ws:aktivitas>Berenang, kuliner, fotografi, melihat ws:aktivitas pelabuhan</ws:aktivitas>
     </rdf:Description>
 
+<<<<<<< Updated upstream
     <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/north-nias-regency/pantai-marisa-136898707/" rdf:graph="http://example.com/graph/alam">
       <rdfs:label>Pantai Tuhemberua</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
@@ -869,6 +881,9 @@
     </rdf:Description>
 
     <rdf:Description rdf:about="https://www.kompasiana.com/iwan02/5b98c026aeebe17c17627d43/pantai-hoya-objek-wisata-pantai-yang-indah-dan-tempat-outbond-yang-mengasikan-di-gunungsitoli" rdf:graph="http://example.com/graph/alam">
+=======
+    <rdf:Description rdf:about="https://www.kompasiana.com/iwan02/5b98c026aeebe17c17627d43/pantai-hoya-objek-wisata-pantai-yang-indah-dan-tempat-outbond-yang-mengasikan-di-gunungsitoli">
+>>>>>>> Stashed changes
       <rdfs:label>Pantai Hoya Nias Utara</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -886,6 +901,7 @@
       <ws:aktivitas>Bersantai, memancing, menikmati pemandangan laut</ws:aktivitas>
     </rdf:Description>
 
+<<<<<<< Updated upstream
     <rdf:Description rdf:about="https://www.kompasiana.com/iwan02/6533e60b110fce037f7fddb2/pantai-bozihona-objek-wisata-yang-eksis-kembali-di-kabupaten-nias" rdf:graph="http://example.com/graph/alam">
       <rdfs:label>Pantai Bozihona Hilisimaetano</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
@@ -905,6 +921,9 @@
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Sirombu,_Nias_Barat" rdf:graph="http://example.com/graph/alam">
+=======
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Sirombu,_Nias_Barat">
+>>>>>>> Stashed changes
       <rdfs:label>Pantai Sirombu Tengah</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -958,8 +977,12 @@
       <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam</ws:aktivitas>
     </rdf:Description>
 
+<<<<<<< Updated upstream
 
     <rdf:Description rdf:about="https://www.traveloka.com/id-id/explore/activities/huta-ginjang-ta/554974" rdf:graph="http://example.com/graph/alam">
+=======
+    <rdf:Description rdf:about="https://www.traveloka.com/id-id/explore/activities/huta-ginjang-ta/554974">
+>>>>>>> Stashed changes
       <rdfs:label>Huta Ginjang</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Bukit</ws:kategori>
@@ -1013,6 +1036,7 @@
       <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam, piknik</ws:aktivitas>
     </rdf:Description>
 
+<<<<<<< Updated upstream
     <rdf:Description rdf:about="https://rri.co.id/wisata/621168/batu-gajah-pesona-alam-yang-mengagumkan-di-tapanuli-tengah" rdf:graph="http://example.com/graph/alam">
       <rdfs:label>Pantai Batu Gajah</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
@@ -1032,6 +1056,9 @@
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pulau_Karang_(Kabupaten_Tapanuli_Tengah)" rdf:graph="http://example.com/graph/alam">
+=======
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pulau_Karang_(Kabupaten_Tapanuli_Tengah)">
+>>>>>>> Stashed changes
       <rdfs:label>Pulau Karang Sitiris-Tiris</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pulau</ws:kategori>
@@ -1049,6 +1076,7 @@
       <ws:aktivitas>Snorkeling, menyelam, eksplorasi pulau</ws:aktivitas>
     </rdf:Description>
 
+<<<<<<< Updated upstream
     <rdf:Description rdf:about="https://satyawinnie.com/air-terjun-mursala/" rdf:graph="http://example.com/graph/alam">
       <rdfs:label>Air Terjun Mursala Dua</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
@@ -1068,6 +1096,9 @@
     </rdf:Description>
 
     <rdf:Description rdf:about="https://www.traveloka.com/id-id/explore/activities/pantai-binasi-tapanuli-tengah-ta/1000187" rdf:graph="http://example.com/graph/alam">
+=======
+    <rdf:Description rdf:about="https://www.traveloka.com/id-id/explore/activities/pantai-binasi-tapanuli-tengah-ta/1000187">
+>>>>>>> Stashed changes
       <rdfs:label>Pantai Binasi</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -1122,6 +1153,7 @@
       <ws:aktivitas>Berenang, memancing, fotografi, bersantai</ws:aktivitas>
     </rdf:Description>
 
+<<<<<<< Updated upstream
     <rdf:Description rdf:about="https://sisparnas.kemenparekraf.go.id/p/62405" rdf:graph="http://example.com/graph/alam">
       <rdfs:label>Air Terjun Sitabotabo</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
@@ -1141,6 +1173,9 @@
     </rdf:Description>
 
     <rdf:Description rdf:about="https://aeksijorni.id/" rdf:graph="http://example.com/graph/alam">
+=======
+    <rdf:Description rdf:about="https://aeksijorni.id/">
+>>>>>>> Stashed changes
       <rdfs:label>Pemandian Air Panas Aek Sijorni</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pemandian Air Panas</ws:kategori>
