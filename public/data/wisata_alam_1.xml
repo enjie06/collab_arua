@@ -324,24 +324,6 @@
       <ws:aktivitas>Bersantai, Menikmati Pemandangan</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai_Lagundri">
-      <rdfs:label>Pantai Lagundri</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Pantai</ws:kategori>
-      <ws:alamat>Teluk Dalam, Kabupaten Nias Selatan</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>0.5500</geo:latitude>
-      <geo:longitude>97.7733</geo:longitude>
-      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>06:00</ws:jamBuka>
-      <ws:jamTutup>18:00</ws:jamTutup>
-      <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
-      <ws:fasilitas>Homestay, Parkir, Area Surfing</ws:fasilitas>
-      <ws:aktivitas>Surfing, Berenang, Bersantai</ws:aktivitas>
-    </rdf:Description>
-
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bukit_Indah_Simarjarunjung">
       <rdfs:label>Bukit Indah Simarjarunjung</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
@@ -829,24 +811,6 @@
       <ws:dekatDengan>Gunung Sitoli</ws:dekatDengan>
       <ws:fasilitas>Parkir, area camping</ws:fasilitas>
       <ws:aktivitas>Trekking, camping, mandi di air terjun</ws:aktivitas>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="https://travel.detik.com/cerita-perjalanan/d-7692456/merasakan-sensasi-pantai-pribadi-di-pantai-tureloto-yang-tenang">
-      <rdfs:label>Pantai Tureloto</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Pantai</ws:kategori>
-      <ws:alamat>Kecamatan Lahewa</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Nias Utara</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>1.4167</geo:latitude>
-      <geo:longitude>97.0833</geo:longitude>
-      <ws:hargaTiket>Rp 5.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>06:00</ws:jamBuka>
-      <ws:jamTutup>18:00</ws:jamTutup>
-      <ws:dekatDengan>Pelabuhan Lahewa</ws:dekatDengan>
-      <ws:fasilitas>Parkir, hotel, restoran, warung makan</ws:fasilitas>
-      <ws:aktivitas>Berenang, kuliner, fotografi, melihat ws:aktivitas pelabuhan</ws:aktivitas>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/north-nias-regency/pantai-marisa-136898707/">
