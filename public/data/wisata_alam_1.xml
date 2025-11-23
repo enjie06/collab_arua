@@ -4,9 +4,8 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:ws="http://example.com/wisatasumut#"
     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
-    xmlns:graph="http://example.com/graph/">
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Danau_Toba" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Danau_Toba">
       <rdfs:label>Danau Toba</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Danau</ws:kategori>
@@ -24,7 +23,7 @@
       <ws:aktivitas>Berenang, Berlayar, Foto, Wisata Alam</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pulau_Samosir" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pulau_Samosir">
       <rdfs:label>Pulau Samosir</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pulau</ws:kategori>
@@ -42,7 +41,7 @@
       <ws:aktivitas>Bersepeda, Jelajah Budaya, Foto</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Sipiso-piso" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Sipiso-piso">
       <rdfs:label>Air Terjun Sipiso-piso</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
@@ -61,7 +60,7 @@
     </rdf:Description>
 
     <!-- ✅ SUDAH BENAR -->
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Gunung_Sibayak" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Gunung_Sibayak">
       <rdfs:label>Gunung Sibayak</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Gunung</ws:kategori>
@@ -80,7 +79,7 @@
     </rdf:Description>
 
     <!-- ✅ SUDAH BENAR -->
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bukit_Lawang" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bukit_Lawang">
       <rdfs:label>Bukit Lawang</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Taman Nasional</ws:kategori>
@@ -99,7 +98,7 @@
     </rdf:Description>
 
     <!-- 🔧 DIPERBAIKI: Koordinat dan link -->
-    <rdf:Description rdf:about="https://jejakpiknik.com/air-terjun-ponot/" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://jejakpiknik.com/air-terjun-ponot/">
       <rdfs:label>Air Terjun Ponot</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
@@ -118,7 +117,7 @@
     </rdf:Description>
 
     <!-- 🔧 DIPERBAIKI: Link dan koordinat -->
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Taman_Wisata_Alam_Sicike-cike" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Taman_Wisata_Alam_Sicike-cike">
       <rdfs:label>Taman Wisata Alam Sicike-cike</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Taman Alam</ws:kategori>
@@ -137,7 +136,7 @@
     </rdf:Description>
 
     <!-- 🔧 DIPERBAIKI: Koordinat -->
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Danau_Linting" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Danau_Linting">
       <rdfs:label>Danau Linting</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Danau</ws:kategori>
@@ -156,7 +155,7 @@
     </rdf:Description>
 
     <!-- ✅ SUDAH BENAR -->
-    <rdf:Description rdf:about="https://www.tapanulitengahkab.go.id/wisata/pantai-pandan" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://www.tapanulitengahkab.go.id/wisata/pantai-pandan">
       <rdfs:label>Pantai Pandan</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -175,7 +174,7 @@
     </rdf:Description>
 
     <!-- 🔧 DIPERBAIKI: Koordinat -->
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Dua_Warna" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Dua_Warna">
       <rdfs:label>Air Terjun Dua Warna Sibolangit</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
@@ -194,7 +193,7 @@
     </rdf:Description>
 
     <!-- 🔧 DIPERBAIKI: Koordinat -->
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bukit_Holbung" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bukit_Holbung">
       <rdfs:label>Bukit Holbung</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Bukit</ws:kategori>
@@ -213,7 +212,7 @@
     </rdf:Description>
 
     <!-- 🔧 DIPERBAIKI: Koordinat -->
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Danau_Lau_Kawar" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Danau_Lau_Kawar">
       <rdfs:label>Danau Lau Kawar</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Danau</ws:kategori>
@@ -232,7 +231,7 @@
     </rdf:Description>
 
     <!-- 🔧 DIPERBAIKI: Koordinat dan link -->
-    <rdf:Description rdf:about="https://jejakpiknik.com/?s=Air+Terjun+Sikulikap" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://jejakpiknik.com/?s=Air+Terjun+Sikulikap">
       <rdfs:label>Air Terjun Sikulikap</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
@@ -251,7 +250,7 @@
     </rdf:Description>
 
     <!-- 🔧 DIPERBAIKI: Koordinat -->
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai_Cermin" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai_Cermin">
       <rdfs:label>Pantai Cermin</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -270,7 +269,7 @@
     </rdf:Description>
 
     <!-- 🔧 DIPERBAIKI: Link dan koordinat -->
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Gunung_Sibuatan" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Gunung_Sibuatan">
       <rdfs:label>Gunung Sibuatan</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Gunung</ws:kategori>
@@ -289,7 +288,7 @@
     </rdf:Description>
 
     <!-- 🔧 DIPERBAIKI: Koordinat -->
-    <rdf:Description rdf:about="https://jejakpiknik.com/air-terjun-di-danau-toba/#1_Situmurun%E2%9D%A4%EF%B8%8F" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://jejakpiknik.com/air-terjun-di-danau-toba/#1_Situmurun%E2%9D%A4%EF%B8%8F">
       <rdfs:label>Air Terjun Situmurun Binangalom</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
@@ -307,7 +306,7 @@
       <ws:aktivitas>Naik Perahu, Berenang, Fotografi</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Danau_Sidihoni" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Danau_Sidihoni">
       <rdfs:label>Danau Sidihoni</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Danau</ws:kategori>
@@ -325,7 +324,7 @@
       <ws:aktivitas>Bersantai, Menikmati Pemandangan</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai_Lagundri" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai_Lagundri">
       <rdfs:label>Pantai Lagundri</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -343,7 +342,7 @@
       <ws:aktivitas>Surfing, Berenang, Bersantai</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bukit_Indah_Simarjarunjung" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bukit_Indah_Simarjarunjung">
       <rdfs:label>Bukit Indah Simarjarunjung</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Bukit</ws:kategori>
@@ -361,7 +360,7 @@
       <ws:aktivitas>Fotografi, Bersantai</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bukit_Gajah_Bobok" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bukit_Gajah_Bobok">
       <rdfs:label>Bukit Gajah Bobok</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Bukit</ws:kategori>
@@ -379,7 +378,7 @@
       <ws:aktivitas>Camping, Hiking, Menikmati Sunrise</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Lae_Pendaroh" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Lae_Pendaroh">
       <rdfs:label>Air Terjun Lae Pendaroh</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
@@ -397,7 +396,7 @@
       <ws:aktivitas>Berenang, Fotografi</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Danau_Siombak" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Danau_Siombak">
       <rdfs:label>Danau Siombak</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Danau</ws:kategori>
@@ -415,7 +414,7 @@
       <ws:aktivitas>Memancing, Berperahu, Piknik</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Tarunggang" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Tarunggang">
       <rdfs:label>Air Terjun Tarunggang</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
@@ -433,7 +432,7 @@
       <ws:aktivitas>Fotografi, Trekking</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Taman_Alam_Lumbini" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Taman_Alam_Lumbini">
       <rdfs:label>Taman Alam Lumbini</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Taman</ws:kategori>
@@ -451,7 +450,7 @@
       <ws:aktivitas>Wisata Religi, Fotografi, Meditasi</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Janji" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Janji">
       <rdfs:label>Air Terjun Janji</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
@@ -469,7 +468,7 @@
       <ws:aktivitas>Fotografi, Bersantai, Berenang</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Simangande" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Simangande">
       <rdfs:label>Air Terjun Simangande</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
@@ -487,7 +486,7 @@
       <ws:aktivitas>Fotografi, Menikmati Alam</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bukit_Doa_Tapanuli_Utara" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bukit_Doa_Tapanuli_Utara">
       <rdfs:label>Bukit Doa Tapanuli Utara</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Bukit</ws:kategori>
@@ -505,7 +504,7 @@
       <ws:aktivitas>Bersantai, Berdoa, Menikmati Pemandangan</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai_Batu_Hoda" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai_Batu_Hoda">
       <rdfs:label>Pantai Batu Hoda</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -523,7 +522,7 @@
       <ws:aktivitas>Bermain Air, Bersantai, Fotografi</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Gunung_Lubukraya" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Gunung_Lubukraya">
       <rdfs:label>Gunung Lubukraya</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Gunung</ws:kategori>
@@ -541,7 +540,7 @@
       <ws:aktivitas>Mendaki, Camping</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bukit_Gundaling" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bukit_Gundaling">
       <rdfs:label>Bukit Gundaling</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Bukit</ws:kategori>
@@ -559,7 +558,7 @@
       <ws:aktivitas>Menikmati Pemandangan, Berkuda</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Mursala" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Mursala">
       <rdfs:label>Air Terjun Mursala</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
@@ -577,7 +576,7 @@
       <ws:aktivitas>Menjelajah Pulau, Fotografi</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Silangit" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Silangit">
       <rdfs:label>Air Terjun Silangit</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
@@ -595,7 +594,7 @@
       <ws:aktivitas>Fotografi, Menikmati Alam</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Lembah_Bakkara" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Lembah_Bakkara">
       <rdfs:label>Lembah Bakkara</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Lembah</ws:kategori>
@@ -613,7 +612,7 @@
       <ws:aktivitas>Menikmati Panorama, Berfoto, Eksplorasi</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Menara_Pandang_Tele" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Menara_Pandang_Tele">
       <rdfs:label>Menara Pandang Tele</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Menara</ws:kategori>
@@ -631,7 +630,7 @@
       <ws:aktivitas>Melihat Panorama, Fotografi, Bersantai</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pusuk_Buhit" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pusuk_Buhit">
       <rdfs:label>Pusuk Buhit Samosir</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Gunung</ws:kategori>
@@ -649,7 +648,7 @@
       <ws:aktivitas>Mendaki, Camping, Menikmati Pemandangan</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Aek_Sipitu_Dai" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Aek_Sipitu_Dai">
       <rdfs:label>Aek Sipitu Dai</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Sumber Air</ws:kategori>
@@ -667,7 +666,7 @@
       <ws:aktivitas>Menikmati Keunikan Air Tujuh Rasa, Foto Alam</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Tano_Ponggol" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Tano_Ponggol">
       <rdfs:label>Tano Ponggol</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Tanah Genting</ws:kategori>
@@ -685,7 +684,7 @@
       <ws:aktivitas>Berkeliling, Menikmati Panorama Danau Toba</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Sigura-Gura" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Sigura-Gura">
       <rdfs:label>Air Terjun Sigura-Gura</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
@@ -703,7 +702,7 @@
       <ws:aktivitas>Menikmati Air Terjun, Fotografi Alam</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai_Pandan" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai_Pandan">
       <rdfs:label>Pantai Pandan Sibolga</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -721,7 +720,7 @@
       <ws:aktivitas>Berenang, Bermain Pasir, Berfoto</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai_Sorake" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai_Sorake">
       <rdfs:label>Pantai Sorake</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -739,7 +738,7 @@
       <ws:aktivitas>Berselancar, Berenang, Menikmati Sunset</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Nias" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Nias">
       <rdfs:label>Pantai Botohilitano</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -758,7 +757,7 @@
     </rdf:Description>    
 
         <!-- Pakai Wikipedia Sumatera Utara -->
-    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/North_Sumatra" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/North_Sumatra">
       <rdfs:label>Pantai Miga</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -776,7 +775,7 @@
       <ws:aktivitas>Berenang, memancing, bersantai</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="http://dbpedia.org/resource/Nias" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="http://dbpedia.org/resource/Nias">
       <rdfs:label>Pantai Gawu Soyo</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -795,7 +794,7 @@
     </rdf:Description>
 
         <!-- Pakai Wikipedia Indonesia tentang Pantai -->
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai">
       <rdfs:label>Pantai Siwalu Banua</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -814,7 +813,7 @@
     </rdf:Description>
 
         <!-- Pakai Wikipedia Air Terjun -->
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_terjun" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_terjun">
       <rdfs:label>Air Terjun Luaha Ndroi</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
@@ -832,7 +831,7 @@
       <ws:aktivitas>Trekking, camping, mandi di air terjun</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://travel.detik.com/cerita-perjalanan/d-7692456/merasakan-sensasi-pantai-pribadi-di-pantai-tureloto-yang-tenang" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://travel.detik.com/cerita-perjalanan/d-7692456/merasakan-sensasi-pantai-pribadi-di-pantai-tureloto-yang-tenang">
       <rdfs:label>Pantai Tureloto</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -850,7 +849,7 @@
       <ws:aktivitas>Berenang, kuliner, fotografi, melihat ws:aktivitas pelabuhan</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/north-nias-regency/pantai-marisa-136898707/" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/north-nias-regency/pantai-marisa-136898707/">
       <rdfs:label>Pantai Tuhemberua</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -868,7 +867,7 @@
       <ws:aktivitas>Berenang, memancing, bersantai</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://www.kompasiana.com/iwan02/5b98c026aeebe17c17627d43/pantai-hoya-objek-wisata-pantai-yang-indah-dan-tempat-outbond-yang-mengasikan-di-gunungsitoli" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://www.kompasiana.com/iwan02/5b98c026aeebe17c17627d43/pantai-hoya-objek-wisata-pantai-yang-indah-dan-tempat-outbond-yang-mengasikan-di-gunungsitoli">
       <rdfs:label>Pantai Hoya Nias Utara</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -886,7 +885,7 @@
       <ws:aktivitas>Bersantai, memancing, menikmati pemandangan laut</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://www.kompasiana.com/iwan02/6533e60b110fce037f7fddb2/pantai-bozihona-objek-wisata-yang-eksis-kembali-di-kabupaten-nias" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://www.kompasiana.com/iwan02/6533e60b110fce037f7fddb2/pantai-bozihona-objek-wisata-yang-eksis-kembali-di-kabupaten-nias">
       <rdfs:label>Pantai Bozihona Hilisimaetano</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -904,7 +903,7 @@
       <ws:aktivitas>Bermain pasir, berenang, foto laut</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Sirombu,_Nias_Barat" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Sirombu,_Nias_Barat">
       <rdfs:label>Pantai Sirombu Tengah</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -922,7 +921,7 @@
       <ws:aktivitas>Bermain pasir, bersantai, melihat ombak</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://www.liputan6.com/regional/read/5138272/menikmati-ketenangan-pantai-sifahandro-di-nias" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://www.liputan6.com/regional/read/5138272/menikmati-ketenangan-pantai-sifahandro-di-nias">
       <rdfs:label>Pantai Sifahandro</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -940,7 +939,7 @@
       <ws:aktivitas>Berenang, bersantai, fotografi pantai</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/hilimbowo/air-terjun-handro-handro-142445382/" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/hilimbowo/air-terjun-handro-handro-142445382/">
       <rdfs:label>Air Terjun Hilimbowo</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
@@ -959,7 +958,7 @@
     </rdf:Description>
 
 
-    <rdf:Description rdf:about="https://www.traveloka.com/id-id/explore/activities/huta-ginjang-ta/554974" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://www.traveloka.com/id-id/explore/activities/huta-ginjang-ta/554974">
       <rdfs:label>Huta Ginjang</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Bukit</ws:kategori>
@@ -977,7 +976,7 @@
       <ws:aktivitas>Menikmati panorama Danau Toba, fotografi, melihat sunrise/sunset</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://archipelagoid.com/wisata-air-panas-sipoholon-keajaiban-alam-tapanuli-utara/" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://archipelagoid.com/wisata-air-panas-sipoholon-keajaiban-alam-tapanuli-utara/">
       <rdfs:label>Kawah Sipoholon</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Kawah</ws:kategori>
@@ -995,7 +994,7 @@
       <ws:aktivitas>Berendam air panas, terapi alam, fotografi</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/unte-mungkur-iii/air-terjun-silaklakgotting-143964367/" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/unte-mungkur-iii/air-terjun-silaklakgotting-143964367/">
       <rdfs:label>Air Terjun Silaklak</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
@@ -1013,7 +1012,7 @@
       <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam, piknik</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://rri.co.id/wisata/621168/batu-gajah-pesona-alam-yang-mengagumkan-di-tapanuli-tengah" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://rri.co.id/wisata/621168/batu-gajah-pesona-alam-yang-mengagumkan-di-tapanuli-tengah">
       <rdfs:label>Pantai Batu Gajah</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -1031,7 +1030,7 @@
       <ws:aktivitas>Berenang, bersantai, foto pantai</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pulau_Karang_(Kabupaten_Tapanuli_Tengah)" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pulau_Karang_(Kabupaten_Tapanuli_Tengah)">
       <rdfs:label>Pulau Karang Sitiris-Tiris</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pulau</ws:kategori>
@@ -1049,7 +1048,7 @@
       <ws:aktivitas>Snorkeling, menyelam, eksplorasi pulau</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://satyawinnie.com/air-terjun-mursala/" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://satyawinnie.com/air-terjun-mursala/">
       <rdfs:label>Air Terjun Mursala Dua</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
@@ -1067,7 +1066,7 @@
       <ws:aktivitas>Snorkeling, foto alam, menikmati air terjun laut</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://www.traveloka.com/id-id/explore/activities/pantai-binasi-tapanuli-tengah-ta/1000187" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://www.traveloka.com/id-id/explore/activities/pantai-binasi-tapanuli-tengah-ta/1000187">
       <rdfs:label>Pantai Binasi</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -1085,7 +1084,7 @@
       <ws:aktivitas>Berenang, bermain pasir, kuliner pantai</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/central-tapanuli-regency/pantai-batu-gajah-hajoran-137017552/" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/central-tapanuli-regency/pantai-batu-gajah-hajoran-137017552/">
       <rdfs:label>Pantai Hajoran</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -1104,7 +1103,7 @@
     </rdf:Description>
 
 
-    <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/central-tapanuli-regency/pantai-kalangan-indah-137304945/" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/central-tapanuli-regency/pantai-kalangan-indah-137304945/">
       <rdfs:label>Pantai Indah Kalangan</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pantai</ws:kategori>
@@ -1122,7 +1121,7 @@
       <ws:aktivitas>Berenang, memancing, fotografi, bersantai</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://sisparnas.kemenparekraf.go.id/p/62405" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://sisparnas.kemenparekraf.go.id/p/62405">
       <rdfs:label>Air Terjun Sitabotabo</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
@@ -1140,7 +1139,7 @@
       <ws:aktivitas>Trekking, mandi di air terjun, fotografi alam</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://aeksijorni.id/" rdf:graph="http://example.com/graph/alam">
+    <rdf:Description rdf:about="https://aeksijorni.id/">
       <rdfs:label>Pemandian Air Panas Aek Sijorni</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Pemandian Air Panas</ws:kategori>
