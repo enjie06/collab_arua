@@ -323,7 +323,7 @@
         <ws:jamBuka>07:00</ws:jamBuka>
         <ws:jamTutup>17:00</ws:jamTutup>
         <ws:dekatDengan>Istana Maimun</ws:dekatDengan>
-        <ws:aktivitas>Wisata religi & budaya Tionghoa, upacara, foto</ws:aktivitas>
+        <ws:aktivitas>Wisata religi dan budaya Tionghoa, upacara, foto</ws:aktivitas>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Rumah_Tjong_A_Fie">
