@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:ws="http://example.com/wisatasumut#"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:graph="http://example.com/graph/">
+
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Sumatera_Utara" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Museum Negeri Provinsi Sumatera Utara</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Museum</ws:kategori>
+        <ws:alamat>Jalan H.M. Joni No. 51, Teladan Barat, Medan Kota</ws:alamat>
+        <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>3.5833</geo:latitude>
+        <geo:longitude>98.6667</geo:longitude>
+        <ws:hargaTiket>Rp 3.000 - Rp 30.000</ws:hargaTiket>
+        <ws:hariBuka>Selasa - Minggu</ws:hariBuka>
+        <ws:jamBuka>09:00</ws:jamBuka>
+        <ws:jamTutup>15:30</ws:jamTutup>
+        <ws:dekatDengan>Lapangan Merdeka Medan</ws:dekatDengan>
+        <ws:fasilitas>Ruang pameran, perpustakaan, auditorium, musholla, area parkir</ws:fasilitas>
+        <ws:aktivitas>Belajar sejarah, penelitian, pameran budaya</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Batak,_Balige" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Museum Batak TB Silalahi Center</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Museum</ws:kategori>
+        <ws:alamat>Jl. Dr. TB Silalahi No. 88, Balige</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Toba</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>2.3332</geo:latitude>
+        <geo:longitude>99.0833</geo:longitude>
+        <ws:hargaTiket>Rp 10.000</ws:hargaTiket>
+        <ws:hariBuka>Selasa - Minggu</ws:hariBuka>
+        <ws:jamBuka>08:00</ws:jamBuka>
+        <ws:jamTutup>17:00</ws:jamTutup>
+        <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+        <ws:fasilitas>Rumah adat Batak, galeri artefak, area pamer</ws:fasilitas>
+        <ws:aktivitas>Wisata budaya, foto, belajar sejarah Batak</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Huta_Bolon_Simanindo" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Museum Huta Bolon Simanindo</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Museum / Rumah Adat</ws:kategori>
+        <ws:alamat>Desa Simanindo, Kecamatan Simanindo, Kabupaten Samosir</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>2.7525</geo:latitude>
+        <geo:longitude>98.7445</geo:longitude>
+        <ws:hargaTiket>Rp 10.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>10:00</ws:jamBuka>
+        <ws:jamTutup>17:00</ws:jamTutup>
+        <ws:dekatDengan>Pelabuhan Simanindo</ws:dekatDengan>
+        <ws:fasilitas>Rumah adat, galeri budaya, area pertunjukan Tor-Tor</ws:fasilitas>
+        <ws:aktivitas>Belajar budaya Batak, menonton Tor-Tor, fotografi</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Huta_Siallagan" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Huta Siallagan</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Kampung Adat</ws:kategori>
+        <ws:alamat>Desa Ambarita, Kecamatan Simanindo, Kabupaten Samosir</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>2.6544</geo:latitude>
+        <geo:longitude>98.7922</geo:longitude>
+        <ws:hargaTiket>Rp 5.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>06:00</ws:jamBuka>
+        <ws:jamTutup>18:00</ws:jamTutup>
+        <ws:dekatDengan>Batu Kursi Raja</ws:dekatDengan>
+        <ws:fasilitas>Rumah adat, patung kayu, tempat sidang batu</ws:fasilitas>
+        <ws:aktivitas>Wisata budaya, edukasi adat, foto</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Tuktuk_Siadong,_Simanindo,_Samosir" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Desa Wisata Tuktuk Siadong</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Desa Wisata</ws:kategori>
+        <ws:alamat>Tuktuk Siadong, Kecamatan Simanindo, Kabupaten Samosir</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>2.6670</geo:latitude>
+        <geo:longitude>98.8530</geo:longitude>
+        <ws:hargaTiket>Gratis</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>24 Jam</ws:jamBuka>
+        <ws:jamTutup>-</ws:jamTutup>
+        <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+        <ws:fasilitas>Homestay, restoran, cafe, galeri seni</ws:fasilitas>
+        <ws:aktivitas>Wisata budaya, kuliner, foto, interaksi lokal</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="hhttps://id.wikipedia.org/wiki/Lingga,_Simpang_Empat,_Karo" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Desa Lingga</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Kampung Adat Karo</ws:kategori>
+        <ws:alamat>Desa Lingga, Kecamatan Simpang Empat, Kabupaten Karo</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Karo</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>3.1220</geo:latitude>
+        <geo:longitude>98.4740</geo:longitude>
+        <ws:hargaTiket>Rp 5.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>07:00</ws:jamBuka>
+        <ws:jamTutup>18:00</ws:jamTutup>
+        <ws:dekatDengan>Gunung Sibayak</ws:dekatDengan>
+        <ws:fasilitas>Rumah adat Karo, pemandu lokal, galeri mini</ws:fasilitas>
+        <ws:aktivitas>Wisata budaya Karo, foto, edukasi adat</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Simalungun" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Museum Simalungun</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Museum</ws:kategori>
+        <ws:alamat>Jalan Jenderal Sudirman No. 20, Pematang Siantar</ws:alamat>
+        <ws:kotaKabupaten>Kota Pematang Siantar</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>2.9511</geo:latitude>
+        <geo:longitude>99.0689</geo:longitude>
+        <ws:hargaTiket>Rp 5.000</ws:hargaTiket>
+        <ws:hariBuka>Senin - Sabtu</ws:hariBuka>
+        <ws:jamBuka>08:00</ws:jamBuka>
+        <ws:jamTutup>16:00</ws:jamTutup>
+        <ws:dekatDengan>Taman Hewan Siantar</ws:dekatDengan>
+        <ws:fasilitas>Galeri artefak, ruang pamer tematik</ws:fasilitas>
+        <ws:aktivitas>Belajar sejarah Simalungun, foto</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Pusaka_Nias" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Museum Pusaka Nias</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Museum</ws:kategori>
+        <ws:alamat>Jalan Yos Sudarso No. 134A, Gunungsitoli</ws:alamat>
+        <ws:kotaKabupaten>Kota Gunungsitoli</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>1.2917</geo:latitude>
+        <geo:longitude>97.6151</geo:longitude>
+        <ws:hargaTiket>Rp 10.000</ws:hargaTiket>
+        <ws:hariBuka>Selasa - Minggu</ws:hariBuka>
+        <ws:jamBuka>08:00</ws:jamBuka>
+        <ws:jamTutup>17:00</ws:jamTutup>
+        <ws:dekatDengan>Pantai Laowömaru</ws:dekatDengan>
+        <ws:fasilitas>Galeri budaya Nias, area sejarah megalit</ws:fasilitas>
+        <ws:aktivitas>Belajar adat Nias, melihat artefak, foto</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Perjuangan_TNI" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Museum Perjuangan Kodam I/Bukit Barisan</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Museum Militer</ws:kategori>
+        <ws:alamat>Jl. Zainul Arifin No. 8, Medan</ws:alamat>
+        <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>3.5910</geo:latitude>
+        <geo:longitude>98.6762</geo:longitude>
+        <ws:hargaTiket>Gratis</ws:hargaTiket>
+        <ws:hariBuka>Senin - Jumat</ws:hariBuka>
+        <ws:jamBuka>08:00</ws:jamBuka>
+        <ws:jamTutup>15:00</ws:jamTutup>
+        <ws:dekatDengan>Sri Deli Park</ws:dekatDengan>
+        <ws:fasilitas>Ruang artefak militer, senjata, dokumentasi sejarah</ws:fasilitas>
+        <ws:aktivitas>Tur edukasi, foto, belajar sejarah kemiliteran</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Rumah_Bolon_Pamatang_Purba" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Rumah Bolon Purba</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Rumah Adat Batak</ws:kategori>
+        <ws:alamat>Balige, Kabupaten Toba</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Toba</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>2.3333</geo:latitude>
+        <geo:longitude>99.0667</geo:longitude>
+        <ws:hargaTiket>Rp 40.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>Pagi</ws:jamBuka>
+        <ws:jamTutup>Sore</ws:jamTutup>
+        <ws:dekatDengan>Pasar Balige</ws:dekatDengan>
+        <ws:fasilitas>Rumah adat, galeri mini</ws:fasilitas>
+        <ws:aktivitas>Wisata budaya Batak, foto</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Pusaka_Karo" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Museum Pusaka Karo</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Museum</ws:kategori>
+        <ws:alamat>Jalan Perwira, Gundaling I, Berastagi, Gundaling I, Kec. Berastagi, Kabupaten Karo</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Karo</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>3.1000</geo:latitude>
+        <geo:longitude>98.5000</geo:longitude>
+        <ws:hargaTiket>Rp 15.000</ws:hargaTiket>
+        <ws:hariBuka>Senin - Sabtu</ws:hariBuka>
+        <ws:jamBuka>08:00</ws:jamBuka>
+        <ws:jamTutup>17:00</ws:jamTutup>
+        <ws:dekatDengan>Alun-alun Kabanjahe</ws:dekatDengan>
+        <ws:fasilitas>Artefak Karo, kostum adat, galeri sejarah</ws:fasilitas>
+        <ws:aktivitas>Edukasi budaya Karo, tur museum</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://museumdeliserdang.org/" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Museum Kabupaten Deli Serdang</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Museum Daerah</ws:kategori>
+        <ws:alamat>Lubuk Pakam, Kabupaten Deli Serdang</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Deli Serdang</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>3.5595</geo:latitude>
+        <geo:longitude>98.8902</geo:longitude>
+        <ws:hargaTiket>Rp 2.000 - 10.000</ws:hargaTiket>
+        <ws:hariBuka>Senin - Jumat</ws:hariBuka>
+        <ws:jamBuka>09:00</ws:jamBuka>
+        <ws:jamTutup>16:00</ws:jamTutup>
+        <ws:dekatDengan>Bandara Internasional Kualanamu</ws:dekatDengan>
+        <ws:fasilitas>Galeri budaya Melayu Deli, ruang pamer artefak</ws:fasilitas>
+        <ws:aktivitas>Belajar budaya lokal, melihat artefak</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Daerah_Kabupaten_Langkat#" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Museum Daerah Kabupaten Langkat</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Museum</ws:kategori>
+        <ws:alamat>Jl. Tanjung, Pekan Tj. Pura, Kec. Tj. Pura</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Langkat</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>3.7500</geo:latitude>
+        <geo:longitude>98.4500</geo:longitude>
+        <ws:hargaTiket>Rp 5.000</ws:hargaTiket>
+        <ws:hariBuka>Senin - Jumat</ws:hariBuka>
+        <ws:jamBuka>08:00</ws:jamBuka>
+        <ws:jamTutup>16.00</ws:jamTutup>
+        <ws:dekatDengan>Masjid Azizi Tanjung Pura</ws:dekatDengan>
+        <ws:fasilitas>Artefak sejarah Langkat, foto arsip</ws:fasilitas>
+        <ws:aktivitas>Tur museum, edukasi sejarah</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://eksisnews.com/taman-budaya-sumut-salah-satu-ikon-pariwisata/" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Taman Budaya Sumatera Utara</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Kompleks Budaya</ws:kategori>
+        <ws:alamat>Jl. Perintis Kemerdekaan No.33, Gaharu, Medan</ws:alamat>
+        <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>3.5967</geo:latitude>
+        <geo:longitude>98.6770</geo:longitude>
+        <ws:hargaTiket>Gratis</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>08:00</ws:jamBuka>
+        <ws:jamTutup>22:00</ws:jamTutup>
+        <ws:dekatDengan>Universitas Negeri Medan (UNIMED)</ws:dekatDengan>
+        <ws:fasilitas>Panggung seni, galeri, auditorium, pusat pelatihan seni</ws:fasilitas>
+        <ws:aktivitas>Menonton pertunjukan seni, pameran budaya</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://mindtrip.ai/attraction/tuktuk-siadong-sumatra/batu-kursi-raja-siallagan-stone-chair-king-siallagan/at-ZDzMwcf4" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Batu Kursi Raja Siallagan ( Stone Chair of King Siallagan )</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Situs Megalit</ws:kategori>
+        <ws:alamat>Siallagan Pindaraya, Jl. Lkr. Tuktuk, Simanindo</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>2.6545</geo:latitude>
+        <geo:longitude>98.7920</geo:longitude>
+        <ws:hargaTiket>Rp 2.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>08:00</ws:jamBuka>
+        <ws:jamTutup>18:00</ws:jamTutup>
+        <ws:dekatDengan>Huta Siallagan</ws:dekatDengan>
+        <ws:fasilitas>Situs batu, pemandu lokal</ws:fasilitas>
+        <ws:aktivitas>Belajar sejarah hukum adat Batak, foto</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://onetoba.com/places/desa-adat-ragi-hotang-meat/" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Desa Wisata Ragi Hotang</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Desa Wisata</ws:kategori>
+        <ws:alamat>Samosir, Kabupaten Samosir</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>2.6780</geo:latitude>
+        <geo:longitude>98.8200</geo:longitude>
+        <ws:hargaTiket>Gratis</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>24 Jam</ws:jamBuka>
+        <ws:dekatDengan>Desa Tomok</ws:dekatDengan>
+        <ws:fasilitas>Homestay, tenun tradisional, pusat kerajinan</ws:fasilitas>
+        <ws:aktivitas>Belajar tenun, foto, interaksi warga lokal</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Istana_Maimun" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Istana Maimun (Maimoon Palace)</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Istana / Museum Sejarah</ws:kategori>
+        <ws:alamat>Jalan Brigjend Katamso No. 1, Medan</ws:alamat>
+        <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>3.574356</geo:latitude>
+        <geo:longitude>98.673500</geo:longitude>
+        <ws:hargaTiket>Rp 15.000 (perkiraan; cek di lokasi)</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>08:00</ws:jamBuka>
+        <ws:jamTutup>17:00</ws:jamTutup>
+        <ws:dekatDengan>Museum Negeri Provinsi Sumatera Utara</ws:dekatDengan>
+        <ws:aktivitas>Tur istana, belajar sejarah Kerajaan Deli, foto</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Vihara_Gunung_Timur" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Vihara Gunung Timur</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Tempat Ibadah Sejarah / Kuil Tionghoa</ws:kategori>
+        <ws:alamat>Jalan Hang Tuah, Medan</ws:alamat>
+        <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>3.577827</geo:latitude>
+        <geo:longitude>98.668522</geo:longitude>
+        <ws:hargaTiket>Gratis</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>07:00</ws:jamBuka>
+        <ws:jamTutup>17:00</ws:jamTutup>
+        <ws:dekatDengan>Istana Maimun</ws:dekatDengan>
+        <ws:aktivitas>Wisata religi & budaya Tionghoa, upacara, foto</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Rumah_Tjong_A_Fie" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Rumah Tjong A Fie (Tjong A Fie Mansion)</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Museum Sejarah Tionghoa</ws:kategori>
+        <ws:alamat>Jalan Ahmad Yani, Medan</ws:alamat>
+        <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>3.58557</geo:latitude>
+        <geo:longitude>98.68056</geo:longitude>
+        <ws:hargaTiket>Rp 35.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>09:00</ws:jamBuka>
+        <ws:jamTutup>17:00</ws:jamTutup>
+        <ws:dekatDengan>Vihara Gunung Timur</ws:dekatDengan>
+        <ws:aktivitas>Tur sejarah Tionghoa, pameran interior rumah, foto</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Hirohara_Shrine" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Hirohara Shrine</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Kuil / Situs Sejarah Jepang</ws:kategori>
+        <ws:alamat>Jalan R.A. Kartini No.36, Medan Polonia</ws:alamat>
+        <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>3.5760</geo:latitude>
+        <geo:longitude>98.6695</geo:longitude>
+        <ws:hargaTiket>Gratis</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>-</ws:jamBuka>
+        <ws:jamTutup>-</ws:jamTutup>
+        <ws:dekatDengan>Kawasan Polonia / Kantor Pemerintahan Lama</ws:dekatDengan>
+        <ws:aktivitas>Tur sejarah, studi arsitektur, pemotretan</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Tomok,_Simanindo,_Samosir" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Desa Tomok</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Desa Wisata / Situs Budaya Batak</ws:kategori>
+        <ws:alamat>Desa Tomok, Kecamatan Simanindo, Kabupaten Samosir</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Samosir</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>2.646580</geo:latitude>
+        <geo:longitude>98.865486</geo:longitude>
+        <ws:hargaTiket>Rp 10.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>06:00</ws:jamBuka>
+        <ws:jamTutup>18:00</ws:jamTutup>
+        <ws:dekatDengan>Pulau Samosir / Pelabuhan Tomok</ws:dekatDengan>
+        <ws:aktivitas>Wisata budaya, makam raja Sidabutar, pameran kerajinan, foto</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bawomataluo,_Fanayama,_Nias_Selatan" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Desa Adat Bawömataluo</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Desa Adat Nias</ws:kategori>
+        <ws:alamat>Bawömataluo, Fanayama, Nias Selatan</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Nias Selatan</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>-0.9460</geo:latitude>
+        <geo:longitude>97.7840</geo:longitude>
+        <ws:hargaTiket>4 hari 3 malam Rp 8.800.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>08:00</ws:jamBuka>
+        <ws:jamTutup>20:00</ws:jamTutup>
+        <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
+        <ws:aktivitas>Wisata budaya, lompat batu Nias, pertunjukan adat</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://museumgunungtua.org/" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Museum Padang Lawas Utara (Gunung Tua)</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Museum Arkeologi / Sejarah</ws:kategori>
+        <ws:alamat>jl , Ps. Gn. Tua, Kec. Padang Bolak, Kabupaten Padang Lawas Utara</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Padang Lawas Utara</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>2.0170</geo:latitude>
+        <geo:longitude>99.0400</geo:longitude>
+        <ws:hargaTiket>Rp 15.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>08:00</ws:jamBuka>
+        <ws:jamTutup>17:00</ws:jamTutup>
+        <ws:dekatDengan>Situs Candi Bahal</ws:dekatDengan>
+        <ws:aktivitas>Edukasi arkeologi, melihat artefak purbakala, tur sejarah</ws:aktivitas>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://museumtapanuliutara.org/" rdf:graph="http://example.com/graph/budaya">
+        <rdfs:label>Museum Tapanuli Utara</rdfs:label>
+        <ws:jenisWisata>Budaya</ws:jenisWisata>
+        <ws:kategori>Museum Sejarah Batak</ws:kategori>
+        <ws:alamat>Jl. Dr. T.D. Pardede, Desa Hutauruk, Kecamatan Tarutung</ws:alamat>
+        <ws:kotaKabupaten>Kabupaten Tapanuli Utara</ws:kotaKabupaten>
+        <ws:provinsi>Sumatera Utara</ws:provinsi>
+        <geo:latitude>1.9705</geo:latitude>
+        <geo:longitude>99.0019</geo:longitude>
+        <ws:hargaTiket>Rp 15.000</ws:hargaTiket>
+        <ws:hariBuka>Setiap Hari</ws:hariBuka>
+        <ws:jamBuka>08:00</ws:jamBuka>
+        <ws:jamTutup>17:00</ws:jamTutup>
+        <ws:dekatDengan>Salib Kasih Tarutung</ws:dekatDengan>
+        <ws:aktivitas>Belajar sejarah Batak, melihat artefak, tur edukatif</ws:aktivitas>
+    </rdf:Description>
+
+</rdf:RDF>
