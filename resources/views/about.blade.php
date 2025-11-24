@@ -183,20 +183,6 @@
     </div>
 </section>
 
-<!-- Bottom CTA Banner -->
-<section class="relative h-80 bg-cover bg-center overflow-hidden" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('{{ asset('images/danau.jpg') }}');">
-    <!-- Overlay Pattern -->
-    <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, rgba(102, 126, 234, 0.1) 0px, rgba(102, 126, 234, 0.1) 10px, transparent 10px, transparent 20px);"></div>
-    
-    <!-- Content -->
-    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-        <h2 class="text-4xl md:text-5xl font-black text-white mb-8 drop-shadow-lg">Siap menjelajahi Sumatera Utara dengan AURA?</h2>
-        <a href="/" class="inline-block px-8 py-4 bg-lime-400 hover:bg-lime-500 text-gray-900 font-black text-lg md:text-xl uppercase tracking-wide rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl shadow-lg">
-            Mulai Eksplorasi →
-        </a>
-    </div>
-</section>
-
 <script src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>
