@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:ws="http://example.com/wisatasumut#"
-    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
-    xmlns:graph="http://example.com/graph/">
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Sumatera_Utara" rdf:graph="http://example.com/graph/budaya">
-        <rdfs:label>Museum Negeri Provinsi Sumatera Utara</rdfs:label>
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Sumatera_Utara">
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Museum</ws:kategori>
         <ws:alamat>Jalan H.M. Joni No. 51, Teladan Barat, Medan Kota</ws:alamat>
@@ -24,7 +22,7 @@
         <ws:aktivitas>Belajar sejarah, penelitian, pameran budaya</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Batak,_Balige" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Batak,_Balige">
         <rdfs:label>Museum Batak TB Silalahi Center</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Museum</ws:kategori>
@@ -42,7 +40,7 @@
         <ws:aktivitas>Wisata budaya, foto, belajar sejarah Batak</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Huta_Bolon_Simanindo" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Huta_Bolon_Simanindo">
         <rdfs:label>Museum Huta Bolon Simanindo</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Museum / Rumah Adat</ws:kategori>
@@ -60,7 +58,7 @@
         <ws:aktivitas>Belajar budaya Batak, menonton Tor-Tor, fotografi</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Huta_Siallagan" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Huta_Siallagan">
         <rdfs:label>Huta Siallagan</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Kampung Adat</ws:kategori>
@@ -78,7 +76,7 @@
         <ws:aktivitas>Wisata budaya, edukasi adat, foto</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Tuktuk_Siadong,_Simanindo,_Samosir" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Tuktuk_Siadong,_Simanindo,_Samosir">
         <rdfs:label>Desa Wisata Tuktuk Siadong</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Desa Wisata</ws:kategori>
@@ -96,7 +94,7 @@
         <ws:aktivitas>Wisata budaya, kuliner, foto, interaksi lokal</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="hhttps://id.wikipedia.org/wiki/Lingga,_Simpang_Empat,_Karo" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Lingga,_Simpang_Empat,_Karo">
         <rdfs:label>Desa Lingga</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Kampung Adat Karo</ws:kategori>
@@ -114,7 +112,7 @@
         <ws:aktivitas>Wisata budaya Karo, foto, edukasi adat</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Simalungun" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Simalungun">
         <rdfs:label>Museum Simalungun</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Museum</ws:kategori>
@@ -132,7 +130,7 @@
         <ws:aktivitas>Belajar sejarah Simalungun, foto</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Pusaka_Nias" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Pusaka_Nias">
         <rdfs:label>Museum Pusaka Nias</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Museum</ws:kategori>
@@ -150,7 +148,7 @@
         <ws:aktivitas>Belajar adat Nias, melihat artefak, foto</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Perjuangan_TNI" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Perjuangan_TNI">
         <rdfs:label>Museum Perjuangan Kodam I/Bukit Barisan</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Museum Militer</ws:kategori>
@@ -168,7 +166,7 @@
         <ws:aktivitas>Tur edukasi, foto, belajar sejarah kemiliteran</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Rumah_Bolon_Pamatang_Purba" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Rumah_Bolon_Pamatang_Purba">
         <rdfs:label>Rumah Bolon Purba</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Rumah Adat Batak</ws:kategori>
@@ -186,7 +184,7 @@
         <ws:aktivitas>Wisata budaya Batak, foto</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Pusaka_Karo" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Pusaka_Karo">
         <rdfs:label>Museum Pusaka Karo</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Museum</ws:kategori>
@@ -204,7 +202,7 @@
         <ws:aktivitas>Edukasi budaya Karo, tur museum</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://museumdeliserdang.org/" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://museumdeliserdang.org/">
         <rdfs:label>Museum Kabupaten Deli Serdang</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Museum Daerah</ws:kategori>
@@ -222,7 +220,7 @@
         <ws:aktivitas>Belajar budaya lokal, melihat artefak</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Daerah_Kabupaten_Langkat#" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Daerah_Kabupaten_Langkat#">
         <rdfs:label>Museum Daerah Kabupaten Langkat</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Museum</ws:kategori>
@@ -240,7 +238,7 @@
         <ws:aktivitas>Tur museum, edukasi sejarah</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://eksisnews.com/taman-budaya-sumut-salah-satu-ikon-pariwisata/" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://eksisnews.com/taman-budaya-sumut-salah-satu-ikon-pariwisata/">
         <rdfs:label>Taman Budaya Sumatera Utara</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Kompleks Budaya</ws:kategori>
@@ -258,7 +256,7 @@
         <ws:aktivitas>Menonton pertunjukan seni, pameran budaya</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://mindtrip.ai/attraction/tuktuk-siadong-sumatra/batu-kursi-raja-siallagan-stone-chair-king-siallagan/at-ZDzMwcf4" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://mindtrip.ai/attraction/tuktuk-siadong-sumatra/batu-kursi-raja-siallagan-stone-chair-king-siallagan/at-ZDzMwcf4">
         <rdfs:label>Batu Kursi Raja Siallagan ( Stone Chair of King Siallagan )</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Situs Megalit</ws:kategori>
@@ -276,7 +274,7 @@
         <ws:aktivitas>Belajar sejarah hukum adat Batak, foto</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://onetoba.com/places/desa-adat-ragi-hotang-meat/" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://onetoba.com/places/desa-adat-ragi-hotang-meat/">
         <rdfs:label>Desa Wisata Ragi Hotang</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Desa Wisata</ws:kategori>
@@ -293,7 +291,7 @@
         <ws:aktivitas>Belajar tenun, foto, interaksi warga lokal</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Istana_Maimun" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Istana_Maimun">
         <rdfs:label>Istana Maimun (Maimoon Palace)</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Istana / Museum Sejarah</ws:kategori>
@@ -310,7 +308,7 @@
         <ws:aktivitas>Tur istana, belajar sejarah Kerajaan Deli, foto</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Vihara_Gunung_Timur" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Vihara_Gunung_Timur">
         <rdfs:label>Vihara Gunung Timur</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Tempat Ibadah Sejarah / Kuil Tionghoa</ws:kategori>
@@ -324,10 +322,10 @@
         <ws:jamBuka>07:00</ws:jamBuka>
         <ws:jamTutup>17:00</ws:jamTutup>
         <ws:dekatDengan>Istana Maimun</ws:dekatDengan>
-        <ws:aktivitas>Wisata religi & budaya Tionghoa, upacara, foto</ws:aktivitas>
+        <ws:aktivitas>Wisata religi dan budaya Tionghoa, upacara, foto</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Rumah_Tjong_A_Fie" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Rumah_Tjong_A_Fie">
         <rdfs:label>Rumah Tjong A Fie (Tjong A Fie Mansion)</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Museum Sejarah Tionghoa</ws:kategori>
@@ -344,24 +342,7 @@
         <ws:aktivitas>Tur sejarah Tionghoa, pameran interior rumah, foto</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Hirohara_Shrine" rdf:graph="http://example.com/graph/budaya">
-        <rdfs:label>Hirohara Shrine</rdfs:label>
-        <ws:jenisWisata>Budaya</ws:jenisWisata>
-        <ws:kategori>Kuil / Situs Sejarah Jepang</ws:kategori>
-        <ws:alamat>Jalan R.A. Kartini No.36, Medan Polonia</ws:alamat>
-        <ws:kotaKabupaten>Kota Medan</ws:kotaKabupaten>
-        <ws:provinsi>Sumatera Utara</ws:provinsi>
-        <geo:latitude>3.5760</geo:latitude>
-        <geo:longitude>98.6695</geo:longitude>
-        <ws:hargaTiket>Gratis</ws:hargaTiket>
-        <ws:hariBuka>Setiap Hari</ws:hariBuka>
-        <ws:jamBuka>-</ws:jamBuka>
-        <ws:jamTutup>-</ws:jamTutup>
-        <ws:dekatDengan>Kawasan Polonia / Kantor Pemerintahan Lama</ws:dekatDengan>
-        <ws:aktivitas>Tur sejarah, studi arsitektur, pemotretan</ws:aktivitas>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Tomok,_Simanindo,_Samosir" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Tomok,_Simanindo,_Samosir">
         <rdfs:label>Desa Tomok</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Desa Wisata / Situs Budaya Batak</ws:kategori>
@@ -378,7 +359,7 @@
         <ws:aktivitas>Wisata budaya, makam raja Sidabutar, pameran kerajinan, foto</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bawomataluo,_Fanayama,_Nias_Selatan" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bawomataluo,_Fanayama,_Nias_Selatan">
         <rdfs:label>Desa Adat Bawömataluo</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Desa Adat Nias</ws:kategori>
@@ -395,7 +376,7 @@
         <ws:aktivitas>Wisata budaya, lompat batu Nias, pertunjukan adat</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://museumgunungtua.org/" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://museumgunungtua.org/">
         <rdfs:label>Museum Padang Lawas Utara (Gunung Tua)</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Museum Arkeologi / Sejarah</ws:kategori>
@@ -412,14 +393,13 @@
         <ws:aktivitas>Edukasi arkeologi, melihat artefak purbakala, tur sejarah</ws:aktivitas>
     </rdf:Description>
 
-    <rdf:Description rdf:about="https://museumtapanuliutara.org/" rdf:graph="http://example.com/graph/budaya">
+    <rdf:Description rdf:about="https://museumtapanuliutara.org/">
         <rdfs:label>Museum Tapanuli Utara</rdfs:label>
         <ws:jenisWisata>Budaya</ws:jenisWisata>
         <ws:kategori>Museum Sejarah Batak</ws:kategori>
         <ws:alamat>Jl. Dr. T.D. Pardede, Desa Hutauruk, Kecamatan Tarutung</ws:alamat>
         <ws:kotaKabupaten>Kabupaten Tapanuli Utara</ws:kotaKabupaten>
         <ws:provinsi>Sumatera Utara</ws:provinsi>
-        <geo:latitude>1.9705</geo:latitude>
         <geo:longitude>99.0019</geo:longitude>
         <ws:hargaTiket>Rp 15.000</ws:hargaTiket>
         <ws:hariBuka>Setiap Hari</ws:hariBuka>
