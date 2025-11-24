@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title') - Wisata Sumut</title>
     
-    <!-- Pastikan CSS dan JS load -->
     @vite(['resources/css/app.css','resources/js/app.js'])
     
-    <!-- Fallback jika Vite tidak work -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     
     <!-- Font Awesome -->
