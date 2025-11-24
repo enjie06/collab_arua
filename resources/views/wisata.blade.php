@@ -150,7 +150,7 @@
     <h2 class="text-2xl font-bold mb-8 text-white">
         RELIGI
     </h2>
-        
+    
         <!-- Swipeable Container -->
         <div class="overflow-x-auto scrollbar-hide">
             <div class="flex gap-6 pb-4 min-w-max">
