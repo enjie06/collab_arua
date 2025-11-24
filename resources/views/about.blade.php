@@ -1,322 +1,85 @@
 @extends('layouts.main')
 @section('content')
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Wisata Sumatera Utara</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <style>
-        .about-hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 8rem 4rem 4rem;
-            text-align: center;
-            margin-top: 70px;
-        }
-   
-        .about-hero h1 {
-            font-size: 3.5rem;
-            font-weight: 900;
-            margin-bottom: 1rem;
-            color: white;
-        }
-
-        .about-hero p {
-            font-size: 1.2rem;
-            color: rgba(255, 255, 255, 0.9);
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        /* About Content */
-        .about-content {
-            padding: 6rem 4rem;
-            background: #0f0f1e;
-        }
-
-        .about-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .mv-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 3rem;
-            transition: all 0.3s;
-        }
-
-        /* Team Section */
-        .team-section {
-            margin-bottom: 6rem;
-        }
-
-        .team-title {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 3rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .team-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .team-row {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-        }
-
-        .team-card {
-         background: rgba(255, 255, 255, 0.05);
-         border: 1px solid rgba(255, 255, 255, 0.1);
-         border-radius: 15px;
-         padding: 1.5rem;
-         width: 180px;
-         text-align: center;
-         transition: all 0.3s;
-         gap: 1.5rem;
-}
-
-        .team-card:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(102, 126, 234, 0.5);
-            transform: translateY(-10px);
-
-        }
-
-        .team-photo {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1rem;
-        }
-
-       .team-name {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: white;
-        }
-
-
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 20px;
-            padding: 4rem;
-            text-align: center;
-        }
-
-        .cta-section h2 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: white;
-            margin-bottom: 1rem;
-        }
-
-        .cta-section p {
-            font-size: 1.1rem;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 2rem;
-        }
-
-        .cta-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem 2.5rem;
-            background: white;
-            color: #667eea;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 700;
-            transition: all 0.3s;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .cta-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-}
-        /* Bottom CTA Banner */
-        .bottom-cta-banner {
-            position: relative;
-            height: 300px;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), 
-            url('{{ asset("images/danau.jpg") }}') center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        .banner-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: repeating-linear-gradient(
-                45deg,
-                rgba(102, 126, 234, 0.05),
-                rgba(102, 126, 234, 0.05) 10px,
-                transparent 10px,
-                transparent 20px
-            );
-            pointer-events: none;
-        }
-
-        .banner-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .banner-content h2 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: white;
-            margin-bottom: 2rem;
-            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
-        }
-
-        .banner-btn {
-            display: inline-block;
-            padding: 1.2rem 3rem;
-            background: #a8e063;
-            color: #1a1a2e;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 800;
-            font-size: 1.1rem;
-            letter-spacing: 1px;
-            transition: all 0.3s;
-            box-shadow: 0 10px 30px rgba(168, 224, 99, 0.4);
-            text-transform: uppercase;
-        }
-
-        .banner-btn:hover {
-            background: #93d04b;
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 15px 40px rgba(168, 224, 99, 0.6);
-        }
-
-        /* Responsive */
-        @media (max-width: 1024px) {
-            .mission-vision {
-                grid-template-columns: 1fr;
-            }
-
-            .features-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .team-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .about-hero {
-                padding: 6rem 2rem 3rem;
-            }
-
-            .about-hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .about-content {
-                padding: 4rem 2rem;
-            }
-
-            .banner-content h2 {
-                font-size: 1.8rem;
-            }
-
-            .banner-btn {
-                font-size: 1rem;
-                padding: 1rem 2rem;
-            }
-        }
-    </style>
+    @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
 <body>
+<!-- Hero Section -->
+<section class="bg-gradient-to-br from-purple-600 to-purple-800 py-32 px-4 text-center mt-16">
+    <h1 class="text-5xl md:text-6xl font-black text-white mb-4">Tentang Kami</h1>
+    <p class="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">Platform pencarian wisata berbasis Web Semantik untuk menghubungkan Anda dengan keindahan Sumatera Utara</p>
+</section>
 
-    <!-- Hero Section -->
-    <section class="about-hero">
-        <h1>Tentang Kami</h1>
-        <p>Platform pencarian wisata berbasis Web Semantik untuk menghubungkan Anda dengan keindahan Sumatera Utara</p>
-    </section>
+<!-- About Content -->
+<section class="bg-gray-950 py-24 px-4 md:px-8">
+    <div class="max-w-5xl mx-auto">
 
-    <!-- About Content -->
-    <section class="about-content">
-        <div class="about-container">
-
-             <!-- Team -->
-             <div class="team-section">
-                <h2 class="team-title">Tim Kami</h2>
-                
-                <div class="team-grid">
-                    <!-- Baris Atas: 3 Orang -->
-                    <div class="team-row top">
-                        <div class="team-card">
-                            <img src="{{ asset('images/member1.jpg') }}" alt="Nama Anggota 1" class="team-photo">
-                            <h3 class="team-name">Anggie Rahmadina Nasution</h3>
-                        </div>
-
-                        <div class="team-card">
-                            <img src="{{ asset('images/member2.jpg') }}" alt="Arua" class="team-photo">
-                            <h3 class="team-name">Miranda Nainggolan</h3>
-                        </div>
-
-                        <div class="team-card">
-                            <img src="{{ asset('images/member3.jpg') }}" alt="Nama Anggota 3" class="team-photo">
-                            <h3 class="team-name">Vina Permata Sari</h3>
-                        </div>
+        <!-- Team Section -->
+        <div class="mb-24">
+            <h2 class="text-4xl md:text-5xl font-black text-center bg-gradient-to-r from-purple-500 to-purple-700 bg-clip-text text-transparent mb-16">Tim Kami</h2>
+            
+            <div class="flex flex-col items-center gap-8">
+                <!-- Baris Atas: 3 Orang -->
+                <div class="flex flex-wrap justify-center gap-8">
+                    <!-- Member 1 -->
+                    <div class="bg-white/5 border border-white/10 rounded-3xl p-10 w-72 text-center transition-all duration-300 hover:bg-white/8 hover:border-purple-500/50 hover:-translate-y-2">
+                        <img src="{{ asset('images/member1.jpg') }}" alt="Anggie Rahmadina Nasution" class="w-40 h-40 rounded-full object-cover mx-auto mb-6">
+                        <h3 class="text-2xl font-bold text-white">Anggie Rahmadina Nasution</h3>
                     </div>
 
-                    <!-- Baris Bawah: 2 Orang -->
-                    <div class="team-row bottom">
-                        <div class="team-card">
-                            <img src="{{ asset('images/member4.jpg') }}" alt="Nama Anggota 4" class="team-photo">
-                            <h3 class="team-name">Nayla Vania</h3>
-                        </div>
+                    <!-- Member 2 -->
+                    <div class="bg-white/5 border border-white/10 rounded-3xl p-10 w-72 text-center transition-all duration-300 hover:bg-white/8 hover:border-purple-500/50 hover:-translate-y-2">
+                        <img src="{{ asset('images/member2.jpg') }}" alt="Miranda Nainggolan" class="w-40 h-40 rounded-full object-cover mx-auto mb-6">
+                        <h3 class="text-2xl font-bold text-white">Miranda Nainggolan</h3>
+                    </div>
 
-                        <div class="team-card">
-                            <img src="{{ asset('images/member5.jpg') }}" alt="Nama Anggota 5" class="team-photo">
-                            <h3 class="team-name">Natali Desi Sembiring</h3>
-                        </div>
+                    <!-- Member 3 -->
+                    <div class="bg-white/5 border border-white/10 rounded-3xl p-10 w-72 text-center transition-all duration-300 hover:bg-white/8 hover:border-purple-500/50 hover:-translate-y-2">
+                        <img src="{{ asset('images/member3.jpg') }}" alt="Vina Permata Sari" class="w-40 h-40 rounded-full object-cover mx-auto mb-6">
+                        <h3 class="text-2xl font-bold text-white">Vina Permata Sari</h3>
+                    </div>
+                </div>
+
+                <!-- Baris Bawah: 2 Orang -->
+                <div class="flex flex-wrap justify-center gap-8">
+                    <!-- Member 4 -->
+                    <div class="bg-white/5 border border-white/10 rounded-3xl p-10 w-72 text-center transition-all duration-300 hover:bg-white/8 hover:border-purple-500/50 hover:-translate-y-2">
+                        <img src="{{ asset('images/member4.jpg') }}" alt="Nayla Vania" class="w-40 h-40 rounded-full object-cover mx-auto mb-6">
+                        <h3 class="text-2xl font-bold text-white">Nayla Vania</h3>
+                    </div>
+
+                    <!-- Member 5 -->
+                    <div class="bg-white/5 border border-white/10 rounded-3xl p-10 w-72 text-center transition-all duration-300 hover:bg-white/8 hover:border-purple-500/50 hover:-translate-y-2">
+                        <img src="{{ asset('images/member5.jpg') }}" alt="Natali Desi Sembiring" class="w-40 h-40 rounded-full object-cover mx-auto mb-6">
+                        <h3 class="text-2xl font-bold text-white">Natali Desi Sembiring</h3>
                     </div>
                 </div>
             </div>
-    </section>
+        </div>
 
-            <!-- CTA Section -->
-            <section class="bottom-cta-banner">
-    <div class="banner-overlay"></div>
-    <div class="banner-content">
-        <h2>Mulai menjelajahi Sumatera Utara?</h2>
-        <a href="/" class="banner-btn">
-            START EXPLORING →
+    </div>
+</section>
+
+<!-- Bottom CTA Banner -->
+<section class="relative h-80 bg-cover bg-center overflow-hidden" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('{{ asset('images/danau.jpg') }}');">
+    <!-- Overlay Pattern -->
+    <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, rgba(102, 126, 234, 0.1) 0px, rgba(102, 126, 234, 0.1) 10px, transparent 10px, transparent 20px);"></div>
+    
+    <!-- Content -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+        <h2 class="text-4xl md:text-5xl font-black text-white mb-8 drop-shadow-lg">Mulai menjelajahi Sumatera Utara?</h2>
+        <a href="/" class="inline-block px-8 py-4 bg-lime-400 hover:bg-lime-500 text-gray-900 font-black text-lg md:text-xl uppercase tracking-wide rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl shadow-lg">
+            Start Exploring →
         </a>
     </div>
 </section>
 
-
-    <script src="{{ asset('js/script.js') }}"></script>
+<script src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>
-
 @endsection
