@@ -12,10 +12,10 @@
 
         <div class="relative z-10 text-center px-4 max-w-4xl">
             <h1 class="text-5xl md:text-6xl font-black text-white mb-4 animate-fade-in">
-                Jelajahi Sumatera Utara
+                Explore Sumatera Utara
             </h1>
             <p class="text-lg md:text-xl text-white/90">
-                Temukan destinasi wisata impian Anda dengan teknologi Web Semantik
+                Temukan destinasi wisata impian Anda 
             </p>
         </div>
     </section>
@@ -41,7 +41,6 @@
     <!-- Kategori SEMUA (default tampil) -->
     <section id="category-semua" class="category-content max-w-7xl mx-auto px-4 mb-20">
         <h2 class="text-4xl font-black text-white mb-4">SEMUA DESTINASI</h2>
-        <p class="text-gray-400 mb-8">Jelajahi semua kategori wisata</p>
         
         <!-- Grid untuk semua destinasi -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -127,7 +126,6 @@
         <div class="flex items-center justify-between mb-8">
             <div>
                 <h2 class="text-4xl font-black text-white">ALAM</h2>
-                <p class="text-gray-400 mt-2">Keindahan alam yang memukau</p>
             </div>
         </div>
 
@@ -191,7 +189,6 @@
         <div class="flex items-center justify-between mb-8">
             <div>
                 <h2 class="text-4xl font-black text-white">BUDAYA</h2>
-                <p class="text-gray-400 mt-2">Warisan budaya yang kaya</p>
             </div>
         </div>
 
@@ -255,7 +252,6 @@
         <div class="flex items-center justify-between mb-8">
             <div>
                 <h2 class="text-4xl font-black text-white">RELIGI</h2>
-                <p class="text-gray-400 mt-2">Tempat ibadah yang sakral</p>
             </div>
         </div>
 

@@ -692,7 +692,7 @@
             Ready to Explore North Sumatera?
         </h2>
 
-        <a href="/"
+        <a href="{{ route('wisata') }}"
            class="inline-block mt-8 px-8 py-4 bg-lime-400 hover:bg-lime-500 text-gray-900 font-black text-lg md:text-xl uppercase tracking-wide rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl shadow-lg">
             Start Exploring →
         </a>

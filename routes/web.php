@@ -14,7 +14,7 @@ Route::get('/home', function () {
 
 Route::get('/wisata', function () {
     return view('wisata');
-});
+})->name('wisata');
 
 Route::get('/about', function () {
     return view('about');

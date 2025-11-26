@@ -75,7 +75,7 @@
                     <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-purple-200 transition-colors">
                     Anggie Rahmadina Nasution
                     </h3>
-                    <p class="text-purple-300 font-medium mb-4">Full Stack Developer</p>
+                    <p class="text-purple-300 font-medium mb-4">Integration & Maps Developer</p>
                 </div>
             </div>
 
@@ -117,7 +117,7 @@
                     <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-green-200 transition-colors">
                         Vina Permata Sari
                     </h3>
-                    <p class="text-green-300 font-medium mb-4">Content Specialist</p>
+                    <p class="text-green-300 font-medium mb-4">Data Scraper</p>
                 </div>
             </div>
         </div>
@@ -142,7 +142,7 @@
                     <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-orange-200 transition-colors">
                         Nayla Vania
                     </h3>
-                    <p class="text-orange-300 font-medium mb-4">Data Analyst</p>
+                    <p class="text-orange-300 font-medium mb-4">Data Scraper & Media Integration</p>
                 </div>
             </div>
 
