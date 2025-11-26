@@ -1,7 +1,9 @@
 @extends('layouts.main')
 @section('content')
 
-<section class="w-full py-20 px-8 md:px-16">
+
+
+<section class="w-full py-20 px-8 md:px-16 gradient-bg min-h-screen">
 
   <!-- Kategori ALAM -->
   <div class="mb-16">
@@ -310,21 +312,6 @@
     </div>
 </div>
 
-<!-- Tambahkan modal untuk card lainnya dengan ID berbeda: modal-alam-2, modal-budaya-1, dst -->
-<!-- Copy struktur modal di atas dan ganti ID + kontennya -->
-
-<!-- Custom CSS & JavaScript -->
-<style>
-    /* Hide scrollbar tapi tetap bisa scroll */
-    .scrollbar-hide::-webkit-scrollbar {
-        display: none;
-    }
-    .scrollbar-hide {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-        scroll-behavior: smooth;
-    }
-</style>
 
 <script>
     function openModal(modalId) {
@@ -365,7 +352,7 @@
                 modal.classList.add('hidden');
                 modal.classList.remove('flex');
             });
-            document.body.style.overflow = 'auto';
+            document.body.style.overflow = 'auto'; 
         }
     });
 </script>

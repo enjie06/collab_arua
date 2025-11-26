@@ -1,5 +1,5 @@
 <nav class="backdrop-blur-md bg-white/10 border-b border-white/20 fixed top-0 left-0 w-full z-50">
-    <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
 
         <!-- Logo -->
         <h1 class="text-white text-xl font-bold tracking-wide">
