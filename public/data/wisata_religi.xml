@@ -3,7 +3,8 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:ws="http://example.com/wisatasumut#"
-  xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+  xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/">
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Masjid_Raya_Al-Mashun">
       <rdfs:label>Masjid Raya Al-Mashun</rdfs:label>
@@ -21,6 +22,7 @@
       <ws:jamBuka>24 Jam</ws:jamBuka>
       <ws:jamTutup>-</ws:jamTutup>
       <ws:dekatDengan>Istana Maimun</ws:dekatDengan>
+      <foaf:depiction rdf:resource="https://commons.wikimedia.org/wiki/File:Great_mosque_in_Medan_cropped.jpg"/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://ceritamedan.com/masjid-al-osmani-masjid-tertua-kesultanan-deli/">
@@ -39,6 +41,7 @@
       <ws:jamBuka>24 Jam</ws:jamBuka>
       <ws:jamTutup>-</ws:jamTutup>
       <ws:dekatDengan>Pelabuhan Belawan</ws:dekatDengan>
+      <foaf:depiction rdf:resource="https://commons.wikimedia.org/wiki/File:Al-Osmani_Mosque,_Medan,_Indonesia.jpg"/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://idalamat.com/alamat/143606/masjid-agung-binjai-binjai-sumatera-utara">
@@ -57,6 +60,7 @@
       <ws:jamBuka>24 Jam</ws:jamBuka>
       <ws:jamTutup>-</ws:jamTutup>
       <ws:dekatDengan>Lapangan Merdeka Binjai</ws:dekatDengan>
+      <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Grand_Mosque_of_Medan">
@@ -75,6 +79,7 @@
       <ws:jamBuka>24 Jam</ws:jamBuka>
       <ws:jamTutup>-</ws:jamTutup>
       <ws:dekatDengan>Lapangan Merdeka Medan</ws:dekatDengan>
+      <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Sultan_Ma%27mun_Al_Rashid_Perkasa_Alamsyah">
@@ -93,6 +98,7 @@
       <ws:jamBuka>07:00</ws:jamBuka>
       <ws:jamTutup>18:00</ws:jamTutup>
       <ws:dekatDengan>Masjid Raya Al-Mashun</ws:dekatDengan>
+      <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Abdul_Wahab_Rokan">
@@ -111,6 +117,7 @@
       <ws:jamBuka>07:00</ws:jamBuka>
       <ws:jamTutup>18:00</ws:jamTutup>
       <ws:dekatDengan>Pondok Pesantren Babussalam</ws:dekatDengan>
+      <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://www.backpacksejarah.com/2015/10/makam-sisingamangaraja-xii-di-balige.html">
@@ -129,6 +136,7 @@
       <ws:jamBuka>07:00</ws:jamBuka>
       <ws:jamTutup>18:00</ws:jamTutup>
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Azizi_Mosque">
@@ -147,6 +155,7 @@
       <ws:jamBuka>24 Jam</ws:jamBuka>
       <ws:jamTutup>-</ws:jamTutup>
       <ws:dekatDengan>Ponpes Tuan Guru Babussalam</ws:dekatDengan>
+      <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Azizi_Mosque_side.jpg/640px-Azizi_Mosque_side.jpg"/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Masjid_Raya_Stabat">
@@ -165,6 +174,7 @@
       <ws:jamBuka>24 Jam</ws:jamBuka>
       <ws:jamTutup>-</ws:jamTutup>
       <ws:dekatDengan>Alun-Alun Stabat</ws:dekatDengan>
+      <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://mieayammahmud.com/sejarah-masjid-al-jihad-medan/">
@@ -183,6 +193,7 @@
       <ws:jamBuka>24 Jam</ws:jamBuka>
       <ws:jamTutup>-</ws:jamTutup>
       <ws:dekatDengan>Kampus USU</ws:dekatDengan>
+      <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Graha_Maria_Annai_Velangkanni">
@@ -201,6 +212,7 @@
       <ws:jamBuka>08:00</ws:jamBuka>
       <ws:jamTutup>17:00</ws:jamTutup>
       <ws:dekatDengan>Kampus Santo Thomas Medan</ws:dekatDengan>
+      <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Gereja_Velangkani_Medan.jpg/640px-Gereja_Velangkani_Medan.jpg"/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://katedralmedan.or.id/">
@@ -219,6 +231,7 @@
       <ws:jamBuka>06:00</ws:jamBuka>
       <ws:jamTutup>20:00</ws:jamTutup>
       <ws:dekatDengan>Lapangan Merdeka Medan</ws:dekatDengan>
+      <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Salib_Kasih">
@@ -237,6 +250,7 @@
       <ws:jamBuka>08:00</ws:jamBuka>
       <ws:jamTutup>18:00</ws:jamTutup>
       <ws:dekatDengan>Kota Tarutung</ws:dekatDengan>
+      <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/HKBP_Distrik_XI_Toba_Hasundutan">
@@ -255,6 +269,7 @@
       <ws:jamBuka>06:00</ws:jamBuka>
       <ws:jamTutup>12:00</ws:jamTutup>
       <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/HKBP_Balige%2C_Res._Balige_11.jpg/640px-HKBP_Balige%2C_Res._Balige_11.jpg"/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://parokipadangbulan.id/">
@@ -273,6 +288,7 @@
       <ws:jamBuka>06:00</ws:jamBuka>
       <ws:jamTutup>20:00</ws:jamTutup>
       <ws:dekatDengan>Graha Maria Annai Velangkanni</ws:dekatDengan>
+      <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://adulamtravel.com/product/wisata-iman-katolik-via-medan-5-hari-4-malam-goa-maria-berastagi-taman-simalem-bukit-sibea-bea-desa-ulos-samosir-tour/">
@@ -291,6 +307,7 @@
       <ws:jamBuka>07:00</ws:jamBuka>
       <ws:jamTutup>18:00</ws:jamTutup>
       <ws:dekatDengan>Taman Alam Lumbini</ws:dekatDengan>
+      <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://idalamat.com/alamat/239547/gereja-katolik-st-yoseph-medan-sumatera-utara">
@@ -309,6 +326,7 @@
       <ws:jamBuka>06:00</ws:jamBuka>
       <ws:jamTutup>20:00</ws:jamTutup>
       <ws:dekatDengan>Lapangan Merdeka Medan</ws:dekatDengan>
+      <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Lumbini_Natural_Park">
@@ -327,6 +345,7 @@
       <ws:jamBuka>08:00</ws:jamBuka>
       <ws:jamTutup>17:00</ws:jamTutup>
       <ws:dekatDengan>Bukit Doa Getsemani</ws:dekatDengan>
+      <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/TamanLumbini20110607.jpg/640px-TamanLumbini20110607.jpg"/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://mahaviharamaitreya.org/">
@@ -345,6 +364,7 @@
       <ws:jamBuka>07:00</ws:jamBuka>
       <ws:jamTutup>21:00</ws:jamTutup>
       <ws:dekatDengan>Pusat Komplek Cemara Asri</ws:dekatDengan>
+      <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://www.semuabis.com/vihara-setia-budi_3C">
@@ -363,6 +383,7 @@
       <ws:jamBuka>07:00</ws:jamBuka>
       <ws:jamTutup>18:00</ws:jamTutup>
       <ws:dekatDengan>Pusat Kota Pematangsiantar</ws:dekatDengan>
+      <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://pariwisatasumut.com/destination/read/vihara-avalokitesvara">
@@ -381,6 +402,7 @@
       <ws:jamBuka>07:00</ws:jamBuka>
       <ws:jamTutup>21:00</ws:jamTutup>
       <ws:dekatDengan>Pelabuhan Tanjungbalai</ws:dekatDengan>
+      <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://viharaborobudur.org/home/informasi.html">
@@ -399,6 +421,7 @@
       <ws:jamBuka>08:30</ws:jamBuka>
       <ws:jamTutup>20:00</ws:jamTutup>
       <ws:dekatDengan>Masjid Raya Medan</ws:dekatDengan>
+      <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Sri_Mariamman_Temple,_Medan">
@@ -417,6 +440,7 @@
       <ws:jamBuka>06:00</ws:jamBuka>
       <ws:jamTutup>20:00</ws:jamTutup>
       <ws:dekatDengan>Sun Plaza Medan</ws:dekatDengan>
+      <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://www.tobawisata.com/chong-a-fie-mansion/">
@@ -435,5 +459,6 @@
       <ws:jamBuka>09:00</ws:jamBuka>
       <ws:jamTutup>17:00</ws:jamTutup>
       <ws:dekatDengan>Lapangan Merdeka Medan</ws:dekatDengan>
+      <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Tjong_A_Fie_Mansion%2C_October_2021.jpg/640px-Tjong_A_Fie_Mansion%2C_October_2021.jpg"/>
     </rdf:Description>
 </rdf:RDF>
