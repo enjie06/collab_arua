@@ -270,309 +270,439 @@
 </div>
 
             
-            <!-- CAROUSEL SECTION -->
-            <div class="carousel-wrapper">
-                <div class="carousel-container">
-                    <div class="carousel" id="categoryCarousel">
-                        <div class="carousel-item">
-                            <div class="carousel-card">
-                                <img src="/images/kategori-alam.jpeg" alt="Alam" />
-                                <h3 class="carousel-label">Alam</h3>
-                            </div>
-                        </div>
+    <!-- CAROUSEL SECTION -->
 
-                        <div class="carousel-item">
-                            <div class="carousel-card">
-                                <img src="/images/kategori-budaya.jpeg" alt="Budaya" />
-                                <h3 class="carousel-label">Budaya</h3>
-                            </div>
-                        </div>
+      <style>
+          .stack-gallery {
+              text-align: center;
+              padding: 50px 0;
+              position: relative;
+          }
 
-                        <div class="carousel-item">
-                            <div class="carousel-card">
-                                <img src="/images/kategori-religi.jpeg" alt="Religi" />
-                                <h3 class="carousel-label">Religi</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          .stack-container {
+              position: relative;
+              width: 400px;
+              height: 260px;
+              margin: auto;
+          }
 
-                <div class="carousel-nav">
-                    <button class="carousel-btn" onclick="moveCarousel(-1)">❮</button>
+          .stack-img {
+              width: 300px;
+              height: 300px;
+              object-fit: cover;
+              border-radius: 15px;
+              position: absolute;
+              transition: 0.35s ease;
+          }
 
-                    <div class="carousel-dots">
-                        <span class="carousel-dot active" onclick="goToSlide(0)"></span>
-                        <span class="carousel-dot" onclick="goToSlide(1)"></span>
-                        <span class="carousel-dot" onclick="goToSlide(2)"></span>
-                    </div>
+          /* Wrapper untuk efek hover */
+          .img-wrapper {
+              position: absolute;
+              width: 300px;
+              height: 300px;
+              border-radius: 15px;
+              overflow: hidden;
 
-                    <button class="carousel-btn" onclick="moveCarousel(1)">❯</button>
-                </div>
-            </div>
-        </div>
-    </section>
+              transition: 0.35s ease;
+              z-index: 1;
+          }
 
-<section id="wisata-section" class="relative py-24 px-16" 
-    style="background-image: url('{{ asset('images/wpp2.jpeg') }}'); 
-           background-size: cover; 
-           background-position: center; 
-           background-repeat: no-repeat;">
+          /* Efek naik, zoom, dan jadi paling depan */
+          .img-wrapper:hover {
+              transform: scale(1.12) translateY(-25px) rotate(0deg);
+              z-index: 15;
+              box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+          }
 
-  <!-- Bingkai tengah -->
-  <div class="mx-auto rounded-3xl border-4 border-white/30 shadow-xl max-w-[1200px]" 
-       style="background: linear-gradient(135deg, #0B3D91, #0F7C59, #145C4A);">
-    
-    <h1 class="text-4xl font-bold mb-12 text-center text-white pt-8">TOP 10 DESTINATIONS</h1>
+        .label {
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              left: 0;
 
-    <div class="flex gap-6 overflow-x-auto pb-8 px-6 scrollbar-hide">
-        @php
-            $wisataList = [
-                ['img' => 'wisata1.jpg', 'nama' => 'Danau Toba'],
-                ['img' => 'wisata2.jpg', 'nama' => 'Pulau Samosir'],
-                ['img' => 'wisata3.jpg', 'nama' => 'Air Terjun Sipiso-piso'],
-                ['img' => 'wisata4.jpg', 'nama' => 'Bukit Lawang'],
-                ['img' => 'wisata5.jpg', 'nama' => 'Gunung Sibayak'],
-                ['img' => 'wisata1.jpg', 'nama' => 'Taman Nasional Gunung Leuser'],
-                ['img' => 'wisata2.jpg', 'nama' => 'Menara Pandang Tele'],
-                ['img' => 'wisata3.jpg', 'nama' => 'Bukit Holbung'],
-                ['img' => 'wisata4.jpg', 'nama' => 'Kawah Sipoholon'],
-                ['img' => 'wisata5.jpg', 'nama' => 'Museum Batak'],
+              padding: 5px;
 
-            ];
-        @endphp
+              background: rgba(0, 0, 0, 0.45);
+              border: 1px solid rgba(255,255,255,0.45);
 
-        @foreach ($wisataList as $w)
-            <a href="/wisata?page={{ $loop->iteration }}"
-               class="relative min-w-[250px] h-[330px] rounded-3xl shadow-xl flex flex-col justify-end overflow-hidden group transition transform hover:scale-105"
-               style="background: linear-gradient(135deg, #FDE68A, #FBBF24);">
-               
-                <img src="/images/{{ $w['img'] }}"
-                     class="w-full h-full object-cover transition duration-500 group-hover:scale-110 rounded-3xl" />
+              color: white;
+              font-size: 17px;
+              font-weight: 600;
 
-                <!-- TEXT -->
-                <div class="absolute bottom-0 left-0 w-full bg-black/30 backdrop-blur-sm py-3 text-center">
-                    <p class="text-white font-semibold text-lg">{{ $w['nama'] }}</p>
-                </div>
-            </a>
-        @endforeach
-    </div>
-  </div>
-</section>
+              border-radius: 0;
+              backdrop-filter: blur(3px);
+              z-index: 20;
+          }
 
-<style>
-.scrollbar-hide::-webkit-scrollbar {
-    display: none;
+          .img-1 {
+              top: 0;
+              right: 120px;
+              transform: rotate(-12deg);
+              z-index: 3;
+          }
+
+          .img-2 {
+              top: -90px;
+              left: 80px;
+              transform: rotate(0deg) scale(1.05);
+              z-index: 5;
+          }
+
+          .img-3 {
+              top: 0;
+              left: 190px;
+              transform: rotate(10deg);
+              z-index: 2;
+          }
+
+          .stack-text {
+              margin-top: 230px;
+              font-size: 26px;
+              font-weight: 700;
+              color: white;
+          }
+
+          .stack-btn {
+              margin-top: 15px;
+              background: #00AEEF;
+              color: white;
+              padding: 10px 25px;
+              border-radius: 25px;
+              font-weight: 600;
+              border: none;
+              cursor: pointer;
+              transition: 0.25s;
+          }
+
+          .stack-btn:hover {
+              background: #0284c7;
+              transform: scale(1.05);
+          }
+      </style>
+
+      <section class="stack-gallery">
+          <div class="stack-container">
+
+              <!-- Gambar 1 -->
+              <div class="img-wrapper img-1">
+                  <img src="/images/kategori-alam.jpeg" alt="Alam" class="stack-img">
+                  <div class="label">Alam</div>
+              </div>
+
+              <!-- Gambar 2 -->
+              <div class="img-wrapper img-2">
+                  <img src="/images/kategori-religi.jpeg" alt="Religi" class="stack-img">
+                  <div class="label">Religi</div>
+              </div>
+
+              <!-- Gambar 3 -->
+              <div class="img-wrapper img-3">
+                  <img src="/images/kategori-budaya.jpeg" alt="Budaya" class="stack-img">
+                  <div class="label">Budaya</div>
+              </div>
+
+          </div>
+
+
+      </section>
+
+
+      </section>
+
+      <section id="wisata-section" class="relative py-24 px-16"
+          style="background-image: url('{{ asset('images/Tano_Ponggol.jpg') }}');
+          
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;">
+                    <div class="absolute inset-0 bg-black/50"></div>
+
+          <h1 class="text-6xl font-bold mb-12 text-center text-white drop-shadow-lg">
+              TOP 10 DESTINATIONS
+          </h1>
+
+          <div class="flex gap-6 overflow-x-auto pb-8 px-6 scrollbar-hide">
+
+              @php
+                  $wisataList = [
+                      ['img' => 'wisata1.jpg', 'nama' => 'Danau Toba'],
+                      ['img' => 'wisata2.jpg', 'nama' => 'Pulau Samosir'],
+                      ['img' => 'wisata3.jpg', 'nama' => 'Air Terjun Sipiso-piso'],
+                      ['img' => 'wisata4.jpg', 'nama' => 'Bukit Lawang'],
+                      ['img' => 'wisata5.jpg', 'nama' => 'Gunung Sibayak'],
+                      ['img' => 'wisata1.jpg', 'nama' => 'Taman Nasional Gunung Leuser'],
+                      ['img' => 'wisata2.jpg', 'nama' => 'Menara Pandang Tele'],
+                      ['img' => 'wisata3.jpg', 'nama' => 'Bukit Holbung'],
+                      ['img' => 'wisata4.jpg', 'nama' => 'Kawah Sipoholon'],
+                      ['img' => 'wisata5.jpg', 'nama' => 'Museum Batak'],
+                  ];
+              @endphp
+
+              @foreach ($wisataList as $w)
+                  <a href="/wisata?page={{ $loop->iteration }}"
+                    class="relative min-w-[250px] h-[330px] rounded-3xl shadow-xl flex flex-col justify-end overflow-hidden group transition transform hover:scale-105"
+                    style="background: linear-gradient(135deg, #FDE68A, #FBBF24);">
+
+                      <img src="/images/{{ $w['img'] }}"
+                          class="w-full h-full object-cover transition duration-500 
+                                  group-hover:scale-110 rounded-3xl" />
+
+                      <div class="absolute bottom-0 left-0 w-full bg-black/40 backdrop-blur-sm py-3 text-center">
+                          <p class="text-white font-semibold text-lg">{{ $w['nama'] }}</p>
+                      </div>
+                  </a>
+              @endforeach
+
+          </div>
+      </section>
+
+      <style>
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      </style>
+
+
+      <style>
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      </style>
+
+
+     <style>
+/* Warna card: biru gelap elegan */
+.card-blue {
+    background: rgba(10, 25, 47, 0.75);     /* navy + transparan */
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
 }
-.scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+
+/* Hover biar lebih pop */
+.card-blue:hover {
+    transform: scale(1.06);
+    border-color: rgba(255,255,255,0.3);
 }
 </style>
 
+<section class="relative px-6 py-20 bg-cover bg-center"
+         style="background-image: url('{{ asset('images/Sibayak.jpg') }}');">
+             <div class="absolute inset-0 bg-black/50"></div>
 
-<section class="relative py- px-6">
-    
-  <!-- Bingkai tengah -->
-  <div class="mx-auto rounded-3xl border-4 border-white/30 shadow-xl max-w-[1000px] mt-12" 
-       style="background: linear-gradient(135deg, #85c3e7ff, #7ceb9fff, #FFFFFF);">
-    
-    <div class="max-w-6xl mx-auto text-center py-8">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What They Say?</h2>
-      
-      <h2 class="text-gray-700 max-w-2xl mx-auto mb-12"> <b> Kata mereka para wisatawan yang telah menjelajahi keindahan Sumatera Utara</b>
-       
-</h2>
+    <div class="text-center mb-12">
+        <h1 class="text-6xl md:text-10xl font-bold text-white drop-shadow-lg">
+            What They Say?
+        </h1>
 
-      <!-- Carousel Testimoni -->
-      <div class="overflow-x-auto scroll-smooth scrollbar-hide py-4">
-        <div class="flex gap-6 w-max px-6">
-
-      <!-- Card 1 -->
-      <div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl flex flex-col justify-between transition transform hover:scale-105"
-           style="background: linear-gradient(135deg, #FDE68A, #FBBF24); border: 2px solid #F59E0B;">
-        <p class="text-gray-800 mb-4 text-sm">
-          “Pengalaman yang sangat menyenangkan! Alamnya indah dan penduduknya ramah.”
-        </p>
-        <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border-2 border-white/50 bg-white/20">
-          <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon1" 
-               class="w-10 h-10 rounded-full border-2 border-white p-[1px]" />
-          <div class="text-left">
-            <h4 class="font-semibold text-gray-800 text-sm">Rani Putri</h4>
-            <p class="text-gray-700 text-xs">Traveler</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl flex flex-col justify-between transition transform hover:scale-105"
-           style="background: linear-gradient(135deg, #A5F3FC, #0EA5E9); border: 2px solid #0284C7;">
-        <p class="text-gray-800 mb-4 text-sm">
-          “Website ini membantu banget buat nyari wisata yang cocok tanpa ribet.”
-        </p>
-        <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border-2 border-white/50 bg-white/20">
-          <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon2" 
-               class="w-10 h-10 rounded-full border-2 border-white p-[1px]" />
-          <div class="text-left">
-            <h4 class="font-semibold text-gray-800 text-sm">Budi Santoso</h4>
-            <p class="text-gray-700 text-xs">Pengunjung</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl flex flex-col justify-between transition transform hover:scale-105"
-           style="background: linear-gradient(135deg, #FBCFE8, #EC4899); border: 2px solid #DB2777;">
-        <p class="text-gray-800 mb-4 text-sm">
-          “Pilihan destinasinya lengkap dan informatif. Sangat direkomendasikan!”
-        </p>
-        <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border-2 border-white/50 bg-white/20">
-          <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon3" 
-               class="w-10 h-10 rounded-full border-2 border-white p-[1px]" />
-          <div class="text-left">
-            <h4 class="font-semibold text-gray-800 text-sm">Siska Marbun</h4>
-            <p class="text-gray-700 text-xs">Mahasiswa</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl flex flex-col justify-between transition transform hover:scale-105"
-           style="background: linear-gradient(135deg, #D9F99D, #84CC16); border: 2px solid #4D7C0F;">
-        <p class="text-gray-800 mb-4 text-sm">
-          “Destinasi menarik dan staf sangat membantu, pasti balik lagi!”
-        </p>
-        <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border-2 border-white/50 bg-white/20">
-          <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon4" 
-               class="w-10 h-10 rounded-full border-2 border-white p-[1px]" />
-          <div class="text-left">
-            <h4 class="font-semibold text-gray-800 text-sm">Andi Wijaya</h4>
-            <p class="text-gray-700 text-xs">Traveler</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl flex flex-col justify-between transition transform hover:scale-105"
-           style="background: linear-gradient(135deg, #FECACA, #EF4444); border: 2px solid #B91C1C;">
-        <p class="text-gray-800 mb-4 text-sm">
-          “Informasi lengkap dan website mudah digunakan, love it!”
-        </p>
-        <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border-2 border-white/50 bg-white/20">
-          <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon5" 
-               class="w-10 h-10 rounded-full border-2 border-white p-[1px]" />
-          <div class="text-left">
-            <h4 class="font-semibold text-gray-800 text-sm">Citra Dewi</h4>
-            <p class="text-gray-700 text-xs">Pengunjung</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 6 -->
-      <div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl flex flex-col justify-between transition transform hover:scale-105"
-           style="background: linear-gradient(135deg, #E0E7FF, #6366F1); border: 2px solid #4338CA;">
-        <p class="text-gray-800 mb-4 text-sm">
-          “Sangat puas dengan pilihan wisata yang tersedia di sini.”
-        </p>
-        <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border-2 border-white/50 bg-white/20">
-          <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon6" 
-               class="w-10 h-10 rounded-full border-2 border-white p-[1px]" />
-          <div class="text-left">
-            <h4 class="font-semibold text-gray-800 text-sm">Dewi Anggraini</h4>
-            <p class="text-gray-700 text-xs">Mahasiswa</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 7 -->
-      <div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl flex flex-col justify-between transition transform hover:scale-105"
-           style="background: linear-gradient(135deg, #FEF9C3, #FACC15); border: 2px solid #A16207;">
-        <p class="text-gray-800 mb-4 text-sm">
-          “Website ini bikin rencana liburan jadi gampang dan cepat.”
-        </p>
-        <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border-2 border-white/50 bg-white/20">
-          <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon7" 
-               class="w-10 h-10 rounded-full border-2 border-white p-[1px]" />
-          <div class="text-left">
-            <h4 class="font-semibold text-gray-800 text-sm">Fajar Pratama</h4>
-            <p class="text-gray-700 text-xs">Traveler</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 8 -->
-      <div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl flex flex-col justify-between transition transform hover:scale-105"
-           style="background: linear-gradient(135deg, #FBCFE8, #DB2777); border: 2px solid #BE185D;">
-        <p class="text-gray-800 mb-4 text-sm">
-          “Pelayanan ramah, destinasi keren, pasti rekomendasi ke teman-teman.”
-        </p>
-        <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border-2 border-white/50 bg-white/20">
-          <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon8" 
-               class="w-10 h-10 rounded-full border-2 border-white p-[1px]" />
-          <div class="text-left">
-            <h4 class="font-semibold text-gray-800 text-sm">Gita Lestari</h4>
-            <p class="text-gray-700 text-xs">Pengunjung</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 9 -->
-      <div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl flex flex-col justify-between transition transform hover:scale-105"
-           style="background: linear-gradient(135deg, #C7D2FE, #4338CA); border: 2px solid #3730A3;">
-        <p class="text-gray-800 mb-4 text-sm">
-          “Website ini bikin perjalanan kami jadi lebih seru dan mudah.”
-        </p>
-        <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border-2 border-white/50 bg-white/20">
-          <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon9" 
-               class="w-10 h-10 rounded-full border-2 border-white p-[1px]" />
-          <div class="text-left">
-            <h4 class="font-semibold text-gray-800 text-sm">Hadi Susanto</h4>
-            <p class="text-gray-700 text-xs">Traveler</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 10 -->
-      <div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl flex flex-col justify-between transition transform hover:scale-105"
-           style="background: linear-gradient(135deg, #FDE68A, #F59E0B); border: 2px solid #B45309;">
-        <p class="text-gray-800 mb-4 text-sm">
-          “Destinasi recommended banget! Website jelas dan mudah dipakai.”
-        </p>
-        <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border-2 border-white/50 bg-white/20">
-          <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon10" 
-               class="w-10 h-10 rounded-full border-2 border-white p-[1px]" />
-          <div class="text-left">
-            <h4 class="font-semibold text-gray-800 text-sm">Intan Permata</h4>
-            <p class="text-gray-700 text-xs">Mahasiswa</p>
-          </div>
-        </div>
-      </div>
+        <h1 class="text-gray-200 mt-10 max-w-10xl mx-auto text-2xl font-bold text-white drop-shadow-lg">
+    Kata mereka para wisatawan yang telah menjelajahi keindahan Sumatera Utara
+</h1>
 
     </div>
-  </div>
-</section>
+
+    <!-- Carousel -->
+    <div class="overflow-x-auto scroll-smooth scrollbar-hide py-4">
+        <div class="flex gap-6 w-max px-6">
+        <!-- Card 1 -->
+
+<div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl card-blue transition duration-300">
+    <p class="text-gray-200 mb-4 text-sm">
+        “Pengalaman yang sangat menyenangkan! Alamnya indah dan penduduknya ramah.”
+    </p>
+    <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border border-white/20 bg-white/5">
+        <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon1"
+            class="w-10 h-10 rounded-full border border-white/20 p-[1px]" />
+        <div class="text-left">
+            <h4 class="font-semibold text-white text-sm">Rani Putri</h4>
+            <p class="text-gray-400 text-xs">Traveler</p>
+        </div>
+    </div>
+</div>
+
+<!-- Card 2 -->
+<div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl card-blue transition duration-300">
+    <p class="text-gray-200 mb-4 text-sm">
+        “Website ini membantu banget buat nyari wisata yang cocok tanpa ribet.”
+    </p>
+    <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border border-white/20 bg-white/5">
+        <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon2"
+            class="w-10 h-10 rounded-full border border-white/20 p-[1px]" />
+        <div class="text-left">
+            <h4 class="font-semibold text-white text-sm">Budi Santoso</h4>
+            <p class="text-gray-400 text-xs">Pengunjung</p>
+        </div>
+    </div>
+</div>
+
+<!-- Card 3 -->
+<div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl card-blue transition duration-300">
+    <p class="text-gray-200 mb-4 text-sm">
+        “Pilihan destinasinya lengkap dan informatif. Sangat direkomendasikan!”
+    </p>
+    <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border border-white/20 bg-white/5">
+        <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon3"
+            class="w-10 h-10 rounded-full border border-white/20 p-[1px]" />
+        <div class="text-left">
+            <h4 class="font-semibold text-white text-sm">Siska Marbun</h4>
+            <p class="text-gray-400 text-xs">Mahasiswa</p>
+        </div>
+    </div>
+</div>
+
+<!-- Card 4 -->
+<div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl card-blue transition duration-300">
+    <p class="text-gray-200 mb-4 text-sm">
+        “Navigasinya mudah dipahami dan tampilannya keren banget!”
+    </p>
+    <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border border-white/20 bg-white/5">
+        <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon4"
+            class="w-10 h-10 rounded-full border border-white/20 p-[1px]" />
+        <div class="text-left">
+            <h4 class="font-semibold text-white text-sm">Rio Pratama</h4>
+            <p class="text-gray-400 text-xs">Pekerja Kantoran</p>
+        </div>
+    </div>
+</div>
+
+<!-- Card 5 -->
+<div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl card-blue transition duration-300">
+    <p class="text-gray-200 mb-4 text-sm">
+        “Informasinya lengkap banget, sampai kuliner pun dibahas!”
+    </p>
+    <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border border-white/20 bg-white/5">
+        <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon5"
+            class="w-10 h-10 rounded-full border border-white/20 p-[1px]" />
+        <div class="text-left">
+            <h4 class="font-semibold text-white text-sm">Anita Sihombing</h4>
+            <p class="text-gray-400 text-xs">Food Lover</p>
+        </div>
+    </div>
+</div>
+
+<!-- Card 6 -->
+<div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl card-blue transition duration-300">
+    <p class="text-gray-200 mb-4 text-sm">
+        “Sangat membantu buat planning liburan bareng keluarga.”
+    </p>
+    <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border border-white/20 bg-white/5">
+        <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon6"
+            class="w-10 h-10 rounded-full border border-white/20 p-[1px]" />
+        <div class="text-left">
+            <h4 class="font-semibold text-white text-sm">Dedi Hartono</h4>
+            <p class="text-gray-400 text-xs">Ayah 2 Anak</p>
+        </div>
+    </div>
+</div>
+
+<!-- Card 7 -->
+<div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl card-blue transition duration-300">
+    <p class="text-gray-200 mb-4 text-sm">
+        “Baru tau banyak hidden gem di Sumut setelah buka web ini!”
+    </p>
+    <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border border-white/20 bg-white/5">
+        <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon7"
+            class="w-10 h-10 rounded-full border border-white/20 p-[1px]" />
+        <div class="text-left">
+            <h4 class="font-semibold text-white text-sm">Maya Putong</h4>
+            <p class="text-gray-400 text-xs">Content Creator</p>
+        </div>
+    </div>
+</div>
+
+<!-- Card 8 -->
+<div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl card-blue transition duration-300">
+    <p class="text-gray-200 mb-4 text-sm">
+        “Loading cepat dan responsif banget. Enak dipake di HP.”
+    </p>
+    <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border border-white/20 bg-white/5">
+        <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon8"
+            class="w-10 h-10 rounded-full border border-white/20 p-[1px]" />
+        <div class="text-left">
+            <h4 class="font-semibold text-white text-sm">Danu Saputra</h4>
+            <p class="text-gray-400 text-xs">IT Support</p>
+        </div>
+    </div>
+</div>
+
+<!-- Card 9 -->
+<div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl card-blue transition duration-300">
+    <p class="text-gray-200 mb-4 text-sm">
+        “Akhirnya ada web wisata Sumut yang estetik & lengkap! Love it.”
+    </p>
+    <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border border-white/20 bg-white/5">
+        <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon9"
+            class="w-10 h-10 rounded-full border border-white/20 p-[1px]" />
+        <div class="text-left">
+            <h4 class="font-semibold text-white text-sm">Cika Br Ginting</h4>
+            <p class="text-gray-400 text-xs">Mahasiswi</p>
+        </div>
+    </div>
+</div>
+
+<!-- Card 10 -->
+<div class="min-w-[280px] max-w-[300px] p-4 rounded-3xl shadow-xl card-blue transition duration-300">
+    <p class="text-gray-200 mb-4 text-sm">
+        “Suka banget animasi hover-nya, smooth dan modern!”
+    </p>
+    <div class="flex items-center gap-3 mt-2 p-2 rounded-xl border border-white/20 bg-white/5">
+        <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=cartoon10"
+            class="w-10 h-10 rounded-full border border-white/20 p-[1px]" />
+        <div class="text-left">
+            <h4 class="font-semibold text-white text-sm">Felix Wijaya</h4>
+            <p class="text-gray-400 text-xs">UI/UX Enthusiast</p>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+
 
 <!-- Bottom CTA Banner -->
-<section class="relative h-80 bg-cover bg-center overflow-hidden mt-12" 
-         style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('{{ asset('images/danau.jpg') }}');">
+<section class="relative w-full bg-cover bg-center overflow-hidden"
+         style="
+            height: 380px; 
+            margin: 0 !important; 
+            padding: 0 !important;
+            background-image:
+                linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.75)),
+                url('{{ asset('images/Batu_Hoda.jpg') }}');
+        ">
+
     <!-- Overlay Pattern -->
-    <div class="absolute inset-0 opacity-10" 
-         style="background-image: repeating-linear-gradient(45deg, rgba(102, 126, 234, 0.1) 0px, rgba(102, 126, 234, 0.1) 10px, transparent 10px, transparent 20px);">
+    <div class="absolute inset-0 opacity-10"
+         style="background-image: repeating-linear-gradient(45deg,
+            rgba(102, 126, 234, 0.1) 0px,
+            rgba(102, 126, 234, 0.1) 10px,
+            transparent 10px,
+            transparent 20px);">
     </div>
-    
+
     <!-- Content -->
-    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-        <h2 class="text-4xl md:text-5xl font-black text-white mb-8 drop-shadow-lg">
-            Mulai menjelajahi Sumatera Utara?
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-0 py-0">
+        <h2 class="text-4xl md:text-5xl font-black text-white drop-shadow-lg m-0 p-0">
+            Ready to Explore North Sumatera?
         </h2>
-        <a href="/" 
-           class="inline-block px-8 py-4 bg-lime-400 hover:bg-lime-500 text-gray-900 font-black text-lg md:text-xl uppercase tracking-wide rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl shadow-lg">
+
+        <a href="/"
+           class="inline-block mt-8 px-8 py-4 bg-lime-400 hover:bg-lime-500 text-gray-900 font-black text-lg md:text-xl uppercase tracking-wide rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl shadow-lg">
             Start Exploring →
         </a>
     </div>
+<section class="relative w-full bg-cover bg-center overflow-hidden m-0 p-0">
+
 </section>
 
-
 <style>
+  
   /* Hide scrollbar */
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
