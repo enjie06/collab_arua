@@ -73,7 +73,7 @@
                     </div>
 
                     <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-purple-200 transition-colors">
-                        Anggie Rahmadina Nasution
+                    Anggie Rahmadina Nasution
                     </h3>
                     <p class="text-purple-300 font-medium mb-4">Full Stack Developer</p>
                 </div>
@@ -96,7 +96,7 @@
                     <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-blue-200 transition-colors">
                         Miranda Nainggolan
                     </h3>
-                    <p class="text-blue-300 font-medium mb-4">UI/UX Designer</p>
+                    <p class="text-blue-300 font-medium mb-4">Front End</p>
                 </div>
             </div>
 
@@ -163,7 +163,7 @@
                     <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-indigo-200 transition-colors">
                         Natali Desi Sembiring
                     </h3>
-                    <p class="text-indigo-300 font-medium mb-4">Project Manager</p>
+                    <p class="text-indigo-300 font-medium mb-4">Front End</p>
                 </div>
             </div>
         </div>
