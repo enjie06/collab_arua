@@ -137,10 +137,10 @@
     <section id="category-alam" class="category-content hidden max-w-7xl mx-auto px-4 mb-20">
         <div class="flex items-center justify-between mb-8">
             <div>
-<<<<<<<<h2 class="text-4xl font-black text-white">ALAM ({{ count($wisataAlam) }})</h2>
+<h2 class="text-4xl font-black text-white">ALAM ({{ count($wisataAlam) }})</h2>
 <p class="text-gray-400 mt-2">Keindahan alam yang memukau</p>
-            </div>
-        </div>
+</div>
+</div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             @foreach($wisataAlam as $index => $wisata)
