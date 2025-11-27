@@ -27,13 +27,13 @@
                 Semua
             </button>
             <button onclick="showCategory('alam')" id="tab-alam" class="tab-btn group px-8 py-4 glass-card text-white font-bold rounded-full whitespace-nowrap hover:scale-105 hover:bg-white/20 transition-all duration-300">
-                Alam
+                Alam ({{ count($wisataAlam) }})
             </button>
             <button onclick="showCategory('budaya')" id="tab-budaya" class="tab-btn group px-8 py-4 glass-card text-white font-bold rounded-full whitespace-nowrap hover:scale-105 hover:bg-white/20 transition-all duration-300">
-                Budaya
+                Budaya ({{ count($wisataBudaya) }})
             </button>
             <button onclick="showCategory('religi')" id="tab-religi" class="tab-btn group px-8 py-4 glass-card text-white font-bold rounded-full whitespace-nowrap hover:scale-105 hover:bg-white/20 transition-all duration-300">
-                Religi
+                Religi ({{ count($wisataReligi) }})
             </button>
         </div>
     </section>
@@ -44,80 +44,92 @@
         
         <!-- Grid untuk semua destinasi -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Destinasi Alam -->
-            <div onclick="openModal('modal-alam-1')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
+            <!-- Destinasi Alam dari RDF -->
+            @foreach($wisataAlam as $index => $wisata)
+            <div onclick="openModal('modal-alam-{{ $index }}')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
+                @if($wisata['gambar'])
+                <div class="h-48 bg-cover bg-center" style="background-image: url('{{ $wisata['gambar'] }}')">
+                    <div class="h-full w-full bg-black/20 flex items-center justify-center"></div>
+                </div>
+                @else
                 <div class="h-48 bg-gradient-to-br from-emerald-400 via-teal-500 to-blue-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">DANAU TOBA</span>
+                    <span class="text-white text-xl font-bold">{{ strtoupper($wisata['kategori']) }}</span>
                 </div>
+                @endif
                 <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Danau Toba</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Kabupaten Simalungun</span>
+                    <h3 class="text-xl font-bold mb-3 text-white">{{ $wisata['nama'] }}</h3>
+                    <div class="space-y-2 text-sm text-gray-300">
+                        <div class="flex justify-between">
+                            <span>📍 {{ $wisata['kota'] }}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="bg-emerald-500/20 text-emerald-300 px-2 py-1 rounded text-xs">
+                                {{ $wisata['kategori'] }}
+                            </span>
+                            <span class="text-orange-300">{{ $wisata['harga_tiket'] }}</span>
+                        </div>
                     </div>
                 </div>
             </div>
+            @endforeach
 
-            <div onclick="openModal('modal-alam-2')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div class="h-48 bg-gradient-to-br from-emerald-400 via-teal-500 to-blue-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">AIR TERJUN</span>
+            <!-- Destinasi Budaya dari RDF -->
+            @foreach($wisataBudaya as $index => $wisata)
+            <div onclick="openModal('modal-budaya-{{ $index }}')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
+                @if($wisata['gambar'])
+                <div class="h-48 bg-cover bg-center" style="background-image: url('{{ $wisata['gambar'] }}')">
+                    <div class="h-full w-full bg-black/20 flex items-center justify-center"></div>
                 </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Air Terjun Sipiso-piso</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Tongging</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Destinasi Budaya -->
-            <div onclick="openModal('modal-budaya-1')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
+                @else
                 <div class="h-48 bg-gradient-to-br from-amber-400 via-orange-500 to-red-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">ISTANA</span>
+                    <span class="text-white text-xl font-bold">{{ strtoupper($wisata['kategori']) }}</span>
                 </div>
+                @endif
                 <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Istana Maimun</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Medan</span>
+                    <h3 class="text-xl font-bold mb-3 text-white">{{ $wisata['nama'] }}</h3>
+                    <div class="space-y-2 text-sm text-gray-300">
+                        <div class="flex justify-between">
+                            <span>📍 {{ $wisata['kota'] }}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="bg-amber-500/20 text-amber-300 px-2 py-1 rounded text-xs">
+                                {{ $wisata['kategori'] }}
+                            </span>
+                            <span class="text-orange-300">{{ $wisata['harga_tiket'] }}</span>
+                        </div>
                     </div>
                 </div>
             </div>
+            @endforeach
 
-            <div onclick="openModal('modal-budaya-2')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div class="h-48 bg-gradient-to-br from-amber-400 via-orange-500 to-red-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">RUMAH BOLON</span>
+            <!-- Destinasi Religi dari RDF -->
+            @foreach($wisataReligi as $index => $wisata)
+            <div onclick="openModal('modal-religi-{{ $index }}')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
+                @if($wisata['gambar'])
+                <div class="h-48 bg-cover bg-center" style="background-image: url('{{ $wisata['gambar'] }}')">
+                    <div class="h-full w-full bg-black/20 flex items-center justify-center"></div>
                 </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Rumah Bolon</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Balige</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Destinasi Religi -->
-            <div onclick="openModal('modal-religi-1')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
+                @else
                 <div class="h-48 bg-gradient-to-br from-violet-400 via-purple-500 to-fuchsia-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">MASJID</span>
+                    <span class="text-white text-xl font-bold">{{ strtoupper($wisata['kategori']) }}</span>
                 </div>
+                @endif
                 <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Masjid Raya Medan</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Medan</span>
+                    <h3 class="text-xl font-bold mb-3 text-white">{{ $wisata['nama'] }}</h3>
+                    <div class="space-y-2 text-sm text-gray-300">
+                        <div class="flex justify-between">
+                            <span>📍 {{ $wisata['kota'] }}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="bg-violet-500/20 text-violet-300 px-2 py-1 rounded text-xs">
+                                {{ $wisata['kategori'] }}
+                            </span>
+                            <span class="text-orange-300">{{ $wisata['harga_tiket'] }}</span>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div onclick="openModal('modal-religi-2')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div class="h-48 bg-gradient-to-br from-violet-400 via-purple-500 to-fuchsia-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">VIHARA</span>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Vihara Gunung Timur</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Medan</span>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
 
@@ -125,62 +137,43 @@
     <section id="category-alam" class="category-content hidden max-w-7xl mx-auto px-4 mb-20">
         <div class="flex items-center justify-between mb-8">
             <div>
+<<<<<<< Updated upstream
                 <h2 class="text-4xl font-black text-white">ALAM</h2>
+=======
+                <h2 class="text-4xl font-black text-white">ALAM ({{ count($wisataAlam) }})</h2>
+                <p class="text-gray-400 mt-2">Keindahan alam yang memukau</p>
+>>>>>>> Stashed changes
             </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Card Alam 1 - Danau Toba -->
-            <div onclick="openModal('modal-alam-1')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div class="h-48 bg-gradient-to-br from-emerald-400 via-teal-500 to-blue-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">DANAU TOBA</span>
+            @foreach($wisataAlam as $index => $wisata)
+            <div onclick="openModal('modal-alam-{{ $index }}')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
+                @if($wisata['gambar'])
+                <div class="h-48 bg-cover bg-center" style="background-image: url('{{ $wisata['gambar'] }}')">
+                    <div class="h-full w-full bg-black/20 flex items-center justify-center"></div>
                 </div>
+                @else
+                <div class="h-48 bg-gradient-to-br from-emerald-400 via-teal-500 to-blue-600 flex items-center justify-center">
+                    <span class="text-white text-xl font-bold">{{ strtoupper($wisata['kategori']) }}</span>
+                </div>
+                @endif
                 <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Danau Toba</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Kabupaten Simalungun</span>
+                    <h3 class="text-xl font-bold mb-3 text-white">{{ $wisata['nama'] }}</h3>
+                    <div class="space-y-2 text-sm text-gray-300">
+                        <div class="flex justify-between">
+                            <span>📍 {{ $wisata['kota'] }}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="bg-emerald-500/20 text-emerald-300 px-2 py-1 rounded text-xs">
+                                {{ $wisata['kategori'] }}
+                            </span>
+                            <span class="text-orange-300">{{ $wisata['harga_tiket'] }}</span>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Card Alam 2 -->
-            <div onclick="openModal('modal-alam-2')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div class="h-48 bg-gradient-to-br from-emerald-400 via-teal-500 to-blue-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">AIR TERJUN</span>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Air Terjun Sipiso-piso</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Tongging</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card Alam 3 -->
-            <div onclick="openModal('modal-alam-3')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div class="h-48 bg-gradient-to-br from-emerald-400 via-teal-500 to-blue-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">BUKIT LAWANG</span>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Bukit Lawang</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Langkat</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card Alam 4 -->
-            <div onclick="openModal('modal-alam-4')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div class="h-48 bg-gradient-to-br from-emerald-400 via-teal-500 to-blue-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">PANTAI</span>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Pantai Parbaba</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Samosir</span>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
 
@@ -188,62 +181,43 @@
     <section id="category-budaya" class="category-content hidden max-w-7xl mx-auto px-4 mb-20">
         <div class="flex items-center justify-between mb-8">
             <div>
+<<<<<<< Updated upstream
                 <h2 class="text-4xl font-black text-white">BUDAYA</h2>
+=======
+                <h2 class="text-4xl font-black text-white">BUDAYA ({{ count($wisataBudaya) }})</h2>
+                <p class="text-gray-400 mt-2">Warisan budaya yang kaya</p>
+>>>>>>> Stashed changes
             </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Card Budaya 1 -->
-            <div onclick="openModal('modal-budaya-1')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div class="h-48 bg-gradient-to-br from-amber-400 via-orange-500 to-red-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">ISTANA</span>
+            @foreach($wisataBudaya as $index => $wisata)
+            <div onclick="openModal('modal-budaya-{{ $index }}')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
+                @if($wisata['gambar'])
+                <div class="h-48 bg-cover bg-center" style="background-image: url('{{ $wisata['gambar'] }}')">
+                    <div class="h-full w-full bg-black/20 flex items-center justify-center"></div>
                 </div>
+                @else
+                <div class="h-48 bg-gradient-to-br from-amber-400 via-orange-500 to-red-600 flex items-center justify-center">
+                    <span class="text-white text-xl font-bold">{{ strtoupper($wisata['kategori']) }}</span>
+                </div>
+                @endif
                 <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Istana Maimun</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Medan</span>
+                    <h3 class="text-xl font-bold mb-3 text-white">{{ $wisata['nama'] }}</h3>
+                    <div class="space-y-2 text-sm text-gray-300">
+                        <div class="flex justify-between">
+                            <span>📍 {{ $wisata['kota'] }}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="bg-amber-500/20 text-amber-300 px-2 py-1 rounded text-xs">
+                                {{ $wisata['kategori'] }}
+                            </span>
+                            <span class="text-orange-300">{{ $wisata['harga_tiket'] }}</span>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Card Budaya 2 -->
-            <div onclick="openModal('modal-budaya-2')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div class="h-48 bg-gradient-to-br from-amber-400 via-orange-500 to-red-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">RUMAH BOLON</span>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Rumah Bolon</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Balige</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card Budaya 3 -->
-            <div onclick="openModal('modal-budaya-3')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div class="h-48 bg-gradient-to-br from-amber-400 via-orange-500 to-red-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">MUSEUM</span>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Museum Negeri Sumut</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Medan</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card Budaya 4 -->
-            <div onclick="openModal('modal-budaya-4')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div class="h-48 bg-gradient-to-br from-amber-400 via-orange-500 to-red-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">KAMPUNG</span>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Kampung Naga</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Tasikmalaya</span>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
 
@@ -251,79 +225,61 @@
     <section id="category-religi" class="category-content hidden max-w-7xl mx-auto px-4 mb-20">
         <div class="flex items-center justify-between mb-8">
             <div>
-                <h2 class="text-4xl font-black text-white">RELIGI</h2>
+<h2 class="text-4xl font-black text-white">RELIGI ({{ count($wisataReligi) }})</h2>
+<p class="text-gray-400 mt-2">Tempat ibadah yang sakral</p>
             </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Card Religi 1 -->
-            <div onclick="openModal('modal-religi-1')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div class="h-48 bg-gradient-to-br from-violet-400 via-purple-500 to-fuchsia-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">MASJID</span>
+            @foreach($wisataReligi as $index => $wisata)
+            <div onclick="openModal('modal-religi-{{ $index }}')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
+                @if($wisata['gambar'])
+                <div class="h-48 bg-cover bg-center" style="background-image: url('{{ $wisata['gambar'] }}')">
+                    <div class="h-full w-full bg-black/20 flex items-center justify-center"></div>
                 </div>
+                @else
+                <div class="h-48 bg-gradient-to-br from-violet-400 via-purple-500 to-fuchsia-600 flex items-center justify-center">
+                    <span class="text-white text-xl font-bold">{{ strtoupper($wisata['kategori']) }}</span>
+                </div>
+                @endif
                 <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Masjid Raya Medan</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Medan</span>
+                    <h3 class="text-xl font-bold mb-3 text-white">{{ $wisata['nama'] }}</h3>
+                    <div class="space-y-2 text-sm text-gray-300">
+                        <div class="flex justify-between">
+                            <span>📍 {{ $wisata['kota'] }}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="bg-violet-500/20 text-violet-300 px-2 py-1 rounded text-xs">
+                                {{ $wisata['kategori'] }}
+                            </span>
+                            <span class="text-orange-300">{{ $wisata['harga_tiket'] }}</span>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Card Religi 2 -->
-            <div onclick="openModal('modal-religi-2')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div class="h-48 bg-gradient-to-br from-violet-400 via-purple-500 to-fuchsia-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">VIHARA</span>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Vihara Gunung Timur</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Medan</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card Religi 3 -->
-            <div onclick="openModal('modal-religi-3')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div class="h-48 bg-gradient-to-br from-violet-400 via-purple-500 to-fuchsia-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">GEREJA</span>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Gereja Graha Maria</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Medan</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card Religi 4 -->
-            <div onclick="openModal('modal-religi-4')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div class="h-48 bg-gradient-to-br from-violet-400 via-purple-500 to-fuchsia-600 flex items-center justify-center">
-                    <span class="text-white text-2xl font-bold">KUIL</span>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">Kuil Shri Mariamman</h3>
-                    <div class="flex justify-between text-sm text-gray-300">
-                        <span>📍 Medan</span>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
 </div>
 
-<!-- Modal Danau Toba -->
-<div id="modal-alam-1" class="fixed inset-0 bg-black/90 backdrop-blur-md z-50 hidden items-center justify-center p-4">
+<!-- MODAL DINAMIS UNTUK ALAM -->
+@foreach($wisataAlam as $index => $wisata)
+<div id="modal-alam-{{ $index }}" class="fixed inset-0 bg-black/90 backdrop-blur-md z-50 hidden items-center justify-center p-4">
     <div class="glass-card rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-y-auto border border-white/20">
         <div class="sticky top-0 glass-card border-b border-white/10 p-6 flex justify-between items-center">
-            <h2 class="text-4xl font-black text-white">Danau Toba</h2>
-            <button onclick="closeModal('modal-alam-1')" class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition">
+            <h2 class="text-4xl font-black text-white">{{ $wisata['nama'] }}</h2>
+            <button onclick="closeModal('modal-alam-{{ $index }}')" class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition">
                 <span class="text-xl">×</span>
             </button>
         </div>
         <div class="p-8">
+            @if($wisata['gambar'])
+            <div class="w-full h-96 bg-cover bg-center rounded-2xl mb-8" style="background-image: url('{{ $wisata['gambar'] }}')"></div>
+            @else
             <div class="w-full h-96 bg-gradient-to-br from-emerald-400 via-teal-500 to-blue-600 rounded-2xl flex items-center justify-center mb-8">
-                <span class="text-white text-4xl font-bold">DANAU TOBA</span>
+                <span class="text-white text-4xl font-bold">{{ strtoupper($wisata['kategori']) }}</span>
             </div>
+            @endif
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                 <div class="bg-white/10 rounded-xl p-4">
@@ -332,16 +288,21 @@
                 </div>
                 <div class="bg-white/10 rounded-xl p-4">
                     <h3 class="text-white font-bold mb-2">Kategori</h3>
-                    <p class="text-gray-300">Danau</p>
+                    <p class="text-gray-300">{{ $wisata['kategori'] }}</p>
                 </div>
                 <div class="bg-white/10 rounded-xl p-4">
                     <h3 class="text-white font-bold mb-2">Harga Tiket</h3>
-                    <p class="text-gray-300">Gratis</p>
+                    <p class="text-gray-300">{{ $wisata['harga_tiket'] }}</p>
                 </div>
                 <div class="bg-white/10 rounded-xl p-4">
-                    <h3 class="text-white font-bold mb-2">Jam Operasional</h3>
-                    <p class="text-gray-300">24 Jam</p>
-                </div>
+    <h3 class="text-white font-bold mb-2">Jam Operasional</h3>
+    <p class="text-gray-300">
+        {{ $wisata['jam_buka'] ?? 'Tidak tersedia' }}
+        @if(isset($wisata['jam_tutup']) && $wisata['jam_tutup'] && $wisata['jam_tutup'] != '-')
+        - {{ $wisata['jam_tutup'] }}
+        @endif
+    </p>
+</div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
@@ -350,38 +311,47 @@
                     <div class="space-y-3">
                         <div class="flex justify-between">
                             <span class="text-gray-300">Alamat:</span>
-                            <span class="text-white font-medium">Parapat, Kabupaten Simalungun</span>
+                            <span class="text-white font-medium">{{ $wisata['alamat'] }}</span>
                         </div>
                         <div class="flex justify-between">
                             <span class="text-gray-300">Kabupaten:</span>
-                            <span class="text-white font-medium">Kabupaten Simalungun</span>
+                            <span class="text-white font-medium">{{ $wisata['kota'] }}</span>
                         </div>
                         <div class="flex justify-between">
                             <span class="text-gray-300">Provinsi:</span>
-                            <span class="text-white font-medium">Sumatera Utara</span>
+                            <span class="text-white font-medium">{{ $wisata['provinsi'] }}</span>
                         </div>
-                        <div class="flex justify-between">
-                            <span class="text-gray-300">Koordinat:</span>
-                            <span class="text-white font-medium">2.6096° N, 98.9289° E</span>
-                        </div>
+                      @if(isset($wisata['latitude']) && isset($wisata['longitude']) && $wisata['latitude'] && $wisata['longitude'])
+                     <div class="flex justify-between">
+                     <span class="text-gray-300">Koordinat:</span>
+                     <span class="text-white font-medium">{{ $wisata['latitude'] }}° N, {{ $wisata['longitude'] }}° E</span>
+                    </div>
+                    @endif
                     </div>
                 </div>
 
                 <div class="bg-white/10 rounded-xl p-6">
                     <h3 class="text-white font-bold mb-4 text-xl">Fasilitas & Aktivitas</h3>
                     <div class="space-y-3">
+                        @if(isset($wisata['fasilitas']) && $wisata['fasilitas'])
+<div>
+    <span class="text-gray-300">Fasilitas:</span>
+    <p class="text-white font-medium">{{ $wisata['fasilitas'] }}</p>
+</div>
+@endif
+                        
+                       @if(isset($wisata['aktivitas']) && $wisata['aktivitas'])
                         <div>
-                            <span class="text-gray-300">Fasilitas:</span>
-                            <p class="text-white font-medium">Parkir, Penginapan, Restoran, Toilet</p>
-                        </div>
+                         <span class="text-gray-300">Aktivitas:</span>
+                            <p class="text-white font-medium">{{ $wisata['aktivitas'] }}</p>
+                            </div>
+                              @endif
+                        @if(isset($wisata['dekat_dengan']) && $wisata['dekat_dengan'])
                         <div>
-                            <span class="text-gray-300">Aktivitas:</span>
-                            <p class="text-white font-medium">Berenang, Berlayar, Foto, Wisata Alam</p>
+                        <span class="text-gray-300">Dekat Dengan:</span>
+                         <p class="text-white font-medium">{{ $wisata['dekat_dengan'] }}</p>
                         </div>
-                        <div>
-                            <span class="text-gray-300">Dekat Dengan:</span>
-                            <p class="text-white font-medium">Pulau Samosir</p>
-                        </div>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -389,17 +359,113 @@
             <div class="bg-white/10 rounded-xl p-6">
                 <h3 class="text-white font-bold mb-4 text-xl">Deskripsi</h3>
                 <p class="text-gray-300 text-lg leading-relaxed">
-                    Danau Toba adalah danau vulkanik terbesar di Indonesia dan Asia Tenggara, serta danau terbesar kedua di dunia setelah Danau Victoria di Afrika. 
-                    Danau ini terbentuk dari letusan gunung berapi super sekitar 74.000 tahun yang lalu. Dengan luas lebih dari 1.145 kilometer persegi dan kedalaman mencapai 450 meter, 
-                    Danau Toba menawarkan pemandangan alam yang menakjubkan dengan Pulau Samosir di tengahnya. Destinasi ini menjadi salah satu ikon wisata Sumatera Utara 
-                    yang menawarkan berbagai aktivitas wisata alam dan budaya.
+                    {{ $wisata['nama'] }} adalah salah satu destinasi wisata alam terbaik di Sumatera Utara. 
+                    Menawarkan pengalaman wisata yang tak terlupakan dengan pemandangan alam yang menakjubkan 
+                    dan berbagai aktivitas menarik untuk dinikmati oleh pengunjung.
                 </p>
             </div>
         </div>
     </div>
 </div>
+@endforeach
 
-<!-- Modal lainnya bisa ditambahkan dengan struktur yang sama -->
+<!-- MODAL DINAMIS UNTUK BUDAYA -->
+@foreach($wisataBudaya as $index => $wisata)
+<div id="modal-budaya-{{ $index }}" class="fixed inset-0 bg-black/90 backdrop-blur-md z-50 hidden items-center justify-center p-4">
+    <div class="glass-card rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-y-auto border border-white/20">
+        <div class="sticky top-0 glass-card border-b border-white/10 p-6 flex justify-between items-center">
+            <h2 class="text-4xl font-black text-white">{{ $wisata['nama'] }}</h2>
+            <button onclick="closeModal('modal-budaya-{{ $index }}')" class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition">
+                <span class="text-xl">×</span>
+            </button>
+        </div>
+        <div class="p-8">
+            @if($wisata['gambar'])
+            <div class="w-full h-96 bg-cover bg-center rounded-2xl mb-8" style="background-image: url('{{ $wisata['gambar'] }}')"></div>
+            @else
+            <div class="w-full h-96 bg-gradient-to-br from-amber-400 via-orange-500 to-red-600 rounded-2xl flex items-center justify-center mb-8">
+                <span class="text-white text-4xl font-bold">{{ strtoupper($wisata['kategori']) }}</span>
+            </div>
+            @endif
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white/10 rounded-xl p-4">
+                    <h3 class="text-white font-bold mb-2">Jenis Wisata</h3>
+                    <p class="text-gray-300">Budaya</p>
+                </div>
+                <div class="bg-white/10 rounded-xl p-4">
+                    <h3 class="text-white font-bold mb-2">Kategori</h3>
+                    <p class="text-gray-300">{{ $wisata['kategori'] }}</p>
+                </div>
+                <div class="bg-white/10 rounded-xl p-4">
+                    <h3 class="text-white font-bold mb-2">Harga Tiket</h3>
+                    <p class="text-gray-300">{{ $wisata['harga_tiket'] }}</p>
+                </div>
+                <div class="bg-white/10 rounded-xl p-4">
+                    <h3 class="text-white font-bold mb-2">Jam Operasional</h3>
+                    <p class="text-gray-300">
+                        {{ $wisata['jam_buka'] }} 
+                        @if($wisata['jam_tutup'] && $wisata['jam_tutup'] != '-')
+                        - {{ $wisata['jam_tutup'] }}
+                        @endif
+                    </p>
+                </div>
+            </div>
+
+            <!-- Konten modal budaya sama seperti alam, sesuaikan jika ada field khusus budaya -->
+        </div>
+    </div>
+</div>
+@endforeach
+
+<!-- MODAL DINAMIS UNTUK RELIGI -->
+@foreach($wisataReligi as $index => $wisata)
+<div id="modal-religi-{{ $index }}" class="fixed inset-0 bg-black/90 backdrop-blur-md z-50 hidden items-center justify-center p-4">
+    <div class="glass-card rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-y-auto border border-white/20">
+        <div class="sticky top-0 glass-card border-b border-white/10 p-6 flex justify-between items-center">
+            <h2 class="text-4xl font-black text-white">{{ $wisata['nama'] }}</h2>
+            <button onclick="closeModal('modal-religi-{{ $index }}')" class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition">
+                <span class="text-xl">×</span>
+            </button>
+        </div>
+        <div class="p-8">
+            @if($wisata['gambar'])
+            <div class="w-full h-96 bg-cover bg-center rounded-2xl mb-8" style="background-image: url('{{ $wisata['gambar'] }}')"></div>
+            @else
+            <div class="w-full h-96 bg-gradient-to-br from-violet-400 via-purple-500 to-fuchsia-600 rounded-2xl flex items-center justify-center mb-8">
+                <span class="text-white text-4xl font-bold">{{ strtoupper($wisata['kategori']) }}</span>
+            </div>
+            @endif
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white/10 rounded-xl p-4">
+                    <h3 class="text-white font-bold mb-2">Jenis Wisata</h3>
+                    <p class="text-gray-300">Religi</p>
+                </div>
+                <div class="bg-white/10 rounded-xl p-4">
+                    <h3 class="text-white font-bold mb-2">Kategori</h3>
+                    <p class="text-gray-300">{{ $wisata['kategori'] }}</p>
+                </div>
+                <div class="bg-white/10 rounded-xl p-4">
+                    <h3 class="text-white font-bold mb-2">Harga Tiket</h3>
+                    <p class="text-gray-300">{{ $wisata['harga_tiket'] }}</p>
+                </div>
+                <div class="bg-white/10 rounded-xl p-4">
+                    <h3 class="text-white font-bold mb-2">Jam Operasional</h3>
+                    <p class="text-gray-300">
+                        {{ $wisata['jam_buka'] }} 
+                        @if($wisata['jam_tutup'] && $wisata['jam_tutup'] != '-')
+                        - {{ $wisata['jam_tutup'] }}
+                        @endif
+                    </p>
+                </div>
+            </div>
+
+            <!-- Konten modal religi sama seperti alam, sesuaikan jika ada field khusus religi -->
+        </div>
+    </div>
+</div>
+@endforeach
 
 <style>
     @keyframes fade-in {
