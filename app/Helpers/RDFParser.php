@@ -159,12 +159,18 @@ class RDFParser
      */
     private static function isInvalidImageUrl($url)
     {
+        // Jika URL kosong atau hanya berisi tanda petik
+        if (empty($url) || $url === '""' || $url === "''" || trim($url) === '') {
+            return true;
+        }
+        
         // List pattern URLs yang tidak valid
         $invalidPatterns = [
             'google.com/url?',      // Google redirect URLs
             '& ',                   // URL dengan spasi setelah &
             'http:// &',            // URL dengan karakter tidak valid
             'https:// &',           // URL dengan karakter tidak valid
+            '""',                   // URL kosong dengan petik
         ];
         
         foreach ($invalidPatterns as $pattern) {
