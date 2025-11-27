@@ -2,13 +2,10 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:ws="http://example.com/wisatasumut#"
+    xmlns:ws="http://example.com/ontology/wisata#"
     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
-<<<<<<< Updated upstream
-    xmlns:graph="http://example.com/graph/">
-=======
-     xmlns:foaf="http://xmlns.com/foaf/0.1/">
->>>>>>> Stashed changes
+    xmlns:graph="http://example.com/graph/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/">
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Danau_Toba" rdf:graph="http://example.com/graph/alam">
       <rdfs:label>Danau Toba</rdfs:label>
@@ -342,7 +339,7 @@
       <ws:fasilitas>Area Parkir, Warung</ws:fasilitas>
       <ws:aktivitas>Bersantai, Menikmati Pemandangan</ws:aktivitas>
     </rdf:Description>
-    
+
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Pantai_Lagundri" rdf:graph="http://example.com/graph/alam">
       <rdfs:label>Pantai Lagundri</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
