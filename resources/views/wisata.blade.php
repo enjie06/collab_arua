@@ -137,12 +137,8 @@
     <section id="category-alam" class="category-content hidden max-w-7xl mx-auto px-4 mb-20">
         <div class="flex items-center justify-between mb-8">
             <div>
-<<<<<<< Updated upstream
-                <h2 class="text-4xl font-black text-white">ALAM</h2>
-=======
-                <h2 class="text-4xl font-black text-white">ALAM ({{ count($wisataAlam) }})</h2>
-                <p class="text-gray-400 mt-2">Keindahan alam yang memukau</p>
->>>>>>> Stashed changes
+<<<<<<<<h2 class="text-4xl font-black text-white">ALAM ({{ count($wisataAlam) }})</h2>
+<p class="text-gray-400 mt-2">Keindahan alam yang memukau</p>
             </div>
         </div>
 
@@ -181,12 +177,8 @@
     <section id="category-budaya" class="category-content hidden max-w-7xl mx-auto px-4 mb-20">
         <div class="flex items-center justify-between mb-8">
             <div>
-<<<<<<< Updated upstream
-                <h2 class="text-4xl font-black text-white">BUDAYA</h2>
-=======
-                <h2 class="text-4xl font-black text-white">BUDAYA ({{ count($wisataBudaya) }})</h2>
-                <p class="text-gray-400 mt-2">Warisan budaya yang kaya</p>
->>>>>>> Stashed changes
+<h2 class="text-4xl font-black text-white">BUDAYA ({{ count($wisataBudaya) }})</h2>
+<p class="text-gray-400 mt-2">Warisan budaya yang kaya</p>
             </div>
         </div>
 

@@ -413,9 +413,6 @@
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Danau_Siombak" rdf:graph="http://example.com/graph/alam">
-=======
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Danau_Siombak">
->>>>>>> Stashed changes
       <rdfs:label>Danau Siombak</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Danau</ws:kategori>
@@ -429,12 +426,11 @@
       <ws:jamBuka>07:00</ws:jamBuka>
       <ws:jamTutup>18:00</ws:jamTutup>
       <ws:dekatDengan>Pantai Mangrove Belawan</ws:dekatDengan>
-    <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/1/1d/Danau_Siombak.png"/>
+      <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/1/1d/Danau_Siombak.png"/>
       <ws:fasilitas>Perahu, Tempat Makan, Area Parkir</ws:fasilitas>
       <ws:aktivitas>Memancing, Berperahu, Piknik</ws:aktivitas>
     </rdf:Description>
 
-<<<<<<< Updated upstream
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Tarunggang" rdf:graph="http://example.com/graph/alam">
       <rdfs:label>Air Terjun Tarunggang</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
@@ -472,9 +468,23 @@
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Janji" rdf:graph="http://example.com/graph/alam">
-=======
-    <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Air_Terjun_Janji">
->>>>>>> Stashed changes
+      <rdfs:label>Air Terjun Janji</rdfs:label>
+      <ws:jenisWisata>Alam</ws:jenisWisata>
+      <ws:kategori>Air Terjun</ws:kategori>
+      <ws:alamat>Desa Janji, Kecamatan Dolok Sanggul, Kabupaten Humbang Hasundutan</ws:alamat>
+      <ws:kotaKabupaten>Kabupaten Humbang Hasundutan</ws:kotaKabupaten>
+      <ws:provinsi>Sumatera Utara</ws:provinsi>
+      <geo:latitude>2.2833</geo:latitude>
+      <geo:longitude>98.8000</geo:longitude>
+      <ws:hargaTiket>Rp5.000</ws:hargaTiket>
+      <ws:hariBuka>Setiap Hari</ws:hariBuka>
+      <ws:jamBuka>08:00</ws:jamBuka>
+      <ws:jamTutup>17:00</ws:jamTutup>
+      <ws:dekatDengan>Danau Toba</ws:dekatDengan>
+      <ws:fasilitas>Parkir, Area Foto</ws:fasilitas>
+      <ws:aktivitas>Fotografi, Trekking</ws:aktivitas>
+    </rdf:Description>
+    
       <rdfs:label>Air Terjun Janji</rdfs:label>
       <ws:jenisWisata>Alam</ws:jenisWisata>
       <ws:kategori>Air Terjun</ws:kategori>
