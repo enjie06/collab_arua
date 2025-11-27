@@ -396,15 +396,74 @@
                 <div class="bg-white/10 rounded-xl p-4">
                     <h3 class="text-white font-bold mb-2">Jam Operasional</h3>
                     <p class="text-gray-300">
-                        {{ $wisata['jam_buka'] }} 
-                        @if($wisata['jam_tutup'] && $wisata['jam_tutup'] != '-')
+                        {{ $wisata['jam_buka'] ?? 'Tidak tersedia' }}
+                        @if(isset($wisata['jam_tutup']) && $wisata['jam_tutup'] && $wisata['jam_tutup'] != '-')
                         - {{ $wisata['jam_tutup'] }}
                         @endif
                     </p>
                 </div>
             </div>
 
-            <!-- Konten modal budaya sama seperti alam, sesuaikan jika ada field khusus budaya -->
+            <!-- TAMBAHKAN BAGIAN INI UNTUK BUDAYA -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-white/10 rounded-xl p-6">
+                    <h3 class="text-white font-bold mb-4 text-xl">Informasi Lokasi</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-gray-300">Alamat:</span>
+                            <span class="text-white font-medium">{{ $wisata['alamat'] }}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-300">Kabupaten:</span>
+                            <span class="text-white font-medium">{{ $wisata['kota'] }}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-300">Provinsi:</span>
+                            <span class="text-white font-medium">{{ $wisata['provinsi'] }}</span>
+                        </div>
+                      @if(isset($wisata['latitude']) && isset($wisata['longitude']) && $wisata['latitude'] && $wisata['longitude'])
+                     <div class="flex justify-between">
+                     <span class="text-gray-300">Koordinat:</span>
+                     <span class="text-white font-medium">{{ $wisata['latitude'] }}° N, {{ $wisata['longitude'] }}° E</span>
+                    </div>
+                    @endif
+                    </div>
+                </div>
+
+                <div class="bg-white/10 rounded-xl p-6">
+                    <h3 class="text-white font-bold mb-4 text-xl">Fasilitas & Aktivitas</h3>
+                    <div class="space-y-3">
+                        @if(isset($wisata['fasilitas']) && $wisata['fasilitas'])
+<div>
+    <span class="text-gray-300">Fasilitas:</span>
+    <p class="text-white font-medium">{{ $wisata['fasilitas'] }}</p>
+</div>
+@endif
+                        
+                       @if(isset($wisata['aktivitas']) && $wisata['aktivitas'])
+                        <div>
+                         <span class="text-gray-300">Aktivitas:</span>
+                            <p class="text-white font-medium">{{ $wisata['aktivitas'] }}</p>
+                            </div>
+                              @endif
+                        @if(isset($wisata['dekat_dengan']) && $wisata['dekat_dengan'])
+                        <div>
+                        <span class="text-gray-300">Dekat Dengan:</span>
+                         <p class="text-white font-medium">{{ $wisata['dekat_dengan'] }}</p>
+                        </div>
+                        @endif
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/10 rounded-xl p-6">
+                <h3 class="text-white font-bold mb-4 text-xl">Deskripsi</h3>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                    {{ $wisata['nama'] }} adalah salah satu destinasi wisata budaya terbaik di Sumatera Utara. 
+                    Menawarkan pengalaman wisata yang tak terlupakan dengan kekayaan budaya yang menakjubkan 
+                    dan berbagai aktivitas menarik untuk dinikmati oleh pengunjung.
+                </p>
+            </div>
         </div>
     </div>
 </div>
@@ -445,20 +504,79 @@
                 <div class="bg-white/10 rounded-xl p-4">
                     <h3 class="text-white font-bold mb-2">Jam Operasional</h3>
                     <p class="text-gray-300">
-                        {{ $wisata['jam_buka'] }} 
-                        @if($wisata['jam_tutup'] && $wisata['jam_tutup'] != '-')
+                        {{ $wisata['jam_buka'] ?? 'Tidak tersedia' }}
+                        @if(isset($wisata['jam_tutup']) && $wisata['jam_tutup'] && $wisata['jam_tutup'] != '-')
                         - {{ $wisata['jam_tutup'] }}
                         @endif
                     </p>
                 </div>
             </div>
 
-            <!-- Konten modal religi sama seperti alam, sesuaikan jika ada field khusus religi -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-white/10 rounded-xl p-6">
+                    <h3 class="text-white font-bold mb-4 text-xl">Informasi Lokasi</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-gray-300">Alamat:</span>
+                            <span class="text-white font-medium">{{ $wisata['alamat'] }}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-300">Kabupaten:</span>
+                            <span class="text-white font-medium">{{ $wisata['kota'] }}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-300">Provinsi:</span>
+                            <span class="text-white font-medium">{{ $wisata['provinsi'] }}</span>
+                        </div>
+                        <!-- PERBAIKI BAGIAN KOORDINAT INI -->
+                        @if(isset($wisata['latitude']) && isset($wisata['longitude']) && $wisata['latitude'] && $wisata['longitude'])
+                        <div class="flex justify-between">
+                            <span class="text-gray-300">Koordinat:</span>
+                            <span class="text-white font-medium">{{ $wisata['latitude'] }}° N, {{ $wisata['longitude'] }}° E</span>
+                        </div>
+                        @endif
+                    </div>
+                </div>
+
+                <div class="bg-white/10 rounded-xl p-6">
+                    <h3 class="text-white font-bold mb-4 text-xl">Fasilitas & Aktivitas</h3>
+                    <div class="space-y-3">
+                        @if(isset($wisata['fasilitas']) && $wisata['fasilitas'])
+                        <div>
+                            <span class="text-gray-300">Fasilitas:</span>
+                            <p class="text-white font-medium">{{ $wisata['fasilitas'] }}</p>
+                        </div>
+                        @endif
+                        
+                        @if(isset($wisata['aktivitas']) && $wisata['aktivitas'])
+                        <div>
+                            <span class="text-gray-300">Aktivitas:</span>
+                            <p class="text-white font-medium">{{ $wisata['aktivitas'] }}</p>
+                        </div>
+                        @endif
+                        
+                        @if(isset($wisata['dekat_dengan']) && $wisata['dekat_dengan'])
+                        <div>
+                            <span class="text-gray-300">Dekat Dengan:</span>
+                            <p class="text-white font-medium">{{ $wisata['dekat_dengan'] }}</p>
+                        </div>
+                        @endif
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/10 rounded-xl p-6">
+                <h3 class="text-white font-bold mb-4 text-xl">Deskripsi</h3>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                    {{ $wisata['nama'] }} adalah salah satu destinasi wisata religi terbaik di Sumatera Utara. 
+                    Menawarkan pengalaman wisata yang tak terlupakan dengan suasana spiritual yang menakjubkan 
+                    dan berbagai aktivitas menarik untuk dinikmati oleh pengunjung.
+                </p>
+            </div>
         </div>
     </div>
 </div>
 @endforeach
-
 <style>
     @keyframes fade-in {
         from { opacity: 0; transform: translateY(20px); }
