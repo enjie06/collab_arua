@@ -38,6 +38,7 @@
         <ws:dekatDengan>Danau Toba</ws:dekatDengan>
         <ws:fasilitas>Rumah adat Batak, galeri artefak, area pamer</ws:fasilitas>
         <ws:aktivitas>Wisata budaya, foto, belajar sejarah Batak</ws:aktivitas>
+        <foaf:depiction rdf:resource="https://commons.wikimedia.org/wiki/File:Museum_Batak,_Balige.png"/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Huta_Bolon_Simanindo">
@@ -56,6 +57,7 @@
         <ws:dekatDengan>Pelabuhan Simanindo</ws:dekatDengan>
         <ws:fasilitas>Rumah adat, galeri budaya, area pertunjukan Tor-Tor</ws:fasilitas>
         <ws:aktivitas>Belajar budaya Batak, menonton Tor-Tor, fotografi</ws:aktivitas>
+        <foaf:depiction rdf:resource="https://www.google.com/imgres?q=Museum%20Huta%20Bolon%20Simanindo%20wikimedia&imgurl=https%3A%2F%2Faurorawisata.net%2Fwp-content%2Fuploads%2F2025%2F10%2Fmuseum-huta-bolon-simanindo.jpeg&imgrefurl=https%3A%2F%2Faurorawisata.net%2Fmuseum-huta-bolon-simanindo%2F&docid=2uTG7yI2zQPyPM&tbnid=bs7_FmBQoy9TpM&vet=12ahUKEwishvnP55GRAxXvxjgGHXtXIUkQM3oECBIQAA..i&w=960&h=760&hcb=2&ved=2ahUKEwishvnP55GRAxXvxjgGHXtXIUkQM3oECBIQAA"/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Huta_Siallagan">
@@ -74,6 +76,7 @@
         <ws:dekatDengan>Batu Kursi Raja</ws:dekatDengan>
         <ws:fasilitas>Rumah adat, patung kayu, tempat sidang batu</ws:fasilitas>
         <ws:aktivitas>Wisata budaya, edukasi adat, foto</ws:aktivitas>
+        <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/6/67/Huta_Siallagan_Batak_Village.jpg"/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Tuktuk_Siadong,_Simanindo,_Samosir">
@@ -92,6 +95,7 @@
         <ws:dekatDengan>Danau Toba</ws:dekatDengan>
         <ws:fasilitas>Homestay, restoran, cafe, galeri seni</ws:fasilitas>
         <ws:aktivitas>Wisata budaya, kuliner, foto, interaksi lokal</ws:aktivitas>
+        <foaf:depiction rdf:resource="https://commons.wikimedia.org/wiki/File:Welcome_Gate_To_Tuktuk_Siadong,_Simanindo,_Samosir.JPG"/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Lingga,_Simpang_Empat,_Karo">
@@ -110,6 +114,7 @@
         <ws:dekatDengan>Gunung Sibayak</ws:dekatDengan>
         <ws:fasilitas>Rumah adat Karo, pemandu lokal, galeri mini</ws:fasilitas>
         <ws:aktivitas>Wisata budaya Karo, foto, edukasi adat</ws:aktivitas>
+        <foaf:depiction rdf:resource="https://www.google.com/imgres?q=Desa%20Lingga%20wikimedia&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F8%2F8c%2FCempa_stilthouses.jpg%2F250px-Cempa_stilthouses.jpg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLingga_Regency&docid=e8ZgEau3akDbIM&tbnid=KCjrw1oGK3CznM&vet=12ahUKEwi5xfSB6pGRAxXfyqACHScbBoAQM3oECBcQAA..i&w=250&h=188&hcb=2&ved=2ahUKEwi5xfSB6pGRAxXfyqACHScbBoAQM3oECBcQAA"/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Simalungun">
@@ -128,6 +133,7 @@
         <ws:dekatDengan>Taman Hewan Siantar</ws:dekatDengan>
         <ws:fasilitas>Galeri artefak, ruang pamer tematik</ws:fasilitas>
         <ws:aktivitas>Belajar sejarah Simalungun, foto</ws:aktivitas>
+        <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Pusaka_Nias">
@@ -146,6 +152,7 @@
         <ws:dekatDengan>Pantai Laowömaru</ws:dekatDengan>
         <ws:fasilitas>Galeri budaya Nias, area sejarah megalit</ws:fasilitas>
         <ws:aktivitas>Belajar adat Nias, melihat artefak, foto</ws:aktivitas>
+        <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Perjuangan_TNI">
@@ -164,6 +171,7 @@
         <ws:dekatDengan>Sri Deli Park</ws:dekatDengan>
         <ws:fasilitas>Ruang artefak militer, senjata, dokumentasi sejarah</ws:fasilitas>
         <ws:aktivitas>Tur edukasi, foto, belajar sejarah kemiliteran</ws:aktivitas>
+        <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Rumah_Bolon_Pamatang_Purba">
@@ -182,6 +190,7 @@
         <ws:dekatDengan>Pasar Balige</ws:dekatDengan>
         <ws:fasilitas>Rumah adat, galeri mini</ws:fasilitas>
         <ws:aktivitas>Wisata budaya Batak, foto</ws:aktivitas>
+        <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Pusaka_Karo">
@@ -200,6 +209,7 @@
         <ws:dekatDengan>Alun-alun Kabanjahe</ws:dekatDengan>
         <ws:fasilitas>Artefak Karo, kostum adat, galeri sejarah</ws:fasilitas>
         <ws:aktivitas>Edukasi budaya Karo, tur museum</ws:aktivitas>
+        <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://museumdeliserdang.org/">
@@ -218,6 +228,7 @@
         <ws:dekatDengan>Bandara Internasional Kualanamu</ws:dekatDengan>
         <ws:fasilitas>Galeri budaya Melayu Deli, ruang pamer artefak</ws:fasilitas>
         <ws:aktivitas>Belajar budaya lokal, melihat artefak</ws:aktivitas>
+        <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Daerah_Kabupaten_Langkat#">
@@ -236,6 +247,7 @@
         <ws:dekatDengan>Masjid Azizi Tanjung Pura</ws:dekatDengan>
         <ws:fasilitas>Artefak sejarah Langkat, foto arsip</ws:fasilitas>
         <ws:aktivitas>Tur museum, edukasi sejarah</ws:aktivitas>
+        <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://eksisnews.com/taman-budaya-sumut-salah-satu-ikon-pariwisata/">
@@ -254,6 +266,7 @@
         <ws:dekatDengan>Universitas Negeri Medan (UNIMED)</ws:dekatDengan>
         <ws:fasilitas>Panggung seni, galeri, auditorium, pusat pelatihan seni</ws:fasilitas>
         <ws:aktivitas>Menonton pertunjukan seni, pameran budaya</ws:aktivitas>
+        <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://mindtrip.ai/attraction/tuktuk-siadong-sumatra/batu-kursi-raja-siallagan-stone-chair-king-siallagan/at-ZDzMwcf4">
@@ -272,6 +285,7 @@
         <ws:dekatDengan>Huta Siallagan</ws:dekatDengan>
         <ws:fasilitas>Situs batu, pemandu lokal</ws:fasilitas>
         <ws:aktivitas>Belajar sejarah hukum adat Batak, foto</ws:aktivitas>
+        <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://onetoba.com/places/desa-adat-ragi-hotang-meat/">
@@ -289,6 +303,7 @@
         <ws:dekatDengan>Desa Tomok</ws:dekatDengan>
         <ws:fasilitas>Homestay, tenun tradisional, pusat kerajinan</ws:fasilitas>
         <ws:aktivitas>Belajar tenun, foto, interaksi warga lokal</ws:aktivitas>
+        <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Istana_Maimun">
@@ -306,6 +321,7 @@
         <ws:jamTutup>17:00</ws:jamTutup>
         <ws:dekatDengan>Museum Negeri Provinsi Sumatera Utara</ws:dekatDengan>
         <ws:aktivitas>Tur istana, belajar sejarah Kerajaan Deli, foto</ws:aktivitas>
+        <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Vihara_Gunung_Timur">
@@ -323,6 +339,7 @@
         <ws:jamTutup>17:00</ws:jamTutup>
         <ws:dekatDengan>Istana Maimun</ws:dekatDengan>
         <ws:aktivitas>Wisata religi dan budaya Tionghoa, upacara, foto</ws:aktivitas>
+        <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Rumah_Tjong_A_Fie">
@@ -340,6 +357,7 @@
         <ws:jamTutup>17:00</ws:jamTutup>
         <ws:dekatDengan>Vihara Gunung Timur</ws:dekatDengan>
         <ws:aktivitas>Tur sejarah Tionghoa, pameran interior rumah, foto</ws:aktivitas>
+        <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Tomok,_Simanindo,_Samosir">
@@ -357,6 +375,7 @@
         <ws:jamTutup>18:00</ws:jamTutup>
         <ws:dekatDengan>Pulau Samosir / Pelabuhan Tomok</ws:dekatDengan>
         <ws:aktivitas>Wisata budaya, makam raja Sidabutar, pameran kerajinan, foto</ws:aktivitas>
+        <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Bawomataluo,_Fanayama,_Nias_Selatan">
@@ -374,6 +393,7 @@
         <ws:jamTutup>20:00</ws:jamTutup>
         <ws:dekatDengan>Pantai Sorake</ws:dekatDengan>
         <ws:aktivitas>Wisata budaya, lompat batu Nias, pertunjukan adat</ws:aktivitas>
+        <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://museumgunungtua.org/">
@@ -391,6 +411,7 @@
         <ws:jamTutup>17:00</ws:jamTutup>
         <ws:dekatDengan>Situs Candi Bahal</ws:dekatDengan>
         <ws:aktivitas>Edukasi arkeologi, melihat artefak purbakala, tur sejarah</ws:aktivitas>
+        <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://museumtapanuliutara.org/">
@@ -407,6 +428,7 @@
         <ws:jamTutup>17:00</ws:jamTutup>
         <ws:dekatDengan>Salib Kasih Tarutung</ws:dekatDengan>
         <ws:aktivitas>Belajar sejarah Batak, melihat artefak, tur edukatif</ws:aktivitas>
+        <foaf:depiction rdf:resource=""/>
     </rdf:Description>
 
 </rdf:RDF>
