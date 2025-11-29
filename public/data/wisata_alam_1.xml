@@ -838,7 +838,7 @@
       <ws:jamBuka>07:00</ws:jamBuka>
       <ws:jamTutup>18:30</ws:jamTutup>
       <ws:dekatDengan>Pantai Pandan</ws:dekatDengan>
-    <foaf:depiction rdf:resource=""/>
+     <foaf:depiction rdf:resource=""/>
 
       <ws:fasilitas>Parkir, warung, kamar mandi</ws:fasilitas>
       <ws:aktivitas>Berenang, naik banana boat, bersantai</ws:aktivitas>

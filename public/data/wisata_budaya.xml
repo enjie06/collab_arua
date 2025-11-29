@@ -133,7 +133,7 @@
         <ws:dekatDengan>Taman Hewan Siantar</ws:dekatDengan>
         <ws:fasilitas>Galeri artefak, ruang pamer tematik</ws:fasilitas>
         <ws:aktivitas>Belajar sejarah Simalungun, foto</ws:aktivitas>
-        <foaf:depiction rdf:resource=""/>
+        <foaf:depiction rdf:resource="https://www.bing.com/images/search?view=detailV2&ccid=VYgvQxCl&id=F8AFB045FB91AB78E653B265031549B491B3DD39&thid=OIP.VYgvQxClsglDmtetxd6h_wHaFj&mediaurl=https%3a%2f%2fimages.hive.blog%2f1200x630%2fhttps%3a%2f%2ffiles.peakd.com%2ffile%2fpeakd-hive%2ftomidiwirja%2fEqNFC6ZXmTzbjpL7uxLQyLoQbAhmTwM7GSsdXNB5v4rd8VVz66Te729HNTKTBTS5TX2.jpeg&exph=630&expw=840&q=Museum+Simalungu+wikimedia&FORM=IRPRST&ck=894D6956470130C200221D239967EFE1&selectedIndex=1&itb=0"/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Pusaka_Nias">
@@ -152,7 +152,7 @@
         <ws:dekatDengan>Pantai Laowömaru</ws:dekatDengan>
         <ws:fasilitas>Galeri budaya Nias, area sejarah megalit</ws:fasilitas>
         <ws:aktivitas>Belajar adat Nias, melihat artefak, foto</ws:aktivitas>
-        <foaf:depiction rdf:resource=""/>
+        <foaf:depiction rdf:resource="https://www.bing.com/images/search?view=detailV2&ccid=6mNUlUfj&id=47674A094EFF28ED0612AF8EB4D850A40509EA07&thid=OIP.6mNUlUfjXHbMC1OS0W-mRQHaE8&mediaurl=https%3a%2f%2fmedia.zcreators.id%2fcrop%2f0x0%3a0x0%2f750x500%2fphoto%2findizone%2f2023%2f03%2f24%2fbnsPgR9%2fmenjelajahi-museum-pusaka-nias-semua-budaya-nias-diperkenalkan-di-tempat-ini57.jpg&exph=500&expw=750&q=Museum+Pusaka+Nias+wikimedia&FORM=IRPRST&ck=DD2BDF823837E608A2DD0FA9F2350E91&selectedIndex=61&itb=0"/>
     </rdf:Description>
 
     <rdf:Description rdf:about="https://id.wikipedia.org/wiki/Museum_Perjuangan_TNI">
