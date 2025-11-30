@@ -419,43 +419,187 @@
 
           <h1 class="text-6xl font-bold mb-12 text-center text-white drop-shadow-lg">
               TOP 10 DESTINATIONS
-          </h1>
+         </h1>
 
-          <div class="flex gap-6 overflow-x-auto pb-8 px-6 scrollbar-hide">
+<div class="flex gap-6 overflow-x-auto pb-8 px-6 scrollbar-hide">
 
-              @php
-                  $wisataList = [
-                      ['img' => 'wisata1.jpg', 'nama' => 'Danau Toba'],
-                      ['img' => 'wisata2.jpg', 'nama' => 'Pulau Samosir'],
-                      ['img' => 'wisata3.jpg', 'nama' => 'Air Terjun Sipiso-piso'],
-                      ['img' => 'wisata4.jpg', 'nama' => 'Bukit Lawang'],
-                      ['img' => 'wisata5.jpg', 'nama' => 'Gunung Sibayak'],
-                      ['img' => 'wisata1.jpg', 'nama' => 'Taman Nasional Gunung Leuser'],
-                      ['img' => 'wisata2.jpg', 'nama' => 'Menara Pandang Tele'],
-                      ['img' => 'wisata3.jpg', 'nama' => 'Bukit Holbung'],
-                      ['img' => 'wisata4.jpg', 'nama' => 'Kawah Sipoholon'],
-                      ['img' => 'wisata5.jpg', 'nama' => 'Museum Batak'],
-                  ];
-              @endphp
+    @php
+        $allWisata = array_merge(
+            array_slice($wisataAlam, 0, 4),
+            array_slice($wisataBudaya, 0, 3), 
+            array_slice($wisataReligi, 0, 3)
+        );
+    @endphp
 
-              @foreach ($wisataList as $w)
-                  <a href="/wisata?page={{ $loop->iteration }}"
-                    class="relative min-w-[250px] h-[330px] rounded-3xl shadow-xl flex flex-col justify-end overflow-hidden group transition transform hover:scale-105"
-                    style="background: linear-gradient(135deg, #FDE68A, #FBBF24);">
+@foreach ($allWisata as $index => $wisata)
+    <div class="relative min-w-[250px] h-[330px] rounded-3xl shadow-xl flex flex-col justify-end overflow-hidden group transition transform hover:scale-105"
+        style="background: linear-gradient(135deg, #FDE68A, #FBBF24);">
 
-                      <img src="/images/{{ $w['img'] }}"
-                          class="w-full h-full object-cover transition duration-500 
-                                  group-hover:scale-110 rounded-3xl" />
+        @if($wisata['gambar'])
+            <img src="{{ $wisata['gambar'] }}"
+                class="w-full h-full object-cover transition duration-500 group-hover:scale-110 rounded-3xl" 
+                alt="{{ $wisata['nama'] }}" />
+        @else
+            <div class="w-full h-full bg-gradient-to-br from-emerald-400 via-teal-500 to-blue-600 flex items-center justify-center rounded-3xl">
+                <span class="text-white text-xl font-bold">{{ strtoupper($wisata['kategori'] ?? 'WISATA') }}</span>
+            </div>
+        @endif
 
-                      <div class="absolute bottom-0 left-0 w-full bg-black/40 backdrop-blur-sm py-3 text-center">
-                          <p class="text-white font-semibold text-lg">{{ $w['nama'] }}</p>
-                      </div>
-                  </a>
-              @endforeach
+        <div class="absolute bottom-0 left-0 w-full bg-black/40 backdrop-blur-sm py-3 text-center">
+            <p class="text-white font-semibold text-lg">{{ $wisata['nama'] }}</p>
+            <p class="text-gray-200 text-sm">{{ $wisata['kota'] }}</p>
+        </div>
+    </div>
+@endforeach
 
-          </div>
-      </section>
+</div>
+</section>
 
+
+<!-- MODAL UNTUK SEMUA WISATA -->
+@foreach($allWisata as $index => $wisata)
+<div id="modal-wisata-{{ $index }}" class="fixed inset-0 bg-black/90 backdrop-blur-md z-50 hidden items-center justify-center p-4">
+    <div class="glass-card rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-y-auto border border-white/20">
+        <div class="sticky top-0 glass-card border-b border-white/10 p-6 flex justify-between items-center">
+            <h2 class="text-4xl font-black text-white">{{ $wisata['nama'] }}</h2>
+            <button onclick="closeModal('modal-wisata-{{ $index }}')" class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition">
+                <span class="text-xl">×</span>
+            </button>
+        </div>
+        <div class="p-8">
+            @if($wisata['gambar'])
+            <div class="w-full h-96 bg-cover bg-center rounded-2xl mb-8" style="background-image: url('{{ $wisata['gambar'] }}')"></div>
+            @else
+            <div class="w-full h-96 bg-gradient-to-br from-emerald-400 via-teal-500 to-blue-600 rounded-2xl flex items-center justify-center mb-8">
+                <span class="text-white text-4xl font-bold">{{ strtoupper($wisata['kategori'] ?? 'WISATA') }}</span>
+            </div>
+            @endif
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white/10 rounded-xl p-4">
+                    <h3 class="text-white font-bold mb-2">Jenis Wisata</h3>
+                    <p class="text-gray-300">{{ $wisata['jenisWisata'] ?? 'Wisata' }}</p>
+                </div>
+                <div class="bg-white/10 rounded-xl p-4">
+                    <h3 class="text-white font-bold mb-2">Kategori</h3>
+                    <p class="text-gray-300">{{ $wisata['kategori'] ?? '-' }}</p>
+                </div>
+                <div class="bg-white/10 rounded-xl p-4">
+                    <h3 class="text-white font-bold mb-2">Harga Tiket</h3>
+                    <p class="text-gray-300">{{ $wisata['harga_tiket'] ?? 'Gratis' }}</p>
+                </div>
+                <div class="bg-white/10 rounded-xl p-4">
+                    <h3 class="text-white font-bold mb-2">Jam Operasional</h3>
+                    <p class="text-gray-300">
+                        {{ $wisata['jam_buka'] ?? 'Tidak tersedia' }}
+                        @if(isset($wisata['jam_tutup']) && $wisata['jam_tutup'] && $wisata['jam_tutup'] != '-')
+                        - {{ $wisata['jam_tutup'] }}
+                        @endif
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-white/10 rounded-xl p-6">
+                    <h3 class="text-white font-bold mb-4 text-xl">Informasi Lokasi</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-gray-300">Alamat:</span>
+                            <span class="text-white font-medium">{{ $wisata['alamat'] ?? '-' }}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-300">Kabupaten:</span>
+                            <span class="text-white font-medium">{{ $wisata['kota'] ?? '-' }}</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-300">Provinsi:</span>
+                            <span class="text-white font-medium">{{ $wisata['provinsi'] ?? '-' }}</span>
+                        </div>
+                        @if(isset($wisata['latitude']) && isset($wisata['longitude']) && $wisata['latitude'] && $wisata['longitude'])
+                        <div class="flex justify-between">
+                            <span class="text-gray-300">Koordinat:</span>
+                            <span class="text-white font-medium">{{ $wisata['latitude'] }}° N, {{ $wisata['longitude'] }}° E</span>
+                        </div>
+                        @endif
+                    </div>
+                </div>
+
+                <div class="bg-white/10 rounded-xl p-6">
+                    <h3 class="text-white font-bold mb-4 text-xl">Fasilitas & Aktivitas</h3>
+                    <div class="space-y-3">
+                        @if(isset($wisata['fasilitas']) && $wisata['fasilitas'])
+                        <div>
+                            <span class="text-gray-300">Fasilitas:</span>
+                            <p class="text-white font-medium">{{ $wisata['fasilitas'] }}</p>
+                        </div>
+                        @endif
+                        
+                        @if(isset($wisata['aktivitas']) && $wisata['aktivitas'])
+                        <div>
+                            <span class="text-gray-300">Aktivitas:</span>
+                            <p class="text-white font-medium">{{ $wisata['aktivitas'] }}</p>
+                        </div>
+                        @endif
+                        
+                        @if(isset($wisata['dekat_dengan']) && $wisata['dekat_dengan'])
+                        <div>
+                            <span class="text-gray-300">Dekat Dengan:</span>
+                            <p class="text-white font-medium">{{ $wisata['dekat_dengan'] }}</p>
+                        </div>
+                        @endif
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/10 rounded-xl p-6">
+                <h3 class="text-white font-bold mb-4 text-xl">Deskripsi</h3>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                    {{ $wisata['nama'] }} adalah salah satu destinasi wisata {{ $wisata['jenisWisata'] ?? 'terbaik' }} di Sumatera Utara. 
+                    Menawarkan pengalaman wisata yang tak terlupakan dengan pemandangan yang menakjubkan 
+                    dan berbagai aktivitas menarik untuk dinikmati oleh pengunjung.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+@endforeach
+
+<!-- JavaScript untuk Modal -->
+<script>
+    function openModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    function closeModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+    }
+
+    // ESC key close
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            document.querySelectorAll('[id^="modal-wisata-"]').forEach(modal => {
+                closeModal(modal.id);
+            });
+        }
+    });
+
+    // Close modal when clicking outside
+    document.addEventListener('click', (e) => {
+        if (e.target.classList.contains('fixed') && e.target.id.startsWith('modal-wisata-')) {
+            closeModal(e.target.id);
+        }
+    });
+</script>
       <style>
       .scrollbar-hide::-webkit-scrollbar {
           display: none;
