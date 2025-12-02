@@ -291,67 +291,158 @@
                     <p class="text-gray-300">{{ $wisata['harga_tiket'] }}</p>
                 </div>
                 <div class="bg-white/10 rounded-xl p-4">
-    <h3 class="text-white font-bold mb-2">Jam Operasional</h3>
-    <p class="text-gray-300">
-        {{ $wisata['jam_buka'] ?? 'Tidak tersedia' }}
-        @if(isset($wisata['jam_tutup']) && $wisata['jam_tutup'] && $wisata['jam_tutup'] != '-')
-        - {{ $wisata['jam_tutup'] }}
-        @endif
-    </p>
-</div>
+                    <h3 class="text-white font-bold mb-2">Jam Operasional</h3>
+                    <p class="text-gray-300">
+                        {{ $wisata['jam_buka'] ?? 'Tidak tersedia' }}
+                        @if(isset($wisata['jam_tutup']) && $wisata['jam_tutup'] && $wisata['jam_tutup'] != '-')
+                        - {{ $wisata['jam_tutup'] }}
+                        @endif
+                    </p>
+                </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <!-- Kolom kiri: Informasi Lokasi -->
                 <div class="bg-white/10 rounded-xl p-6">
                     <h3 class="text-white font-bold mb-4 text-xl">Informasi Lokasi</h3>
-                    <div class="space-y-3">
-                        <div class="flex justify-between">
-                            <span class="text-gray-300">Alamat:</span>
-                            <span class="text-white font-medium">{{ $wisata['alamat'] }}</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="text-gray-300">Kabupaten:</span>
-                            <span class="text-white font-medium">{{ $wisata['kota'] }}</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="text-gray-300">Provinsi:</span>
-                            <span class="text-white font-medium">{{ $wisata['provinsi'] }}</span>
-                        </div>
-                      @if(isset($wisata['latitude']) && isset($wisata['longitude']) && $wisata['latitude'] && $wisata['longitude'])
-                     <div class="flex justify-between">
-                     <span class="text-gray-300">Koordinat:</span>
-                     <span class="text-white font-medium">{{ $wisata['latitude'] }}° N, {{ $wisata['longitude'] }}° E</span>
-                    </div>
-                    @endif
-                    </div>
-                </div>
-
-                <div class="bg-white/10 rounded-xl p-6">
-                    <h3 class="text-white font-bold mb-4 text-xl">Fasilitas & Aktivitas</h3>
-                    <div class="space-y-3">
-                        @if(isset($wisata['fasilitas']) && $wisata['fasilitas'])
-<div>
-    <span class="text-gray-300">Fasilitas:</span>
-    <p class="text-white font-medium">{{ $wisata['fasilitas'] }}</p>
-</div>
-@endif
-                        
-                       @if(isset($wisata['aktivitas']) && $wisata['aktivitas'])
-                        <div>
-                         <span class="text-gray-300">Aktivitas:</span>
-                            <p class="text-white font-medium">{{ $wisata['aktivitas'] }}</p>
+                    <div class="space-y-4">
+                        <div class="space-y-2">
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                <span class="font-medium">Alamat</span>
                             </div>
-                              @endif
-                        @if(isset($wisata['dekat_dengan']) && $wisata['dekat_dengan'])
-                        <div>
-                        <span class="text-gray-300">Dekat Dengan:</span>
-                         <p class="text-white font-medium">{{ $wisata['dekat_dengan'] }}</p>
+                            <p class="text-white font-medium pl-6">{{ $wisata['alamat'] }}</p>
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-city mr-2"></i>
+                                <span class="font-medium">Kabupaten/Kota</span>
+                            </div>
+                            <p class="text-white font-medium pl-6">{{ $wisata['kota'] }}</p>
+                        </div>
+                        
+                        <!-- Provinsi -->
+                        <div class="space-y-2">
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-globe mr-2"></i>
+                                <span class="font-medium">Provinsi</span>
+                            </div>
+                            <p class="text-white font-medium pl-6">{{ $wisata['provinsi'] }}</p>
+                        </div>
+                        
+                        <!-- Koordinat (hanya teks) -->
+                        @if(isset($wisata['latitude']) && isset($wisata['longitude']) && $wisata['latitude'] && $wisata['longitude'])
+                        <div class="space-y-2">
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-crosshairs mr-2"></i>
+                                <span class="font-medium">Koordinat</span>
+                            </div>
+                            <p class="text-white font-medium pl-6">
+                                {{ number_format($wisata['latitude'], 6) }}° N, 
+                                {{ number_format($wisata['longitude'], 6) }}° E
+                            </p>
                         </div>
                         @endif
                     </div>
                 </div>
+
+                @if(isset($wisata['latitude']) && isset($wisata['longitude']) && $wisata['latitude'] && $wisata['longitude'])
+                <div class="relative bg-white/10 rounded-xl p-6">
+                    <h3 class="text-white font-bold mb-4 text-xl">Peta Wisata</h3>
+                    
+                    <div class="mb-4">
+                        <div class="rounded-xl overflow-hidden border border-white/20 shadow-lg" style="height: 250px;">
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                frameborder="0"
+                                style="border:0;"
+                                src="https://www.google.com/maps?q={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}&z=15&output=embed"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-row items-center gap-3">
+                        
+                        <a href="https://www.google.com/maps/search/?api=1&query={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}" 
+                        target="_blank" 
+                        class="group relative flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl border border-white/20">
+                            <div class="absolute -top-10 bg-black/90 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                                Buka di Google Maps
+                            </div>
+                            <i class="fas fa-map-marked-alt text-white text-2xl"></i>
+                        </a>
+                        
+                        <a href="https://www.google.com/maps/dir/?api=1&destination={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}" 
+                        target="_blank" 
+                        class="group relative flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl border border-white/20">
+                            <div class="absolute -top-10 bg-black/90 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                                Dapatkan Rute
+                            </div>
+                            <i class="fas fa-directions text-white text-2xl"></i>
+                        </a>
+                        
+                        <a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}" 
+                        target="_blank" 
+                        class="group relative flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl border border-white/20">
+                            <div class="absolute -top-10 bg-black/90 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                                Lihat Street View
+                            </div>
+                            <i class="fas fa-street-view text-white text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                @else
+                <div class="bg-white/10 rounded-xl p-6 flex flex-col items-center justify-center">
+                    <div class="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-map-marker-slash text-4xl text-gray-500"></i>
+                    </div>
+                    <h4 class="text-white font-bold mb-2">Peta Tidak Tersedia</h4>
+                    <p class="text-gray-400 text-sm text-center">
+                        Lokasi koordinat untuk wisata ini belum tersedia
+                    </p>
+                </div>
+                @endif
             </div>
 
+            <div class="bg-white/10 rounded-xl p-6 mb-8">
+                <h3 class="text-white font-bold mb-4 text-xl">Fasilitas & Aktivitas</h3>
+                <div class="space-y-4">
+                    @if(isset($wisata['fasilitas']) && $wisata['fasilitas'])
+                    <div class="space-y-2">
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-concierge-bell mr-2"></i>
+                            <span class="font-medium">Fasilitas</span>
+                        </div>
+                        <p class="text-white font-medium pl-6">{{ $wisata['fasilitas'] }}</p>
+                    </div>
+                    @endif
+                    
+                    @if(isset($wisata['aktivitas']) && $wisata['aktivitas'])
+                    <div class="space-y-2">
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-hiking mr-2"></i>
+                            <span class="font-medium">Aktivitas</span>
+                        </div>
+                        <p class="text-white font-medium pl-6">{{ $wisata['aktivitas'] }}</p>
+                    </div>
+                    @endif
+                    
+                    @if(isset($wisata['dekat_dengan']) && $wisata['dekat_dengan'])
+                    <div class="space-y-2">
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-landmark mr-2"></i>
+                            <span class="font-medium">Dekat Dengan</span>
+                        </div>
+                        <p class="text-white font-medium pl-6">{{ $wisata['dekat_dengan'] }}</p>
+                    </div>
+                    @endif
+                </div>
+            </div>
+
+            <!-- Deskripsi -->
             <div class="bg-white/10 rounded-xl p-6">
                 <h3 class="text-white font-bold mb-4 text-xl">Deskripsi</h3>
                 <p class="text-gray-300 text-lg leading-relaxed">
@@ -408,55 +499,145 @@
                 </div>
             </div>
 
-            <!-- TAMBAHKAN BAGIAN INI UNTUK BUDAYA -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <!-- Kolom kiri: Informasi Lokasi -->
                 <div class="bg-white/10 rounded-xl p-6">
                     <h3 class="text-white font-bold mb-4 text-xl">Informasi Lokasi</h3>
-                    <div class="space-y-3">
-                        <div class="flex justify-between">
-                            <span class="text-gray-300">Alamat:</span>
-                            <span class="text-white font-medium">{{ $wisata['alamat'] }}</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="text-gray-300">Kabupaten:</span>
-                            <span class="text-white font-medium">{{ $wisata['kota'] }}</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="text-gray-300">Provinsi:</span>
-                            <span class="text-white font-medium">{{ $wisata['provinsi'] }}</span>
-                        </div>
-                      @if(isset($wisata['latitude']) && isset($wisata['longitude']) && $wisata['latitude'] && $wisata['longitude'])
-                     <div class="flex justify-between">
-                     <span class="text-gray-300">Koordinat:</span>
-                     <span class="text-white font-medium">{{ $wisata['latitude'] }}° N, {{ $wisata['longitude'] }}° E</span>
-                    </div>
-                    @endif
-                    </div>
-                </div>
-
-                <div class="bg-white/10 rounded-xl p-6">
-                    <h3 class="text-white font-bold mb-4 text-xl">Fasilitas & Aktivitas</h3>
-                    <div class="space-y-3">
-                        @if(isset($wisata['fasilitas']) && $wisata['fasilitas'])
-<div>
-    <span class="text-gray-300">Fasilitas:</span>
-    <p class="text-white font-medium">{{ $wisata['fasilitas'] }}</p>
-</div>
-@endif
-                        
-                       @if(isset($wisata['aktivitas']) && $wisata['aktivitas'])
-                        <div>
-                         <span class="text-gray-300">Aktivitas:</span>
-                            <p class="text-white font-medium">{{ $wisata['aktivitas'] }}</p>
+                    <div class="space-y-4">
+                        <!-- Alamat -->
+                        <div class="space-y-2">
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                <span class="font-medium">Alamat</span>
                             </div>
-                              @endif
-                        @if(isset($wisata['dekat_dengan']) && $wisata['dekat_dengan'])
-                        <div>
-                        <span class="text-gray-300">Dekat Dengan:</span>
-                         <p class="text-white font-medium">{{ $wisata['dekat_dengan'] }}</p>
+                            <p class="text-white font-medium pl-6">{{ $wisata['alamat'] }}</p>
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-city mr-2"></i>
+                                <span class="font-medium">Kabupaten/Kota</span>
+                            </div>
+                            <p class="text-white font-medium pl-6">{{ $wisata['kota'] }}</p>
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-globe mr-2"></i>
+                                <span class="font-medium">Provinsi</span>
+                            </div>
+                            <p class="text-white font-medium pl-6">{{ $wisata['provinsi'] }}</p>
+                        </div>
+                        
+                        @if(isset($wisata['latitude']) && isset($wisata['longitude']) && $wisata['latitude'] && $wisata['longitude'])
+                        <div class="space-y-2">
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-crosshairs mr-2"></i>
+                                <span class="font-medium">Koordinat</span>
+                            </div>
+                            <p class="text-white font-medium pl-6">
+                                {{ number_format($wisata['latitude'], 6) }}° N, 
+                                {{ number_format($wisata['longitude'], 6) }}° E
+                            </p>
                         </div>
                         @endif
                     </div>
+                </div>
+
+                @if(isset($wisata['latitude']) && isset($wisata['longitude']) && $wisata['latitude'] && $wisata['longitude'])
+                <div class="relative bg-white/10 rounded-xl p-6">
+                    <h3 class="text-white font-bold mb-4 text-xl">Peta Wisata</h3>
+                    
+                    <!-- Map Container (Lebar, tidak terlalu tinggi) -->
+                    <div class="mb-4">
+                        <div class="rounded-xl overflow-hidden border border-white/20 shadow-lg" style="height: 250px;">
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                frameborder="0"
+                                style="border:0;"
+                                src="https://www.google.com/maps?q={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}&z=15&output=embed"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-row items-center gap-3">
+                        <!-- Tombol Buka di Maps -->
+                        <a href="https://www.google.com/maps/search/?api=1&query={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}" 
+                        target="_blank" 
+                        class="group relative flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl border border-white/20">
+                            <div class="absolute -top-10 bg-black/90 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                                Buka di Google Maps
+                            </div>
+                            <i class="fas fa-map-marked-alt text-white text-2xl"></i>
+                        </a>
+                        
+                        <a href="https://www.google.com/maps/dir/?api=1&destination={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}" 
+                        target="_blank" 
+                        class="group relative flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl border border-white/20">
+                            <div class="absolute -top-10 bg-black/90 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                                Dapatkan Rute
+                            </div>
+                            <i class="fas fa-directions text-white text-2xl"></i>
+                        </a>
+                        
+                        <a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}" 
+                        target="_blank" 
+                        class="group relative flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl border border-white/20">
+                            <div class="absolute -top-10 bg-black/90 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                                Lihat Street View
+                            </div>
+                            <i class="fas fa-street-view text-white text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                @else
+                
+                <div class="bg-white/10 rounded-xl p-6 flex flex-col items-center justify-center">
+                    <div class="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-map-marker-slash text-4xl text-gray-500"></i>
+                    </div>
+                    <h4 class="text-white font-bold mb-2">Peta Tidak Tersedia</h4>
+                    <p class="text-gray-400 text-sm text-center">
+                        Lokasi koordinat untuk wisata ini belum tersedia
+                    </p>
+                </div>
+                @endif
+            </div>
+
+            <div class="bg-white/10 rounded-xl p-6 mb-8">
+                <h3 class="text-white font-bold mb-4 text-xl">Fasilitas & Aktivitas</h3>
+                <div class="space-y-4">
+                    @if(isset($wisata['fasilitas']) && $wisata['fasilitas'])
+                    <div class="space-y-2">
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-concierge-bell mr-2"></i>
+                            <span class="font-medium">Fasilitas</span>
+                        </div>
+                        <p class="text-white font-medium pl-6">{{ $wisata['fasilitas'] }}</p>
+                    </div>
+                    @endif
+                    
+                    @if(isset($wisata['aktivitas']) && $wisata['aktivitas'])
+                    <div class="space-y-2">
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-landmark mr-2"></i>
+                            <span class="font-medium">Aktivitas Budaya</span>
+                        </div>
+                        <p class="text-white font-medium pl-6">{{ $wisata['aktivitas'] }}</p>
+                    </div>
+                    @endif
+                    
+                    @if(isset($wisata['dekat_dengan']) && $wisata['dekat_dengan'])
+                    <div class="space-y-2">
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-compass mr-2"></i>
+                            <span class="font-medium">Dekat Dengan</span>
+                        </div>
+                        <p class="text-white font-medium pl-6">{{ $wisata['dekat_dengan'] }}</p>
+                    </div>
+                    @endif
                 </div>
             </div>
 
@@ -473,7 +654,6 @@
 </div>
 @endforeach
 
-<!-- MODAL DINAMIS UNTUK RELIGI -->
 @foreach($wisataReligi as $index => $wisata)
 <div id="modal-religi-{{ $index }}" class="fixed inset-0 bg-black/90 backdrop-blur-md z-50 hidden items-center justify-center p-4">
     <div class="glass-card rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-y-auto border border-white/20">
@@ -517,55 +697,166 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <!-- Kolom kiri: Informasi Lokasi -->
                 <div class="bg-white/10 rounded-xl p-6">
                     <h3 class="text-white font-bold mb-4 text-xl">Informasi Lokasi</h3>
-                    <div class="space-y-3">
-                        <div class="flex justify-between">
-                            <span class="text-gray-300">Alamat:</span>
-                            <span class="text-white font-medium">{{ $wisata['alamat'] }}</span>
+                    <div class="space-y-4">
+                        <!-- Alamat -->
+                        <div class="space-y-2">
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                <span class="font-medium">Alamat</span>
+                            </div>
+                            <p class="text-white font-medium pl-6">{{ $wisata['alamat'] }}</p>
                         </div>
-                        <div class="flex justify-between">
-                            <span class="text-gray-300">Kabupaten:</span>
-                            <span class="text-white font-medium">{{ $wisata['kota'] }}</span>
+                        
+                        <!-- Kabupaten/Kota -->
+                        <div class="space-y-2">
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-city mr-2"></i>
+                                <span class="font-medium">Kabupaten/Kota</span>
+                            </div>
+                            <p class="text-white font-medium pl-6">{{ $wisata['kota'] }}</p>
                         </div>
-                        <div class="flex justify-between">
-                            <span class="text-gray-300">Provinsi:</span>
-                            <span class="text-white font-medium">{{ $wisata['provinsi'] }}</span>
+                        
+                        <!-- Provinsi -->
+                        <div class="space-y-2">
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-globe mr-2"></i>
+                                <span class="font-medium">Provinsi</span>
+                            </div>
+                            <p class="text-white font-medium pl-6">{{ $wisata['provinsi'] }}</p>
                         </div>
-                        <!-- PERBAIKI BAGIAN KOORDINAT INI -->
+                        
+                        <!-- Agama Terkait -->
+                        @if(isset($wisata['agama_terkait']) && $wisata['agama_terkait'])
+                        <div class="space-y-2">
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-pray mr-2"></i>
+                                <span class="font-medium">Agama</span>
+                            </div>
+                            <p class="text-white font-medium pl-6">{{ $wisata['agama_terkait'] }}</p>
+                        </div>
+                        @endif
+                        
+                        <!-- Koordinat (hanya teks) -->
                         @if(isset($wisata['latitude']) && isset($wisata['longitude']) && $wisata['latitude'] && $wisata['longitude'])
-                        <div class="flex justify-between">
-                            <span class="text-gray-300">Koordinat:</span>
-                            <span class="text-white font-medium">{{ $wisata['latitude'] }}° N, {{ $wisata['longitude'] }}° E</span>
+                        <div class="space-y-2">
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-crosshairs mr-2"></i>
+                                <span class="font-medium">Koordinat</span>
+                            </div>
+                            <p class="text-white font-medium pl-6">
+                                {{ number_format($wisata['latitude'], 6) }}° N, 
+                                {{ number_format($wisata['longitude'], 6) }}° E
+                            </p>
                         </div>
                         @endif
                     </div>
                 </div>
 
-                <div class="bg-white/10 rounded-xl p-6">
-                    <h3 class="text-white font-bold mb-4 text-xl">Fasilitas & Aktivitas</h3>
-                    <div class="space-y-3">
-                        @if(isset($wisata['fasilitas']) && $wisata['fasilitas'])
-                        <div>
-                            <span class="text-gray-300">Fasilitas:</span>
-                            <p class="text-white font-medium">{{ $wisata['fasilitas'] }}</p>
+                @if(isset($wisata['latitude']) && isset($wisata['longitude']) && $wisata['latitude'] && $wisata['longitude'])
+                <div class="relative bg-white/10 rounded-xl p-6">
+                    <h3 class="text-white font-bold mb-4 text-xl">Peta Wisata</h3>
+                    
+                    <div class="mb-4">
+                        <div class="rounded-xl overflow-hidden border border-white/20 shadow-lg" style="height: 250px;">
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                frameborder="0"
+                                style="border:0;"
+                                src="https://www.google.com/maps?q={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}&z=15&output=embed"
+                                allowfullscreen>
+                            </iframe>
                         </div>
-                        @endif
-                        
-                        @if(isset($wisata['aktivitas']) && $wisata['aktivitas'])
-                        <div>
-                            <span class="text-gray-300">Aktivitas:</span>
-                            <p class="text-white font-medium">{{ $wisata['aktivitas'] }}</p>
-                        </div>
-                        @endif
-                        
-                        @if(isset($wisata['dekat_dengan']) && $wisata['dekat_dengan'])
-                        <div>
-                            <span class="text-gray-300">Dekat Dengan:</span>
-                            <p class="text-white font-medium">{{ $wisata['dekat_dengan'] }}</p>
-                        </div>
-                        @endif
                     </div>
+                    
+                    <div class="flex flex-row items-center gap-3">
+                        <a href="https://www.google.com/maps/search/?api=1&query={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}" 
+                        target="_blank" 
+                        class="group relative flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl border border-white/20">
+                            <div class="absolute -top-10 bg-black/90 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                                Buka di Google Maps
+                            </div>
+                            <i class="fas fa-map-marked-alt text-white text-2xl"></i>
+                        </a>
+                        
+                        <a href="https://www.google.com/maps/dir/?api=1&destination={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}" 
+                        target="_blank" 
+                        class="group relative flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl border border-white/20">
+                            <div class="absolute -top-10 bg-black/90 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                                Dapatkan Rute
+                            </div>
+                            <i class="fas fa-directions text-white text-2xl"></i>
+                        </a>
+                        
+                        <a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}" 
+                        target="_blank" 
+                        class="group relative flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl border border-white/20">
+                            <div class="absolute -top-10 bg-black/90 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                                Lihat Street View
+                            </div>
+                            <i class="fas fa-street-view text-white text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                @else
+                
+                <div class="bg-white/10 rounded-xl p-6 flex flex-col items-center justify-center">
+                    <div class="w-24 h-24 bg-white/5 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-map-marker-slash text-4xl text-gray-500"></i>
+                    </div>
+                    <h4 class="text-white font-bold mb-2">Peta Tidak Tersedia</h4>
+                    <p class="text-gray-400 text-sm text-center">
+                        Lokasi koordinat untuk wisata ini belum tersedia
+                    </p>
+                </div>
+                @endif
+            </div>
+
+            <div class="bg-white/10 rounded-xl p-6 mb-8">
+                <h3 class="text-white font-bold mb-4 text-xl">Fasilitas & Aktivitas</h3>
+                <div class="space-y-4">
+                    @if(isset($wisata['fasilitas']) && $wisata['fasilitas'])
+                    <div class="space-y-2">
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-concierge-bell mr-2"></i>
+                            <span class="font-medium">Fasilitas</span>
+                        </div>
+                        <p class="text-white font-medium pl-6">{{ $wisata['fasilitas'] }}</p>
+                    </div>
+                    @endif
+                    
+                    @if(isset($wisata['aktivitas']) && $wisata['aktivitas'])
+                    <div class="space-y-2">
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-praying-hands mr-2"></i>
+                            <span class="font-medium">Aktivitas Religi</span>
+                        </div>
+                        <p class="text-white font-medium pl-6">{{ $wisata['aktivitas'] }}</p>
+                    </div>
+                    @endif
+                    
+                    @if(isset($wisata['tokoh_terkait']) && $wisata['tokoh_terkait'] && $wisata['tokoh_terkait'] != '-')
+                    <div class="space-y-2">
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-user-tie mr-2"></i>
+                            <span class="font-medium">Tokoh Terkait</span>
+                        </div>
+                        <p class="text-white font-medium pl-6">{{ $wisata['tokoh_terkait'] }}</p>
+                    </div>
+                    @endif
+                    
+                    @if(isset($wisata['dekat_dengan']) && $wisata['dekat_dengan'])
+                    <div class="space-y-2">
+                        <div class="flex items-center text-gray-300">
+                            <i class="fas fa-compass mr-2"></i>
+                            <span class="font-medium">Dekat Dengan</span>
+                        </div>
+                        <p class="text-white font-medium pl-6">{{ $wisata['dekat_dengan'] }}</p>
+                    </div>
+                    @endif
                 </div>
             </div>
 
