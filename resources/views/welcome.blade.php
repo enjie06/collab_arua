@@ -234,24 +234,25 @@
 
         <!-- SEARCH BAR -->
         
-      <form id="searchForm" class="mt-6 w-full max-w-2xl mx-auto flex">
-  <div class="relative flex-grow">
-    <!-- Ikon kaca pembesar -->
-    <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">🔍</span>
-    <input 
-      type="text" 
-      id="searchInput" 
-      placeholder="Find Destinations..." 
-      class="w-full pl-10 pr-4 py-3 rounded-l-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 bg-white"
-      required
-    />
-  </div>
-  <button 
-    type="submit" 
-    class="bg-blue-700 hover:bg-blue-800 text-white px-6 rounded-r-3xl font-semibold transition-all">
-    GO!
-  </button>
-</form>
+        <form action="{{ route('search') }}" method="GET" class="mt-6 w-full max-w-2xl mx-auto flex">
+            <div class="relative flex-grow">
+                <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">🔍</span>
+                <input 
+                    type="text" 
+                    name="q"  
+                    id="searchInput" 
+                    placeholder="Find Destinations..." 
+                    class="w-full pl-10 pr-4 py-3 rounded-l-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 bg-white"
+                    required
+                    value="{{ request('q') }}"  
+                />
+            </div>
+            <button 
+                type="submit" 
+                class="bg-blue-700 hover:bg-blue-800 text-white px-6 rounded-r-3xl font-semibold transition-all">
+                GO!
+            </button>
+        </form>
 
 
         <script>
