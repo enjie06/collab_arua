@@ -236,7 +236,7 @@
         
         <form action="{{ route('search') }}" method="GET" class="mt-6 w-full max-w-2xl mx-auto flex">
             <div class="relative flex-grow">
-                <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">🔍</span>
+                <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></span>
                 <input 
                     type="text" 
                     name="q"  
