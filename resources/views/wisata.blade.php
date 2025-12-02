@@ -321,6 +321,32 @@
                      <div class="flex justify-between">
                      <span class="text-gray-300">Koordinat:</span>
                      <span class="text-white font-medium">{{ $wisata['latitude'] }}° N, {{ $wisata['longitude'] }}° E</span>
+                     <div class="mt-4">
+                        <h4 class="text-white font-bold mb-3">📍 Peta Lokasi</h4>
+                        <div class="rounded-xl overflow-hidden border border-white/20">
+                            <iframe
+                                width="100%"
+                                height="300"
+                                frameborder="0"
+                                style="border:0;"
+                                src="https://www.google.com/maps?q={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}&z=15&output=embed"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        
+                        <div class="flex gap-3 mt-3">
+                            <a href="https://www.google.com/maps/dir/?api=1&destination={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}" 
+                            target="_blank" 
+                            class="flex-1 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-semibold py-2 px-4 rounded-lg text-center transition">
+                                🚗 Dapatkan Rute
+                            </a>
+                            <a href="https://www.google.com/maps/search/?api=1&query={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}" 
+                            target="_blank" 
+                            class="flex-1 bg-white/10 hover:bg-white/20 text-white font-semibold py-2 px-4 rounded-lg text-center border border-white/20 transition">
+                                📍 Buka di Maps
+                            </a>
+                        </div>
+                    </div>
                     </div>
                     @endif
                     </div>
@@ -429,6 +455,33 @@
                      <div class="flex justify-between">
                      <span class="text-gray-300">Koordinat:</span>
                      <span class="text-white font-medium">{{ $wisata['latitude'] }}° N, {{ $wisata['longitude'] }}° E</span>
+                     <div class="mt-4">
+                        <h4 class="text-white font-bold mb-3">📍 Peta Lokasi</h4>
+                        <div class="rounded-xl overflow-hidden border border-white/20">
+                            <iframe
+                                width="100%"
+                                height="300"
+                                frameborder="0"
+                                style="border:0;"
+                                src="https://www.google.com/maps?q={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}&z=15&output=embed"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        
+                        <!-- Tombol tambahan -->
+                        <div class="flex gap-3 mt-3">
+                            <a href="https://www.google.com/maps/dir/?api=1&destination={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}" 
+                            target="_blank" 
+                            class="flex-1 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-semibold py-2 px-4 rounded-lg text-center transition">
+                                🚗 Dapatkan Rute
+                            </a>
+                            <a href="https://www.google.com/maps/search/?api=1&query={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}" 
+                            target="_blank" 
+                            class="flex-1 bg-white/10 hover:bg-white/20 text-white font-semibold py-2 px-4 rounded-lg text-center border border-white/20 transition">
+                                📍 Buka di Maps
+                            </a>
+                        </div>
+                    </div>
                     </div>
                     @endif
                     </div>
@@ -537,6 +590,33 @@
                         <div class="flex justify-between">
                             <span class="text-gray-300">Koordinat:</span>
                             <span class="text-white font-medium">{{ $wisata['latitude'] }}° N, {{ $wisata['longitude'] }}° E</span>
+                            <div class="mt-4">
+                                <h4 class="text-white font-bold mb-3">📍 Peta Lokasi</h4>
+                                <div class="rounded-xl overflow-hidden border border-white/20">
+                                    <iframe
+                                        width="100%"
+                                        height="300"
+                                        frameborder="0"
+                                        style="border:0;"
+                                        src="https://www.google.com/maps?q={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}&z=15&output=embed"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                                
+                                <!-- Tombol tambahan -->
+                                <div class="flex gap-3 mt-3">
+                                    <a href="https://www.google.com/maps/dir/?api=1&destination={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}" 
+                                    target="_blank" 
+                                    class="flex-1 bg-gradient-to-r from-violet-500 to-purple-600 hover:from-violet-600 hover:to-purple-700 text-white font-semibold py-2 px-4 rounded-lg text-center transition">
+                                        🚗 Dapatkan Rute
+                                    </a>
+                                    <a href="https://www.google.com/maps/search/?api=1&query={{ $wisata['latitude'] }},{{ $wisata['longitude'] }}" 
+                                    target="_blank" 
+                                    class="flex-1 bg-white/10 hover:bg-white/20 text-white font-semibold py-2 px-4 rounded-lg text-center border border-white/20 transition">
+                                        📍 Buka di Maps
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         @endif
                     </div>
