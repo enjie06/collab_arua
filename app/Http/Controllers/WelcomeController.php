@@ -18,7 +18,7 @@ class WelcomeController extends Controller
             public_path('data/wisata_budaya.xml'),
         ];
         
-        // Parse semua file RDF (sama seperti di WisataController)
+        // Parse semua file RDF
         foreach ($rdfFiles as $file) {
             if (file_exists($file)) {
                 try {
@@ -36,29 +36,48 @@ class WelcomeController extends Controller
         // Convert field names untuk kompatibilitas
         $allWisataData = $this->convertFieldNames($allWisataData);
         
-        // Group by jenisWisata (sama seperti di WisataController)
+        // DEBUG: Cek apakah koordinat sudah ada
+        \Log::info('=== DEBUG KOORDINAT ===');
+        foreach (array_slice($allWisataData, 0, 5) as $index => $item) {
+            \Log::info("Item {$index}: {$item['nama']} - Lat: {$item['latitude']}, Lng: {$item['longitude']}");
+        }
+        
+        // Group by jenisWisata
         $wisataAlam = array_values(array_filter($allWisataData, function($item) {
-            return isset($item['jenisWisata']) && $item['jenisWisata'] === 'Alam';
+            $jenis = strtolower(trim($item['jenisWisata'] ?? ''));
+            return $jenis === 'alam' || $jenis === 'wisata alam';
         }));
         
         $wisataBudaya = array_values(array_filter($allWisataData, function($item) {
-            return isset($item['jenisWisata']) && $item['jenisWisata'] === 'Budaya';
+            $jenis = strtolower(trim($item['jenisWisata'] ?? ''));
+            return $jenis === 'budaya' || $jenis === 'wisata budaya';
         }));
         
         $wisataReligi = array_values(array_filter($allWisataData, function($item) {
-            return isset($item['jenisWisata']) && $item['jenisWisata'] === 'Religi';
+            $jenis = strtolower(trim($item['jenisWisata'] ?? ''));
+            return $jenis === 'religi' || $jenis === 'wisata religi';
         }));
+
+        \Log::info('=== FINAL COUNTS ===');
+        \Log::info('- Alam: ' . count($wisataAlam));
+        \Log::info('- Budaya: ' . count($wisataBudaya));
+        \Log::info('- Religi: ' . count($wisataReligi));
 
         return view('welcome', compact('wisataAlam', 'wisataBudaya', 'wisataReligi'));
     }
 
     /**
      * Convert field names dari RDFParser format ke View format
-     * SAMA PERSIS dengan yang di WisataController
+     * PERBAIKI INI: Pastikan latitude dan longitude tidak hilang!
      */
     private function convertFieldNames($data)
     {
         return array_map(function($item) {
+            // DEBUG: Lihat apa yang ada di $item
+            if (!isset($item['latitude']) || !isset($item['longitude'])) {
+                \Log::warning("Item tanpa koordinat: " . ($item['nama'] ?? 'Unknown'));
+            }
+            
             return [
                 'nama' => $item['nama'] ?? $item['label'] ?? '',
                 'gambar' => $item['gambar'] ?? '',
@@ -66,8 +85,11 @@ class WelcomeController extends Controller
                 'alamat' => $item['alamat'] ?? '',
                 'kota' => $item['kotaKabupaten'] ?? '',
                 'provinsi' => $item['provinsi'] ?? '',
-                'latitude' => $item['latitude'] ?? '',
-                'longitude' => $item['longitude'] ?? '',
+                
+                // PERBAIKAN PENTING: Jangan hilangkan koordinat!
+                'latitude' => !empty($item['latitude']) ? (float)$item['latitude'] : null,
+                'longitude' => !empty($item['longitude']) ? (float)$item['longitude'] : null,
+                
                 'harga_tiket' => $item['hargaTiket'] ?? '',
                 'hari_buka' => $item['hariBuka'] ?? '',
                 'jam_buka' => $item['jamBuka'] ?? '',
