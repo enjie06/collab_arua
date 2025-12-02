@@ -19,6 +19,8 @@
         </div>
     </section>
 
+
+
     <section class="max-w-7xl mx-auto px-4 mb-12">
         <div class="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-6">
             <form action="{{ route('search') }}" method="GET" class="flex flex-col md:flex-row gap-4 items-center">
@@ -69,6 +71,15 @@
             </div>
         </div>
     </section>
+
+    @if(isset($searchType) && $searchType === 'sparql')
+        <div class="mb-4 p-3 bg-blue-900/30 border border-blue-700 rounded-lg">
+            <p class="text-blue-300 text-sm">
+                <i class="fas fa-search mr-2"></i>
+                Searching with <strong>SPARQL</strong> engine
+            </p>
+        </div>
+    @endif
 
     @if($total > 0)
         <section class="max-w-7xl mx-auto px-4 mb-20">
