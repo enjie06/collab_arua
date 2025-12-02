@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\WisataController;
 use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\SparqlSearchController;
 
 
 Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
@@ -131,9 +132,15 @@ Route::get('/test-search', function() {
         echo "</pre>";
     }
     
-    // Test 4: Categories
     $cats = $service->getAllCategories();
     echo "<h3>Categories: " . implode(', ', $cats) . "</h3>";
     
     return '';
 });
+
+// Route SPARQL Search (TIDAK mengganti route yang ada)
+Route::get('/sparql-search', [SparqlSearchController::class, 'search'])->name('sparql.search');
+Route::get('/test-sparql-service', [SparqlSearchController::class, 'test']);
+
+// Route search lama TETAP ADA (jangan dihapus!)
+Route::get('/search', [SearchController::class, 'search'])->name('search');
