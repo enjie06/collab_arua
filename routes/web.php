@@ -19,16 +19,14 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/search', function (Request $request) {
-    $query = $request->get('q');
-    return redirect('/')->with('search', $query);
-});
+Route::get('/search', [SearchController::class, 'search'])->name('search');
+
+Route::get('/search/autocomplete', [SearchController::class, 'ajaxSearch'])->name('search.autocomplete');
 
 Route::get('/wisata/search', [SearchController::class, 'search']);
 Route::get('/wisata/category/{category}', [SearchController::class, 'byCategory']);
 Route::get('/wisata/all', [SearchController::class, 'allWisata']);  
 
-// Debug routes
 Route::get('/debug-wisata', function() {
     try {
         $controller = new App\Http\Controllers\WisataController();
@@ -50,7 +48,6 @@ Route::get('/debug-wisata', function() {
 });
 
 Route::get('/test-view', function() {
-    // Test langsung dengan data dummy
     $data = [
         'wisataAlam' => [
             [
@@ -117,4 +114,26 @@ Route::get('/debug-duplicate', function() {
     echo "<pre>";
     print_r($results);
     echo "</pre>";
+});
+
+Route::get('/test-search', function() {
+    $service = new \App\Services\SparqlSearchService();
+    
+    $all = $service->search();
+    echo "<h3>Total Data: " . count($all) . "</h3>";
+    
+    $results = $service->search('Danau');
+    echo "<h3>Search 'Danau': " . count($results) . " results</h3>";
+    
+    if (count($results) > 0) {
+        echo "<pre>";
+        print_r($results[0]);
+        echo "</pre>";
+    }
+    
+    // Test 4: Categories
+    $cats = $service->getAllCategories();
+    echo "<h3>Categories: " . implode(', ', $cats) . "</h3>";
+    
+    return '';
 });
