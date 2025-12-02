@@ -2,167 +2,202 @@
 
 namespace App\Services;
 
-use App\Helpers\RDFParser;
+use EasyRdf\Graph;
+use EasyRdf\Sparql\Client;
 use Illuminate\Support\Facades\Log;
 
 class SparqlSearchService
 {
-    protected $allWisata = [];
+    protected $graph;
     
     public function __construct()
     {
-        $this->loadAllWisata();
+        // Option 1: Query ke file RDF lokal
+        $this->graph = new Graph();
+        $this->loadRdfFiles();
     }
     
-    protected function loadAllWisata()
+    protected function loadRdfFiles()
     {
-        $rdfFiles = [
-            'wisata_alam_1' => public_path('data/wisata_alam_1.xml'),
-            'wisata_alam_2' => public_path('data/wisata_alam_2.xml'),
-            'wisata_religi' => public_path('data/wisata_religi.xml'),
-            'wisata_budaya' => public_path('data/wisata_budaya.xml'),
+        $files = [
+            public_path('data/wisata_alam_1.xml'),
+            public_path('data/wisata_alam_2.xml'),
+            public_path('data/wisata_budaya.xml'),
+            public_path('data/wisata_religi.xml'),
         ];
         
-        foreach ($rdfFiles as $name => $file) {
+        foreach ($files as $file) {
             if (file_exists($file)) {
                 try {
-                    $data = RDFParser::parse($file);
-                    $this->allWisata = array_merge($this->allWisata, $data);
-                    Log::info("Loaded {$name}: " . count($data) . " items");
+                    $this->graph->parseFile($file, 'rdfxml');
+                    Log::info("Loaded RDF: " . basename($file));
                 } catch (\Exception $e) {
-                    Log::error("Failed to load {$name}: " . $e->getMessage());
+                    Log::error("Failed to load {$file}: " . $e->getMessage());
                 }
             }
         }
-        
-        Log::info("Total wisata loaded: " . count($this->allWisata));
     }
     
     /**
-     * Simple search function
+     * SPARQL Search - Mencari di SEMUA field
      */
     public function search($keyword = null, $category = null, $type = null)
     {
-        if (empty($this->allWisata)) {
+        // Build SPARQL query
+        $query = $this->buildSearchQuery($keyword, $category, $type);
+        
+        try {
+            $results = $this->graph->query($query);
+            return $this->formatResults($results);
+        } catch (\Exception $e) {
+            Log::error("SPARQL Query Error: " . $e->getMessage());
+            
+            // Fallback: return empty array jika error
             return [];
         }
+    }
+    
+    /**
+     * Build SPARQL query untuk search di semua field
+     */
+    protected function buildSearchQuery($keyword, $category, $type)
+    {
+        $prefixes = "
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            PREFIX ws: <http://example.com/wisatasumut#>
+            PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+            PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+        ";
         
-        $filtered = $this->allWisata;
+        $select = "
+            SELECT DISTINCT ?wisata ?label ?jenis ?kategori ?alamat 
+                   ?kota ?provinsi ?latitude ?longitude ?harga 
+                   ?fasilitas ?aktivitas ?gambar ?jamBuka ?jamTutup
+                   ?dekatDengan ?agama ?tokoh ?hariBuka
+        ";
         
-        // Filter by keyword
+        $where = "
+            WHERE {
+                ?wisata rdfs:label ?label .
+                OPTIONAL { ?wisata ws:jenisWisata ?jenis . }
+                OPTIONAL { ?wisata ws:kategori ?kategori . }
+                OPTIONAL { ?wisata ws:alamat ?alamat . }
+                OPTIONAL { ?wisata ws:kotaKabupaten ?kota . }
+                OPTIONAL { ?wisata ws:provinsi ?provinsi . }
+                OPTIONAL { ?wisata geo:latitude ?latitude . }
+                OPTIONAL { ?wisata geo:longitude ?longitude . }
+                OPTIONAL { ?wisata ws:hargaTiket ?harga . }
+                OPTIONAL { ?wisata ws:fasilitas ?fasilitas . }
+                OPTIONAL { ?wisata ws:aktivitas ?aktivitas . }
+                OPTIONAL { ?wisata foaf:depiction ?gambar . }
+                OPTIONAL { ?wisata ws:jamBuka ?jamBuka . }
+                OPTIONAL { ?wisata ws:jamTutup ?jamTutup . }
+                OPTIONAL { ?wisata ws:dekatDengan ?dekatDengan . }
+                OPTIONAL { ?wisata ws:agamaTerkait ?agama . }
+                OPTIONAL { ?wisata ws:tokohTerkait ?tokoh . }
+                OPTIONAL { ?wisata ws:hariBuka ?hariBuka . }
+        ";
+        
+        // Tambah FILTER untuk keyword
+        $filters = [];
+        
         if ($keyword) {
-            $keywordLower = strtolower($keyword);
-            $filtered = array_filter($filtered, function($item) use ($keywordLower) {
-                // Cari di berbagai field
-                $searchFields = [
-                    $item['nama'] ?? '',
-                    $item['label'] ?? '',
-                    $item['kategori'] ?? '',
-                    $item['jenisWisata'] ?? '',
-                    $item['alamat'] ?? '',
-                    $item['kotaKabupaten'] ?? '',
-                    $item['provinsi'] ?? '',
-                    $item['dekatDengan'] ?? '',
-                    $item['fasilitas'] ?? '',
-                    $item['aktivitas'] ?? '',
-                ];
-                
-                foreach ($searchFields as $field) {
-                    if (str_contains(strtolower($field), $keywordLower)) {
-                        return true;
-                    }
-                }
-                return false;
-            });
+            $safeKeyword = addslashes(strtolower($keyword));
+            $filters[] = "
+                FILTER (
+                    regex(LCASE(STR(?label)), '{$safeKeyword}', 'i') ||
+                    regex(LCASE(STR(?kategori)), '{$safeKeyword}', 'i') ||
+                    regex(LCASE(STR(?jenis)), '{$safeKeyword}', 'i') ||
+                    regex(LCASE(STR(?alamat)), '{$safeKeyword}', 'i') ||
+                    regex(LCASE(STR(?kota)), '{$safeKeyword}', 'i') ||
+                    regex(LCASE(STR(?provinsi)), '{$safeKeyword}', 'i') ||
+                    regex(LCASE(STR(?harga)), '{$safeKeyword}', 'i') ||
+                    regex(LCASE(STR(?fasilitas)), '{$safeKeyword}', 'i') ||
+                    regex(LCASE(STR(?aktivitas)), '{$safeKeyword}', 'i') ||
+                    regex(LCASE(STR(?dekatDengan)), '{$safeKeyword}', 'i') ||
+                    regex(LCASE(STR(?agama)), '{$safeKeyword}', 'i') ||
+                    regex(LCASE(STR(?tokoh)), '{$safeKeyword}', 'i') ||
+                    regex(LCASE(STR(?hariBuka)), '{$safeKeyword}', 'i') ||
+                    regex(LCASE(STR(?jamBuka)), '{$safeKeyword}', 'i') ||
+                    regex(LCASE(STR(?jamTutup)), '{$safeKeyword}', 'i')
+                )
+            ";
         }
         
-        // Filter by category
         if ($category) {
-            $categoryLower = strtolower($category);
-            $filtered = array_filter($filtered, function($item) use ($categoryLower) {
-                $itemCategory = strtolower($item['kategori'] ?? $item['category'] ?? '');
-                return $itemCategory === $categoryLower;
-            });
+            $safeCategory = addslashes($category);
+            $filters[] = "?wisata ws:kategori '{$safeCategory}' .";
         }
         
-        // Filter by type
         if ($type) {
-            $typeLower = strtolower($type);
-            $filtered = array_filter($filtered, function($item) use ($typeLower) {
-                $itemType = strtolower($item['jenisWisata'] ?? $item['type'] ?? '');
-                return $itemType === $typeLower;
-            });
+            $safeType = addslashes($type);
+            $filters[] = "?wisata ws:jenisWisata '{$safeType}' .";
         }
         
-        // Convert to format yang diharapkan view
-        return $this->convertToViewFormat(array_values($filtered));
+        $filterString = implode("\n", $filters);
+        
+        return $prefixes . $select . $where . $filterString . "} LIMIT 100";
     }
     
     /**
-     * Convert array ke format yang diharapkan view (dengan ->getValue())
+     * Format hasil SPARQL ke array
      */
-    protected function convertToViewFormat($data)
+    protected function formatResults($sparqlResults)
     {
-        return array_map(function($item) {
-            return (object)[
-                'label' => (object)['getValue' => function() use ($item) { 
-                    return $item['nama'] ?? $item['label'] ?? 'Tanpa Nama'; 
-                }],
-                'kategori' => (object)['getValue' => function() use ($item) { 
-                    return $item['kategori'] ?? $item['category'] ?? $item['jenisWisata'] ?? 'Umum'; 
-                }],
-                'jenis' => (object)['getValue' => function() use ($item) { 
-                    return $item['jenisWisata'] ?? $item['type'] ?? 'Umum'; 
-                }],
-                'kota' => (object)['getValue' => function() use ($item) { 
-                    return $item['kotaKabupaten'] ?? $item['kota'] ?? $item['city'] ?? ''; 
-                }],
-                'alamat' => (object)['getValue' => function() use ($item) { 
-                    return $item['alamat'] ?? $item['address'] ?? ''; 
-                }],
-                'latitude' => (object)['getValue' => function() use ($item) { 
-                    return $item['latitude'] ?? $item['lat'] ?? ''; 
-                }],
-                'longitude' => (object)['getValue' => function() use ($item) { 
-                    return $item['longitude'] ?? $item['long'] ?? $item['lng'] ?? ''; 
-                }],
-                'hargaTiket' => (object)['getValue' => function() use ($item) { 
-                    return $item['hargaTiket'] ?? $item['harga'] ?? $item['tiket'] ?? 'Gratis'; 
-                }],
-                'gambar' => isset($item['gambar']) ? 
-                    (object)['getUri' => function() use ($item) { return $item['gambar']; }] : null,
-                'original' => $item // Simpan data original untuk debug
+        $data = [];
+        
+        foreach ($sparqlResults as $row) {
+            $item = [
+                'nama' => $row->label->getValue(),
+                'jenisWisata' => isset($row->jenis) ? $row->jenis->getValue() : 'Umum',
+                'kategori' => isset($row->kategori) ? $row->kategori->getValue() : 'Umum',
+                'alamat' => isset($row->alamat) ? $row->alamat->getValue() : '',
+                'kota' => isset($row->kota) ? $row->kota->getValue() : '',
+                'provinsi' => isset($row->provinsi) ? $row->provinsi->getValue() : 'Sumatera Utara',
+                'latitude' => isset($row->latitude) ? $row->latitude->getValue() : '',
+                'longitude' => isset($row->longitude) ? $row->longitude->getValue() : '',
+                'harga_tiket' => isset($row->harga) ? $row->harga->getValue() : 'Gratis',
+                'fasilitas' => isset($row->fasilitas) ? $row->fasilitas->getValue() : '',
+                'aktivitas' => isset($row->aktivitas) ? $row->aktivitas->getValue() : '',
+                'gambar' => isset($row->gambar) ? $row->gambar->getUri() : '',
+                'jam_buka' => isset($row->jamBuka) ? $row->jamBuka->getValue() : '',
+                'jam_tutup' => isset($row->jamTutup) ? $row->jamTutup->getValue() : '',
+                'dekat_dengan' => isset($row->dekatDengan) ? $row->dekatDengan->getValue() : '',
+                'agama_terkait' => isset($row->agama) ? $row->agama->getValue() : '',
+                'tokoh_terkait' => isset($row->tokoh) ? $row->tokoh->getValue() : '',
+                'hari_buka' => isset($row->hariBuka) ? $row->hariBuka->getValue() : 'Setiap Hari',
             ];
-        }, $data);
+            
+            $data[] = $item;
+        }
+        
+        return $data;
     }
     
     /**
-     * Get all unique categories
+     * Test query SPARQL sederhana
      */
-    public function getAllCategories()
+    public function testSparql()
     {
-        $categories = [];
-        foreach ($this->allWisata as $item) {
-            $cat = $item['kategori'] ?? $item['category'] ?? $item['jenisWisata'] ?? null;
-            if ($cat) {
-                $categories[] = $cat;
+        $query = "
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            PREFIX ws: <http://example.com/wisatasumut#>
+            
+            SELECT (COUNT(?wisata) as ?total)
+            WHERE {
+                ?wisata rdfs:label ?label .
             }
-        }
-        return array_unique($categories);
-    }
-    
-    /**
-     * Get all unique types
-     */
-    public function getAllTypes()
-    {
-        $types = [];
-        foreach ($this->allWisata as $item) {
-            $type = $item['jenisWisata'] ?? $item['type'] ?? null;
-            if ($type) {
-                $types[] = $type;
+        ";
+        
+        try {
+            $results = $this->graph->query($query);
+            foreach ($results as $row) {
+                return $row->total->getValue();
             }
+        } catch (\Exception $e) {
+            return "Error: " . $e->getMessage();
         }
-        return array_unique($types);
+        
+        return 0;
     }
 }
