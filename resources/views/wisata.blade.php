@@ -1,6 +1,10 @@
 @extends('layouts.main')
 @section('content')
 
+@extends('layouts.main')
+@section('content')
+
+
 <div class="min-h-screen pt-24">
     <!-- Hero Section -->
     <section class="relative h-[400px] flex items-center justify-center overflow-hidden mb-8">
@@ -21,22 +25,22 @@
     </section>
 
     <!-- Filter Tabs -->
-    <section class="max-w-7xl mx-auto px-4 mb-12">
-        <div class="flex gap-4 overflow-x-auto scrollbar-hide pb-2">
-            <button onclick="showCategory('semua')" id="tab-semua" class="tab-btn group px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-bold rounded-full whitespace-nowrap hover:scale-105 transition-all duration-300 shadow-lg">
-                Semua
-            </button>
-            <button onclick="showCategory('alam')" id="tab-alam" class="tab-btn group px-8 py-4 glass-card text-white font-bold rounded-full whitespace-nowrap hover:scale-105 hover:bg-white/20 transition-all duration-300">
-                Alam ({{ count($wisataAlam) }})
-            </button>
-            <button onclick="showCategory('budaya')" id="tab-budaya" class="tab-btn group px-8 py-4 glass-card text-white font-bold rounded-full whitespace-nowrap hover:scale-105 hover:bg-white/20 transition-all duration-300">
-                Budaya ({{ count($wisataBudaya) }})
-            </button>
-            <button onclick="showCategory('religi')" id="tab-religi" class="tab-btn group px-8 py-4 glass-card text-white font-bold rounded-full whitespace-nowrap hover:scale-105 hover:bg-white/20 transition-all duration-300">
-                Religi ({{ count($wisataReligi) }})
-            </button>
-        </div>
-    </section>
+<section class="max-w-7xl mx-auto px-4 mb-12">
+    <div class="flex gap-4 overflow-x-auto scrollbar-hide pb-2">
+        <button onclick="showCategory('semua')" id="tab-semua" class="tab-btn group px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-bold rounded-full whitespace-nowrap hover:scale-105 transition-all duration-300 shadow-lg">
+            Semua
+        </button>
+        <button onclick="showCategory('alam')" id="tab-alam" class="tab-btn group px-8 py-4 glass-card text-white font-bold rounded-full whitespace-nowrap hover:scale-105 hover:bg-white/20 transition-all duration-300">
+            Alam  <!-- HAPUS ({{ count($wisataAlam) }}) -->
+        </button>
+        <button onclick="showCategory('budaya')" id="tab-budaya" class="tab-btn group px-8 py-4 glass-card text-white font-bold rounded-full whitespace-nowrap hover:scale-105 hover:bg-white/20 transition-all duration-300">
+            Budaya  <!-- HAPUS ({{ count($wisataBudaya) }}) -->
+        </button>
+        <button onclick="showCategory('religi')" id="tab-religi" class="tab-btn group px-8 py-4 glass-card text-white font-bold rounded-full whitespace-nowrap hover:scale-105 hover:bg-white/20 transition-all duration-300">
+            Religi  <!-- HAPUS ({{ count($wisataReligi) }}) -->
+        </button>
+    </div>
+</section>
 
     <!-- Kategori SEMUA (default tampil) -->
     <section id="category-semua" class="category-content max-w-7xl mx-auto px-4 mb-20">
@@ -137,7 +141,7 @@
     <section id="category-alam" class="category-content hidden max-w-7xl mx-auto px-4 mb-20">
         <div class="flex items-center justify-between mb-8">
             <div>
-<h2 class="text-4xl font-black text-white">ALAM ({{ count($wisataAlam) }})</h2>
+<h2 class="text-4xl font-black text-white">ALAM</h2>
 <p class="text-gray-400 mt-2">Keindahan alam yang memukau</p>
 </div>
 </div>
@@ -177,7 +181,7 @@
     <section id="category-budaya" class="category-content hidden max-w-7xl mx-auto px-4 mb-20">
         <div class="flex items-center justify-between mb-8">
             <div>
-<h2 class="text-4xl font-black text-white">BUDAYA ({{ count($wisataBudaya) }})</h2>
+<h2 class="text-4xl font-black text-white">BUDAYA</h2>
 <p class="text-gray-400 mt-2">Warisan budaya yang kaya</p>
             </div>
         </div>
@@ -217,7 +221,7 @@
     <section id="category-religi" class="category-content hidden max-w-7xl mx-auto px-4 mb-20">
         <div class="flex items-center justify-between mb-8">
             <div>
-<h2 class="text-4xl font-black text-white">RELIGI ({{ count($wisataReligi) }})</h2>
+<h2 class="text-4xl font-black text-white">RELIGI</h2>
 <p class="text-gray-400 mt-2">Tempat ibadah yang sakral</p>
             </div>
         </div>
