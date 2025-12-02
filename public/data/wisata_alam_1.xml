@@ -758,71 +758,42 @@
       <ws:aktivitas>Berenang, bermain pasir, kuliner pantai</ws:aktivitas>
     </rdf:Description>
 
-<<<<<<< HEAD
-    <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/central-tapanuli-regency/pantai-batu-gajah-hajoran-137017552/">
-      <rdfs:label>Pantai Hajoran</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Pantai</ws:kategori>
-      <ws:alamat>Desa Hajoran, Kec. Pandan</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Tapanuli Tengah</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>1.6908</geo:latitude>
-      <geo:longitude>98.7746</geo:longitude>
-      <ws:hargaTiket>Rp10.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>07:00</ws:jamBuka>
-      <ws:jamTutup>18:30</ws:jamTutup>
-      <ws:dekatDengan>Pantai Pandan</ws:dekatDengan>
-     <foaf:depiction rdf:resource=""/>
 
-      <ws:fasilitas>Parkir, warung, kamar mandi</ws:fasilitas>
-      <ws:aktivitas>Berenang, naik banana boat, bersantai</ws:aktivitas>
-    </rdf:Description>
+<rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/central-tapanuli-regency/pantai-kalangan-indah-137304945/">
+  <rdfs:label>Pantai Indah Kalangan</rdfs:label>
+  <ws:jenisWisata>Alam</ws:jenisWisata>
+  <ws:kategori>Pantai</ws:kategori>
+  <ws:alamat>Desa Kalangan</ws:alamat>
+  <ws:kotaKabupaten>Kabupaten Tapanuli Tengah</ws:kotaKabupaten>
+  <ws:provinsi>Sumatera Utara</ws:provinsi>
+  <geo:latitude>1.8500</geo:latitude>
+  <geo:longitude>98.6833</geo:longitude>
+  <ws:hargaTiket>Rp 5.000</ws:hargaTiket>
+  <ws:hariBuka>Setiap Hari</ws:hariBuka>
+  <ws:jamBuka>07:00</ws:jamBuka>
+  <ws:jamTutup>18:00</ws:jamTutup>
+  <ws:dekatDengan>Kota Sibolga</ws:dekatDengan>
+  <foaf:depiction rdf:resource="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpzA4IAx1ces7oDHIuxcek7-tF9eQRN49oCg&s"/>
+  <ws:fasilitas>Parkir, warung makan, toilet, musholla</ws:fasilitas>
+  <ws:aktivitas>Berenang, memancing, fotografi, bersantai</ws:aktivitas>
+</rdf:Description>
 
-
-=======
->>>>>>> 72c5d9d6af5e66acd190318ee0a683b6bd91e267
-    <rdf:Description rdf:about="https://id.trip.com/travel-guide/attraction/central-tapanuli-regency/pantai-kalangan-indah-137304945/">
-      <rdfs:label>Pantai Indah Kalangan</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Pantai</ws:kategori>
-      <ws:alamat>Desa Kalangan</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Tapanuli Tengah</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>1.8500</geo:latitude>
-      <geo:longitude>98.6833</geo:longitude>
-      <ws:hargaTiket>Rp 5.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>07:00</ws:jamBuka>
-      <ws:jamTutup>18:00</ws:jamTutup>
-      <ws:dekatDengan>Kota Sibolga</ws:dekatDengan>
-<<<<<<< HEAD
-    C
-
-=======
-    <foaf:depiction rdf:resource="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpzA4IAx1ces7oDHIuxcek7-tF9eQRN49oCg&s"/>
->>>>>>> 72c5d9d6af5e66acd190318ee0a683b6bd91e267
-      <ws:fasilitas>Parkir, warung makan, toilet, musholla</ws:fasilitas>
-      <ws:aktivitas>Berenang, memancing, fotografi, bersantai</ws:aktivitas>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="https://aeksijorni.id/">
-      <rdfs:label>Pemandian Air Panas Aek Sijorni</rdfs:label>
-      <ws:jenisWisata>Alam</ws:jenisWisata>
-      <ws:kategori>Pemandian Air Panas</ws:kategori>
-      <ws:alamat>Desa Aek Sijorni</ws:alamat>
-      <ws:kotaKabupaten>Kabupaten Tapanuli Utara</ws:kotaKabupaten>
-      <ws:provinsi>Sumatera Utara</ws:provinsi>
-      <geo:latitude>2.1000</geo:latitude>
-      <geo:longitude>98.9333</geo:longitude>
-      <ws:hargaTiket>Rp 10.000</ws:hargaTiket>
-      <ws:hariBuka>Setiap Hari</ws:hariBuka>
-      <ws:jamBuka>07:00</ws:jamBuka>
-      <ws:jamTutup>17:00</ws:jamTutup>
-      <ws:fasilitas>Kolam renang air panas, parkir, kamar ganti, warung makan</ws:fasilitas>
-      <ws:aktivitas>Berendam air panas, terapi kesehatan, relaksasi</ws:aktivitas>
-      <ws:dekatDengan>Tarutung</ws:dekatDengan>
-    <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/2/2b/%22Crystal_Falls_Tapsel%22.jpg"/>
-    </rdf:Description>
-
+<rdf:Description rdf:about="https://aeksijorni.id/">
+  <rdfs:label>Pemandian Air Panas Aek Sijorni</rdfs:label>
+  <ws:jenisWisata>Alam</ws:jenisWisata>
+  <ws:kategori>Pemandian Air Panas</ws:kategori>
+  <ws:alamat>Desa Aek Sijorni</ws:alamat>
+  <ws:kotaKabupaten>Kabupaten Tapanuli Utara</ws:kotaKabupaten>
+  <ws:provinsi>Sumatera Utara</ws:provinsi>
+  <geo:latitude>2.1000</geo:latitude>
+  <geo:longitude>98.9333</geo:longitude>
+  <ws:hargaTiket>Rp 10.000</ws:hargaTiket>
+  <ws:hariBuka>Setiap Hari</ws:hariBuka>
+  <ws:jamBuka>07:00</ws:jamBuka>
+  <ws:jamTutup>17:00</ws:jamTutup>
+  <ws:fasilitas>Kolam renang air panas, parkir, kamar ganti, warung makan</ws:fasilitas>
+  <ws:aktivitas>Berendam air panas, terapi kesehatan, relaksasi</ws:aktivitas>
+  <ws:dekatDengan>Tarutung</ws:dekatDengan>
+  <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/2/2b/%22Crystal_Falls_Tapsel%22.jpg"/>
+</rdf:Description>
 </rdf:RDF>
