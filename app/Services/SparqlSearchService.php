@@ -12,7 +12,6 @@ class SparqlSearchService
     
     public function __construct()
     {
-        // Option 1: Query ke file RDF lokal
         $this->graph = new Graph();
         $this->loadRdfFiles();
     }
@@ -38,12 +37,8 @@ class SparqlSearchService
         }
     }
     
-    /**
-     * SPARQL Search - Mencari di SEMUA field
-     */
     public function search($keyword = null, $category = null, $type = null)
     {
-        // Build SPARQL query
         $query = $this->buildSearchQuery($keyword, $category, $type);
         
         try {
@@ -52,14 +47,10 @@ class SparqlSearchService
         } catch (\Exception $e) {
             Log::error("SPARQL Query Error: " . $e->getMessage());
             
-            // Fallback: return empty array jika error
             return [];
         }
     }
     
-    /**
-     * Build SPARQL query untuk search di semua field
-     */
     protected function buildSearchQuery($keyword, $category, $type)
     {
         $prefixes = "
@@ -98,7 +89,6 @@ class SparqlSearchService
                 OPTIONAL { ?wisata ws:hariBuka ?hariBuka . }
         ";
         
-        // Tambah FILTER untuk keyword
         $filters = [];
         
         if ($keyword) {
@@ -139,9 +129,6 @@ class SparqlSearchService
         return $prefixes . $select . $where . $filterString . "} LIMIT 100";
     }
     
-    /**
-     * Format hasil SPARQL ke array
-     */
     protected function formatResults($sparqlResults)
     {
         $data = [];
@@ -174,9 +161,6 @@ class SparqlSearchService
         return $data;
     }
     
-    /**
-     * Test query SPARQL sederhana
-     */
     public function testSparql()
     {
         $query = "
