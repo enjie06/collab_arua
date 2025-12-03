@@ -18,7 +18,6 @@ class WisataController extends Controller
             'wisata_budaya' => public_path('data/wisata_budaya.xml'),
         ];
         
-        // Parse semua file RDF
         foreach ($rdfFiles as $name => $file) {
             \Log::info("=== Processing: {$name} ===");
             
@@ -27,7 +26,6 @@ class WisataController extends Controller
                 continue;
             }
             
-            // Cek ukuran file
             $fileSize = filesize($file);
             \Log::info("File size: {$fileSize} bytes");
             
@@ -45,7 +43,6 @@ class WisataController extends Controller
             } catch (\Exception $e) {
                 \Log::error("Error parsing {$name}: " . $e->getMessage());
                 
-                // Untuk debugging, tampilkan isi file yang error
                 if ($name === 'wisata_budaya') {
                     $content = file_get_contents($file);
                     \Log::info("First 1000 chars of wisata_budaya.xml:");
@@ -57,14 +54,11 @@ class WisataController extends Controller
         
         \Log::info('TOTAL ALL DATA BEFORE CONVERT: ' . count($allWisataData));
         
-        // CONVERT FIELD NAMES
         $convertedData = $this->convertFieldNames($allWisataData);
         
-        // DEBUG: Tampilkan semua data setelah convert
         \Log::info('=== AFTER CONVERT ===');
         \Log::info('Total converted: ' . count($convertedData));
         
-        // Group by jenisWisata
         $wisataAlam = array_filter($convertedData, function($item) {
             $jenis = strtolower(trim($item['jenisWisata'] ?? ''));
             return $jenis === 'alam' || $jenis === 'wisata alam';
@@ -80,12 +74,10 @@ class WisataController extends Controller
             return $jenis === 'religi' || $jenis === 'wisata religi';
         });
 
-        // Reset array keys
         $wisataAlam = array_values($wisataAlam);
         $wisataBudaya = array_values($wisataBudaya);
         $wisataReligi = array_values($wisataReligi);
 
-        // Jika budaya masih kosong, tambahkan data dummy untuk testing
         if (count($wisataBudaya) === 0) {
             \Log::warning('Budaya masih kosong, menambahkan data dummy');
             $wisataBudaya = $this->getDummyBudayaData();
@@ -99,9 +91,6 @@ class WisataController extends Controller
         return view('wisata', compact('wisataAlam', 'wisataBudaya', 'wisataReligi'));
     }
 
-    /**
-     * Convert field names
-     */
     private function convertFieldNames($data)
     {
         return array_map(function($item) {
@@ -128,9 +117,6 @@ class WisataController extends Controller
         }, $data);
     }
     
-    /**
-     * Data dummy budaya untuk testing
-     */
     private function getDummyBudayaData()
     {
         return [
