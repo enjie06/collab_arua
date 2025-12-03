@@ -18,7 +18,6 @@ class WelcomeController extends Controller
             public_path('data/wisata_budaya.xml'),
         ];
         
-        // Parse semua file RDF (sama seperti di WisataController)
         foreach ($rdfFiles as $file) {
             if (file_exists($file)) {
                 try {
@@ -33,10 +32,8 @@ class WelcomeController extends Controller
             }
         }
         
-        // Convert field names untuk kompatibilitas
         $allWisataData = $this->convertFieldNames($allWisataData);
         
-        // Group by jenisWisata (sama seperti di WisataController)
         $wisataAlam = array_values(array_filter($allWisataData, function($item) {
             return isset($item['jenisWisata']) && $item['jenisWisata'] === 'Alam';
         }));
@@ -52,10 +49,6 @@ class WelcomeController extends Controller
         return view('welcome', compact('wisataAlam', 'wisataBudaya', 'wisataReligi'));
     }
 
-    /**
-     * Convert field names dari RDFParser format ke View format
-     * SAMA PERSIS dengan yang di WisataController
-     */
     private function convertFieldNames($data)
     {
         return array_map(function($item) {
