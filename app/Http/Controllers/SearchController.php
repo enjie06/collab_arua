@@ -52,6 +52,23 @@ class SearchController extends Controller
         // 2. Jika bukan "wisata sekitar", gunakan fuzzy search biasa
         return $this->fuzzySearch($data, $keyword, $category, $type);
     }
+
+    /**
+ * Deteksi apakah keyword adalah nama lokasi/kota
+ */
+private function isLocationKeyword($keyword)
+{
+    // Daftar kota/kabupaten di Sumatera Utara
+    $locations = [
+        'medan', 'binjai', 'tebing tinggi', 'pematang siantar', 'tanjung balai',
+        'labuhan batu', 'deli serdang', 'langkat', 'karo', 'simalungun', 
+        'daerah istimewa', 'asahan', 'labuhanbatu', 'toba', 'samosir',
+        'mandailing natal', 'pakpak bharat', 'humbang hasundutan', 
+        'samosir', 'nias', 'nias selatan', 'nias utara', 'nias barat'
+    ];
+    
+    return in_array($keyword, $locations);
+}
     
     /**
      * Fuzzy search dengan toleransi typo
@@ -71,7 +88,7 @@ class SearchController extends Controller
             // Daftar KATEGORI yang valid
             $validCategories = [
                 'pantai', 'danau', 'gunung', 'bukit', 'sungai', 'air terjun',
-                'pulau', 'religi', 'budaya', 'alam', 'medan', 'masjid',
+                'pulau', 'religi', 'budaya', 'alam', 'masjid',
                 'gereja', 'kuil', 'pura', 'museum', 'kampung adat', 'desa wisata',
                 'istana', 'taman', 'salib', 'air panas', 'goa', 'hutan', 
                 'kolam', 'pemandian', 'monumen', 'candi', 'vihara'
@@ -82,8 +99,9 @@ class SearchController extends Controller
             $isDaySearch = TypoCorrector::isDayKeyword($keywordLower);
             $isJenisSearch = in_array($keywordLower, ['alam', 'budaya', 'religi', 'sejarah', 'kuliner', 'edukasi']);
             $isHargaSearch = TypoCorrector::isHargaKeyword($keywordLower);
+            $isLocationSearch = $this->isLocationKeyword($keywordLower);
 
-            $filtered = array_filter($filtered, function($item) use ($keywordLower, $isCategorySearch, $isDaySearch, $isJenisSearch, $isHargaSearch) {
+            $filtered = array_filter($filtered, function($item) use ($keywordLower, $isCategorySearch, $isDaySearch, $isJenisSearch, $isHargaSearch, $isLocationSearch) {
                 // Ambil data
                 $itemKategori = strtolower(trim($item['kategori'] ?? ''));
                 $itemJenis = strtolower(trim($item['jenisWisata'] ?? ''));
