@@ -47,37 +47,51 @@
                 </div>
             </form>
             
-            <div class="mt-6 flex flex-wrap gap-3 justify-center">
-                <a href="{{ route('search', ['q' => 'Danau']) }}" 
-                class="bg-white/10 hover:bg-white/20 text-gray-300 hover:text-white text-sm px-4 py-2 rounded-full border border-white/20 transition duration-300">
-                    Danau
-                </a>
-                <a href="{{ route('search', ['q' => 'Pantai']) }}" 
-                class="bg-white/10 hover:bg-white/20 text-gray-300 hover:text-white text-sm px-4 py-2 rounded-full border border-white/20 transition duration-300">
-                    Pantai
-                </a>
-                <a href="{{ route('search', ['q' => 'Medan']) }}" 
-                class="bg-white/10 hover:bg-white/20 text-gray-300 hover:text-white text-sm px-4 py-2 rounded-full border border-white/20 transition duration-300">
-                    Medan
-                </a>
-                <a href="{{ route('search', ['q' => 'Alam']) }}" 
-                class="bg-white/10 hover:bg-white/20 text-gray-300 hover:text-white text-sm px-4 py-2 rounded-full border border-white/20 transition duration-300">
-                    Alam
-                </a>
-                <a href="{{ route('search', ['q' => 'Religi']) }}" 
-                class="bg-white/10 hover:bg-white/20 text-gray-300 hover:text-white text-sm px-4 py-2 rounded-full border border-white/20 transition duration-300">
-                    Religi
-                </a>
+            {{-- Notifikasi koreksi typo --}}
+            @if(isset($isCorrected) && $isCorrected && $correctedKeyword)
+            <div class="mt-6">
+                <div class="bg-gradient-to-r from-yellow-900/30 to-amber-900/20 backdrop-blur-sm rounded-xl border border-yellow-700/30 p-4 shadow-lg">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 pt-1">
+                            <div class="w-10 h-10 bg-yellow-500/20 rounded-full flex items-center justify-center">
+                                <i class="fas fa-lightbulb text-yellow-400 text-lg"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between">
+                                <div class="mb-2 md:mb-0">
+                                    <h4 class="text-yellow-300 font-bold text-sm uppercase tracking-wider mb-1">
+                                        <i class="fas fa-magic mr-2"></i>Pencarian Diperbaiki
+                                    </h4>
+                                    <p class="text-white">
+                                        Menampilkan hasil untuk 
+                                        <a href="{{ route('search', ['q' => $correctedKeyword]) }}" 
+                                           class="font-bold text-yellow-200 hover:text-yellow-100 underline">
+                                            "{{ ucfirst($correctedKeyword) }}"
+                                        </a>
+                                        <span class="text-gray-300 ml-2">(dari: "{{ $keyword }}")</span>
+                                    </p>
+                                </div>
+                                <div class="text-xs text-yellow-400/70 bg-yellow-900/30 px-3 py-1.5 rounded-full">
+                                    <i class="fas fa-robot mr-1"></i> Auto-correct aktif
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            @endif
         </div>
     </section>
 
     @if(isset($searchType) && $searchType === 'sparql')
-        <div class="mb-4 p-3 bg-blue-900/30 border border-blue-700 rounded-lg">
-            <p class="text-blue-300 text-sm">
-                <i class="fas fa-search mr-2"></i>
-                Searching with <strong>SPARQL</strong> engine
-            </p>
+        <div class="max-w-7xl mx-auto px-4 mb-4">
+            <div class="bg-blue-900/30 border border-blue-700/50 rounded-xl p-4 backdrop-blur-sm">
+                <p class="text-blue-300 text-sm">
+                    <i class="fas fa-search mr-2"></i>
+                    Searching with <strong>SPARQL</strong> engine
+                </p>
+            </div>
         </div>
     @endif
 
@@ -802,13 +816,52 @@
     @else
         <div class="max-w-7xl mx-auto px-4 text-center py-12">
             <div class="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-12 max-w-md mx-auto">
+                {{-- Info koreksi jika typo --}}
+                @if(isset($isCorrected) && $isCorrected && $correctedKeyword)
+                <div class="mb-6 p-4 bg-yellow-900/20 rounded-lg border border-yellow-700/30">
+                    <p class="text-yellow-300 text-sm">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        Sudah mencari dengan kata kunci yang dikoreksi: <strong>"{{ $correctedKeyword }}"</strong>
+                    </p>
+                </div>
+                @endif
+                
+                <div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-search text-3xl text-gray-400"></i>
+                </div>
+                
                 <h3 class="text-xl font-semibold text-white mb-2">Tidak ada hasil ditemukan</h3>
-                <p class="text-gray-300 mb-6">Tidak ada wisata yang sesuai dengan pencarian "{{ $keyword }}"</p>
+                <p class="text-gray-300 mb-6">
+                    Tidak ada wisata yang sesuai dengan pencarian 
+                    <span class="text-white font-medium">"{{ $keyword }}"</span>
+                </p>
+                
+                {{-- Saran pencarian jika bukan typo --}}
+                @if(!isset($isCorrected) || !$isCorrected)
+                    <div class="mb-6 p-4 bg-blue-900/20 rounded-lg">
+                        <p class="text-blue-300 text-sm mb-3">Coba cari dengan:</p>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            @foreach(['pantai', 'danau', 'medan', 'alam', 'religi', 'budaya'] as $suggest)
+                                @if($suggest !== strtolower($keyword))
+                                    <a href="{{ route('search', ['q' => $suggest]) }}" 
+                                       class="bg-blue-700/30 hover:bg-blue-700/50 text-blue-200 text-sm px-3 py-1.5 rounded-full border border-blue-600/30 transition">
+                                        {{ ucfirst($suggest) }}
+                                    </a>
+                                @endif
+                            @endforeach
+                        </div>
+                    </div>
+                @endif
+                
                 <div class="space-y-3">
-                    <a href="/wisata" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold text-white inline-flex items-center gap-2 transition duration-200 w-full justify-center">
+                    <a href="/wisata" 
+                       class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold text-white inline-flex items-center gap-2 transition duration-200 w-full justify-center">
+                        <i class="fas fa-map-marked-alt"></i>
                         Lihat Semua Wisata
                     </a>
-                    <a href="/" class="bg-gray-600 hover:bg-gray-700 px-6 py-3 rounded-lg font-semibold text-white inline-flex items-center gap-2 transition duration-200 w-full justify-center">
+                    <a href="/" 
+                       class="bg-gray-700 hover:bg-gray-800 px-6 py-3 rounded-lg font-semibold text-white inline-flex items-center gap-2 transition duration-200 w-full justify-center">
+                        <i class="fas fa-home"></i>
                         Kembali ke Beranda
                     </a>
                 </div>
