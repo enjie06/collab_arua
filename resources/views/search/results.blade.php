@@ -19,9 +19,12 @@
         </div>
     </section>
 
+
+
     <section class="max-w-7xl mx-auto px-4 mb-12">
         <div class="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-6">
             <form action="{{ route('search') }}" method="GET" class="flex flex-col md:flex-row gap-4 items-center">
+                
                 <div class="flex-1 w-full">
                     <input 
                         type="text" 
@@ -44,29 +47,20 @@
                 </div>
             </form>
             
-<<<<<<< Updated upstream
             {{-- Notifikasi koreksi typo --}}
-=======
-            {{-- Notifikasi untuk semua tipe koreksi --}}
->>>>>>> Stashed changes
             @if(isset($isCorrected) && $isCorrected && $correctedKeyword)
             <div class="mt-6">
                 <div class="bg-gradient-to-r from-yellow-900/30 to-amber-900/20 backdrop-blur-sm rounded-xl border border-yellow-700/30 p-4 shadow-lg">
                     <div class="flex items-start">
                         <div class="flex-shrink-0 pt-1">
                             <div class="w-10 h-10 bg-yellow-500/20 rounded-full flex items-center justify-center">
-<<<<<<< Updated upstream
                                 <i class="fas fa-lightbulb text-yellow-400 text-lg"></i>
-=======
-                                <i class="fas fa-magic text-yellow-400 text-lg"></i>
->>>>>>> Stashed changes
                             </div>
                         </div>
                         <div class="ml-4 flex-1">
                             <div class="flex flex-col md:flex-row md:items-center justify-between">
                                 <div class="mb-2 md:mb-0">
                                     <h4 class="text-yellow-300 font-bold text-sm uppercase tracking-wider mb-1">
-<<<<<<< Updated upstream
                                         <i class="fas fa-magic mr-2"></i>Pencarian Diperbaiki
                                     </h4>
                                     <p class="text-white">
@@ -82,108 +76,11 @@
                                     <i class="fas fa-robot mr-1"></i> Auto-correct aktif
                                 </div>
                             </div>
-=======
-                                        <i class="fas fa-lightbulb mr-2"></i>Pencarian Diperbaiki
-                                    </h4>
-                                    <p class="text-white">
-                                        @if(isset($isWisataSekitar) && $isWisataSekitar)
-                                            <i class="fas fa-map-marker-alt mr-1"></i> Deteksi otomatis: wisata sekitar 
-                                            <strong class="text-yellow-200">{{ $originalLocation }}</strong>
-                                            <br>
-                                            <span class="text-gray-300 text-sm">(dari: "{{ $keyword }}")</span>
-                                        @else
-                                            Menampilkan hasil untuk 
-                                            <a href="{{ route('search', ['q' => $correctedKeyword]) }}" 
-                                               class="font-bold text-yellow-200 hover:text-yellow-100 underline">
-                                                "{{ ucfirst($correctedKeyword) }}"
-                                            </a>
-                                            <span class="text-gray-300 ml-2">(dari: "{{ $keyword }}")</span>
-                                        @endif
-                                    </p>
-                                </div>
-                                <div class="text-xs text-yellow-400/70 bg-yellow-900/30 px-3 py-1.5 rounded-full">
-                                    <i class="fas fa-robot mr-1"></i> 
-                                    @if(isset($correctionType))
-                                        {{ $correctionType }}
-                                    @else
-                                        Auto-correct aktif
-                                    @endif
-                                </div>
-                            </div>
-                            @if(isset($suggestions) && count($suggestions) > 0)
-                                <div class="mt-3 pt-3 border-t border-yellow-700/30">
-                                    <p class="text-yellow-300/80 text-sm mb-2">Saran pencarian lainnya:</p>
-                                    <div class="flex flex-wrap gap-2">
-                                        @foreach($suggestions as $suggestion)
-                                            <a href="{{ route('search', ['q' => $suggestion]) }}" 
-                                               class="bg-yellow-900/30 hover:bg-yellow-800/40 text-yellow-200 text-xs px-3 py-1.5 rounded-full border border-yellow-700/30 transition duration-200">
-                                                {{ ucfirst($suggestion) }}
-                                            </a>
-                                        @endforeach
-                                    </div>
-                                </div>
-                            @endif
->>>>>>> Stashed changes
                         </div>
                     </div>
                 </div>
             </div>
             @endif
-<<<<<<< Updated upstream
-=======
-
-            {{-- Notifikasi jika pencarian "wisata sekitar" tapi tidak ada data --}}
-            @if(isset($isWisataSekitar) && $isWisataSekitar && $total == 0)
-            <div class="mt-6">
-                <div class="bg-gradient-to-r from-blue-900/30 to-indigo-900/20 backdrop-blur-sm rounded-xl border border-blue-700/30 p-4 shadow-lg">
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 pt-1">
-                            <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center">
-                                <i class="fas fa-map-marker-alt text-blue-400 text-lg"></i>
-                            </div>
-                        </div>
-                        <div class="ml-4 flex-1">
-                            <h4 class="text-blue-300 font-bold text-sm uppercase tracking-wider mb-1">
-                                <i class="fas fa-info-circle mr-2"></i>Wisata Sekitar
-                            </h4>
-                            <p class="text-white">
-                                Mencari wisata di sekitar <strong class="text-blue-200">{{ $originalLocation }}</strong>
-                            </p>
-                            <p class="text-gray-300 text-sm mt-1">
-                                Tidak ditemukan wisata di database untuk lokasi ini. Coba cari dengan nama kota/kabupaten lain.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endif
-
-            {{-- Notifikasi pencarian SPARQL --}}
-            @if(isset($searchType) && $searchType === 'sparql')
-            <div class="mt-4">
-                <div class="bg-gradient-to-r from-green-900/30 to-emerald-900/20 backdrop-blur-sm rounded-xl border border-green-700/30 p-4">
-                    <div class="flex items-center">
-                        <div class="flex-shrink-0">
-                            <div class="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center">
-                                <i class="fas fa-database text-green-400"></i>
-                            </div>
-                        </div>
-                        <div class="ml-3">
-                            <p class="text-green-300 text-sm">
-                                <i class="fas fa-search mr-1"></i>
-                                Searching with <strong>SPARQL</strong> endpoint
-                                @if(isset($isCorrected) && $isCorrected)
-                                    <span class="text-green-400/70 ml-2">
-                                        <i class="fas fa-magic mr-1"></i>dengan auto-correct
-                                    </span>
-                                @endif
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endif
->>>>>>> Stashed changes
         </div>
     </section>
 
@@ -199,32 +96,6 @@
     @endif
 
     @if($total > 0)
-        {{-- Notifikasi jika pencarian "wisata sekitar" berhasil --}}
-        @if(isset($isWisataSekitar) && $isWisataSekitar)
-        <div class="max-w-7xl mx-auto px-4 mb-6">
-            <div class="bg-gradient-to-r from-purple-900/30 to-pink-900/20 backdrop-blur-sm rounded-xl border border-purple-700/30 p-6">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
-                            <i class="fas fa-map-signs text-white text-lg"></i>
-                        </div>
-                    </div>
-                    <div class="ml-4">
-                        <h3 class="text-white font-bold text-lg mb-1">
-                            <i class="fas fa-location-dot mr-2"></i>Wisata Sekitar {{ ucfirst($originalLocation) }}
-                        </h3>
-                        <p class="text-gray-300">
-                            Menampilkan {{ $total }} wisata di sekitar <strong class="text-purple-200">{{ ucfirst($originalLocation) }}</strong>
-                            @if(isset($correctionType))
-                                <span class="text-gray-400 text-sm ml-2">({{ $correctionType }})</span>
-                            @endif
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        @endif
-
         <section class="max-w-7xl mx-auto px-4 mb-20">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
@@ -326,7 +197,7 @@
                     <div class="glass-card rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-y-auto border border-white/20">
                         <div class="sticky top-0 glass-card border-b border-white/10 p-6 flex justify-between items-center">
                             <h2 class="text-4xl font-black text-white">{{ $wisata['nama'] }}</h2>
-                            <button onclick="closeModal('modal-alam-{{ $index }}')" class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition">
+                            <button onclick="closeModal('modal-alam-search-{{ $index }}')" class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition">
                                 <span class="text-xl">×</span>
                             </button>
                         </div>
@@ -523,7 +394,7 @@
                     <div class="glass-card rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-y-auto border border-white/20">
                         <div class="sticky top-0 glass-card border-b border-white/10 p-6 flex justify-between items-center">
                             <h2 class="text-4xl font-black text-white">{{ $wisata['nama'] }}</h2>
-                            <button onclick="closeModal('modal-budaya-{{ $index }}')" class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition">
+                            <button onclick="closeModal('modal-budaya-search-{{ $index }}')" class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition">
                                 <span class="text-xl">×</span>
                             </button>
                         </div>
@@ -720,7 +591,7 @@
                     <div class="glass-card rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-y-auto border border-white/20">
                         <div class="sticky top-0 glass-card border-b border-white/10 p-6 flex justify-between items-center">
                             <h2 class="text-4xl font-black text-white">{{ $wisata['nama'] }}</h2>
-                            <button onclick="closeModal('modal-religi-{{ $index }}')" class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition">
+                            <button onclick="closeModal('modal-religi-search-{{ $index }}')" class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition">
                                 <span class="text-xl">×</span>
                             </button>
                         </div>
@@ -938,11 +809,6 @@
             <div class="mt-8 text-center">
                 <p class="text-gray-400 text-sm">
                     Menampilkan {{ $total }} hasil pencarian untuk "{{ $keyword }}"
-                    @if(isset($isCorrected) && $isCorrected)
-                        <span class="text-yellow-400/70">
-                            <i class="fas fa-magic ml-2 mr-1"></i>(dikoreksi)
-                        </span>
-                    @endif
                 </p>
             </div>
         </section>
@@ -957,14 +823,6 @@
                         <i class="fas fa-info-circle mr-2"></i>
                         Sudah mencari dengan kata kunci yang dikoreksi: <strong>"{{ $correctedKeyword }}"</strong>
                     </p>
-<<<<<<< Updated upstream
-=======
-                    @if(isset($isWisataSekitar) && $isWisataSekitar)
-                        <p class="text-yellow-300/80 text-sm mt-1">
-                            <i class="fas fa-map-marker-alt mr-1"></i> Deteksi otomatis: wisata sekitar <strong>{{ $originalLocation }}</strong>
-                        </p>
-                    @endif
->>>>>>> Stashed changes
                 </div>
                 @endif
                 
@@ -992,12 +850,6 @@
                                 @endif
                             @endforeach
                         </div>
-<<<<<<< Updated upstream
-=======
-                        <p class="text-blue-300/70 text-xs mt-3">
-                            <i class="fas fa-lightbulb mr-1"></i> Anda juga bisa cari: "wisata sekitar [nama kota]"
-                        </p>
->>>>>>> Stashed changes
                     </div>
                 @endif
                 
