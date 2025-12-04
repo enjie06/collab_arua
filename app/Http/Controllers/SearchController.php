@@ -40,10 +40,10 @@ class SearchController extends Controller
         $wisataReligi = array_values($wisataReligi);
 
         return view('search.results', [
-            'results' => $formattedResults, // Semua hasil untuk display
-            'wisataAlam' => $wisataAlam,    // Untuk gradient alam (hijau)
-            'wisataBudaya' => $wisataBudaya, // Untuk gradient budaya (orange)
-            'wisataReligi' => $wisataReligi, // Untuk gradient religi (ungu)
+            'results' => $formattedResults,
+            'wisataAlam' => $wisataAlam,    
+            'wisataBudaya' => $wisataBudaya, 
+            'wisataReligi' => $wisataReligi, 
             'keyword' => $keyword,
             'selectedCategory' => $category,
             'selectedType' => $type,
@@ -68,7 +68,6 @@ class SearchController extends Controller
                     $data = RDFParser::parse($file);
                     $allData = array_merge($allData, $data);
                 } catch (\Exception $e) {
-                    // Skip file jika error
                     continue;
                 }
             }
