@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Services\SparqlSearchService;
+use App\Helpers\TypoCorrector;
 
 class SparqlSearchController extends Controller
 {
@@ -15,6 +16,7 @@ class SparqlSearchController extends Controller
     }
     
     /**
+<<<<<<< Updated upstream
      * Koreksi typo umum dalam pencarian
      */
     private function correctTypo($keyword)
@@ -102,6 +104,48 @@ class SparqlSearchController extends Controller
         
         // 3. Jika tidak ditemukan typo, return keyword asli
         return ($bestDistance <= 2 && $bestDistance > 0) ? $bestMatch : $keyword;
+=======
+     * Enhanced search dengan semua fitur baru untuk SPARQL
+     */
+    private function enhancedSearch($keyword, $category = null, $type = null)
+    {
+        $originalKeyword = $keyword;
+        
+        // 1. Deteksi "wisata sekitar [lokasi]"
+        $nearbySearch = TypoCorrector::detectNearbySearch($keyword);
+        
+        if ($nearbySearch) {
+            // User mencari "wisata sekitar [lokasi]"
+            $location = $nearbySearch['correctedLocation'];
+            
+            // Search dengan SPARQL untuk lokasi tertentu
+            $results = $this->sparqlService->searchByLocation($location);
+            
+            return [
+                'data' => $results,
+                'originalKeyword' => $originalKeyword,
+                'correctedKeyword' => $location,
+                'isCorrected' => $location !== $nearbySearch['location'],
+                'searchType' => 'nearby',
+                'nearbyLocation' => $location
+            ];
+        }
+        
+        // 2. Jika bukan "wisata sekitar", gunakan search biasa dengan typo correction
+        $correctedKeyword = TypoCorrector::correct($keyword);
+        $isCorrected = $correctedKeyword !== $originalKeyword;
+        
+        // 3. Gunakan SPARQL service dengan keyword yang sudah dikoreksi
+        $results = $this->sparqlService->search($correctedKeyword, $category, $type);
+        
+        return [
+            'data' => $results,
+            'originalKeyword' => $originalKeyword,
+            'correctedKeyword' => $correctedKeyword,
+            'isCorrected' => $isCorrected,
+            'searchType' => 'regular'
+        ];
+>>>>>>> Stashed changes
     }
     
     public function search(Request $request)
@@ -115,6 +159,7 @@ class SparqlSearchController extends Controller
         echo "<h2>DEBUG: Search 'pantai'</h2>";
         echo "<h3>Semua item dengan kategori mengandung 'pantai':</h3>";
         
+<<<<<<< Updated upstream
         $count = 0;
         foreach ($allData as $item) {
             $kategori = strtolower($item['kategori'] ?? '');
@@ -149,6 +194,20 @@ class SparqlSearchController extends Controller
         
         // Gunakan keyword yang sudah dikoreksi untuk search SPARQL
         $results = $this->sparqlService->search($correctedKeyword, $category, $type);
+=======
+        // Gunakan ENHANCED search (dengan nearby detection & typo correction)
+        $searchResult = $this->enhancedSearch($keyword, $category, $type);
+        
+        $results = $searchResult['data'];
+        $isCorrected = $searchResult['isCorrected'] ?? false;
+        $correctedKeyword = $searchResult['correctedKeyword'] ?? $keyword;
+        $originalKeyword = $searchResult['originalKeyword'] ?? $keyword;
+        $searchType = $searchResult['searchType'] ?? 'regular';
+        $nearbyLocation = $searchResult['nearbyLocation'] ?? null;
+        
+        // Log untuk debugging
+        \Log::info("SPARQL Search - Original: '$originalKeyword', Corrected: '$correctedKeyword', Type: $searchType");
+>>>>>>> Stashed changes
         
         $wisataAlam = array_filter($results, function($item) {
             $jenis = strtolower(trim($item['jenisWisata'] ?? ''));
@@ -177,10 +236,14 @@ class SparqlSearchController extends Controller
             'keyword' => $originalKeyword,
             'correctedKeyword' => $isCorrected ? $correctedKeyword : null,
             'isCorrected' => $isCorrected,
+<<<<<<< Updated upstream
+=======
+            'searchType' => 'sparql',
+            'nearbyLocation' => $nearbyLocation,
+>>>>>>> Stashed changes
             'selectedCategory' => $category,
             'selectedType' => $type,
             'total' => count($results),
-            'searchType' => 'sparql' 
         ]);
     }
     
