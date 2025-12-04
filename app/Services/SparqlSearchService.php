@@ -160,6 +160,50 @@ class SparqlSearchService
         
         return $data;
     }
+
+public function searchByLocation($location)
+{
+    $location = strtolower(trim($location));
+    
+    $sparql = "
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX owl: <http://www.w3.org/2002/07/owl#>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+        PREFIX arua: <http://www.semanticweb.org/arua#>
+        PREFIX ws: <http://example.com/wisatasumut#>
+        
+        SELECT DISTINCT ?wisata ?nama ?kategori ?jenis ?alamat ?kota ?gambar ?latitude ?longitude ?harga ?hariBuka ?jamBuka ?jamTutup ?fasilitas ?aktivitas ?dekatDengan
+        WHERE {
+            ?wisata a arua:Wisata .
+            ?wisata arua:memilikiNama ?nama .
+            ?wisata arua:memilikiKategori ?kategori .
+            ?wisata arua:memilikiJenisWisata ?jenis .
+            OPTIONAL { ?wisata arua:memilikiAlamat ?alamat . }
+            OPTIONAL { ?wisata arua:berlokasiDi ?kota . }
+            OPTIONAL { ?wisata arua:memilikiGambar ?gambar . }
+            OPTIONAL { ?wisata arua:memilikiLatitude ?latitude . }
+            OPTIONAL { ?wisata arua:memilikiLongitude ?longitude . }
+            OPTIONAL { ?wisata ws:hargaTiket ?harga . }
+            OPTIONAL { ?wisata ws:hariBuka ?hariBuka . }
+            OPTIONAL { ?wisata ws:jamBuka ?jamBuka . }
+            OPTIONAL { ?wisata ws:jamTutup ?jamTutup . }
+            OPTIONAL { ?wisata ws:fasilitas ?fasilitas . }
+            OPTIONAL { ?wisata ws:aktivitas ?aktivitas . }
+            OPTIONAL { ?wisata ws:dekatDengan ?dekatDengan . }
+            
+            FILTER (
+                lcase(str(?kota)) LIKE '%" . $location . "%' ||
+                lcase(str(?alamat)) LIKE '%" . $location . "%' ||
+                lcase(str(?nama)) LIKE '%" . $location . "%' ||
+                lcase(str(?dekatDengan)) LIKE '%" . $location . "%'
+            )
+        }
+        LIMIT 100
+    ";
+    
+    return $this->executeQuery($sparql);
+}
     
     public function testSparql()
     {
