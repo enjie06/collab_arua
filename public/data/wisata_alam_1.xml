@@ -180,7 +180,7 @@
       <ws:dekatDengan>Danau Linting</ws:dekatDengan>
       <ws:fasilitas>Parkir, Pemandu Wisata</ws:fasilitas>
       <ws:aktivitas>Trekking, Foto, Menikmati Alam</ws:aktivitas>
-          <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/2/2f/Air_Terjun_Dua_Warna_3.jpg"/>
+      <foaf:depiction rdf:resource="https://upload.wikimedia.org/wikipedia/commons/2/2f/Air_Terjun_Dua_Warna_3.jpg"/>
     </rdf:Description>
 
     <!-- 🔧 DIPERBAIKI: Koordinat -->
