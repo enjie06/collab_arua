@@ -41,20 +41,20 @@
                             </i>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold mb-3 text-white">{{ $result->label->getValue() }}</h3>
+                            <h3 class="text-xl font-bold mb-3 text-white">{{ $result['label'] }}</h3>
                             
                             <div class="space-y-2 text-sm text-gray-300">
                                 <div class="flex justify-between">
                                     <span class="font-medium">Jenis:</span>
-                                    <span>{{ $result->jenis->getValue() }}</span>
+                                    <span>{{ $result['jenis'] }}</span>
                                 </div>
                                 <div class="flex justify-between">
                                     <span class="font-medium">Kota:</span>
-                                    <span>{{ $result->kota->getValue() }}</span>
+                                    <span>{{ $result['kota'] }}</span>
                                 </div>
                                 <div class="flex justify-between">
                                     <span class="font-medium">Alamat:</span>
-                                    <span class="text-right">{{ Str::limit($result->alamat->getValue(), 25) }}</span>
+                                    <span class="text-right">{{ Str::limit($result['alamat'], 25) }}</span>
                                 </div>
                             </div>
                         </div>

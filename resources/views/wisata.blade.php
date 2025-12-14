@@ -1,10 +1,6 @@
 @extends('layouts.main')
 @section('content')
 
-@extends('layouts.main')
-@section('content')
-
-
 <div class="min-h-screen pt-24">
     <!-- Hero Section -->
     <section class="relative h-[400px] flex items-center justify-center overflow-hidden mb-8">
@@ -64,11 +60,11 @@
                     <h3 class="text-xl font-bold mb-3 text-white">{{ $wisata['nama'] }}</h3>
                     <div class="space-y-2 text-sm text-gray-300">
                         <div class="flex justify-between">
-                            <span>📍 {{ $wisata['kota'] }}</span>
+                            <span>📍 {{ $wisata['kota'] ?: 'Sumatera Utara' }}</span>
                         </div>
                         <div class="flex justify-between">
                             <span class="bg-emerald-500/20 text-emerald-300 px-2 py-1 rounded text-xs">
-                                {{ $wisata['kategori'] }}
+                                {{ ucwords(str_replace('_', ' ', $wisata['kategori'])) }}
                             </span>
                             <span class="text-orange-300">{{ $wisata['harga_tiket'] }}</span>
                         </div>

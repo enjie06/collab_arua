@@ -15,7 +15,7 @@
 
         <!-- Search Bar -->
         <div class="w-64">
-            <form action="/wisata/search" method="GET" class="relative">
+            <form action="{{ route('search') }}" method="GET" class="relative">
                 <input 
                     type="text" 
                     name="q" 

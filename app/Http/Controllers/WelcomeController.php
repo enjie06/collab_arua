@@ -2,76 +2,110 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Helpers\RDFParser;
+use App\Services\FusekiService;
 
 class WelcomeController extends Controller
 {
-    public function index()
+    protected $fusekiService;
+    
+    public function __construct(FusekiService $fusekiService)
     {
-        $allWisataData = [];
+        $this->fusekiService = $fusekiService;
+    }
+    
+    /**
+     * Halaman / - Homepage
+     */
+    public function index()
+{
+    try {
+        // Ambil semua data dari Fuseki
+        $allWisata = $this->fusekiService->getAllWisata();
         
-        $rdfFiles = [
-            public_path('data/wisata_alam_1.xml'),
-            public_path('data/wisata_alam_2.xml'),
-            public_path('data/wisata_religi.xml'),
-            public_path('data/wisata_budaya.xml'),
-        ];
-        
-        foreach ($rdfFiles as $file) {
-            if (file_exists($file)) {
-                try {
-                    $data = RDFParser::parse($file);
-                    $allWisataData = array_merge($allWisataData, $data);
-                } catch (\Exception $e) {
-                    \Log::error('Error in ' . basename($file) . ': ' . $e->getMessage());
-                    continue;
-                }
-            } else {
-                \Log::warning('File not found: ' . basename($file));
+        // Ambil 10 wisata pertama (filter yang ada gambar dulu)
+        $topWisata = [];
+        foreach ($allWisata as $wisata) {
+            if (count($topWisata) >= 10) break;
+            
+            // Prioritaskan yang ada gambar
+            if (!empty($wisata['gambar'])) {
+                $topWisata[] = $wisata;
             }
         }
         
-        $allWisataData = $this->convertFieldNames($allWisataData);
+        // Jika masih kurang, tambahkan yang tanpa gambar
+        if (count($topWisata) < 10) {
+            foreach ($allWisata as $wisata) {
+                if (count($topWisata) >= 10) break;
+                if (empty($wisata['gambar'])) {
+                    $topWisata[] = $wisata;
+                }
+            }
+        }
         
-        $wisataAlam = array_values(array_filter($allWisataData, function($item) {
-            return isset($item['jenisWisata']) && $item['jenisWisata'] === 'Alam';
-        }));
+        // Kelompokkan untuk carousel (3-4 per kategori)
+        $grouped = $this->fusekiService->getGroupedWisata();
         
-        $wisataBudaya = array_values(array_filter($allWisataData, function($item) {
-            return isset($item['jenisWisata']) && $item['jenisWisata'] === 'Budaya';
-        }));
+        // Ambil maksimal 4 per kategori
+        $wisataAlam = array_slice($grouped['alam'], 0, 4);
+        $wisataBudaya = array_slice($grouped['budaya'], 0, 3);
+        $wisataReligi = array_slice($grouped['religi'], 0, 3);
         
-        $wisataReligi = array_values(array_filter($allWisataData, function($item) {
-            return isset($item['jenisWisata']) && $item['jenisWisata'] === 'Religi';
-        }));
-
-        return view('welcome', compact('wisataAlam', 'wisataBudaya', 'wisataReligi'));
+        // Jika data kurang, tambahkan fallback
+        if (empty($wisataAlam) && empty($wisataBudaya) && empty($wisataReligi)) {
+            return $this->showFallbackHomepage();
+        }
+        
+        return view('welcome', [
+            'wisataAlam' => $wisataAlam,
+            'wisataBudaya' => $wisataBudaya,
+            'wisataReligi' => $wisataReligi,
+            'topWisata' => $topWisata
+        ]);
+        
+    } catch (\Exception $e) {
+        // Jika error, tampilkan fallback
+        return $this->showFallbackHomepage();
     }
+}
 
-    private function convertFieldNames($data)
-    {
-        return array_map(function($item) {
-            return [
-                'nama' => $item['nama'] ?? $item['label'] ?? '',
-                'gambar' => $item['gambar'] ?? '',
-                'kategori' => $item['kategori'] ?? '',
-                'alamat' => $item['alamat'] ?? '',
-                'kota' => $item['kotaKabupaten'] ?? '',
-                'provinsi' => $item['provinsi'] ?? '',
-                'latitude' => $item['latitude'] ?? '',
-                'longitude' => $item['longitude'] ?? '',
-                'harga_tiket' => $item['hargaTiket'] ?? '',
-                'hari_buka' => $item['hariBuka'] ?? '',
-                'jam_buka' => $item['jamBuka'] ?? '',
-                'jam_tutup' => $item['jamTutup'] ?? '',
-                'dekat_dengan' => $item['dekatDengan'] ?? '',
-                'fasilitas' => $item['fasilitas'] ?? '',
-                'aktivitas' => $item['aktivitas'] ?? '',
-                'agama_terkait' => $item['agamaTerkait'] ?? '',
-                'tokoh_terkait' => $item['tokohTerkait'] ?? '',
-                'jenisWisata' => $item['jenisWisata'] ?? '',
-            ];
-        }, $data);
-    }
+private function showFallbackHomepage()
+{
+    $fallbackAlam = [
+        [
+            'nama' => 'Danau Toba',
+            'gambar' => '',
+            'kategori' => 'Danau',
+            'jenisWisata' => 'alam',
+            'kota' => 'Simalungun'
+        ]
+    ];
+    
+    $fallbackBudaya = [
+        [
+            'nama' => 'Istana Maimun',
+            'gambar' => '',
+            'kategori' => 'Istana',
+            'jenisWisata' => 'budaya',
+            'kota' => 'Medan'
+        ]
+    ];
+    
+    $fallbackReligi = [
+        [
+            'nama' => 'Masjid Raya Medan',
+            'gambar' => '',
+            'kategori' => 'Masjid',
+            'jenisWisata' => 'religi',
+            'kota' => 'Medan'
+        ]
+    ];
+    
+    return view('welcome', [
+        'wisataAlam' => $fallbackAlam,
+        'wisataBudaya' => $fallbackBudaya,
+        'wisataReligi' => $fallbackReligi,
+        'topWisata' => array_merge($fallbackAlam, $fallbackBudaya, $fallbackReligi)
+    ]);
+}
 }

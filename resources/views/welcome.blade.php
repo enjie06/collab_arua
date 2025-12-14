@@ -425,33 +425,49 @@
 <div class="flex gap-6 overflow-x-auto pb-8 px-6 scrollbar-hide">
 
     @php
-        $allWisata = array_merge(
-            array_slice($wisataAlam, 0, 4),
-            array_slice($wisataBudaya, 0, 3), 
-            array_slice($wisataReligi, 0, 3)
-        );
+    // Gabungkan semua wisata yang ada
+        $allWisata = [];
+        if (isset($wisataAlam) && is_array($wisataAlam)) {
+            $allWisata = array_merge($allWisata, array_slice($wisataAlam, 0, 4));
+        }
+        if (isset($wisataBudaya) && is_array($wisataBudaya)) {
+            $allWisata = array_merge($allWisata, array_slice($wisataBudaya, 0, 3));
+        }
+        if (isset($wisataReligi) && is_array($wisataReligi)) {
+            $allWisata = array_merge($allWisata, array_slice($wisataReligi, 0, 3));
+        }
     @endphp
 
-@foreach ($allWisata as $index => $wisata)
-    <div class="relative min-w-[250px] h-[330px] rounded-3xl shadow-xl flex flex-col justify-end overflow-hidden group transition transform hover:scale-105"
-        style="background: linear-gradient(135deg, #FDE68A, #FBBF24);">
+    @if(count($allWisata) > 0)
+        @foreach ($allWisata as $index => $wisata)
+            <div class="relative min-w-[250px] h-[330px] rounded-3xl shadow-xl flex flex-col justify-end overflow-hidden group transition transform hover:scale-105"
+                style="background: linear-gradient(135deg, #FDE68A, #FBBF24);">
 
-        @if($wisata['gambar'])
-            <img src="{{ $wisata['gambar'] }}"
-                class="w-full h-full object-cover transition duration-500 group-hover:scale-110 rounded-3xl" 
-                alt="{{ $wisata['nama'] }}" />
-        @else
-            <div class="w-full h-full bg-gradient-to-br from-emerald-400 via-teal-500 to-blue-600 flex items-center justify-center rounded-3xl">
-                <span class="text-white text-xl font-bold">{{ strtoupper($wisata['kategori'] ?? 'WISATA') }}</span>
+                @if($wisata['gambar'])
+                    <img src="{{ $wisata['gambar'] }}"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110 rounded-3xl" 
+                        alt="{{ $wisata['nama'] }}" />
+                @else
+                    <div class="w-full h-full bg-gradient-to-br from-emerald-400 via-teal-500 to-blue-600 flex items-center justify-center rounded-3xl">
+                        <span class="text-white text-xl font-bold">{{ strtoupper($wisata['kategori'] ?? 'WISATA') }}</span>
+                    </div>
+                @endif
+
+                <div class="absolute bottom-0 left-0 w-full bg-black/40 backdrop-blur-sm py-3 text-center">
+                    <p class="text-white font-semibold text-lg">{{ $wisata['nama'] }}</p>
+                    <p class="text-gray-200 text-sm">{{ $wisata['kota'] }}</p>
+                </div>
             </div>
-        @endif
-
-        <div class="absolute bottom-0 left-0 w-full bg-black/40 backdrop-blur-sm py-3 text-center">
-            <p class="text-white font-semibold text-lg">{{ $wisata['nama'] }}</p>
-            <p class="text-gray-200 text-sm">{{ $wisata['kota'] }}</p>
+        @endforeach
+    @else
+    <div class="text-center py-12">
+        <div class="bg-white/10 rounded-2xl p-8">
+            <i class="fas fa-map-marked-alt text-4xl text-gray-400 mb-4"></i>
+            <h3 class="text-xl font-semibold text-white mb-2">Data Wisata Sedang Dimuat</h3>
+            <p class="text-gray-300">Top destinations akan segera tampil...</p>
         </div>
     </div>
-@endforeach
+    @endif
 
 </div>
 </section>

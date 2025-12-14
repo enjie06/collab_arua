@@ -1,146 +1,42 @@
 <?php
 
-use Illuminate\Http\Request; 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SearchController;
-use App\Http\Controllers\WisataController;
 use App\Http\Controllers\WelcomeController;
-use App\Http\Controllers\SparqlSearchController;
+use App\Http\Controllers\WisataController;
+use App\Http\Controllers\SearchController;
 
-
+// Homepage
 Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
 
-Route::get('/home', function () {
-    return view('home');
-});
-
+// Halaman semua wisata
 Route::get('/wisata', [WisataController::class, 'index'])->name('wisata');
 
+// Search
+Route::get('/search', [SearchController::class, 'search'])->name('search');
+
+// Halaman about (static)
 Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/search', [SearchController::class, 'search'])->name('search');
-
-Route::get('/search/autocomplete', [SearchController::class, 'ajaxSearch'])->name('search.autocomplete');
-
-Route::get('/wisata/search', [SearchController::class, 'search']);
-Route::get('/wisata/category/{category}', [SearchController::class, 'byCategory']);
-Route::get('/wisata/all', [SearchController::class, 'allWisata']);  
-
-Route::get('/debug-wisata', function() {
-    try {
-        $controller = new App\Http\Controllers\WisataController();
-        $data = $controller->index();
-        
-        return response()->json([
-            'wisataAlam_count' => count($data['wisataAlam']),
-            'wisataBudaya_count' => count($data['wisataBudaya']),
-            'wisataReligi_count' => count($data['wisataReligi']),
-            'wisataAlam_sample' => $data['wisataAlam'][0] ?? 'No data',
-            'files_exist' => [
-                'alam' => file_exists(public_path('data/wisata_alam_1.xml')),
-                'religi' => file_exists(public_path('data/wisata_religi_1.xml'))
-            ]
-        ]);
-    } catch (Exception $e) {
-        return response()->json(['error' => $e->getMessage()]);
-    }
+// TEST ROUTES - Bisa dihapus setelah semua berjalan
+Route::get('/test-fuseki', function() {
+    $service = new \App\Services\FusekiService();
+    $result = $service->testConnection();
+    
+    return response()->json($result);
 });
 
-Route::get('/test-view', function() {
-    $data = [
-        'wisataAlam' => [
-            [
-                'nama' => 'Danau Toba Test',
-                'gambar' => 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Danau_Toba%2C_Sumatera.jpg',
-                'kategori' => 'Danau',
-                'alamat' => 'Parapat',
-                'kota' => 'Simalungun',
-                'harga_tiket' => 'Gratis'
-            ]
-        ],
-        'wisataBudaya' => [
-            [
-                'nama' => 'Istana Maimun Test',
-                'gambar' => null,
-                'kategori' => 'Istana', 
-                'alamat' => 'Medan',
-                'kota' => 'Medan',
-                'harga_tiket' => 'Rp 10.000'
-            ]
-        ],
-        'wisataReligi' => [
-            [
-                'nama' => 'Masjid Test',
-                'gambar' => null,
-                'kategori' => 'Masjid',
-                'alamat' => 'Medan',
-                'kota' => 'Medan', 
-                'harga_tiket' => 'Gratis'
-            ]
-        ]
-    ];
+Route::get('/test-data', function() {
+    $service = new \App\Services\FusekiService();
+    $data = $service->getAllWisata();
     
-    return view('wisata', $data);
+    return response()->json([
+        'total' => count($data),
+        'sample' => $data[0] ?? 'No data'
+    ]);
 });
 
-Route::get('/test-sparql', function() {
-    try {
-        $client = new \EasyRdf\Sparql\Client('http://localhost:3030/arua/sparql');
-        $result = $client->query('SELECT * WHERE { ?s ?p ?o } LIMIT 1');
-        
-        $count = 0;
-        foreach ($result as $row) {
-            $count++;
-        }
-        
-        return response()->json([
-            'status' => 'success', 
-            'message' => 'Connected to Fuseki successfully!',
-            'data_count' => $count
-        ]);
-    } catch (Exception $e) {
-        return response()->json([
-            'status' => 'error', 
-            'message' => $e->getMessage()
-        ]);
-    }
-});
-
-Route::get('/debug-duplicate', function() {
-    $sparqlService = new \App\Services\SparqlService();
-    $results = $sparqlService->debugDuplicateData('pantai');
-    
-    echo "<pre>";
-    print_r($results);
-    echo "</pre>";
-});
-
-Route::get('/test-search', function() {
-    $service = new \App\Services\SparqlSearchService();
-    
-    $all = $service->search();
-    echo "<h3>Total Data: " . count($all) . "</h3>";
-    
-    $results = $service->search('Danau');
-    echo "<h3>Search 'Danau': " . count($results) . " results</h3>";
-    
-    if (count($results) > 0) {
-        echo "<pre>";
-        print_r($results[0]);
-        echo "</pre>";
-    }
-    
-    $cats = $service->getAllCategories();
-    echo "<h3>Categories: " . implode(', ', $cats) . "</h3>";
-    
-    return '';
-});
-
-// Route SPARQL Search (TIDAK mengganti route yang ada)
-Route::get('/sparql-search', [SparqlSearchController::class, 'search'])->name('sparql.search');
-Route::get('/test-sparql-service', [SparqlSearchController::class, 'test']);
-
-// Route search lama TETAP ADA (jangan dihapus!)
-Route::get('/search', [SearchController::class, 'search'])->name('search');
+// Route debug untuk wisata
+Route::get('/debug-wisata-data', [WisataController::class, 'debug']);
+Route::get('/debug-wisata-view', [WisataController::class, 'debugView']);

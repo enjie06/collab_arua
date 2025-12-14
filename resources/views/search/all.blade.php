@@ -31,14 +31,14 @@
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-3 text-white group-hover:text-blue-300 transition duration-200">
-                                {{ $result->label->getValue() }}
+                                {{ $result['nama'] ?? 'Tanpa Nama' }}
                             </h3>
                             
                             <div class="space-y-2 text-sm text-gray-300">
                                 <div class="flex justify-between items-center">
                                     <span class="font-medium">Kategori:</span>
                                     <span class="bg-orange-500/20 text-orange-300 px-3 py-1 rounded-full text-xs font-semibold">
-                                        {{ $result->kategori->getValue() }}
+                                        {{ $result['kategori'] ?? 'Umum' }}
                                     </span>
                                 </div>
                                 <div class="flex justify-between">
