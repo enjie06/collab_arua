@@ -20,40 +20,76 @@
         </div>
     </section>
 
-    <!-- Filter Tabs -->
-<section class="max-w-7xl mx-auto px-4 mb-12">
-    <div class="flex gap-4 overflow-x-auto scrollbar-hide pb-2">
-        <button onclick="showCategory('semua')" id="tab-semua" class="tab-btn group px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-bold rounded-full whitespace-nowrap hover:scale-105 transition-all duration-300 shadow-lg">
-            Semua
-        </button>
-        <button onclick="showCategory('alam')" id="tab-alam" class="tab-btn group px-8 py-4 glass-card text-white font-bold rounded-full whitespace-nowrap hover:scale-105 hover:bg-white/20 transition-all duration-300">
-            Alam  <!-- HAPUS ({{ count($wisataAlam) }}) -->
-        </button>
-        <button onclick="showCategory('budaya')" id="tab-budaya" class="tab-btn group px-8 py-4 glass-card text-white font-bold rounded-full whitespace-nowrap hover:scale-105 hover:bg-white/20 transition-all duration-300">
-            Budaya  <!-- HAPUS ({{ count($wisataBudaya) }}) -->
-        </button>
-        <button onclick="showCategory('religi')" id="tab-religi" class="tab-btn group px-8 py-4 glass-card text-white font-bold rounded-full whitespace-nowrap hover:scale-105 hover:bg-white/20 transition-all duration-300">
-            Religi  <!-- HAPUS ({{ count($wisataReligi) }}) -->
-        </button>
-    </div>
-</section>
+    <!-- Header Semua Destinasi -->
+    <section class="max-w-7xl mx-auto px-4 mb-8">
+        <div class="text-center">
+            <h2 class="text-4xl font-black text-white mb-2">SEMUA DESTINASI</h2>
+            <p class="text-gray-400">Menampilkan semua wisata Sumatera Utara</p>
+        </div>
+    </section>
 
-    <!-- Kategori SEMUA (default tampil) -->
-    <section id="category-semua" class="category-content max-w-7xl mx-auto px-4 mb-20">
-        <h2 class="text-4xl font-black text-white mb-4">SEMUA DESTINASI</h2>
-        
+    <!-- Grid Semua Destinasi -->
+    <section class="max-w-7xl mx-auto px-4 mb-12">
         <!-- Grid untuk semua destinasi -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Destinasi Alam dari RDF -->
-            @foreach($wisataAlam as $index => $wisata)
-            <div onclick="openModal('modal-alam-{{ $index }}')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
+            @php
+                // Gabungkan semua destinasi dengan ID yang tepat untuk modal
+                $allWisata = [];
+                
+                // Tambahkan wisata alam dengan informasi modal
+                foreach($wisataAlam as $index => $wisata) {
+                    $allWisata[] = [
+                        'data' => $wisata,
+                        'modal_id' => 'modal-alam-' . $index,
+                        'kategori' => 'alam'
+                    ];
+                }
+                
+                // Tambahkan wisata budaya dengan informasi modal
+                foreach($wisataBudaya as $index => $wisata) {
+                    $allWisata[] = [
+                        'data' => $wisata,
+                        'modal_id' => 'modal-budaya-' . $index,
+                        'kategori' => 'budaya'
+                    ];
+                }
+                
+                // Tambahkan wisata religi dengan informasi modal
+                foreach($wisataReligi as $index => $wisata) {
+                    $allWisata[] = [
+                        'data' => $wisata,
+                        'modal_id' => 'modal-religi-' . $index,
+                        'kategori' => 'religi'
+                    ];
+                }
+                
+                // Pagination logic - DIUBAH JADI 12 PER HALAMAN
+                $perPage = 12;
+                $currentPage = request()->get('page', 1);
+                $offset = ($currentPage - 1) * $perPage;
+                $paginatedWisata = array_slice($allWisata, $offset, $perPage);
+                $totalPages = ceil(count($allWisata) / $perPage);
+            @endphp
+
+            @foreach($paginatedWisata as $item)
+            @php
+                $wisata = $item['data'];
+                $modalId = $item['modal_id'];
+                $kategori = $item['kategori'];
+            @endphp
+            
+            <div onclick="openModal('{{ $modalId }}')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
                 @if($wisata['gambar'])
                 <div class="h-48 bg-cover bg-center" style="background-image: url('{{ $wisata['gambar'] }}')">
                     <div class="h-full w-full bg-black/20 flex items-center justify-center"></div>
                 </div>
                 @else
-                <div class="h-48 bg-gradient-to-br from-emerald-400 via-teal-500 to-blue-600 flex items-center justify-center">
-                    <span class="text-white text-xl font-bold">{{ strtoupper($wisata['kategori']) }}</span>
+                <div class="h-48 flex items-center justify-center
+                    @if($kategori == 'alam') bg-gradient-to-br from-emerald-400 via-teal-500 to-blue-600
+                    @elseif($kategori == 'budaya') bg-gradient-to-br from-amber-400 via-orange-500 to-red-600
+                    @else bg-gradient-to-br from-violet-400 via-purple-500 to-fuchsia-600
+                    @endif">
+                    <span class="text-white text-xl font-bold">{{ strtoupper($kategori) }}</span>
                 </div>
                 @endif
                 <div class="p-6">
@@ -63,7 +99,11 @@
                             <span>📍 {{ $wisata['kota'] ?: 'Sumatera Utara' }}</span>
                         </div>
                         <div class="flex justify-between">
-                            <span class="bg-emerald-500/20 text-emerald-300 px-2 py-1 rounded text-xs">
+                            <span class="px-2 py-1 rounded text-xs
+                                @if($kategori == 'alam') bg-emerald-500/20 text-emerald-300
+                                @elseif($kategori == 'budaya') bg-amber-500/20 text-amber-300
+                                @else bg-violet-500/20 text-violet-300
+                                @endif">
                                 {{ ucwords(str_replace('_', ' ', $wisata['kategori'])) }}
                             </span>
                             <span class="text-orange-300">{{ $wisata['harga_tiket'] }}</span>
@@ -72,185 +112,114 @@
                 </div>
             </div>
             @endforeach
+        </div>
 
-            <!-- Destinasi Budaya dari RDF -->
-            @foreach($wisataBudaya as $index => $wisata)
-            <div onclick="openModal('modal-budaya-{{ $index }}')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                @if($wisata['gambar'])
-                <div class="h-48 bg-cover bg-center" style="background-image: url('{{ $wisata['gambar'] }}')">
-                    <div class="h-full w-full bg-black/20 flex items-center justify-center"></div>
+        <!-- Pagination dengan style baru -->
+        @if($totalPages > 1)
+        <div class="mt-12">
+            <!-- Style 3: Previous 1 2 3 ... 10 Next Page 1 of 14 -->
+            <div class="flex flex-col items-center space-y-6">
+                <!-- Navigation -->
+                <div class="flex items-center justify-center space-x-2">
+                    <!-- Previous Button -->
+                    @if($currentPage > 1)
+                    <a href="?page={{ $currentPage - 1 }}" class="pagination-btn group">
+                        <span>Previous</span>
+                    </a>
+                    @else
+                    <span class="pagination-btn-disabled">
+                        <span>Previous</span>
+                    </span>
+                    @endif
+                    
+                    <!-- Page Numbers -->
+                    <div class="flex items-center space-x-1">
+                        @php
+                            // Tampilkan maksimal 7 nomor halaman
+                            $start = max(1, $currentPage - 3);
+                            $end = min($totalPages, $start + 6);
+                            $start = max(1, min($start, $totalPages - 6));
+                        @endphp
+                        
+                        @if($start > 1)
+                        <a href="?page=1" class="pagination-number">1</a>
+                        @if($start > 2) <span class="pagination-ellipsis">...</span> @endif
+                        @endif
+                        
+                        @for($i = $start; $i <= $end; $i++)
+                            @if($i == $currentPage)
+                            <span class="pagination-number-active">{{ $i }}</span>
+                            @else
+                            <a href="?page={{ $i }}" class="pagination-number">{{ $i }}</a>
+                            @endif
+                        @endfor
+                        
+                        @if($end < $totalPages)
+                        @if($end < $totalPages - 1) <span class="pagination-ellipsis">...</span> @endif
+                        <a href="?page={{ $totalPages }}" class="pagination-number">{{ $totalPages }}</a>
+                        @endif
+                    </div>
+                    
+                    <!-- Next Button -->
+                    @if($currentPage < $totalPages)
+                    <a href="?page={{ $currentPage + 1 }}" class="pagination-btn group">
+                        <span>Next</span>
+                    </a>
+                    @else
+                    <span class="pagination-btn-disabled">
+                        <span>Next</span>
+                    </span>
+                    @endif
                 </div>
-                @else
-                <div class="h-48 bg-gradient-to-br from-amber-400 via-orange-500 to-red-600 flex items-center justify-center">
-                    <span class="text-white text-xl font-bold">{{ strtoupper($wisata['kategori']) }}</span>
+                
+                <!-- Page Info -->
+                <div class="text-center">
+                    <div class="inline-flex items-center space-x-2 bg-white/5 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/10">
+                        <span class="text-gray-300">Page</span>
+                        <span class="text-white font-bold">{{ $currentPage }}</span>
+                        <span class="text-gray-300">of</span>
+                        <span class="text-white font-bold">{{ $totalPages }}</span>
+                    </div>
                 </div>
-                @endif
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">{{ $wisata['nama'] }}</h3>
-                    <div class="space-y-2 text-sm text-gray-300">
-                        <div class="flex justify-between">
-                            <span>📍 {{ $wisata['kota'] }}</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="bg-amber-500/20 text-amber-300 px-2 py-1 rounded text-xs">
-                                {{ $wisata['kategori'] }}
-                            </span>
-                            <span class="text-orange-300">{{ $wisata['harga_tiket'] }}</span>
+            </div>
+            
+            <!-- Style 4 & 5: Dengan Go to page -->
+            <div class="mt-8 pt-8 border-t border-white/10">
+                <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+                    <!-- Total Items Info -->
+                    <div class="text-gray-400 text-sm">
+                        Showing {{ ($currentPage - 1) * $perPage + 1 }} to {{ min($currentPage * $perPage, count($allWisata)) }} of {{ count($allWisata) }} results
+                    </div>
+                    
+                    <!-- Go to Page -->
+                    <div class="flex items-center space-x-3">
+                        <span class="text-gray-300 text-sm">Go to page:</span>
+                        <div class="relative">
+                            <input 
+                                type="number" 
+                                id="goToPage" 
+                                min="1" 
+                                max="{{ $totalPages }}" 
+                                value="{{ $currentPage }}"
+                                class="w-20 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-3 py-2 text-white text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            >
+                            <button 
+                                onclick="goToPage()"
+                                class="ml-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg hover:opacity-90 transition-opacity"
+                            >
+                                Go
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            @endforeach
-
-            <!-- Destinasi Religi dari RDF -->
-            @foreach($wisataReligi as $index => $wisata)
-            <div onclick="openModal('modal-religi-{{ $index }}')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                @if($wisata['gambar'])
-                <div class="h-48 bg-cover bg-center" style="background-image: url('{{ $wisata['gambar'] }}')">
-                    <div class="h-full w-full bg-black/20 flex items-center justify-center"></div>
-                </div>
-                @else
-                <div class="h-48 bg-gradient-to-br from-violet-400 via-purple-500 to-fuchsia-600 flex items-center justify-center">
-                    <span class="text-white text-xl font-bold">{{ strtoupper($wisata['kategori']) }}</span>
-                </div>
-                @endif
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">{{ $wisata['nama'] }}</h3>
-                    <div class="space-y-2 text-sm text-gray-300">
-                        <div class="flex justify-between">
-                            <span>📍 {{ $wisata['kota'] }}</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="bg-violet-500/20 text-violet-300 px-2 py-1 rounded text-xs">
-                                {{ $wisata['kategori'] }}
-                            </span>
-                            <span class="text-orange-300">{{ $wisata['harga_tiket'] }}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endforeach
         </div>
-    </section>
-
-    <!-- Kategori ALAM -->
-    <section id="category-alam" class="category-content hidden max-w-7xl mx-auto px-4 mb-20">
-        <div class="flex items-center justify-between mb-8">
-            <div>
-<h2 class="text-4xl font-black text-white">ALAM</h2>
-<p class="text-gray-400 mt-2">Keindahan alam yang memukau</p>
-</div>
-</div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            @foreach($wisataAlam as $index => $wisata)
-            <div onclick="openModal('modal-alam-{{ $index }}')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                @if($wisata['gambar'])
-                <div class="h-48 bg-cover bg-center" style="background-image: url('{{ $wisata['gambar'] }}')">
-                    <div class="h-full w-full bg-black/20 flex items-center justify-center"></div>
-                </div>
-                @else
-                <div class="h-48 bg-gradient-to-br from-emerald-400 via-teal-500 to-blue-600 flex items-center justify-center">
-                    <span class="text-white text-xl font-bold">{{ strtoupper($wisata['kategori']) }}</span>
-                </div>
-                @endif
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">{{ $wisata['nama'] }}</h3>
-                    <div class="space-y-2 text-sm text-gray-300">
-                        <div class="flex justify-between">
-                            <span>📍 {{ $wisata['kota'] }}</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="bg-emerald-500/20 text-emerald-300 px-2 py-1 rounded text-xs">
-                                {{ $wisata['kategori'] }}
-                            </span>
-                            <span class="text-orange-300">{{ $wisata['harga_tiket'] }}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endforeach
+        @else
+        <!-- Info jika hanya 1 halaman -->
+        <div class="mt-8 text-center text-gray-400">
+            <p>Showing all {{ count($allWisata) }} results</p>
         </div>
-    </section>
-
-    <!-- Kategori BUDAYA -->
-    <section id="category-budaya" class="category-content hidden max-w-7xl mx-auto px-4 mb-20">
-        <div class="flex items-center justify-between mb-8">
-            <div>
-<h2 class="text-4xl font-black text-white">BUDAYA</h2>
-<p class="text-gray-400 mt-2">Warisan budaya yang kaya</p>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            @foreach($wisataBudaya as $index => $wisata)
-            <div onclick="openModal('modal-budaya-{{ $index }}')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                @if($wisata['gambar'])
-                <div class="h-48 bg-cover bg-center" style="background-image: url('{{ $wisata['gambar'] }}')">
-                    <div class="h-full w-full bg-black/20 flex items-center justify-center"></div>
-                </div>
-                @else
-                <div class="h-48 bg-gradient-to-br from-amber-400 via-orange-500 to-red-600 flex items-center justify-center">
-                    <span class="text-white text-xl font-bold">{{ strtoupper($wisata['kategori']) }}</span>
-                </div>
-                @endif
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">{{ $wisata['nama'] }}</h3>
-                    <div class="space-y-2 text-sm text-gray-300">
-                        <div class="flex justify-between">
-                            <span>📍 {{ $wisata['kota'] }}</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="bg-amber-500/20 text-amber-300 px-2 py-1 rounded text-xs">
-                                {{ $wisata['kategori'] }}
-                            </span>
-                            <span class="text-orange-300">{{ $wisata['harga_tiket'] }}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </section>
-
-    <!-- Kategori RELIGI -->
-    <section id="category-religi" class="category-content hidden max-w-7xl mx-auto px-4 mb-20">
-        <div class="flex items-center justify-between mb-8">
-            <div>
-<h2 class="text-4xl font-black text-white">RELIGI</h2>
-<p class="text-gray-400 mt-2">Tempat ibadah yang sakral</p>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            @foreach($wisataReligi as $index => $wisata)
-            <div onclick="openModal('modal-religi-{{ $index }}')" class="carousel-card bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-pointer">
-                @if($wisata['gambar'])
-                <div class="h-48 bg-cover bg-center" style="background-image: url('{{ $wisata['gambar'] }}')">
-                    <div class="h-full w-full bg-black/20 flex items-center justify-center"></div>
-                </div>
-                @else
-                <div class="h-48 bg-gradient-to-br from-violet-400 via-purple-500 to-fuchsia-600 flex items-center justify-center">
-                    <span class="text-white text-xl font-bold">{{ strtoupper($wisata['kategori']) }}</span>
-                </div>
-                @endif
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3 text-white">{{ $wisata['nama'] }}</h3>
-                    <div class="space-y-2 text-sm text-gray-300">
-                        <div class="flex justify-between">
-                            <span>📍 {{ $wisata['kota'] }}</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="bg-violet-500/20 text-violet-300 px-2 py-1 rounded text-xs">
-                                {{ $wisata['kategori'] }}
-                            </span>
-                            <span class="text-orange-300">{{ $wisata['harga_tiket'] }}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endforeach
-        </div>
+        @endif
     </section>
 </div>
 
@@ -650,6 +619,7 @@
 </div>
 @endforeach
 
+<!-- MODAL DINAMIS UNTUK RELIGI -->
 @foreach($wisataReligi as $index => $wisata)
 <div id="modal-religi-{{ $index }}" class="fixed inset-0 bg-black/90 backdrop-blur-md z-50 hidden items-center justify-center p-4">
     <div class="glass-card rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-y-auto border border-white/20">
@@ -868,6 +838,7 @@
     </div>
 </div>
 @endforeach
+
 <style>
     @keyframes fade-in {
         from { opacity: 0; transform: translateY(20px); }
@@ -881,47 +852,84 @@
         border: 1px solid rgba(255, 255, 255, 0.2);
     }
     
-    .scrollbar-hide {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
+    /* Pagination Styles */
+    .pagination-btn {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: white;
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.5rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
     }
-    .scrollbar-hide::-webkit-scrollbar {
-        display: none;
+    
+    .pagination-btn:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .pagination-btn-disabled {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.3);
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.5rem;
+        font-weight: 500;
+        cursor: not-allowed;
+    }
+    
+    .pagination-number {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: white;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.375rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    
+    .pagination-number:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-1px);
+    }
+    
+    .pagination-number-active {
+        background: linear-gradient(135deg, #3b82f6, #6366f1);
+        color: white;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.375rem;
+        font-weight: bold;
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    }
+    
+    .pagination-ellipsis {
+        color: rgba(255, 255, 255, 0.5);
+        padding: 0 0.5rem;
+    }
+    
+    #goToPage::-webkit-inner-spin-button,
+    #goToPage::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    #goToPage {
+        -moz-appearance: textfield;
     }
 </style>
 
 <script>
-    // Tab Switching Function
-    function showCategory(category) {
-        // Hide all categories
-        document.querySelectorAll('.category-content').forEach(section => {
-            section.classList.add('hidden');
-        });
-        
-        // Show selected category
-        document.getElementById('category-' + category).classList.remove('hidden');
-        
-        // Update tab styles
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.classList.remove('bg-gradient-to-r', 'from-emerald-500', 'to-teal-600', 'from-amber-500', 'to-orange-600', 'from-violet-500', 'to-purple-600', 'from-blue-500', 'to-indigo-600');
-            btn.classList.add('glass-card');
-        });
-        
-        // Highlight active tab
-        const activeTab = document.getElementById('tab-' + category);
-        activeTab.classList.remove('glass-card');
-        
-        if (category === 'alam') {
-            activeTab.classList.add('bg-gradient-to-r', 'from-emerald-500', 'to-teal-600');
-        } else if (category === 'budaya') {
-            activeTab.classList.add('bg-gradient-to-r', 'from-amber-500', 'to-orange-600');
-        } else if (category === 'religi') {
-            activeTab.classList.add('bg-gradient-to-r', 'from-violet-500', 'to-purple-600');
-        } else if (category === 'semua') {
-            activeTab.classList.add('bg-gradient-to-r', 'from-blue-500', 'to-indigo-600');
-        }
-    }
-
     // Modal functions
     function openModal(modalId) {
         const modal = document.getElementById(modalId);
@@ -956,6 +964,28 @@
     document.addEventListener('click', (e) => {
         if (e.target.classList.contains('fixed') && e.target.id.startsWith('modal-')) {
             closeModal(e.target.id);
+        }
+    });
+
+    // Go to page function
+    function goToPage() {
+        const pageInput = document.getElementById('goToPage');
+        const page = parseInt(pageInput.value);
+        const totalPages = {{ $totalPages }};
+        
+        if (page >= 1 && page <= totalPages) {
+            window.location.href = `?page=${page}`;
+        } else {
+            alert(`Please enter a page number between 1 and ${totalPages}`);
+            pageInput.value = {{ $currentPage }};
+            pageInput.focus();
+        }
+    }
+
+    // Enter key support for go to page
+    document.getElementById('goToPage')?.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            goToPage();
         }
     });
 </script>
