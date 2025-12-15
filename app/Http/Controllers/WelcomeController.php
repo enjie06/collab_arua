@@ -74,32 +74,92 @@ private function showFallbackHomepage()
     $fallbackAlam = [
         [
             'nama' => 'Danau Toba',
-            'gambar' => '',
+            'gambar' => 'https://tse3.mm.bing.net/th/id/OIP.g_Ps3e2c4dA117467s-JZwHaE6?pid=Api&amp;P=0&amp;h=220',
             'kategori' => 'Danau',
             'jenisWisata' => 'alam',
             'kota' => 'Simalungun'
-        ]
+        ],
+
+        [
+            'nama' => 'Pulau Samosir',
+            'gambar' => 'https://wahananews.co/photo/berita/dir042022/menelusuri-sejarah-terbentuknya-danau-toba-dan-pulau-samosir_0Uounr7D9I.jpg',
+            'kategori' => 'Pulau',
+            'jenisWisata' => 'alam',
+            'kota' => 'Samosir'
+        ],
+
+        [
+            'nama' => 'Bukit Holbung',
+            'gambar' => 'https://tse2.mm.bing.net/th/id/OIP.dxP4esid4Lc8LxLhLC72wQHaEc?pid=Api&amp;P=0&amp;h=220',
+            'kategori' => 'Bukit',
+            'jenisWisata' => 'alam',
+            'kota' => 'Samosir'
+        ],
+
+        [
+            'nama' => 'Gunung Sibayak',
+            'gambar' => 'https://tse2.mm.bing.net/th/id/OIP.gx5_VyBVb34Q8j4HxICijQHaEO?pid=Api&amp;P=0&amp;h=220',
+            'kategori' => 'Gunung',
+            'jenisWisata' => 'alam',
+            'kota' => 'Berastagi'
+        ],
+ 
     ];
     
     $fallbackBudaya = [
         [
             'nama' => 'Istana Maimun',
-            'gambar' => '',
+            'gambar' => 'https://blog.airpaz.com/wp-content/uploads/Istana-Maimun-Medan.jpg',
             'kategori' => 'Istana',
             'jenisWisata' => 'budaya',
             'kota' => 'Medan'
-        ]
+        ],
+
+        [
+            'nama' => 'Museum Negeri Sumatera Utara',
+            'gambar' => 'https://tourtoba.com/wp-content/uploads/2018/02/museum-negeri.jpg',
+            'kategori' => 'Museum',
+            'jenisWisata' => 'budaya',
+            'kota' => 'Medan'
+        ],
+
+        [
+            'nama' => 'Desa Wisata Tomok',
+            'gambar' => 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Musum_Batak_di_Tomok%2C_Simanindo%2C_Samosir.jpg',
+            'kategori' => 'Desa Budaya',
+            'jenisWisata' => 'budaya',
+            'kota' => 'Samosir'
+        ],
+
     ];
     
     $fallbackReligi = [
         [
-            'nama' => 'Masjid Raya Medan',
-            'gambar' => '',
+            'nama' => 'Masjid Raya Al-Mashun',
+            'gambar' => 'https://upload.wikimedia.org/wikipedia/commons/d/d6/Masjid_Raya_Al_Mashun_Medan.jpg',
             'kategori' => 'Masjid',
             'jenisWisata' => 'religi',
             'kota' => 'Medan'
-        ]
+        ],
+
+        [
+            'nama' => 'Taman Alam Lumbini',
+            'gambar' => 'https://www.itrip.id/wp-content/uploads/2022/03/Daya-Tarik-Taman-Alam-Lumbini.jpg',
+            'kategori' => 'Pagoda',
+            'jenisWisata' => 'religi',
+            'kota' => 'Berastagi'
+        ],
+
+        [
+            'nama' => 'Graha Maria Annai Velangkanni',
+            'gambar' => 'https://images.genpi.co/uploads/sumut/arsip/normal/2022/03/11/graha-maria-annai-velangkanni-foto-dok-disparbud-sumut-n0mt.jpg',
+            'kategori' => 'Gereja',
+            'jenisWisata' => 'religi',
+            'kota' => 'Medan'
+        ],
+
     ];
+    
     
     return view('welcome', [
         'wisataAlam' => $fallbackAlam,
